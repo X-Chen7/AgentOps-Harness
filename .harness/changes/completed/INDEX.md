@@ -6,6 +6,7 @@
 
 | 日期 | 标题 | 文件 | commit | PR | 仓库 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-08-07 | 流水线状态一致性校验 | [2026-08-07-pipeline-state-consistency-check.md](2026-08-07-pipeline-state-consistency-check.md) | 本次 F-009 提交 | 本次 F-009 PR | agentops-harness |
 | 2026-08-07 | Codex 桌面版可执行多智能体流水线 v2 | [2026-08-07-agent-desktop-pipeline-v2.md](2026-08-07-agent-desktop-pipeline-v2.md) | 本次 F-008 提交 | 未登记 | agentops-harness |
 | 2026-08-06 | Codex 桌面版多智能体迁移 | [2026-08-06-codex-desktop-multi-agent-migration.md](2026-08-06-codex-desktop-multi-agent-migration.md) | 本次迁移提交 | 未登记 | agentops-harness |
 | 2026-08-06 | harness-cli 可执行流水线 v1 | [2026-08-06-harness-cli-executable-pipeline.md](2026-08-06-harness-cli-executable-pipeline.md) | 未登记 | 未登记 | agentops-harness |
@@ -18,6 +19,7 @@
 
 | 日期 | 标题 | 文件 | commit | PR | 仓库 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-08-07 | 执行计划：流水线状态一致性校验（F-009） | [archive/2026-08-07-pipeline-state-consistency-check.md](archive/2026-08-07-pipeline-state-consistency-check.md) | 本次 F-009 提交 | 本次 F-009 PR | agentops-harness |
 | 2026-08-07 | Agent 设计计划：桌面版可执行多智能体流水线 v2 | [archive/2026-08-07-agent-desktop-pipeline-v2.md](archive/2026-08-07-agent-desktop-pipeline-v2.md) | 本次 F-008 提交 | 未登记 | agentops-harness |
 | 2026-08-06 | harness-cli 可执行流水线执行计划 | [archive/2026-08-06-harness-cli-executable-pipeline.md](archive/2026-08-06-harness-cli-executable-pipeline.md) | 未登记 | 未登记 | agentops-harness |
 | 2026-08-06 | Codex 原生 Harness 对齐执行计划 | [archive/2026-08-06-codex-native-harness-alignment.md](archive/2026-08-06-codex-native-harness-alignment.md) | 未登记 | 未登记 | agentops-harness |

@@ -19,7 +19,7 @@ param(
     [string]$Message = ''
 )
 
-$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Continue'
 $root = (Resolve-Path -LiteralPath (Join-Path $PSScriptRoot '..')).Path
 $harness = Join-Path $root '.harness'
 $featureListPath = Join-Path $harness 'changes\active\feature-list.json'
@@ -80,7 +80,7 @@ function Get-FeatureBranchName($feature) {
     if ($feature.branch -and (-not $feature.branch.StartsWith([char]0x672A))) {
         return [string]$feature.branch
     }
-    return ('feature/F-' + $feature.id)
+    return ('feature/' + $feature.id)
 }
 
 function Add-GitHistoryEntry($feature, [string]$status, [string]$note) {
@@ -96,13 +96,32 @@ function Add-GitHistoryEntry($feature, [string]$status, [string]$note) {
     $feature.history = @($feature.history) + @($entry)
 }
 
+function Invoke-StatusCommit($features, $feature, [string]$message) {
+    & git add $featureListPath 2>&1 | Out-Null
+    if ($LASTEXITCODE -ne 0) {
+        throw "git add failed"
+    }
+    $pending = @(& git status --porcelain)
+    if ($pending.Count -eq 0) {
+        return
+    }
+    & git commit -m $message 2>&1 | Out-Null
+    if ($LASTEXITCODE -ne 0) {
+        throw "git commit failed"
+    }
+}
+
 function Invoke-GitCommit($features, $feature) {
     Assert-GitRepo
     $branch = Get-FeatureBranchName $feature
     $current = (& git rev-parse --abbrev-ref HEAD).Trim()
     if ($current -ne $branch) {
-        & git rev-parse --verify "refs/heads/$branch" 2>$null | Out-Null
-        if ($LASTEXITCODE -eq 0) {
+        $previousEap = $ErrorActionPreference
+        $ErrorActionPreference = 'Continue'
+        & git rev-parse --verify --quiet "refs/heads/$branch" *> $null
+        $branchExists = ($LASTEXITCODE -eq 0)
+        $ErrorActionPreference = $previousEap
+        if ($branchExists) {
             & git checkout $branch 2>&1 | Out-Null
         }
         else {
@@ -136,6 +155,7 @@ function Invoke-GitCommit($features, $feature) {
     Add-GitHistoryEntry $feature 'committed' "committed on $branch"
     $features.updated_at = (Get-Date -Format 'yyyy-MM-dd')
     Save-JsonFile $features $featureListPath
+    Invoke-StatusCommit $features $feature "chore($($feature.id)): update feature-list status Ref: $($feature.id)"
     Write-Step "committed $($feature.id) on $branch at $commit"
 }
 
@@ -177,6 +197,11 @@ function Invoke-GitPush($features, $feature) {
     Add-GitHistoryEntry $feature 'pushed' "pushed to origin/$branch"
     $features.updated_at = (Get-Date -Format 'yyyy-MM-dd')
     Save-JsonFile $features $featureListPath
+    Invoke-StatusCommit $features $feature "chore($($feature.id)): update feature-list push status Ref: $($feature.id)"
+    & git push origin $branch 2>&1 | Out-Null
+    if ($LASTEXITCODE -ne 0) {
+        throw "git push (status) failed"
+    }
     Write-Step "pushed $($feature.id) to origin/$branch"
 }
 
@@ -220,6 +245,11 @@ function Invoke-GitPr($features, $feature) {
     Add-GitHistoryEntry $feature 'pushed' "PR created: $url"
     $features.updated_at = (Get-Date -Format 'yyyy-MM-dd')
     Save-JsonFile $features $featureListPath
+    Invoke-StatusCommit $features $feature "chore($($feature.id)): update feature-list PR URL Ref: $($feature.id)"
+    & git push origin $branch 2>&1 | Out-Null
+    if ($LASTEXITCODE -ne 0) {
+        throw "git push (PR status) failed"
+    }
     Write-Step "PR created: $url"
 }
 

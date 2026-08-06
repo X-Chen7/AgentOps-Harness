@@ -1,47 +1,73 @@
 {
-  "schema_version": "1.2",
-  "wip_limit": 1,
-  "updated_at": "2026-08-07",
-  "git_sync": {
-    "enabled": true,
-    "repo": "AgentOps-Harness",
-    "remote": "https://github.com/X-Chen7/AgentOps-Harness"
-  },
-  "features": [
-    {
-      "id": "F-009",
-      "title": "Pipeline state consistency check",
-      "plan": ".harness/changes/active/2026-08-07-pipeline-state-consistency-check.md",
-      "status": "todo",
-      "owner": "owner",
-      "repo": "AgentOps-Harness",
-      "branch": "",
-      "commit": "",
-      "push_status": "none",
-      "pr_url": "",
-      "remote_branch": "",
-      "sync_repos": [],
-      "depends_on": [],
-      "issue_id": "",
-      "acceptance": [
-        "script/check.ps1 passes",
-        "Pipeline state done/blocked must match feature-list pipeline status"
-      ],
-      "blocked_by": [],
-      "pipeline": {
-        "status": "not_started",
-        "artifacts": [],
-        "last_run": ""
-      },
-      "updated_at": "2026-08-07",
-      "history": [
-        {
-          "status": "todo",
-          "at": "2026-08-07",
-          "by": "harness",
-          "note": "planned for desktop pipeline demo"
-        }
-      ]
-    }
-  ]
+    "schema_version":  "1.2",
+    "wip_limit":  1,
+    "updated_at":  "2026-08-07",
+    "git_sync":  {
+                     "enabled":  true,
+                     "repo":  "AgentOps-Harness",
+                     "remote":  "https://github.com/X-Chen7/AgentOps-Harness"
+                 },
+    "features":  [
+                     {
+                         "id":  "F-009",
+                         "title":  "Pipeline state consistency check",
+                         "plan":  ".harness/changes/completed/archive/2026-08-07-pipeline-state-consistency-check.md",
+                         "status":  "pushed",
+                         "owner":  "owner",
+                         "repo":  "AgentOps-Harness",
+                         "branch":  "feature/F-009",
+                         "commit":  "47ec27582692a83d79cb50de2c8bd928b388883d",
+                         "push_status":  "pushed",
+                         "pr_url":  "https://github.com/X-Chen7/AgentOps-Harness/pull/1",
+                         "remote_branch":  "feature/F-009",
+                         "sync_repos":  [
+
+                                        ],
+                         "depends_on":  [
+
+                                        ],
+                         "issue_id":  "",
+                         "acceptance":  [
+                                            "script/check.ps1 passes",
+                                            "Pipeline state done/blocked must match feature-list pipeline status"
+                                        ],
+                         "blocked_by":  [
+
+                                        ],
+                         "pipeline":  {
+                                          "status":  "done",
+                                          "artifacts":  [
+
+                                                        ],
+                                          "last_run":  ""
+                                      },
+                         "updated_at":  "2026-08-07",
+                         "history":  [
+                                         {
+                                             "status":  "todo",
+                                             "at":  "2026-08-07",
+                                             "by":  "harness",
+                                             "note":  "planned for desktop pipeline demo"
+                                         },
+                                         {
+                                             "status":  "committed",
+                                             "note":  "committed on feature/F-009",
+                                             "by":  "harness-git",
+                                             "at":  "2026-08-07"
+                                         },
+                                         {
+                                             "status":  "pushed",
+                                             "note":  "pushed to origin/feature/F-009",
+                                             "by":  "harness-git",
+                                             "at":  "2026-08-07"
+                                         },
+                                         {
+                                             "status":  "pushed",
+                                             "note":  "PR created: https://github.com/X-Chen7/AgentOps-Harness/pull/1",
+                                             "by":  "harness-git",
+                                             "at":  "2026-08-07"
+                                         }
+                                     ]
+                     }
+                 ]
 }
