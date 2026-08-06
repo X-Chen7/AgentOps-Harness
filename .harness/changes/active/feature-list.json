@@ -11,7 +11,7 @@
     {
       "id": "F-009",
       "title": "Pipeline state consistency check",
-      "plan": ".harness/changes/active/2026-08-07-pipeline-state-consistency-check.md",
+      "plan": ".harness/changes/completed/archive/2026-08-07-pipeline-state-consistency-check.md",
       "status": "todo",
       "owner": "owner",
       "repo": "AgentOps-Harness",
@@ -29,7 +29,7 @@
       ],
       "blocked_by": [],
       "pipeline": {
-        "status": "not_started",
+        "status": "done",
         "artifacts": [],
         "last_run": ""
       },

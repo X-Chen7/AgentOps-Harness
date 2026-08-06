@@ -19,7 +19,7 @@ param(
     [string]$Message = ''
 )
 
-$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Continue'
 $root = (Resolve-Path -LiteralPath (Join-Path $PSScriptRoot '..')).Path
 $harness = Join-Path $root '.harness'
 $featureListPath = Join-Path $harness 'changes\active\feature-list.json'
@@ -80,7 +80,7 @@ function Get-FeatureBranchName($feature) {
     if ($feature.branch -and (-not $feature.branch.StartsWith([char]0x672A))) {
         return [string]$feature.branch
     }
-    return ('feature/F-' + $feature.id)
+    return ('feature/' + $feature.id)
 }
 
 function Add-GitHistoryEntry($feature, [string]$status, [string]$note) {
@@ -101,8 +101,12 @@ function Invoke-GitCommit($features, $feature) {
     $branch = Get-FeatureBranchName $feature
     $current = (& git rev-parse --abbrev-ref HEAD).Trim()
     if ($current -ne $branch) {
-        & git rev-parse --verify "refs/heads/$branch" 2>$null | Out-Null
-        if ($LASTEXITCODE -eq 0) {
+        $previousEap = $ErrorActionPreference
+        $ErrorActionPreference = 'Continue'
+        & git rev-parse --verify --quiet "refs/heads/$branch" *> $null
+        $branchExists = ($LASTEXITCODE -eq 0)
+        $ErrorActionPreference = $previousEap
+        if ($branchExists) {
             & git checkout $branch 2>&1 | Out-Null
         }
         else {

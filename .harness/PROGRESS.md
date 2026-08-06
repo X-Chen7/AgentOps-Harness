@@ -5,9 +5,9 @@
 ## 当前状态
 
 - 更新日期：2026-08-07
-- 当前任务：F-009 流水线状态一致性校验
-- 当前状态：`todo`
-- 最近验证：`script/check.ps1` 待 F-009 落地后通过
+- 当前任务：F-009 流水线状态一致性校验（待 push/PR 收尾）
+- 当前状态：`committed`（待 push/PR）
+- 最近验证：`script/check.ps1` 通过，0 error
 
 ## 已完成
 
@@ -20,15 +20,16 @@
 - Harness 第七轮可执行流水线（F-007）：harness-cli.ps1 + codex-executor.ps1 + pipelines/default.json + 任务卡/报告模板 + state/ + 交互菜单 harness.cmd 落地，check.ps1 通过；后续退役，由 Codex 桌面版多智能体编排取代，运行器归档至 .harness/archive/harness-cli/。
 - Harness 第八轮 Codex 桌面版迁移：新增 5 个桌面版角色契约、script/harness-git.ps1 独立 Git/PR 自动化，编排交由桌面版多智能体接管。
 - Harness 第九轮 Codex 桌面版可执行多智能体流水线 v2（F-008）：落地 desktop-pipeline.json、状态 schema、handoff 协议、角色升级、门禁/重试/打回/升级语义和校验脚本。
+- F-009 流水线状态一致性校验：`script/harness-check.ps1` 在流水线状态为 `done` / `blocked` 时校验 feature-list 的 `pipeline.status` 一致，负向验证通过。
 
 ## 进行中
 
-- [ ] F-009 流水线状态一致性校验：让 `script/harness-check.ps1` 在流水线状态为 `done` / `blocked` 时校验 feature-list 的 `pipeline.status` 一致，并完整走一遍 Git/PR 链路。
+- 无进行中 feature（WIP=0）。
 
 ## 下一步
 
-- 按 F-009 计划实现并验证，再执行 `harness commit -Feature F-009`。
-- 配置 remote 后执行 `harness push -Feature F-009` 和 `harness pr -Feature F-009`。
+- 执行 `harness commit -Feature F-009`、`harness push -Feature F-009` 和 `harness pr -Feature F-009` 完成 Git/PR 链路验证。
+- PR 合并后把 F-009 状态置为 `done` / `merged` 并回填 pr_url。
 - 每次会话结束运行 `script/check.ps1` 并回填结果。
 - 同步更新 `changes/active/feature-list.json` 中的状态。
 
