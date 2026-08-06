@@ -12,14 +12,14 @@
                          "id":  "F-009",
                          "title":  "Pipeline state consistency check",
                          "plan":  ".harness/changes/completed/archive/2026-08-07-pipeline-state-consistency-check.md",
-                         "status":  "committed",
+                         "status":  "pushed",
                          "owner":  "owner",
                          "repo":  "AgentOps-Harness",
                          "branch":  "feature/F-009",
                          "commit":  "47ec27582692a83d79cb50de2c8bd928b388883d",
-                         "push_status":  "none",
+                         "push_status":  "pushed",
                          "pr_url":  "",
-                         "remote_branch":  "",
+                         "remote_branch":  "feature/F-009",
                          "sync_repos":  [
 
                                         ],
@@ -52,6 +52,12 @@
                                          {
                                              "status":  "committed",
                                              "note":  "committed on feature/F-009",
+                                             "by":  "harness-git",
+                                             "at":  "2026-08-07"
+                                         },
+                                         {
+                                             "status":  "pushed",
+                                             "note":  "pushed to origin/feature/F-009",
                                              "by":  "harness-git",
                                              "at":  "2026-08-07"
                                          }
