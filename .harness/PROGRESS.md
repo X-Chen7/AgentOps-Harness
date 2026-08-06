@@ -5,9 +5,9 @@
 ## 当前状态
 
 - 更新日期：2026-08-07
-- 当前任务：F-009 流水线状态一致性校验（待 push/PR 收尾）
-- 当前状态：`committed`（待 push/PR）
-- 最近验证：`script/check.ps1` 通过，0 error
+- 当前任务：F-009 流水线状态一致性校验（PR #1 已创建，待合并）
+- 当前状态：`pushed`（PR 待合并）
+- 最近验证：`script/check.ps1` 通过，0 error；push 与 PR 链路已验证
 
 ## 已完成
 
@@ -28,8 +28,8 @@
 
 ## 下一步
 
-- 执行 `harness commit -Feature F-009`、`harness push -Feature F-009` 和 `harness pr -Feature F-009` 完成 Git/PR 链路验证。
-- PR 合并后把 F-009 状态置为 `done` / `merged` 并回填 pr_url。
+- F-009 已提交并推送至 `origin/feature/F-009`，PR 地址：https://github.com/X-Chen7/AgentOps-Harness/pull/1
+- PR 合并后把 F-009 状态置为 `done` / `merged` 并回填 merge 信息。
 - 每次会话结束运行 `script/check.ps1` 并回填结果。
 - 同步更新 `changes/active/feature-list.json` 中的状态。
 

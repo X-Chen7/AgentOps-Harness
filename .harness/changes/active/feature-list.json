@@ -18,7 +18,7 @@
                          "branch":  "feature/F-009",
                          "commit":  "47ec27582692a83d79cb50de2c8bd928b388883d",
                          "push_status":  "pushed",
-                         "pr_url":  "",
+                         "pr_url":  "https://github.com/X-Chen7/AgentOps-Harness/pull/1",
                          "remote_branch":  "feature/F-009",
                          "sync_repos":  [
 
@@ -58,6 +58,12 @@
                                          {
                                              "status":  "pushed",
                                              "note":  "pushed to origin/feature/F-009",
+                                             "by":  "harness-git",
+                                             "at":  "2026-08-07"
+                                         },
+                                         {
+                                             "status":  "pushed",
+                                             "note":  "PR created: https://github.com/X-Chen7/AgentOps-Harness/pull/1",
                                              "by":  "harness-git",
                                              "at":  "2026-08-07"
                                          }
