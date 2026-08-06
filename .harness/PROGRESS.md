@@ -5,9 +5,9 @@
 ## 当前状态
 
 - 更新日期：2026-08-07
-- 当前任务：F-009 流水线状态一致性校验（PR #1 已创建，待合并）
-- 当前状态：`pushed`（PR 待合并）
-- 最近验证：`script/check.ps1` 通过，0 error；push 与 PR 链路已验证
+- 当前任务：F-009 流水线状态一致性校验（已完成）
+- 当前状态：`merged`（PR #1 已合并）
+- 最近验证：`script/check.ps1` 通过，0 error；commit / push / PR / merge 链路已验证
 
 ## 已完成
 
@@ -21,6 +21,7 @@
 - Harness 第八轮 Codex 桌面版迁移：新增 5 个桌面版角色契约、script/harness-git.ps1 独立 Git/PR 自动化，编排交由桌面版多智能体接管。
 - Harness 第九轮 Codex 桌面版可执行多智能体流水线 v2（F-008）：落地 desktop-pipeline.json、状态 schema、handoff 协议、角色升级、门禁/重试/打回/升级语义和校验脚本。
 - F-009 流水线状态一致性校验：`script/harness-check.ps1` 在流水线状态为 `done` / `blocked` 时校验 feature-list 的 `pipeline.status` 一致，负向验证通过。
+- F-009 Git/PR 链路收尾：`harness commit`、`harness push`、PR #1 创建与 squash 合并全部完成，feature-list 状态回写为 `merged`。
 
 ## 进行中
 
@@ -28,8 +29,8 @@
 
 ## 下一步
 
-- F-009 已提交并推送至 `origin/feature/F-009`，PR 地址：https://github.com/X-Chen7/AgentOps-Harness/pull/1
-- PR 合并后把 F-009 状态置为 `done` / `merged` 并回填 merge 信息。
+- 无进行中 feature（WIP=0）。
+- 后续新 feature 继续按 `analysis -> coding -> test -> review -> Git/PR` 流程执行。
 - 每次会话结束运行 `script/check.ps1` 并回填结果。
 - 同步更新 `changes/active/feature-list.json` 中的状态。
 
