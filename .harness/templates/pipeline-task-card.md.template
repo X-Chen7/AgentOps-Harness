@@ -1,0 +1,29 @@
+# Pipeline Task Card
+
+- feature_id: {{feature_id}}
+- feature_title: {{feature_title}}
+- feature_plan: {{feature_plan}}
+- stage: {{stage}}
+- role: {{role}}
+- scope: {{scope}}
+- gate: {{gate}}
+- handoff: {{handoff}}
+- next_stage: {{next_stage}}
+
+## Context
+
+- rules: {{rules_index}}
+- skills: {{skills_index}}
+- wiki: {{wiki_index}}
+- upstream_handoff: {{upstream_handoff}}
+
+## Instructions
+
+1. Read the feature plan and upstream handoff first.
+2. Complete this stage with minimal changes and no unrelated refactoring; only change files required by the scope.
+3. Write the handoff file using `.harness/templates/pipeline-handoff.md.template`; fill all required fields.
+4. Do not run the gate command; the coordinator runs it after this stage finishes.
+5. Do not create branches or run git push; Git/PR automation is handled by `script/harness-git.ps1`.
+6. If scope deviation, missing dependency, or an Owner decision is needed, fill `escalations`; `blocking=true` pauses the pipeline.
+7. Do not chat directly with other stage agents; pass results through handoff and artifacts only.
+8. Record results, decisions, evidence, and remaining risks.

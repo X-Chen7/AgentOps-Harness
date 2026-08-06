@@ -1,0 +1,68 @@
+{
+  "pipeline": "default",
+  "executor": "codex",
+  "stages": [
+    {
+      "id": "analysis",
+      "label": "需求分析",
+      "goal": "分析 feature 需求、影响范围和拆解步骤",
+      "prompt_template": ".harness/templates/pipeline-task-card.md.template",
+      "gate": {
+        "file": "script/check.ps1",
+        "args": []
+      },
+      "timeout_seconds": 900,
+      "reasoning_effort": "medium",
+      "sandbox": "read-only",
+      "output_required": ["需求拆解结果", "影响范围"]
+    },
+    {
+      "id": "coding",
+      "label": "编码",
+      "goal": "按规则和技能实现代码，保持最小改动",
+      "prompt_template": ".harness/templates/pipeline-task-card.md.template",
+      "gate": {
+        "file": "script/check.ps1",
+        "args": []
+      },
+      "timeout_seconds": 3600,
+      "reasoning_effort": "medium",
+      "sandbox": "workspace-write",
+      "output_required": ["代码改动", "验证结果"]
+    },
+    {
+      "id": "test",
+      "label": "测试",
+      "goal": "补充并运行测试，确认后端验证通过",
+      "prompt_template": ".harness/templates/pipeline-task-card.md.template",
+      "gate": {
+        "file": "script/check.ps1",
+        "args": ["-Backend"]
+      },
+      "timeout_seconds": 1800,
+      "reasoning_effort": "medium",
+      "sandbox": "workspace-write",
+      "output_required": ["测试记录", "失败说明"]
+    },
+    {
+      "id": "review",
+      "label": "评审",
+      "goal": "按 expert-reviewer 技能评审改动并记录风险",
+      "prompt_template": ".harness/templates/pipeline-task-card.md.template",
+      "gate": {
+        "file": "script/check.ps1",
+        "args": []
+      },
+      "timeout_seconds": 1200,
+      "reasoning_effort": "high",
+      "sandbox": "read-only",
+      "output_required": ["评审结论", "风险项"]
+    }
+  ],
+  "git_pr": {
+    "enabled": true,
+    "auto_push": false,
+    "commit_template": ".harness/templates/commit-message.md.template",
+    "pr_template": ".harness/templates/pr-description.md.template"
+  }
+}

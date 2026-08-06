@@ -1,0 +1,51 @@
+# Stage Handoff
+
+- feature_id: {{feature_id}}
+- stage: {{stage}}
+- conclusion: {{conclusion}}
+- conclusion_options: passed | needs_owner
+- next_stage: {{next_stage}}
+
+## Scope Covered
+
+{{scope_covered}}
+
+## Files Changed
+
+{{files_changed}}
+
+## Artifacts
+
+- {{artifact}}
+
+## Evidence
+
+- command: {{command}}
+- exit_code: {{exit_code}}
+- output: {{output}}
+
+## Decisions
+
+- {{decision}}
+
+## Risks
+
+- {{risk}}
+
+## Escalations
+
+- kind: normal | scope | dep
+- blocking: true | false
+- question: {{question}}
+- default_if_ignored: {{default_if_ignored}}
+
+## Review Verdict
+
+仅评审阶段填写：`pass` / `rework` / `needs_owner`。
+
+- verdict: {{review_verdict}}
+- issues: {{review_issues}}
+
+## Next Stage Contract
+
+{{next_stage_contract}}

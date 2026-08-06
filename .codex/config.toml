@@ -1,0 +1,30 @@
+# 项目级 Codex 配置
+#
+# 本文件会与用户级配置（C:\Users\Administrator\.codex\config.toml）合并读取。
+# 当前只保留注释和示例，不激活任何会改变模型、沙箱、审批或 MCP 的设置。
+# 请勿把密钥、Token 或本机凭据写入项目级配置。
+
+# === 沙箱与审批（按需启用） ===
+# sandbox_mode、approval_policy 的可用键名以当前 Codex 版本实际支持为准。
+# 启用前先在 CLI 验证：
+#   codex --help
+#   codex doctor
+#   codex exec --strict-config --help
+# 确认支持后再取消注释，并只开启当前任务所需的最小权限。
+#
+# sandbox_mode = "read-only"
+# approval_policy = "on-request"
+
+# === MCP Server（按需启用） ===
+# Codex 的 MCP 服务配置在 config.toml 的 [mcp_servers.*] 中，
+# 不使用 .mcp.json（那是 Claude 的约定）。
+#
+# [mcp_servers.database]
+# command = "..."                 # 占位：MCP server 可执行命令
+# args = ["..."]                  # 占位：启动参数
+# env = { "KEY" = "VALUE" }       # 占位：环境变量
+#
+# [mcp_servers.browser]
+# command = "..."                 # 占位：MCP server 可执行命令
+# args = ["..."]                  # 占位：启动参数
+# env = { "KEY" = "VALUE" }       # 占位：环境变量

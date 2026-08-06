@@ -1,0 +1,4 @@
+interface:
+  display_name: "需求分析"
+  short_description: "复杂需求拆解、影响范围识别、风险判断与执行计划必要性判断"
+  default_prompt: "Use $request-analysis to analyze this feature request and identify scope, risks, and whether a plan is needed."

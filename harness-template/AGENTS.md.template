@@ -1,0 +1,70 @@
+# {{PROJECT_NAME}}
+
+{{PROJECT_DESC}}
+## 1. 文件定位
+
+本仓库采用 Harness Engineering 管理智能体入口、规则、技能和状态。
+本文件是进入仓库后的统一入口，只负责索引、路由和边界约束。
+当前项目真实架构见 `ARCHITECTURE.md`（需项目实例化）。
+
+## 2. 目录与知识索引
+
+完整目录地图和知识坐标见 `.harness/README.md`。
+常用入口：
+
+- 规则：`.harness/rules/`
+- 技能：`.harness/skills/`
+- 变更：`.harness/changes/`
+- 状态：`.harness/PROGRESS.md` + `.harness/changes/active/feature-list.json`
+- 知识：`.harness/wiki/`
+
+## 3. 当前项目实例化索引
+
+启用模块：`{{ENABLED_MODULES}}`。
+
+## 4. 任务路由
+
+| 任务类型 | 优先目录 |
+| --- | --- |
+| 框架、Starter、公共能力 | `app-framework/` |
+| 启动、装配、配置 | `app-server/` |
+| 业务模块 | `app-module-*/` |
+| 数据库结构、初始化 | `sql/` |
+| 脚本、部署辅助 | `script/` |
+
+## 5. 修改边界
+
+- 先确认目标模块和启用状态，再修改。
+- 优先在所属业务模块内完成改动。
+- 不做无关重构、大范围格式化、批量改名。
+- 公共方法、DO/VO、复杂业务逻辑补充必要中文注释。
+- 数据库字段、结构或初始化数据变更时，代码、Mapper、DO、SQL 必须同步。
+
+## 6. 验证入口
+
+```powershell
+script\check.ps1              # 快速检查
+script\check.ps1 -Backend     # 包含后端模块测试和服务打包
+mvn -pl <module> -am test     # 单模块最小验证
+```
+
+## 7. Agent 工作流程
+
+每次任务默认按以下顺序执行：
+
+1. 读取 `AGENTS.md` 和 `.harness/README.md`。
+2. 根据任务类型跳转对应规则和技能。
+3. 确认 `pom.xml`、`app-server/pom.xml` 中的启用模块和装配关系。
+4. 确认影响范围，阅读相关 Controller、Service、Mapper、DO、VO、枚举、SQL 和测试。
+5. 小范围修改。
+6. 执行最小验证，优先使用 `script/check.ps1`。
+7. 更新 `.harness/PROGRESS.md` 和 `.harness/changes/active/feature-list.json`。
+
+## 8. 禁止事项
+
+- 不修改未确认启用的模块，除非用户明确要求。
+- 不绕过认证、权限、租户和数据权限。
+- 不删除用户已有改动。
+- 不执行破坏性 Git 操作，如 `reset --hard`、强制覆盖。
+- 不为了通过编译注释业务逻辑或绕过校验。
+- 不把一次性计划写进本文件。

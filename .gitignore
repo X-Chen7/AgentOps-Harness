@@ -1,0 +1,19 @@
+# Harness runtime state
+.harness/state/pipeline-*.json
+.harness/state/tasks/
+.harness/state/logs/
+.harness/state/reports/
+
+# Generated docs / zread
+.zread/
+docs/zread/
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+*.log
+.DS_Store
+
+# Temp
+_tmp_*.json

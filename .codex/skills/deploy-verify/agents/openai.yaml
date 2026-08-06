@@ -1,0 +1,4 @@
+interface:
+  display_name: "部署验证"
+  short_description: "检查模块装配、配置、依赖、打包与部署前风险，输出验证结论"
+  default_prompt: "Use $deploy-verify to run deployment pre-checks and packaging verification."

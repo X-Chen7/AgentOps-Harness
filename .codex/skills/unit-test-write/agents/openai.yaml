@@ -1,0 +1,4 @@
+interface:
+  display_name: "测试编写"
+  short_description: "为后端变更补充单元测试，覆盖成功、失败、边界与回归场景"
+  default_prompt: "Use $unit-test-write to add tests covering success, failure, and boundary cases."

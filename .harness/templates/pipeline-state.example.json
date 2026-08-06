@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "feature_id": "F-001",
+  "status": "running",
+  "current_stage": "coding",
+  "stages": [
+    {
+      "id": "analysis",
+      "status": "passed",
+      "attempts": 1,
+      "max_attempts": 1,
+      "rework_count": 0,
+      "depends_on": [],
+      "gate": "script/check.ps1",
+      "started_at": "2026-08-07T10:00:00+08:00",
+      "finished_at": "2026-08-07T10:05:00+08:00",
+      "handoff": ".harness/state/tasks/F-001-analysis.md",
+      "artifacts": [
+        "F-001-analysis-scope.md"
+      ],
+      "last_error": null
+    },
+    {
+      "id": "coding",
+      "status": "running",
+      "attempts": 1,
+      "max_attempts": 2,
+      "rework_count": 0,
+      "depends_on": [
+        "analysis"
+      ],
+      "gate": "script/check.ps1 -Compile",
+      "started_at": "2026-08-07T10:06:00+08:00",
+      "finished_at": null,
+      "handoff": ".harness/state/tasks/F-001-coding.md",
+      "artifacts": [],
+      "last_error": null
+    },
+    {
+      "id": "test",
+      "status": "queued",
+      "attempts": 0,
+      "max_attempts": 2,
+      "rework_count": 0,
+      "depends_on": [
+        "coding"
+      ],
+      "gate": "script/check.ps1 -Backend",
+      "started_at": null,
+      "finished_at": null,
+      "handoff": ".harness/state/tasks/F-001-test.md",
+      "artifacts": [],
+      "last_error": null
+    },
+    {
+      "id": "review",
+      "status": "queued",
+      "attempts": 0,
+      "max_attempts": 1,
+      "rework_count": 0,
+      "depends_on": [
+        "test"
+      ],
+      "gate": "script/check.ps1",
+      "started_at": null,
+      "finished_at": null,
+      "handoff": ".harness/state/tasks/F-001-review.md",
+      "artifacts": [],
+      "last_error": null
+    }
+  ],
+  "journal": [
+    {
+      "seq": 1,
+      "at": "2026-08-07T10:00:00+08:00",
+      "type": "stage_started",
+      "stage": "analysis",
+      "note": "启动需求分析"
+    },
+    {
+      "seq": 2,
+      "at": "2026-08-07T10:05:00+08:00",
+      "type": "stage_passed",
+      "stage": "analysis",
+      "note": "门禁 script/check.ps1 通过"
+    },
+    {
+      "seq": 3,
+      "at": "2026-08-07T10:06:00+08:00",
+      "type": "stage_started",
+      "stage": "coding",
+      "note": "按 analysis_scope 启动编码"
+    }
+  ],
+  "created_at": "2026-08-07T10:00:00+08:00",
+  "updated_at": "2026-08-07T10:06:00+08:00"
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "前后端联调"
+  short_description: "接口契约对齐、联调包生成、前后端环境对接与联合验收闭环"
+  default_prompt: "Use $frontend-backend-integration to align the API contract and run frontend-backend joint acceptance."

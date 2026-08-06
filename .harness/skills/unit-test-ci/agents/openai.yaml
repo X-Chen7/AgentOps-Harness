@@ -1,0 +1,4 @@
+interface:
+  display_name: "测试验证"
+  short_description: "选择最小验证命令、执行测试或打包，并完成失败归因与范围说明"
+  default_prompt: "Use $unit-test-ci to run the minimal verification for this change."

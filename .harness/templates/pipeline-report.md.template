@@ -1,0 +1,34 @@
+# Pipeline Report
+
+- feature_id: {{feature_id}}
+- pipeline: {{pipeline}}
+- status: {{pipeline_status}}
+- started_at: {{started_at}}
+- finished_at: {{finished_at}}
+- current_stage: {{current_stage}}
+
+## Stage Table
+
+| Stage | Status | Attempts | Gate | Started | Finished |
+| --- | --- | --- | --- | --- | --- |
+{{stage_table}}
+
+## Journal
+
+{{journal}}
+
+## Summary
+
+{{summary}}
+
+## Evidence
+
+{{evidence}}
+
+## Risks
+
+{{risks}}
+
+## Next Steps
+
+{{next_steps}}

@@ -1,0 +1,28 @@
+# 会话交接清单
+
+## 验证
+
+- [ ] 构建通过
+- [ ] 全部相关测试通过，包括会话开始前已有的测试
+- [ ] 统一验证命令已运行：`script/check.ps1`
+- [ ] 无法验证项已写明原因和风险
+
+## 状态
+
+- [ ] `PROGRESS.md` 已更新：已完成 / 进行中 / 下一步
+- [ ] `feature-list.json` 已更新：todo / in_progress / ready_for_review / committed / pushed / merged / blocked / done
+- [ ] 技术债状态已同步
+
+## Git 同步
+
+- [ ] 当前分支：`<branch>`
+- [ ] 最近 commit：`<hash>`
+- [ ] push 状态：`none / local / pushed / merged`
+- [ ] PR 链接：`<url>`（如有）
+- [ ] `feature-list.json` 已回写 branch / commit / push_status / pr_url
+- [ ] 未提交或未推送内容已说明
+
+## 清洁
+
+- [ ] 临时文件、调试脚本、临时输出已清理
+- [ ] 新改动已提交干净检查点或已明确说明未提交原因

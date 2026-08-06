@@ -1,0 +1,37 @@
+# Commit Message 模板
+
+## 首行
+
+```text
+<type>(<scope>): <摘要> Ref: <F-ID/TD-ID>
+```
+
+示例：
+```text
+feat(harness-check): 增加流水线终态一致性校验 Ref: F-009
+fix(harness): 修复 feature-list 状态回写 Ref: F-010
+docs(harness): 新增 Git 协作同步规则 Ref: F-011
+```
+
+## Body
+
+```text
+改动内容：
+- 改了哪些文件或模块
+
+改动原因：
+- 为什么这样改
+
+验证方式：
+- script/check.ps1
+- 具体模块测试或接口验证
+
+同步项：
+- SQL / 配置 / 接口文档 / Harness 文档是否同步
+```
+
+## 规则
+
+- 一个 commit 只解决一个功能或问题。
+- 涉及 SQL 时必须在 body 标注。
+- 提交后把 commit hash 回写 `feature-list.json`。

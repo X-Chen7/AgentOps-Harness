@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "pipeline": "desktop",
+  "stages": [
+    {
+      "id": "analysis",
+      "description": "需求拆解、影响范围、scope 清单",
+      "role": "analyst",
+      "depends_on": [],
+      "gate": "script/check.ps1",
+      "max_attempts": 1,
+      "outputs": [
+        "analysis_scope"
+      ]
+    },
+    {
+      "id": "coding",
+      "description": "按 scope 实现代码、SQL、配置和测试",
+      "role": "coder",
+      "depends_on": [
+        "analysis"
+      ],
+      "gate": "script/check.ps1 -Compile",
+      "max_attempts": 2,
+      "outputs": [
+        "code_changes"
+      ]
+    },
+    {
+      "id": "test",
+      "description": "补充测试并运行最小测试集",
+      "role": "tester",
+      "depends_on": [
+        "coding"
+      ],
+      "gate": "script/check.ps1 -Backend",
+      "max_attempts": 2,
+      "outputs": [
+        "test_report"
+      ]
+    },
+    {
+      "id": "review",
+      "description": "独立评审并输出 pass/rework/needs_owner",
+      "role": "reviewer",
+      "depends_on": [
+        "test"
+      ],
+      "gate": "script/check.ps1",
+      "max_attempts": 1,
+      "max_rework": 2,
+      "outputs": [
+        "review_verdict"
+      ]
+    }
+  ]
+}

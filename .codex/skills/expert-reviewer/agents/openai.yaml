@@ -1,0 +1,4 @@
+interface:
+  display_name: "专家评审"
+  short_description: "以代码评审视角识别缺陷、回归风险、权限风险、SQL 风险与测试缺口"
+  default_prompt: "Use $expert-reviewer to review this change and list findings by priority."

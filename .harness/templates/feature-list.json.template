@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.1",
+  "wip_limit": 1,
+  "updated_at": "YYYY-MM-DD",
+  "git_sync": {
+    "enabled": false,
+    "repo": "<仓库名>",
+    "remote": "<远端地址或未配置>"
+  },
+  "features": [
+    {
+      "id": "F-001",
+      "title": "功能名称",
+      "plan": ".harness/changes/active/<执行计划>.md",
+      "status": "todo",
+      "owner": "<负责人>",
+      "repo": "<仓库名>",
+      "branch": "feature/F-001-<短名称>",
+      "commit": "",
+      "push_status": "none",
+      "pr_url": "",
+      "remote_branch": "",
+      "sync_repos": [],
+      "depends_on": [],
+      "issue_id": "",
+      "acceptance": [
+        "可验证的验收条件 1",
+        "可验证的验收条件 2"
+      ],
+      "blocked_by": [],
+      "updated_at": "YYYY-MM-DD",
+      "history": [
+        {
+          "status": "todo",
+          "at": "YYYY-MM-DD",
+          "by": "<负责人>",
+          "note": "创建计划"
+        }
+      ]
+    }
+  ]
+}
