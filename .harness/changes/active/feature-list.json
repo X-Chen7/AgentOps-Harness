@@ -394,13 +394,13 @@
             "id": "F-015",
             "owner": "owner",
             "title": "问题跟踪 / PR 双向同步",
-            "remote_branch": "",
+            "remote_branch": "feature/F-015-issue-pr-sync",
             "depends_on": [
                 "F-014"
             ],
             "sync_repos": [],
-            "push_status": "none",
-            "status": "committed",
+            "push_status": "pushed",
+            "status": "pushed",
             "repo": "AgentOps-Harness",
             "branch": "feature/F-015-issue-pr-sync",
             "issue_id": "11",
@@ -443,6 +443,12 @@
                     "at": "2026-08-08",
                     "by": "harness-github",
                     "note": "issue created: https://github.com/X-Chen7/AgentOps-Harness/issues/11"
+                },
+                {
+                    "status": "pushed",
+                    "at": "2026-08-08",
+                    "by": "harness-git",
+                    "note": "pushed to origin/feature/F-015-issue-pr-sync"
                 }
             ],
             "commit": "a2598a93d4adccd12d3afd074c5a771b050185ba"
