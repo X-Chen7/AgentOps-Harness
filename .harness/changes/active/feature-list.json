@@ -263,8 +263,8 @@
                 "F-012"
             ],
             "sync_repos": [],
-            "push_status": "none",
-            "status": "committed",
+            "push_status": "pushed",
+            "status": "pushed",
             "repo": "AgentOps-Harness",
             "branch": "feature/F-013",
             "issue_id": "",
@@ -297,6 +297,12 @@
                     "at": "2026-08-07",
                     "by": "harness-git",
                     "note": "committed on feature/F-013"
+                },
+                {
+                    "status": "pushed",
+                    "at": "2026-08-07",
+                    "by": "harness-git",
+                    "note": "pushed to origin/feature/F-013"
                 }
             ],
             "commit": "5550de0e886fe5f0c9f3a1ff159bfc5d2384f5b3"
