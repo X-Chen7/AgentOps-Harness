@@ -3,7 +3,6 @@ from __future__ import annotations
 import shutil
 import sys
 from pathlib import Path
-from typing import List, Optional
 
 from .common import (
     HarnessError,
@@ -57,7 +56,7 @@ def _add_history(feature: dict, status: str, note: str) -> None:
     feature["history"] = history
 
 
-def _porcelain(root: Path) -> List[str]:
+def _porcelain(root: Path) -> list[str]:
     proc = run_cmd(["git", "status", "--porcelain"], cwd=root)
     return [line for line in proc.stdout.splitlines() if line.strip()]
 
@@ -98,12 +97,12 @@ def _save_feature_list(root: Path, features: dict) -> None:
     write_json(_feature_list_path(root), features)
 
 
-def _run_harness(root: Path, args: List[str]) -> int:
+def _run_harness(root: Path, args: list[str]) -> int:
     proc = run_cmd([sys.executable, "-m", "harness", *args, "--root", str(root)], cwd=root)
     return proc.returncode
 
 
-def cmd_commit(root: Path, feature_id: str, message: Optional[str] = None) -> int:
+def cmd_commit(root: Path, feature_id: str, message: str | None = None) -> int:
     _assert_git_repo(root)
     features = _load_feature_list(root)
     feature = _find_feature(features, feature_id)
@@ -173,7 +172,9 @@ def cmd_push(root: Path, feature_id: str) -> int:
     _add_history(feature, "pushed", f"pushed to origin/{branch}")
     features["updated_at"] = today_str()
     _save_feature_list(root, features)
-    _commit_status(root, feature_id, f"chore({feature_id}): update feature-list push status Ref: {feature_id}")
+    _commit_status(
+        root, feature_id, f"chore({feature_id}): update feature-list push status Ref: {feature_id}"
+    )
 
     proc = run_cmd(["git", "push", "origin", branch], cwd=root)
     if proc.returncode != 0:

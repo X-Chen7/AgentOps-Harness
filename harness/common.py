@@ -3,9 +3,10 @@ from __future__ import annotations
 import hashlib
 import json
 import subprocess
+from collections.abc import Sequence
 from datetime import date, datetime
 from pathlib import Path
-from typing import Any, Optional, Sequence
+from typing import Any
 
 
 class HarnessError(RuntimeError):
@@ -51,7 +52,7 @@ def timestamp_str() -> str:
     return datetime.now().astimezone().isoformat(timespec="seconds")
 
 
-def run_cmd(args: Sequence[str], cwd: Optional[Path] = None) -> subprocess.CompletedProcess:
+def run_cmd(args: Sequence[str], cwd: Path | None = None) -> subprocess.CompletedProcess:
     return subprocess.run(
         list(args),
         cwd=str(cwd) if cwd else None,

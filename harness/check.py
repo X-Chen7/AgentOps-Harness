@@ -4,12 +4,22 @@ import json
 import re
 import shutil
 import sys
+from collections.abc import Sequence
 from pathlib import Path
-from typing import Any, List, Sequence, Tuple
 
 from .common import git_repo_available, read_text, run_cmd, sha256_file
+from .sqlcheck import run_sql_check
 
-VALID_FEATURE_STATUSES = ("todo", "in_progress", "ready_for_review", "committed", "pushed", "merged", "blocked", "done")
+VALID_FEATURE_STATUSES = (
+    "todo",
+    "in_progress",
+    "ready_for_review",
+    "committed",
+    "pushed",
+    "merged",
+    "blocked",
+    "done",
+)
 VALID_PUSH_STATUSES = ("none", "local", "pushed", "merged")
 VALID_PIPELINE_STATUSES = ("not_started", "running", "blocked", "done")
 VALID_STAGE_STATUSES = ("queued", "running", "passed", "failed", "skipped")
@@ -23,8 +33,8 @@ TECH_DEBT_RESOLVED_RE = re.compile(r"^\| TD-\d+ .*\| resolved \|", re.IGNORECASE
 
 class CheckContext:
     def __init__(self) -> None:
-        self.errors: List[str] = []
-        self.warnings: List[str] = []
+        self.errors: list[str] = []
+        self.warnings: list[str] = []
 
     def error(self, message: str) -> None:
         self.errors.append(message)
@@ -35,7 +45,7 @@ class CheckContext:
 
 def assert_no_dependency_cycle(ctx: CheckContext, stages: Sequence[dict], label: str) -> None:
     stage_ids = [stage.get("id") for stage in stages]
-    resolved: List[str] = []
+    resolved: list[str] = []
     remaining = list(stage_ids)
     while remaining:
         progress = False
@@ -97,7 +107,7 @@ def assert_active_stages(ctx: CheckContext, state: dict, label: str) -> None:
                     ctx.error(f"{label} active_stage dependency not passed: {active_id} -> {dep}")
 
 
-def run_check(root: Path, strict: bool = False) -> Tuple[List[str], List[str]]:
+def run_check(root: Path, strict: bool = False) -> tuple[list[str], list[str]]:
     ctx = CheckContext()
     harness = root / ".harness"
 
@@ -116,7 +126,7 @@ def run_check(root: Path, strict: bool = False) -> Tuple[List[str], List[str]]:
             else:
                 scanned += "\n" + read_text(import_path)
 
-        seen_paths: List[str] = []
+        seen_paths: list[str] = []
         for match in AGENTS_PATH_RE.finditer(scanned):
             path = match.group(0).rstrip(".,;)]}")
             if path not in seen_paths:
@@ -166,7 +176,7 @@ def run_check(root: Path, strict: bool = False) -> Tuple[List[str], List[str]]:
 
     feature_list = harness / "changes" / "active" / "feature-list.json"
     features: dict = {}
-    feature_items: List[dict] = []
+    feature_items: list[dict] = []
     if not feature_list.exists():
         ctx.error("Missing changes/active/feature-list.json")
     else:
@@ -332,7 +342,7 @@ def run_check(root: Path, strict: bool = False) -> Tuple[List[str], List[str]]:
             if pipeline_config.get("schema_version") != "1.0":
                 ctx.error("desktop-pipeline.json schema_version must be 1.0")
             stages = pipeline_config.get("stages") or []
-            stage_ids: List[str] = []
+            stage_ids: list[str] = []
             for stage in stages:
                 stage_id = stage.get("id")
                 if stage_id in stage_ids:
@@ -376,7 +386,7 @@ def run_check(root: Path, strict: bool = False) -> Tuple[List[str], List[str]]:
             if parallel_config.get("schema_version") != "1.0":
                 ctx.error("desktop-pipeline.parallel.example.json schema_version must be 1.0")
             parallel_stages = parallel_config.get("stages") or []
-            parallel_ids: List[str] = []
+            parallel_ids: list[str] = []
             for stage in parallel_stages:
                 stage_id = stage.get("id")
                 if stage_id in parallel_ids:
@@ -406,7 +416,10 @@ def run_check(root: Path, strict: bool = False) -> Tuple[List[str], List[str]]:
                 ctx.error(f"pipeline-state.example.json has invalid status: {example.get('status')}")
             for stage in example_stages:
                 if stage.get("status") not in VALID_STAGE_STATUSES:
-                    ctx.error(f"pipeline-state.example.json stage {stage.get('id')} has invalid status: {stage.get('status')}")
+                    ctx.error(
+                        f"pipeline-state.example.json stage {stage.get('id')} has invalid status: "
+                        f"{stage.get('status')}"
+                    )
             for entry in example.get("journal") or []:
                 if entry.get("seq") is None or entry.get("at") is None or entry.get("type") is None:
                     ctx.error("pipeline-state.example.json journal entry missing seq/at/type")
@@ -434,7 +447,8 @@ def run_check(root: Path, strict: bool = False) -> Tuple[List[str], List[str]]:
                 state_stage_ids = [s.get("id") for s in state.get("stages") or []]
                 if state.get("current_stage") and state["current_stage"] not in state_stage_ids:
                     ctx.error(
-                        f"Pipeline state current_stage not found in {state_file.name}: {state.get('current_stage')}"
+                        f"Pipeline state current_stage not found in {state_file.name}: "
+                        f"{state.get('current_stage')}"
                     )
                 if config_stage_ids:
                     for stage_id in config_stage_ids:
@@ -446,7 +460,8 @@ def run_check(root: Path, strict: bool = False) -> Tuple[List[str], List[str]]:
                 for stage in state.get("stages") or []:
                     if stage.get("status") not in VALID_STAGE_STATUSES:
                         ctx.error(
-                            f"Invalid stage status in {state_file.name} for {stage.get('id')}: {stage.get('status')}"
+                            f"Invalid stage status in {state_file.name} for {stage.get('id')}: "
+                            f"{stage.get('status')}"
                         )
                 journal = state.get("journal")
                 if journal is None:
@@ -468,7 +483,8 @@ def run_check(root: Path, strict: bool = False) -> Tuple[List[str], List[str]]:
                         )
                     if state.get("status") == "blocked" and pipeline_block.get("status") != "blocked":
                         ctx.error(
-                            f"Pipeline state blocked but feature-list status is {pipeline_block.get('status')} "
+                            f"Pipeline state blocked but feature-list status is "
+                            f"{pipeline_block.get('status')} "
                             f"for {state.get('feature_id')}"
                         )
             except Exception as exc:
@@ -482,7 +498,9 @@ def run_check(root: Path, strict: bool = False) -> Tuple[List[str], List[str]]:
             if feature.get("pipeline") is None:
                 ctx.error(f"Feature {feature_id} missing pipeline block (schema 1.2)")
             elif feature["pipeline"].get("status") not in VALID_PIPELINE_STATUSES:
-                ctx.error(f"Feature {feature_id} has invalid pipeline.status: {feature['pipeline'].get('status')}")
+                ctx.error(
+                    f"Feature {feature_id} has invalid pipeline.status: {feature['pipeline'].get('status')}"
+                )
 
     tech_debt = harness / "changes" / "tech-debt-tracker.md"
     if tech_debt.exists():
@@ -523,10 +541,10 @@ def run_check(root: Path, strict: bool = False) -> Tuple[List[str], List[str]]:
     return ctx.errors, ctx.warnings
 
 
-def run_mvn_gate(root: Path, mode: str) -> List[str]:
+def run_mvn_gate(root: Path, mode: str) -> list[str]:
     mvn = shutil.which("mvn")
     pom = root / "pom.xml"
-    failures: List[str] = []
+    failures: list[str] = []
     if mode == "backend":
         if mvn is None or not pom.exists():
             print("[check] no Maven project found; skipping backend verification")
@@ -556,17 +574,30 @@ def run_mvn_gate(root: Path, mode: str) -> List[str]:
     return failures
 
 
-def cmd_check(root: Path, strict: bool = False, backend: bool = False, compile: bool = False) -> int:
+def cmd_check(
+    root: Path,
+    strict: bool = False,
+    backend: bool = False,
+    compile: bool = False,
+    ci: bool = False,
+    sql: bool = False,
+) -> int:
     errors, warnings = run_check(root, strict=strict)
     print(f"Harness check: {len(errors)} error(s), {len(warnings)} warning(s)")
     for warning in warnings:
         print(f"WARNING: {warning}", file=sys.stderr)
 
-    failures: List[str] = []
+    failures: list[str] = []
     if errors:
         for error in errors:
             print(f"error: {error}", file=sys.stderr)
         failures.append("harness-check")
+    elif ci and warnings:
+        print("[check] CI mode: warnings are treated as errors", file=sys.stderr)
+        failures.append("harness-check")
+
+    if sql and run_sql_check(root) != 0:
+        failures.append("sqlcheck")
 
     if backend:
         failures.extend(run_mvn_gate(root, "backend"))

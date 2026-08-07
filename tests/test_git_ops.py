@@ -8,7 +8,9 @@ from harness.git_ops import cmd_commit, cmd_pr
 
 def _git_init(path) -> None:
     subprocess.run(["git", "init"], cwd=path, check=True, capture_output=True)
-    subprocess.run(["git", "config", "user.email", "test@example.com"], cwd=path, check=True, capture_output=True)
+    subprocess.run(
+        ["git", "config", "user.email", "test@example.com"], cwd=path, check=True, capture_output=True
+    )
     subprocess.run(["git", "config", "user.name", "Test"], cwd=path, check=True, capture_output=True)
 
 
@@ -38,7 +40,9 @@ def test_commit_creates_feature_branch(tmp_path) -> None:
     ).stdout.strip()
     assert branch == "feature/F-TEST"
 
-    data = json.loads((tmp_path / ".harness" / "changes" / "active" / "feature-list.json").read_text(encoding="utf-8"))
+    data = json.loads(
+        (tmp_path / ".harness" / "changes" / "active" / "feature-list.json").read_text(encoding="utf-8")
+    )
     assert data["features"][0]["status"] == "committed"
 
 

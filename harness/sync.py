@@ -1,16 +1,14 @@
 from __future__ import annotations
 
 import json
-import re
 import sys
 from pathlib import Path
-from typing import List, Optional
 
-from .common import git_repo_available, read_text, run_cmd
 from .check import COMPLETED_PLAN_RE, VALID_FEATURE_STATUSES, VALID_PUSH_STATUSES
+from .common import git_repo_available, read_text, run_cmd
 
 
-def _validate_feature_list(features: dict, errors: List[str]) -> None:
+def _validate_feature_list(features: dict, errors: list[str]) -> None:
     feature_items = features.get("features") or []
     for feature in feature_items:
         feature_id = feature.get("id")
@@ -34,12 +32,12 @@ def sync_changes(root: Path, push_gate: bool = False) -> int:
     harness = root / ".harness"
     feature_list = harness / "changes" / "active" / "feature-list.json"
     progress = harness / "PROGRESS.md"
-    errors: List[str] = []
-    warnings: List[str] = []
+    errors: list[str] = []
+    warnings: list[str] = []
 
     git_repo = git_repo_available(root)
-    features: Optional[dict] = None
-    feature_items: List[dict] = []
+    features: dict | None = None
+    feature_items: list[dict] = []
 
     if not feature_list.exists():
         errors.append(f"Missing {feature_list}")

@@ -5,9 +5,9 @@
 ## 当前状态
 
 - 更新日期：2026-08-07
-- 当前任务：F-011 PowerShell 工具链迁移到 Python CLI（已完成）
-- 当前状态：`merged`（PR #3 已合并）
-- 最近验证：`python -m pytest -q` 14 passed；`python -m harness check` 0 error；PR #3 squash 合并完成
+- 当前任务：F-012 CI/CD 机器验收 + PR 门禁（进行中）
+- 当前状态：`in_progress`
+- 最近验证：`python -m pytest -q` 25 passed；`harness lint`、`harness dod`、`harness check --sql` 通过
 
 ## 已完成
 
@@ -27,11 +27,11 @@
 
 ## 进行中
 
-- 无进行中 feature（WIP=0）。
+- F-012 CI/CD 机器验收 + PR 门禁：GitHub Actions 五段检查、DoD 校验、pre-commit/pre-push 本地钩子已落地，等待 PR 全绿并配置分支保护。
 
 ## 下一步
 
-- 无进行中 feature（WIP=0）。
+- F-012：创建 feature 分支、提交推送、创建 PR、等待 CI 全绿、开启 main 分支保护、合并 PR 并回写 merged 状态。
 - 后续新 feature 继续按 `analysis -> coding -> test -> review -> Git/PR` 流程执行。
 - 每次会话结束运行 `script/check.ps1` 并回填结果。
 - 同步更新 `changes/active/feature-list.json` 中的状态。
