@@ -1,9 +1,11 @@
 from __future__ import annotations
 
+import re
 import shutil
 import sys
 from pathlib import Path
 
+from . import knowledge as knowledge_mod
 from .common import (
     HarnessError,
     git_repo_available,
@@ -13,6 +15,13 @@ from .common import (
     write_json,
     write_text,
 )
+
+PR_NUMBER_RE = re.compile(r"/pull/(\d+)")
+
+
+def _pr_number_from_url(url: str) -> int | None:
+    match = PR_NUMBER_RE.search(url or "")
+    return int(match.group(1)) if match else None
 
 
 def _feature_list_path(root: Path) -> Path:
@@ -129,6 +138,7 @@ def cmd_commit(root: Path, feature_id: str, message: str | None = None) -> int:
     _add_history(feature, "committed", f"committed on {branch}")
     features["updated_at"] = today_str()
     _save_feature_list(root, features)
+    knowledge_mod.build_index(root)
     _commit_status(root, feature_id, f"chore({feature_id}): update feature-list status Ref: {feature_id}")
 
     print(f"[harness-git] committed {feature_id} on {branch} at {commit}")
@@ -172,6 +182,7 @@ def cmd_push(root: Path, feature_id: str) -> int:
     _add_history(feature, "pushed", f"pushed to origin/{branch}")
     features["updated_at"] = today_str()
     _save_feature_list(root, features)
+    knowledge_mod.build_index(root)
     _commit_status(
         root, feature_id, f"chore({feature_id}): update feature-list push status Ref: {feature_id}"
     )
@@ -184,7 +195,7 @@ def cmd_push(root: Path, feature_id: str) -> int:
     return 0
 
 
-def cmd_pr(root: Path, feature_id: str) -> int:
+def cmd_pr(root: Path, feature_id: str, issue_number: int | None = None) -> int:
     _assert_git_repo(root)
     features = _load_feature_list(root)
     feature = _find_feature(features, feature_id)
@@ -195,12 +206,17 @@ def cmd_pr(root: Path, feature_id: str) -> int:
 
     branch = _feature_branch(feature, feature_id)
     title = f"feat({feature_id}): {feature.get('title', '')}"
+    related = [
+        f"- Feature ID: {feature_id}",
+        f"- Branch: {branch}",
+        f"- Commit: {feature.get('commit', '')}",
+    ]
+    if issue_number is not None:
+        related.append(f"- Closes #{issue_number}")
     body = "\n".join(
         [
             "## Related",
-            f"- Feature ID: {feature_id}",
-            f"- Branch: {branch}",
-            f"- Commit: {feature.get('commit', '')}",
+            *related,
             "",
             "## Summary",
             f"- See commit {feature.get('commit', '')}",
@@ -229,9 +245,19 @@ def cmd_pr(root: Path, feature_id: str) -> int:
     lines = [line for line in proc.stdout.splitlines() if line.strip()]
     url = lines[-1].strip() if lines else ""
     feature["pr_url"] = url
+    pr_number = _pr_number_from_url(url)
+    if pr_number is not None:
+        feature["pr_number"] = pr_number
+    if issue_number is not None:
+        feature["issue_number"] = issue_number
+        feature["issue_id"] = str(issue_number)
+        remote = (features.get("git_sync") or {}).get("remote", "")
+        if remote:
+            feature["issue_url"] = f"{remote.rstrip('/')}/issues/{issue_number}"
     _add_history(feature, "pushed", f"PR created: {url}")
     features["updated_at"] = today_str()
     _save_feature_list(root, features)
+    knowledge_mod.build_index(root)
     _commit_status(root, feature_id, f"chore({feature_id}): update feature-list PR URL Ref: {feature_id}")
 
     proc = run_cmd(["git", "push", "origin", branch], cwd=root)

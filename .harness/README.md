@@ -99,6 +99,8 @@ Harness 可初始化到任意后端工程。参考目录：
 | 流水线状态 schema | `.harness/state/README.md` + `.harness/templates/pipeline-state.example.json` |
 | 流水线状态 | `.harness/state/` + feature-list 的 `pipeline` 字段 |
 | Git/PR 自动化 | `harness commit/push/pr` + `harness install-hooks`（兼容 `script/harness-git.ps1`、`script/install-hooks.ps1`） |
+| Issue/PR 双向同步 | `harness github sync` + `.github/workflows/issue-pr-sync.yml` |
+| 状态同步门禁 | `harness github sync --strict`（CI `github-sync` job） |
 | 已退役执行器 | `.harness/archive/harness-cli/`（harness-cli v1 归档，只读） |
 
 ## 维护规则
@@ -115,6 +117,7 @@ Harness 可初始化到任意后端工程。参考目录：
 - 每次会话结束更新 `PROGRESS.md`，运行 `harness check`（或兼容的 `script/check.ps1`）并回填结果。
 - 完成判定必须经过验证命令和 `expert-reviewer`，不能由执行者自报完成。
 - 知识库索引必须用 `harness knowledge index` 重建，禁止手改 `index.json`；`harness check` 会强制校验索引新鲜度、覆盖率和断链。
+- Issue/PR 状态以 `feature-list.json` 为权威，GitHub 事件只触发重新计算，不直接改写台账。
 
 ## 参考
 

@@ -47,9 +47,9 @@
         "自动加载范围"
       ],
       "section": "AI 自动加载范围",
-      "line_start": 16,
-      "line_end": 31,
-      "file_hash": "600b53b5706a8a8367e0ae20121491eabc6ca01fad795aa5f647342af525aeb4",
+      "line_start": 17,
+      "line_end": 32,
+      "file_hash": "49602647959472dedbe11b5cf95939f948ba056232456f6245d6c417b1af095c",
       "content_hash": "725c71ef95e1b0bc157c6c2fb815ba1761f9f9f7433078ff04ae24e12f47445b"
     },
     {
@@ -70,9 +70,9 @@
       ],
       "section": "常用入口",
       "line_start": 3,
-      "line_end": 15,
-      "file_hash": "600b53b5706a8a8367e0ae20121491eabc6ca01fad795aa5f647342af525aeb4",
-      "content_hash": "d18331c823af1ee3f11a50d81745e15b68936dbecda733a4fc3607631bb5102c"
+      "line_end": 16,
+      "file_hash": "49602647959472dedbe11b5cf95939f948ba056232456f6245d6c417b1af095c",
+      "content_hash": "6e50552534a25356114947b30f7cc39013a1dae15de2f46eca1e2b6357cd5c9d"
     },
     {
       "id": "context:AGENTS.d/00-common.md#按需读取判定",
@@ -91,10 +91,10 @@
         "按需读取判定"
       ],
       "section": "按需读取判定",
-      "line_start": 32,
-      "line_end": 67,
-      "file_hash": "600b53b5706a8a8367e0ae20121491eabc6ca01fad795aa5f647342af525aeb4",
-      "content_hash": "f31d417f6733af29d3226c5509e3858db70344a012c0527971fb508fc2c9dd58"
+      "line_start": 33,
+      "line_end": 69,
+      "file_hash": "49602647959472dedbe11b5cf95939f948ba056232456f6245d6c417b1af095c",
+      "content_hash": "d19822eccabc6574a491e9537f9788c69369bf00c9c38d2736b2e56db82a2925"
     },
     {
       "id": "context:AGENTS.d/00-common.md#目录与知识索引",
@@ -115,7 +115,7 @@
       "section": "目录与知识索引",
       "line_start": 1,
       "line_end": 2,
-      "file_hash": "600b53b5706a8a8367e0ae20121491eabc6ca01fad795aa5f647342af525aeb4",
+      "file_hash": "49602647959472dedbe11b5cf95939f948ba056232456f6245d6c417b1af095c",
       "content_hash": "5af868562981a2adcf2197f0e9b8661e34b93a99e620b2f62a3258e2b685cb04"
     },
     {
@@ -3565,7 +3565,7 @@
       "section": "1. 文件定位",
       "line_start": 3,
       "line_end": 6,
-      "file_hash": "fb17141cc8834b7e7edd3dde23241204e71592e4741f17fbaf15607a4c218bf3",
+      "file_hash": "2215af08a85436f86d3c060d0659756f74be24bd24d8525a56185d236b9643ac",
       "content_hash": "f10aa89c625e106c745910bd71a043bdb10f171af6027eb68cae7302cadd5df5"
     },
     {
@@ -3596,7 +3596,7 @@
       "section": "2. 分支规范",
       "line_start": 7,
       "line_end": 14,
-      "file_hash": "fb17141cc8834b7e7edd3dde23241204e71592e4741f17fbaf15607a4c218bf3",
+      "file_hash": "2215af08a85436f86d3c060d0659756f74be24bd24d8525a56185d236b9643ac",
       "content_hash": "396ca3fc759fbf200cb6311501ccb0337a342010c7494b7af9bc280428dd3286"
     },
     {
@@ -3627,7 +3627,7 @@
       "section": "3. 提交规范",
       "line_start": 15,
       "line_end": 22,
-      "file_hash": "fb17141cc8834b7e7edd3dde23241204e71592e4741f17fbaf15607a4c218bf3",
+      "file_hash": "2215af08a85436f86d3c060d0659756f74be24bd24d8525a56185d236b9643ac",
       "content_hash": "23c90f7474b9056012b81ba082b15fe777be445cedaa0e32a1029f7f7af45fd4"
     },
     {
@@ -3660,7 +3660,7 @@
       "section": "4. 推送与 PR",
       "line_start": 23,
       "line_end": 30,
-      "file_hash": "fb17141cc8834b7e7edd3dde23241204e71592e4741f17fbaf15607a4c218bf3",
+      "file_hash": "2215af08a85436f86d3c060d0659756f74be24bd24d8525a56185d236b9643ac",
       "content_hash": "301bf23b58245facfce6a6d5e41993626c8a25248cc8b4dcd6660df1768d65a6"
     },
     {
@@ -3691,22 +3691,24 @@
       "section": "5. 状态同步规则",
       "line_start": 31,
       "line_end": 44,
-      "file_hash": "fb17141cc8834b7e7edd3dde23241204e71592e4741f17fbaf15607a4c218bf3",
+      "file_hash": "2215af08a85436f86d3c060d0659756f74be24bd24d8525a56185d236b9643ac",
       "content_hash": "41bef023090f36a147e971744beb881554164bd2eccb4a78254e16e89c45366f"
     },
     {
-      "id": "rule:.harness/rules/git-workflow.md#6-非-git-目录降级",
+      "id": "rule:.harness/rules/git-workflow.md#6-issue-pr-自动同步",
       "kind": "rule",
       "file": ".harness/rules/git-workflow.md",
-      "title": "6. 非 Git 目录降级",
-      "summary": "6. 非 Git 目录降级",
+      "title": "6. Issue/PR 自动同步",
+      "summary": "6. Issue/PR 自动同步",
       "keywords": [
         "6.",
-        "Git",
-        "目录降级",
+        "Issue",
+        "PR",
+        "自动同步",
         "6.",
-        "Git",
-        "目录降级",
+        "Issue",
+        "PR",
+        "自动同步",
         "git",
         "workflow"
       ],
@@ -3719,25 +3721,28 @@
         "提交",
         "推送",
         "6.",
-        "目录降级"
+        "issue",
+        "自动同步"
       ],
-      "section": "6. 非 Git 目录降级",
+      "section": "6. Issue/PR 自动同步",
       "line_start": 45,
-      "line_end": 53,
-      "file_hash": "fb17141cc8834b7e7edd3dde23241204e71592e4741f17fbaf15607a4c218bf3",
-      "content_hash": "38ff8b7d673b394b850754513c893ca7aa72ad0fd699957c62544d1546f3db1f"
+      "line_end": 52,
+      "file_hash": "2215af08a85436f86d3c060d0659756f74be24bd24d8525a56185d236b9643ac",
+      "content_hash": "e0b4a5bfb9d47d1164a93dd6cbb75fc06c49450c37c5cc2d1255cfbf834a831b"
     },
     {
-      "id": "rule:.harness/rules/git-workflow.md#7-禁止事项",
+      "id": "rule:.harness/rules/git-workflow.md#7-非-git-目录降级",
       "kind": "rule",
       "file": ".harness/rules/git-workflow.md",
-      "title": "7. 禁止事项",
-      "summary": "7. 禁止事项",
+      "title": "7. 非 Git 目录降级",
+      "summary": "7. 非 Git 目录降级",
       "keywords": [
         "7.",
-        "禁止事项",
+        "Git",
+        "目录降级",
         "7.",
-        "禁止事项",
+        "Git",
+        "目录降级",
         "git",
         "workflow"
       ],
@@ -3750,13 +3755,44 @@
         "提交",
         "推送",
         "7.",
+        "目录降级"
+      ],
+      "section": "7. 非 Git 目录降级",
+      "line_start": 53,
+      "line_end": 61,
+      "file_hash": "2215af08a85436f86d3c060d0659756f74be24bd24d8525a56185d236b9643ac",
+      "content_hash": "f2e536a0be4a3bd059b029a22452a0e889f4005c558e83a7e34ed9b0d5cf6174"
+    },
+    {
+      "id": "rule:.harness/rules/git-workflow.md#8-禁止事项",
+      "kind": "rule",
+      "file": ".harness/rules/git-workflow.md",
+      "title": "8. 禁止事项",
+      "summary": "8. 禁止事项",
+      "keywords": [
+        "8.",
+        "禁止事项",
+        "8.",
+        "禁止事项",
+        "git",
+        "workflow"
+      ],
+      "routes": [
+        "git-workflow",
+        "git",
+        "commit",
+        "push",
+        "pr",
+        "提交",
+        "推送",
+        "8.",
         "禁止事项"
       ],
-      "section": "7. 禁止事项",
-      "line_start": 54,
-      "line_end": 59,
-      "file_hash": "fb17141cc8834b7e7edd3dde23241204e71592e4741f17fbaf15607a4c218bf3",
-      "content_hash": "a468fc1b1f2dfd49e803587b2576b431fb2af9967ae0db5b92d243e7a493e389"
+      "section": "8. 禁止事项",
+      "line_start": 62,
+      "line_end": 67,
+      "file_hash": "2215af08a85436f86d3c060d0659756f74be24bd24d8525a56185d236b9643ac",
+      "content_hash": "5edbf43ddf5b995c1bff6adf5601fea2ea6d9fb5403e36d09d08d902bdc21b4b"
     },
     {
       "id": "rule:.harness/rules/git-workflow.md#harness-rules-git-workflow-md",
@@ -3791,7 +3827,7 @@
       "section": ".harness/rules/git-workflow.md",
       "line_start": 1,
       "line_end": 2,
-      "file_hash": "fb17141cc8834b7e7edd3dde23241204e71592e4741f17fbaf15607a4c218bf3",
+      "file_hash": "2215af08a85436f86d3c060d0659756f74be24bd24d8525a56185d236b9643ac",
       "content_hash": "82882b22b16c72ef2fe962d9ea9d992f3b5a2a3523111ac6b483545a9e72dd0e"
     },
     {
@@ -6717,7 +6753,7 @@
       "section": "Harness 进度（PROGRESS）",
       "line_start": 1,
       "line_end": 4,
-      "file_hash": "d7457706caa61f70b8639bb3a21661c3c40eb127ba210e0af58255898dc4358b",
+      "file_hash": "6bd3a212eac8b01ccfd2bb6f78f62ad69610d491805379b4be521abfb93e4e79",
       "content_hash": "ded6338c544c2688a4cd9920126d40dc6f14bd671afc14aaf5c7f8e400e95863"
     },
     {
@@ -6738,10 +6774,10 @@
         "下一步"
       ],
       "section": "下一步",
-      "line_start": 31,
-      "line_end": 37,
-      "file_hash": "d7457706caa61f70b8639bb3a21661c3c40eb127ba210e0af58255898dc4358b",
-      "content_hash": "28c02a29fbf2b225b6f43470f698640547fdd1276e99ddb341803da825a144d5"
+      "line_start": 35,
+      "line_end": 41,
+      "file_hash": "6bd3a212eac8b01ccfd2bb6f78f62ad69610d491805379b4be521abfb93e4e79",
+      "content_hash": "62a70a9d39b2bd4b550975889bba068f1db26e8e51077554005edb19c0e4c847"
     },
     {
       "id": "state:.harness/PROGRESS.md#决策记录",
@@ -6761,9 +6797,9 @@
         "决策记录"
       ],
       "section": "决策记录",
-      "line_start": 38,
-      "line_end": 44,
-      "file_hash": "d7457706caa61f70b8639bb3a21661c3c40eb127ba210e0af58255898dc4358b",
+      "line_start": 42,
+      "line_end": 48,
+      "file_hash": "6bd3a212eac8b01ccfd2bb6f78f62ad69610d491805379b4be521abfb93e4e79",
       "content_hash": "ce997ad527a1a7356a72267f3718d1b5314bbe5f726be2d56516212ca721b0f2"
     },
     {
@@ -6786,7 +6822,7 @@
       "section": "已完成",
       "line_start": 12,
       "line_end": 30,
-      "file_hash": "d7457706caa61f70b8639bb3a21661c3c40eb127ba210e0af58255898dc4358b",
+      "file_hash": "6bd3a212eac8b01ccfd2bb6f78f62ad69610d491805379b4be521abfb93e4e79",
       "content_hash": "ffd5a8f5028e442362221cd6f4a2c49a97f46b572062c987ac9cc90c00cf3016"
     },
     {
@@ -6809,8 +6845,31 @@
       "section": "当前状态",
       "line_start": 5,
       "line_end": 11,
-      "file_hash": "d7457706caa61f70b8639bb3a21661c3c40eb127ba210e0af58255898dc4358b",
-      "content_hash": "0a0aaa97378d8a44d13752493363fd7293d5a761953351f1e846c063261534d1"
+      "file_hash": "6bd3a212eac8b01ccfd2bb6f78f62ad69610d491805379b4be521abfb93e4e79",
+      "content_hash": "3cb8b23804c1076dfd406714cf8244e8067363778303a7f55a294f5662ce2a59"
+    },
+    {
+      "id": "state:.harness/PROGRESS.md#进行中",
+      "kind": "state",
+      "file": ".harness/PROGRESS.md",
+      "title": "进行中",
+      "summary": "进行中",
+      "keywords": [
+        "进行中",
+        "进行中",
+        "PROGRESS"
+      ],
+      "routes": [
+        "progress",
+        "进度",
+        "会话",
+        "进行中"
+      ],
+      "section": "进行中",
+      "line_start": 31,
+      "line_end": 34,
+      "file_hash": "6bd3a212eac8b01ccfd2bb6f78f62ad69610d491805379b4be521abfb93e4e79",
+      "content_hash": "a9639843ece9ab5a225f51aa88da508a9ff0317dc635f5f5a56f6177629b8600"
     },
     {
       "id": "state:.harness/changes/active/feature-list.json",
@@ -6837,8 +6896,8 @@
       "section": null,
       "line_start": null,
       "line_end": null,
-      "file_hash": "28150042c943402e998986f83fc8d223c39b1ae36d933fa8bf7521fbc5c671b1",
-      "content_hash": "28150042c943402e998986f83fc8d223c39b1ae36d933fa8bf7521fbc5c671b1"
+      "file_hash": "8d09d6bcbdbd8944f699bd45a5052d9f9e5e5a8f194de7cbf847d22c2c8ab661",
+      "content_hash": "8d09d6bcbdbd8944f699bd45a5052d9f9e5e5a8f194de7cbf847d22c2c8ab661"
     }
   ]
 }

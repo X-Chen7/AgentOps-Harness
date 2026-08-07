@@ -42,7 +42,15 @@ feature-list 状态机：
 
 每次状态变化写入 `history`：`{ "status": "...", "at": "YYYY-MM-DD", "by": "...", "note": "..." }`。
 
-## 6. 非 Git 目录降级
+## 6. Issue/PR 自动同步
+
+- 每个 feature 对应一个 GitHub Issue，`Feature ID: F-XXX` 写入 Issue 正文、PR 标题或正文、分支名。
+- `feature-list.json` 是机器权威；GitHub Issue/PR 是外部投影，事件触发后由 `harness github sync` 重新计算并回写。
+- Issue opened 自动创建 feature 和计划；PR opened 回写 `pushed`、`pr_url`、`pr_number`；PR merged 自动归档、更新 INDEX/PROGRESS、重建 knowledge index 并关闭关联 Issue。
+- PR closed 未合并回退 `in_progress`；Issue closed 未合并置 `blocked`。
+- `harness github sync --strict` 用于 CI 门禁；重复事件幂等，机器字段以台账为准，标题冲突不静默覆盖。
+
+## 7. 非 Git 目录降级
 
 当前目录可能不是 Git 仓库（例如复制出的工作副本）：
 
@@ -51,7 +59,7 @@ feature-list 状态机：
 - `feature-list.json` 的 `git_sync.enabled` 保持 `false`；
 - 恢复为 Git 仓库后，先安装 hooks，再开启 `git_sync.enabled = true`。
 
-## 7. 禁止事项
+## 8. 禁止事项
 
 - 不自动执行 `git push`；是否推送由用户或团队明确要求。
 - 不执行破坏性 Git 操作。
