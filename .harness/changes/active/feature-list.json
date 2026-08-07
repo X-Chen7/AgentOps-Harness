@@ -140,6 +140,7 @@
             "branch": "feature/F-011",
             "issue_id": "",
             "plan": ".harness/changes/active/2026-08-07-python-cli-migration.md",
+            "pr_url": "https://github.com/X-Chen7/AgentOps-Harness/pull/3",
             "acceptance": [
                 "pytest passes",
                 "harness check passes",
@@ -171,6 +172,12 @@
                     "at": "2026-08-07",
                     "by": "harness-git",
                     "note": "pushed to origin/feature/F-011"
+                },
+                {
+                    "status": "pushed",
+                    "at": "2026-08-07",
+                    "by": "harness-git",
+                    "note": "PR created: https://github.com/X-Chen7/AgentOps-Harness/pull/3"
                 }
             ],
             "commit": "31872065d7bf3cbe3e9df7584947eaf89b32585a"
