@@ -184,7 +184,7 @@
       "section": "Agent 工作流程",
       "line_start": 14,
       "line_end": 24,
-      "file_hash": "446dfa6ded552fa180eab301bf8ee9cefdb805137d68a079e2f2afd1b682843d",
+      "file_hash": "23bee15a4a3a3023d4563589b56744ecca8a3bd780a8ca1e7600ded83201c70a",
       "content_hash": "41766ada9678ae7227166ebe05795a125ed15514d7f5abd4e160e4b59217d645"
     },
     {
@@ -206,7 +206,7 @@
       "section": "验证入口",
       "line_start": 1,
       "line_end": 13,
-      "file_hash": "446dfa6ded552fa180eab301bf8ee9cefdb805137d68a079e2f2afd1b682843d",
+      "file_hash": "23bee15a4a3a3023d4563589b56744ecca8a3bd780a8ca1e7600ded83201c70a",
       "content_hash": "d74eb4f3821899b38286ef3f72c1d8bef040ffbf008456bd101f68ef5a81b513"
     },
     {
@@ -6717,7 +6717,7 @@
       "section": "Harness 进度（PROGRESS）",
       "line_start": 1,
       "line_end": 4,
-      "file_hash": "b0921aa689c772428e651c0733ad2ed738ff384ddcd69dcd8809a3b877af1886",
+      "file_hash": "37a6b559ee4332a192f4abe1659ea3b71d6ceb9e57b2125cbe3f458bf377b105",
       "content_hash": "ded6338c544c2688a4cd9920126d40dc6f14bd671afc14aaf5c7f8e400e95863"
     },
     {
@@ -6740,7 +6740,7 @@
       "section": "下一步",
       "line_start": 34,
       "line_end": 40,
-      "file_hash": "b0921aa689c772428e651c0733ad2ed738ff384ddcd69dcd8809a3b877af1886",
+      "file_hash": "37a6b559ee4332a192f4abe1659ea3b71d6ceb9e57b2125cbe3f458bf377b105",
       "content_hash": "78b1c03462461cf563d9c2a32edf5005ea0879524676d4d83a7487a47b3655d5"
     },
     {
@@ -6763,7 +6763,7 @@
       "section": "决策记录",
       "line_start": 41,
       "line_end": 47,
-      "file_hash": "b0921aa689c772428e651c0733ad2ed738ff384ddcd69dcd8809a3b877af1886",
+      "file_hash": "37a6b559ee4332a192f4abe1659ea3b71d6ceb9e57b2125cbe3f458bf377b105",
       "content_hash": "ce997ad527a1a7356a72267f3718d1b5314bbe5f726be2d56516212ca721b0f2"
     },
     {
@@ -6786,7 +6786,7 @@
       "section": "已完成",
       "line_start": 12,
       "line_end": 29,
-      "file_hash": "b0921aa689c772428e651c0733ad2ed738ff384ddcd69dcd8809a3b877af1886",
+      "file_hash": "37a6b559ee4332a192f4abe1659ea3b71d6ceb9e57b2125cbe3f458bf377b105",
       "content_hash": "693dbcb69bfa83a1f96ea67fb980c6f66523c03feed3dd5ba0b8e6ec8946e771"
     },
     {
@@ -6809,7 +6809,7 @@
       "section": "当前状态",
       "line_start": 5,
       "line_end": 11,
-      "file_hash": "b0921aa689c772428e651c0733ad2ed738ff384ddcd69dcd8809a3b877af1886",
+      "file_hash": "37a6b559ee4332a192f4abe1659ea3b71d6ceb9e57b2125cbe3f458bf377b105",
       "content_hash": "0ef0b813bc80c50d1e97e6493e1ee243059a170f0df846a742e338862e1618e9"
     },
     {
@@ -6832,7 +6832,7 @@
       "section": "进行中",
       "line_start": 30,
       "line_end": 33,
-      "file_hash": "b0921aa689c772428e651c0733ad2ed738ff384ddcd69dcd8809a3b877af1886",
+      "file_hash": "37a6b559ee4332a192f4abe1659ea3b71d6ceb9e57b2125cbe3f458bf377b105",
       "content_hash": "ca9b327be137ea99138b42f7d82b1eccf827778ad1242cfc189b41427e7eb4e6"
     },
     {
@@ -6860,8 +6860,8 @@
       "section": null,
       "line_start": null,
       "line_end": null,
-      "file_hash": "bf1e5ab3b1f7da349ebe24c9df18984c60879ccc639365b84b5b2016863e1b13",
-      "content_hash": "bf1e5ab3b1f7da349ebe24c9df18984c60879ccc639365b84b5b2016863e1b13"
+      "file_hash": "ebb47f083927dd0bff77523d3be5ae21b2c8212bc0d692d8a73072f6780831f4",
+      "content_hash": "ebb47f083927dd0bff77523d3be5ae21b2c8212bc0d692d8a73072f6780831f4"
     }
   ]
 }

@@ -11,7 +11,7 @@ from typing import Any
 
 import yaml
 
-from .common import read_text, sha256_file, write_text
+from .common import read_text, write_text
 
 KNOWLEDGE_SCHEMA_VERSION = "1.0"
 BENCH_SCHEMA_VERSION = "1.0"
@@ -229,14 +229,14 @@ def _markdown_entries(
     skill_yaml: dict | None = None,
 ) -> list[dict[str, Any]]:
     text = read_text(path)
-    file_hash = sha256_file(path)
+    file_hash = _file_hash(path)
     relative = path.relative_to(root).as_posix()
     entries: list[dict[str, Any]] = []
     for section in split_markdown_sections(text):
         section_lines = text.splitlines()[section["start"] - 1 : section["end"]]
         title = section["title"]
         summary = _first_content_line(section_lines)
-        content_hash = sha256_file(path)
+        content_hash = _file_hash(path)
         if section_lines:
             content_hash = _sha256_text("\n".join(section_lines))
         entry_id = f"{kind}:{relative}"
@@ -262,7 +262,7 @@ def _markdown_entries(
 
 
 def _structured_entries(root: Path, path: Path, kind: str) -> list[dict[str, Any]]:
-    file_hash = sha256_file(path)
+    file_hash = _file_hash(path)
     relative = path.relative_to(root).as_posix()
     entries: list[dict[str, Any]] = []
     for item in _load_yaml_items(path):
@@ -308,14 +308,18 @@ def _artifact_entries(root: Path, path: Path) -> list[dict[str, Any]]:
             "section": None,
             "line_start": None,
             "line_end": None,
-            "file_hash": sha256_file(path),
-            "content_hash": sha256_file(path),
+            "file_hash": _file_hash(path),
+            "content_hash": _file_hash(path),
         }
     ]
 
 
 def _sha256_text(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+def _file_hash(path: Path) -> str:
+    return _sha256_text(read_text(path).replace("\r\n", "\n"))
 
 
 def build_index(root: Path, check_only: bool = False) -> int:
@@ -346,8 +350,8 @@ def build_index(root: Path, check_only: bool = False) -> int:
                     "section": None,
                     "line_start": None,
                     "line_end": None,
-                    "file_hash": sha256_file(path),
-                    "content_hash": sha256_file(path),
+                    "file_hash": _file_hash(path),
+                    "content_hash": _file_hash(path),
                 }
             )
 
@@ -635,7 +639,7 @@ def knowledge_check(root: Path) -> list[str]:
             errors.append(f"knowledge entry file missing: {relative}")
             continue
         covered.add(relative)
-        if kind != "state" and sha256_file(file_path) != entry.get("file_hash"):
+        if kind != "state" and _file_hash(file_path) != entry.get("file_hash"):
             errors.append(f"knowledge index stale for {relative}; run 'harness knowledge index'")
         line_start = entry.get("line_start")
         line_end = entry.get("line_end")
