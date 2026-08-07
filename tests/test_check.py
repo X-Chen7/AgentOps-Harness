@@ -44,3 +44,17 @@ def test_invalid_active_stages_blocked(repo_copy) -> None:
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     errors, _ = run_check(repo_copy)
     assert any("active_stages has unknown stage: ghost" in error for error in errors)
+
+
+def test_ci_mode_treats_warning_as_error(repo_copy) -> None:
+    path = repo_copy / ".harness" / "changes" / "active" / "feature-list.json"
+    data = json.loads(path.read_text(encoding="utf-8-sig"))
+    for feature in data["features"]:
+        if feature["id"] == "F-011":
+            feature["owner"] = ""
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    from harness.check import cmd_check
+
+    assert cmd_check(repo_copy, ci=True) == 1
+    assert cmd_check(repo_copy, ci=False) == 0

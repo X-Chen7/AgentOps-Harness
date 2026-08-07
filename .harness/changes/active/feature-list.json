@@ -187,6 +187,66 @@
                 }
             ],
             "commit": "6ed68c34075650c5a9ab1866ffe9cd512b12d2c8"
+        },
+        {
+            "id": "F-012",
+            "owner": "owner",
+            "title": "CI/CD machine acceptance and PR gate",
+            "remote_branch": "feature/F-012",
+            "depends_on": [
+                "F-011"
+            ],
+            "sync_repos": [],
+            "push_status": "pushed",
+            "status": "pushed",
+            "repo": "AgentOps-Harness",
+            "branch": "feature/F-012",
+            "issue_id": "",
+            "plan": ".harness/changes/active/2026-08-07-ci-cd-pr-gate.md",
+            "pr_url": "https://github.com/X-Chen7/AgentOps-Harness/pull/4",
+            "acceptance": [
+                "ruff lint and format pass",
+                "pytest passes",
+                "harness check --ci passes on clean checkout",
+                "harness dod validates PR title/body",
+                "pre-commit and pre-push hooks install",
+                "GitHub Actions five required checks pass",
+                "branch protection blocks non-green PR merge"
+            ],
+            "blocked_by": [],
+            "pipeline": {
+                "status": "not_started",
+                "artifacts": [],
+                "last_run": ""
+            },
+            "updated_at": "2026-08-07",
+            "history": [
+                {
+                    "status": "in_progress",
+                    "note": "CI/CD machine acceptance and PR gate in progress",
+                    "by": "harness",
+                    "at": "2026-08-07"
+                },
+                {
+                    "status": "committed",
+                    "at": "2026-08-07",
+                    "by": "harness-git",
+                    "note": "committed on feature/F-012"
+                },
+                {
+                    "status": "pushed",
+                    "at": "2026-08-07",
+                    "by": "harness-git",
+                    "note": "pushed to origin/feature/F-012"
+                },
+                {
+                    "status": "pushed",
+                    "at": "2026-08-07",
+                    "by": "harness-git",
+                    "note": "PR created: https://github.com/X-Chen7/AgentOps-Harness/pull/4"
+                }
+            ],
+            "commit": "e89fc2647a0a556cc97d0109c82e05be2cba043e"
         }
     ]
 }

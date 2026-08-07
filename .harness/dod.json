@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0",
+  "required_checks": ["lint", "test", "dod", "sql", "backend"],
+  "required_pr_sections": ["## Summary", "## Verification", "Feature ID:"],
+  "pr_title_pattern": "^(feat|fix|chore|docs|refactor)(\\([^)]*\\))?: .+",
+  "required_files": ["AGENTS.md", "README.md", "pyproject.toml"]
+}
