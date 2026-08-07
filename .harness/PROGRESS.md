@@ -30,7 +30,7 @@
 
 ## 下一步
 
-- 将 `knowledge` 加入 main 分支保护 required checks，更新 `4. 知识库检索化` 交付文档。
+- F-014 已收尾：`knowledge` 已加入 main 分支保护 required checks，`4. 知识库检索化` 交付文档已更新。
 - 后续新 feature 继续按 `analysis -> coding -> test -> review -> Git/PR` 流程执行。
 - 每次会话结束运行 `script/check.ps1` 并回填结果。
 - 同步更新 `changes/active/feature-list.json` 中的状态。
