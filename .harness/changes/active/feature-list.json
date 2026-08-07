@@ -393,14 +393,14 @@
         {
             "id": "F-015",
             "owner": "owner",
-            "title": "问题跟踪 / PR 双向同步",
+            "title": "F-015: 问题跟踪 / PR 双向同步",
             "remote_branch": "feature/F-015-issue-pr-sync",
             "depends_on": [
                 "F-014"
             ],
             "sync_repos": [],
-            "push_status": "pushed",
-            "status": "pushed",
+            "push_status": "merged",
+            "status": "merged",
             "repo": "AgentOps-Harness",
             "branch": "feature/F-015-issue-pr-sync",
             "issue_id": "11",
@@ -408,8 +408,8 @@
             "issue_url": "https://github.com/X-Chen7/AgentOps-Harness/issues/11",
             "pr_number": 12,
             "last_synced_at": "",
-            "github_updated_at": "",
-            "plan": ".harness/changes/active/2026-08-08-issue-pr-sync.md",
+            "github_updated_at": "2026-08-07T18:20:11Z",
+            "plan": ".harness/changes/completed/archive/2026-08-08-issue-pr-sync.md",
             "pr_url": "https://github.com/X-Chen7/AgentOps-Harness/pull/12",
             "acceptance": [
                 "Issue 创建自动生成 feature 和计划",
@@ -418,7 +418,9 @@
                 "harness github sync --strict 作为 CI 门禁",
                 "重复事件幂等，冲突不静默覆盖"
             ],
-            "blocked_by": [],
+            "blocked_by": [
+                "GitHub issue #11 closed without merge"
+            ],
             "pipeline": {
                 "status": "not_started",
                 "artifacts": [],
@@ -455,9 +457,33 @@
                     "at": "2026-08-08",
                     "by": "harness-git",
                     "note": "PR created: https://github.com/X-Chen7/AgentOps-Harness/pull/12"
+                },
+                {
+                    "status": "blocked",
+                    "at": "2026-08-08",
+                    "by": "harness-github",
+                    "note": "GitHub issue #11 closed without merge"
+                },
+                {
+                    "status": "pushed",
+                    "at": "2026-08-08",
+                    "by": "harness-github",
+                    "note": "linked to PR #14"
+                },
+                {
+                    "status": "merged",
+                    "at": "2026-08-08",
+                    "by": "harness-github",
+                    "note": "merged via PR #12 (auto-synced)"
+                },
+                {
+                    "status": "pushed",
+                    "at": "2026-08-08",
+                    "by": "harness-github",
+                    "note": "linked to PR #12"
                 }
             ],
-            "commit": "a2598a93d4adccd12d3afd074c5a771b050185ba"
+            "commit": "89ecf7952410f393a0c2c65f07269e7d11f43d4b"
         }
     ]
 }

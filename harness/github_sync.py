@@ -176,11 +176,12 @@ def _create_feature_actions(
 
 def _apply_issue(actions: list[dict], features: dict, issue: GitHubIssue) -> None:
     feature_id = _extract_feature_id(issue.title, issue.body)
+    issue_title = issue.title or f"Issue #{issue.number}"
     if not feature_id:
         if issue.state == "closed":
             return
         feature_id = _next_feature_id(features)
-        _create_feature_actions(actions, features, feature_id, issue.title or f"Issue #{issue.number}")
+        _create_feature_actions(actions, features, feature_id, issue_title)
         actions.append(
             {
                 "type": "update_issue_body",
@@ -192,10 +193,11 @@ def _apply_issue(actions: list[dict], features: dict, issue: GitHubIssue) -> Non
 
     feature = _find_feature(features, feature_id)
     if feature is None:
-        _create_feature_actions(actions, features, feature_id, issue.title or f"Issue #{issue.number}")
+        _create_feature_actions(actions, features, feature_id, issue_title)
         feature = _find_feature(features, feature_id)
     if feature is None:
         return
+    clean_title = re.sub(rf"^{re.escape(feature_id)}:\s*", "", issue_title).strip()
 
     if feature.get("issue_number") != issue.number:
         feature["issue_number"] = issue.number
@@ -211,8 +213,8 @@ def _apply_issue(actions: list[dict], features: dict, issue: GitHubIssue) -> Non
             }
         )
 
-    if feature.get("status") in ("todo", "in_progress", "blocked") and feature.get("title") != issue.title:
-        feature["title"] = issue.title
+    if feature.get("status") in ("todo", "in_progress", "blocked") and feature.get("title") != clean_title:
+        feature["title"] = clean_title
         feature["updated_at"] = today_str()
         actions.append(
             {
@@ -289,8 +291,11 @@ def _apply_pr(actions: list[dict], features: dict, pr: GitHubPR) -> None:
     if feature is None:
         return
 
+    feature_done = feature.get("status") in ("merged", "done")
     primary_match = pr.merged and bool(pr.merge_commit_sha) and pr.merge_commit_sha == feature.get("commit")
-    should_link = feature.get("pr_number") is None or pr.state == "open" or primary_match
+    should_link = (
+        not feature_done and (feature.get("pr_number") is None or pr.state == "open")
+    ) or primary_match
     if should_link and (feature.get("pr_number") != pr.number or feature.get("pr_url") != pr.url):
         feature["pr_number"] = pr.number
         feature["pr_url"] = pr.url
@@ -308,7 +313,7 @@ def _apply_pr(actions: list[dict], features: dict, pr: GitHubPR) -> None:
         feature["branch"] = pr.head_ref
 
     issue_number = feature.get("issue_number")
-    if issue_number and not ISSUE_CLOSE_RE.search(pr.body or ""):
+    if issue_number and not feature_done and not ISSUE_CLOSE_RE.search(pr.body or ""):
         actions.append(
             {
                 "type": "update_pr_body",
@@ -341,6 +346,8 @@ def _apply_pr(actions: list[dict], features: dict, pr: GitHubPR) -> None:
             feature["push_status"] = "merged"
             if merge_sha and (just_created or not already_merged or not feature.get("commit")):
                 feature["commit"] = merge_sha
+            feature["pr_number"] = pr.number
+            feature["pr_url"] = pr.url
             _add_history(feature, "merged", f"merged via PR #{pr.number} (auto-synced)")
             actions.append(
                 {
@@ -444,7 +451,7 @@ def _fetch_github_state(root: Path) -> tuple[list[GitHubIssue], list[GitHubPR]]:
                 title=str(item.get("title") or ""),
                 body=str(item.get("body") or ""),
                 state=str(item.get("state") or "open"),
-                merged=bool(item.get("merged")),
+                merged=bool(item.get("merged_at")),
                 merge_commit_sha=str(item.get("merge_commit_sha") or ""),
                 head_ref=str(item.get("head", {}).get("ref") or ""),
                 url=str(item.get("html_url") or ""),
@@ -613,6 +620,13 @@ def _run_gh_pr_edit(root: Path, repo: str, number: int, body: str) -> None:
 
 
 def _run_gh_issue_close(root: Path, repo: str, number: int, comment: str) -> None:
+    state_proc = run_cmd(
+        ["gh", "api", f"repos/{repo}/issues/{number}", "--jq", ".state"],
+        cwd=root,
+    )
+    if state_proc.returncode == 0 and state_proc.stdout.strip() == "closed":
+        print(f"[github-sync] issue #{number} already closed; skipping close")
+        return
     proc = run_cmd(["gh", "issue", "close", str(number), "--repo", repo, "--comment", comment], cwd=root)
     if proc.returncode != 0:
         raise HarnessError(f"gh issue close failed: {(proc.stdout + proc.stderr).strip()}")
@@ -673,6 +687,10 @@ def _commit_and_transport(root: Path, transport: str, actions: list[dict]) -> in
     commit_proc = run_cmd(["git", "commit", "-m", message], cwd=root)
     if commit_proc.returncode != 0:
         raise HarnessError(f"git commit failed: {(commit_proc.stdout + commit_proc.stderr).strip()}")
+
+    if transport == "local":
+        print("[github-sync] ledger changes committed locally")
+        return 0
 
     if transport == "direct":
         push_proc = run_cmd(["git", "push", "origin", "main"], cwd=root)

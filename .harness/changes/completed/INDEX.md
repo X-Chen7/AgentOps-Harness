@@ -6,6 +6,7 @@
 
 | 日期 | 标题 | 文件 | commit | PR | 仓库 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-08-08 | F-015: 问题跟踪 / PR 双向同步 | [archive/2026-08-08-issue-pr-sync.md](archive/2026-08-08-issue-pr-sync.md) | 本次 F-015 提交 | 本次 F-015 PR | AgentOps-Harness |
 | 2026-08-08 | 知识库检索化（MCP 结构化 brain） | [archive/2026-08-08-knowledge-retrieval.md](archive/2026-08-08-knowledge-retrieval.md) | 本次 F-014 提交 | 本次 F-014 PR | agentops-harness |
 | 2026-08-07 | 技能注册表 + 技能测试与评测 | [archive/2026-08-07-skill-registry-and-benchmark.md](archive/2026-08-07-skill-registry-and-benchmark.md) | 本次 F-013 提交 | 本次 F-013 PR | agentops-harness |
 | 2026-08-07 | CI/CD 机器验收 + PR 门禁 | [archive/2026-08-07-ci-cd-pr-gate.md](archive/2026-08-07-ci-cd-pr-gate.md) | 本次 F-012 提交 | 本次 F-012 PR | agentops-harness |
@@ -24,6 +25,7 @@
 
 | 日期 | 标题 | 文件 | commit | PR | 仓库 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-08-08 | 执行计划：F-015: 问题跟踪 / PR 双向同步（F-015） | [archive/2026-08-08-issue-pr-sync.md](archive/2026-08-08-issue-pr-sync.md) | 本次 F-015 提交 | 本次 F-015 PR | AgentOps-Harness |
 | 2026-08-08 | 执行计划：知识库检索化（F-014） | [archive/2026-08-08-knowledge-retrieval.md](archive/2026-08-08-knowledge-retrieval.md) | 本次 F-014 提交 | 本次 F-014 PR | agentops-harness |
 | 2026-08-07 | 执行计划：技能注册表 + 技能测试与评测（F-013） | [archive/2026-08-07-skill-registry-and-benchmark.md](archive/2026-08-07-skill-registry-and-benchmark.md) | 本次 F-013 提交 | 本次 F-013 PR | agentops-harness |
 | 2026-08-07 | 执行计划：CI/CD 机器验收 + PR 门禁（F-012） | [archive/2026-08-07-ci-cd-pr-gate.md](archive/2026-08-07-ci-cd-pr-gate.md) | 本次 F-012 提交 | 本次 F-012 PR | agentops-harness |
