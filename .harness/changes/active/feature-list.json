@@ -400,7 +400,7 @@
             ],
             "sync_repos": [],
             "push_status": "none",
-            "status": "in_progress",
+            "status": "committed",
             "repo": "AgentOps-Harness",
             "branch": "feature/F-015-issue-pr-sync",
             "issue_id": "",
@@ -431,9 +431,15 @@
                     "at": "2026-08-08",
                     "by": "harness",
                     "note": "issue/PR bidirectional sync in progress"
+                },
+                {
+                    "status": "committed",
+                    "at": "2026-08-08",
+                    "by": "harness-git",
+                    "note": "committed on feature/F-015-issue-pr-sync"
                 }
             ],
-            "commit": ""
+            "commit": "a2598a93d4adccd12d3afd074c5a771b050185ba"
         }
     ]
 }
