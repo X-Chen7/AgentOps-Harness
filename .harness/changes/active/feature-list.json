@@ -263,12 +263,12 @@
                 "F-012"
             ],
             "sync_repos": [],
-            "push_status": "pushed",
-            "status": "pushed",
+            "push_status": "merged",
+            "status": "merged",
             "repo": "AgentOps-Harness",
             "branch": "feature/F-013",
             "issue_id": "",
-            "plan": ".harness/changes/active/2026-08-07-skill-registry-and-benchmark.md",
+            "plan": ".harness/changes/completed/archive/2026-08-07-skill-registry-and-benchmark.md",
             "pr_url": "https://github.com/X-Chen7/AgentOps-Harness/pull/5",
             "acceptance": [
                 "harness skill validate passes for 8 skills",
@@ -309,9 +309,15 @@
                     "at": "2026-08-07",
                     "by": "harness-git",
                     "note": "PR created: https://github.com/X-Chen7/AgentOps-Harness/pull/5"
+                },
+                {
+                    "status": "merged",
+                    "at": "2026-08-07",
+                    "by": "harness-git",
+                    "note": "merged via PR #5 (squash)"
                 }
             ],
-            "commit": "5550de0e886fe5f0c9f3a1ff159bfc5d2384f5b3"
+            "commit": "f39d73864c0aef2dded2668617b7ea461b19c3bc"
         }
     ]
 }
