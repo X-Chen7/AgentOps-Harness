@@ -418,9 +418,7 @@
                 "harness github sync --strict 作为 CI 门禁",
                 "重复事件幂等，冲突不静默覆盖"
             ],
-            "blocked_by": [
-                "GitHub issue #11 closed without merge"
-            ],
+            "blocked_by": [],
             "pipeline": {
                 "status": "not_started",
                 "artifacts": [],
