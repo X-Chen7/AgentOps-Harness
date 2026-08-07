@@ -328,8 +328,8 @@
                 "F-013"
             ],
             "sync_repos": [],
-            "push_status": "local",
-            "status": "in_progress",
+            "push_status": "none",
+            "status": "committed",
             "repo": "AgentOps-Harness",
             "branch": "feature/F-014",
             "issue_id": "",
@@ -356,9 +356,15 @@
                     "at": "2026-08-08",
                     "by": "harness",
                     "note": "knowledge retrieval implementation in progress"
+                },
+                {
+                    "status": "committed",
+                    "at": "2026-08-08",
+                    "by": "harness-git",
+                    "note": "committed on feature/F-014"
                 }
             ],
-            "commit": ""
+            "commit": "7c207a201ea0b614c2b865b0e00212a9b7c18ab6"
         }
     ]
 }
