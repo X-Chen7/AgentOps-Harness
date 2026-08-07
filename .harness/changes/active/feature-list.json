@@ -87,12 +87,18 @@
 
                                         ],
                          "push_status":  "none",
-                         "commit":  "",
+                         "commit":  "536e56d0b69e2a41a0168f282c0b59a45bf46d9f",
                          "history":  [
                                          {
                                              "status":  "todo",
                                              "note":  "planned",
                                              "by":  "harness",
+                                             "at":  "2026-08-07"
+                                         },
+                                         {
+                                             "status":  "committed",
+                                             "note":  "committed on feature/F-010",
+                                             "by":  "harness-git",
                                              "at":  "2026-08-07"
                                          }
                                      ],
@@ -103,7 +109,7 @@
                                                         ],
                                           "last_run":  ""
                                       },
-                         "branch":  "",
+                         "branch":  "feature/F-010",
                          "acceptance":  [
                                             "script/check.ps1 passes",
                                             "parallel pipeline example validates",
@@ -115,7 +121,7 @@
                          "issue_id":  "",
                          "plan":  ".harness/changes/completed/archive/2026-08-07-parallel-dag-and-collab.md",
                          "pr_url":  "",
-                         "status":  "todo",
+                         "status":  "committed",
                          "blocked_by":  [
 
                                         ],
