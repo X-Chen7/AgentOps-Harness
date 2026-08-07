@@ -14,7 +14,7 @@
 | 工具 | `.harness/rules/tool-access.md` |
 | 环境 | `.harness/init-contract.md` + `.harness/wiki/README.md` |
 | 状态 | `.harness/PROGRESS.md` + `.harness/changes/active/feature-list.json` |
-| 反馈 | `script/check.ps1` + `.harness/skills/unit-test-ci/SKILL.md` |
+| 反馈 | `harness check` + `.harness/skills/unit-test-ci/SKILL.md` |
 
 ## 五支柱
 
@@ -80,12 +80,12 @@ Harness 可初始化到任意后端工程。参考目录：
 | 已完成记录 | `.harness/changes/completed/` |
 | 完成记录索引 | `.harness/changes/completed/INDEX.md` |
 | 技术债 | `.harness/changes/tech-debt-tracker.md` |
-| changes 同步脚本 | `script/sync-changes.ps1` |
-| pre-push hooks 安装 | `script/install-hooks.ps1` |
+| changes 同步脚本 | `harness sync`（兼容 `script/sync-changes.ps1`） |
+| pre-push hooks 安装 | `harness install-hooks`（兼容 `script/install-hooks.ps1`） |
 | Codex 项目配置 | `.codex/config.toml` + `.codex/README.md` |
-| Codex 技能同步 | `.codex/skills/` + `script/sync-skills.ps1` |
+| Codex 技能同步 | `.codex/skills/` + `harness sync-skills`（兼容 `script/sync-skills.ps1`） |
 | AI 自动加载范围 | `AGENTS.d/00-common.md` + 本文件 |
-| Harness 初始化模板 | `harness-template/` + `script/harness-init.ps1` |
+| Harness 初始化模板 | `harness-template/` + `harness init`（兼容 `script/harness-init.ps1`） |
 | Harness 基准测试 | `benchmark/README.md` |
 | 桌面版多智能体角色 | `.harness/agents/pipeline/`（协调者 + 分析/编码/测试/评审） |
 | 桌面版流水线配置 | `.harness/pipelines/desktop-pipeline.json` |
@@ -93,7 +93,7 @@ Harness 可初始化到任意后端工程。参考目录：
 | 阶段交接协议 | `.harness/templates/pipeline-handoff.md.template` |
 | 流水线状态 schema | `.harness/state/README.md` + `.harness/templates/pipeline-state.example.json` |
 | 流水线状态 | `.harness/state/` + feature-list 的 `pipeline` 字段 |
-| Git/PR 自动化 | `script/harness-git.ps1`（commit/push/pr）+ `script/install-hooks.ps1` |
+| Git/PR 自动化 | `harness commit/push/pr` + `harness install-hooks`（兼容 `script/harness-git.ps1`、`script/install-hooks.ps1`） |
 | 已退役执行器 | `.harness/archive/harness-cli/`（harness-cli v1 归档，只读） |
 
 ## 维护规则
@@ -107,7 +107,7 @@ Harness 可初始化到任意后端工程。参考目录：
 - 完成记录必须同步维护 `changes/completed/INDEX.md`。
 - 桌面版流水线运行后必须由协调者同步 feature-list 的 `pipeline` 字段；`.harness/state/` 是运行期事实，不手改运行中的状态。
 - 自动加载范围以 `AGENTS.d/00-common.md` 为准，保持入口精简，敏感信息不进入自动加载内容。
-- 每次会话结束更新 `PROGRESS.md`，运行 `script/check.ps1` 并回填结果。
+- 每次会话结束更新 `PROGRESS.md`，运行 `harness check`（或兼容的 `script/check.ps1`）并回填结果。
 - 完成判定必须经过验证命令和 `expert-reviewer`，不能由执行者自报完成。
 
 ## 参考

@@ -5,9 +5,9 @@
 ## 当前状态
 
 - 更新日期：2026-08-07
-- 当前任务：F-010 可执行多智能体流水线增强（已完成）
-- 当前状态：`merged`（PR #2 已合并）
-- 最近验证：`script/check.ps1` 通过，0 error；并行 DAG、写权仲裁、便签墙、debate 全部落地
+- 当前任务：F-011 PowerShell 工具链迁移到 Python CLI（进行中）
+- 当前状态：`in_progress`
+- 最近验证：`python -m pytest -q` 14 passed；`python -m harness check` 0 error
 
 ## 已完成
 
@@ -26,11 +26,11 @@
 
 ## 进行中
 
-- 无进行中 feature（WIP=0）。
+- F-011 PowerShell 工具链迁移到 Python CLI：Python CLI 已实现，PowerShell 降级为兼容包装，测试与 CI 已就绪。
 
 ## 下一步
 
-- 无进行中 feature（WIP=0）。
+- F-011 完成 Git/PR 链路后标记 `merged`。
 - 后续新 feature 继续按 `analysis -> coding -> test -> review -> Git/PR` 流程执行。
 - 每次会话结束运行 `script/check.ps1` 并回填结果。
 - 同步更新 `changes/active/feature-list.json` 中的状态。

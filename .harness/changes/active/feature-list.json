@@ -138,6 +138,49 @@
 
                                         ],
                          "updated_at":  "2026-08-07"
+                     },
+                     {
+                         "id":  "F-011",
+                         "owner":  "owner",
+                         "title":  "Migrate PowerShell toolchain to Python CLI",
+                         "remote_branch":  "feature/F-011",
+                         "depends_on":  [
+                                            "F-010"
+                                        ],
+                         "sync_repos":  [
+
+                                        ],
+                         "push_status":  "none",
+                         "status":  "in_progress",
+                         "repo":  "AgentOps-Harness",
+                         "branch":  "feature/F-011",
+                         "issue_id":  "",
+                         "plan":  ".harness/changes/active/2026-08-07-python-cli-migration.md",
+                         "acceptance":  [
+                                            "pytest passes",
+                                            "harness check passes",
+                                            "PowerShell wrappers remain compatible",
+                                            "GitHub Actions CI added"
+                                        ],
+                         "blocked_by":  [
+
+                                        ],
+                         "pipeline":  {
+                                          "status":  "not_started",
+                                          "artifacts":  [
+
+                                                        ],
+                                          "last_run":  ""
+                                      },
+                         "updated_at":  "2026-08-07",
+                         "history":  [
+                                         {
+                                             "status":  "in_progress",
+                                             "note":  "migration in progress",
+                                             "by":  "harness",
+                                             "at":  "2026-08-07"
+                                         }
+                                     ]
                      }
                  ]
-}
+ }
