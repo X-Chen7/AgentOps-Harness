@@ -197,12 +197,12 @@
                 "F-011"
             ],
             "sync_repos": [],
-            "push_status": "pushed",
-            "status": "pushed",
+            "push_status": "merged",
+            "status": "merged",
             "repo": "AgentOps-Harness",
             "branch": "feature/F-012",
             "issue_id": "",
-            "plan": ".harness/changes/active/2026-08-07-ci-cd-pr-gate.md",
+            "plan": ".harness/changes/completed/archive/2026-08-07-ci-cd-pr-gate.md",
             "pr_url": "https://github.com/X-Chen7/AgentOps-Harness/pull/4",
             "acceptance": [
                 "ruff lint and format pass",
@@ -244,9 +244,15 @@
                     "at": "2026-08-07",
                     "by": "harness-git",
                     "note": "PR created: https://github.com/X-Chen7/AgentOps-Harness/pull/4"
+                },
+                {
+                    "status": "merged",
+                    "at": "2026-08-07",
+                    "by": "harness-git",
+                    "note": "merged via PR #4 (squash)"
                 }
             ],
-            "commit": "e89fc2647a0a556cc97d0109c82e05be2cba043e"
+            "commit": "bdd17c14018bfa29d129b7ee1ffc27254f1360ce"
         }
     ]
 }

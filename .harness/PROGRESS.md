@@ -5,9 +5,9 @@
 ## 当前状态
 
 - 更新日期：2026-08-07
-- 当前任务：F-012 CI/CD 机器验收 + PR 门禁（进行中）
-- 当前状态：`in_progress`
-- 最近验证：`python -m pytest -q` 25 passed；`harness lint`、`harness dod`、`harness check --sql` 通过
+- 当前任务：F-012 CI/CD 机器验收 + PR 门禁（已完成）
+- 当前状态：`merged`（PR #4 已合并）
+- 最近验证：GitHub Actions lint / test / dod / sql / backend 五项全绿；PR #4 squash 合并完成；main 分支保护已开启
 
 ## 已完成
 
@@ -24,14 +24,15 @@
 - F-009 Git/PR 链路收尾：`harness commit`、`harness push`、PR #1 创建与 squash 合并全部完成，feature-list 状态回写为 `merged`。
 - F-010 可执行多智能体流水线增强：并行 DAG、写权仲裁、便签墙、debate 轻量版落地，schema 升级 1.1，负向验证通过。
 - F-011 PowerShell 工具链迁移到 Python CLI：Python CLI、pytest 测试、GitHub Actions CI 落地，PowerShell 降级为兼容包装，PR #3 squash 合并完成。
+- F-012 CI/CD 机器验收 + PR 门禁：`harness lint` / `dod` / `check --ci/--sql`、pre-commit/pre-push、GitHub Actions 五段检查、main 分支保护全部落地，PR #4 squash 合并完成。
 
 ## 进行中
 
-- F-012 CI/CD 机器验收 + PR 门禁：GitHub Actions 五段检查、DoD 校验、pre-commit/pre-push 本地钩子已落地，等待 PR 全绿并配置分支保护。
+- 无进行中 feature（WIP=0）。
 
 ## 下一步
 
-- F-012：创建 feature 分支、提交推送、创建 PR、等待 CI 全绿、开启 main 分支保护、合并 PR 并回写 merged 状态。
+- 无进行中 feature（WIP=0）。
 - 后续新 feature 继续按 `analysis -> coding -> test -> review -> Git/PR` 流程执行。
 - 每次会话结束运行 `script/check.ps1` 并回填结果。
 - 同步更新 `changes/active/feature-list.json` 中的状态。
