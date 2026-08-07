@@ -406,11 +406,11 @@
             "issue_id": "11",
             "issue_number": 11,
             "issue_url": "https://github.com/X-Chen7/AgentOps-Harness/issues/11",
-            "pr_number": null,
+            "pr_number": 12,
             "last_synced_at": "",
             "github_updated_at": "",
             "plan": ".harness/changes/active/2026-08-08-issue-pr-sync.md",
-            "pr_url": "",
+            "pr_url": "https://github.com/X-Chen7/AgentOps-Harness/pull/12",
             "acceptance": [
                 "Issue 创建自动生成 feature 和计划",
                 "PR 打开/合并自动回写状态并归档",
@@ -449,6 +449,12 @@
                     "at": "2026-08-08",
                     "by": "harness-git",
                     "note": "pushed to origin/feature/F-015-issue-pr-sync"
+                },
+                {
+                    "status": "pushed",
+                    "at": "2026-08-08",
+                    "by": "harness-git",
+                    "note": "PR created: https://github.com/X-Chen7/AgentOps-Harness/pull/12"
                 }
             ],
             "commit": "a2598a93d4adccd12d3afd074c5a771b050185ba"
