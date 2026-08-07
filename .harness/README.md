@@ -75,6 +75,11 @@ Harness 可初始化到任意后端工程。参考目录：
 | 数据模型同步技能 | `.harness/skills/db-schema-sync/SKILL.md` |
 | 部署验证技能 | `.harness/skills/deploy-verify/SKILL.md` |
 | 项目知识 | `.harness/wiki/README.md` |
+| 知识检索索引 | `.harness/knowledge/` + `harness knowledge index` |
+| 知识定点检索 | `harness knowledge route/search/get` |
+| 接口事实 | `.harness/knowledge/api/` + `harness knowledge api <路径>` |
+| 表结构事实 | `.harness/knowledge/schema/` + `harness knowledge table <表名>` |
+| 知识检索基准 | `.harness/benchmarks/knowledge/` + `harness knowledge bench` |
 | 当前执行计划 | `.harness/changes/active/` |
 | 功能状态机 | `.harness/changes/active/feature-list.json` |
 | 已完成记录 | `.harness/changes/completed/` |
@@ -109,6 +114,7 @@ Harness 可初始化到任意后端工程。参考目录：
 - 自动加载范围以 `AGENTS.d/00-common.md` 为准，保持入口精简，敏感信息不进入自动加载内容。
 - 每次会话结束更新 `PROGRESS.md`，运行 `harness check`（或兼容的 `script/check.ps1`）并回填结果。
 - 完成判定必须经过验证命令和 `expert-reviewer`，不能由执行者自报完成。
+- 知识库索引必须用 `harness knowledge index` 重建，禁止手改 `index.json`；`harness check` 会强制校验索引新鲜度、覆盖率和断链。
 
 ## 参考
 

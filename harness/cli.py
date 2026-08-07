@@ -9,6 +9,7 @@ from . import dod as dod_mod
 from . import git_ops as git_mod
 from . import hooks as hooks_mod
 from . import init_project as init_mod
+from . import knowledge as knowledge_mod
 from . import lint as lint_mod
 from . import skill_bench as skill_bench_mod
 from . import skill_contract as skill_contract_mod
@@ -76,6 +77,41 @@ def build_parser() -> argparse.ArgumentParser:
     p_skill_promote.add_argument("--case", required=True, help="New fixture case id")
     p_skill_promote.add_argument("--task-text", default="", help="Task description for task.md")
 
+    p_knowledge = sub.add_parser(
+        "knowledge", parents=[common], help="Knowledge index, retrieval, facts, check and benchmark"
+    )
+    knowledge_sub = p_knowledge.add_subparsers(dest="knowledge_command", required=True)
+    p_knowledge_index = knowledge_sub.add_parser("index", parents=[common], help="Build knowledge index")
+    p_knowledge_index.add_argument(
+        "--check", dest="check_only", action="store_true", help="Validate without writing"
+    )
+    p_knowledge_route = knowledge_sub.add_parser(
+        "route", parents=[common], help="Route a task to knowledge entries"
+    )
+    p_knowledge_route.add_argument("text", help="Task text")
+    p_knowledge_route.add_argument("--top", type=int, default=5, help="Number of entries to return")
+    p_knowledge_search = knowledge_sub.add_parser("search", parents=[common], help="Keyword search")
+    p_knowledge_search.add_argument("text", help="Search terms")
+    p_knowledge_search.add_argument("--top", type=int, default=10, help="Number of entries to return")
+    p_knowledge_get = knowledge_sub.add_parser("get", parents=[common], help="Read one knowledge entry")
+    p_knowledge_get.add_argument("entry_id", help="Entry id from index")
+    p_knowledge_get.add_argument("--max-lines", type=int, default=0, help="Limit markdown excerpt lines")
+    p_knowledge_api = knowledge_sub.add_parser("api", parents=[common], help="Lookup API facts")
+    p_knowledge_api.add_argument("query", help="API path or name")
+    p_knowledge_api.add_argument("--top", type=int, default=5, help="Number of matches to return")
+    p_knowledge_table = knowledge_sub.add_parser("table", parents=[common], help="Lookup table facts")
+    p_knowledge_table.add_argument("query", help="Table name")
+    p_knowledge_table.add_argument("--top", type=int, default=5, help="Number of matches to return")
+    knowledge_sub.add_parser("check", parents=[common], help="Validate knowledge index freshness")
+    p_knowledge_bench = knowledge_sub.add_parser("bench", parents=[common], help="Run retrieval benchmark")
+    p_knowledge_bench.add_argument("--save", action="store_true", help="Save current results as baseline")
+    p_knowledge_bench.add_argument("--compare", action="store_true", help="Compare against baseline")
+    p_knowledge_extract = knowledge_sub.add_parser(
+        "extract", parents=[common], help="Extract API/schema facts from code"
+    )
+    p_knowledge_extract.add_argument("--controllers", default="", help="Java controllers directory")
+    p_knowledge_extract.add_argument("--sql", default="", help="SQL directory")
+
     p_init = sub.add_parser("init", parents=[common], help="Initialize harness in a target project")
     p_init.add_argument("--target", required=True, help="Target project directory")
     p_init.add_argument("--project-name", default="", help="Project name used in AGENTS.md")
@@ -140,6 +176,27 @@ def main(argv: list[str] | None = None) -> int:
                 return skill_feedback_mod.promote_feedback(
                     root, args.skill, args.case, task_text=args.task_text
                 )
+        if args.command == "knowledge":
+            if args.knowledge_command == "index":
+                return knowledge_mod.build_index(root, check_only=args.check_only)
+            if args.knowledge_command == "route":
+                return knowledge_mod.cmd_route(root, args.text, top_k=args.top)
+            if args.knowledge_command == "search":
+                return knowledge_mod.cmd_search(root, args.text, top_k=args.top)
+            if args.knowledge_command == "get":
+                return knowledge_mod.cmd_get(root, args.entry_id, max_lines=args.max_lines)
+            if args.knowledge_command == "api":
+                return knowledge_mod.cmd_api(root, args.query, top_k=args.top)
+            if args.knowledge_command == "table":
+                return knowledge_mod.cmd_table(root, args.query, top_k=args.top)
+            if args.knowledge_command == "check":
+                return knowledge_mod.cmd_knowledge_check(root)
+            if args.knowledge_command == "bench":
+                return knowledge_mod.run_knowledge_bench(root, save=args.save, compare=args.compare)
+            if args.knowledge_command == "extract":
+                controllers = root / args.controllers if args.controllers else None
+                sql_dir = root / args.sql if args.sql else None
+                return _run_knowledge_extract(root, controllers, sql_dir)
         if args.command == "init":
             return init_mod.init_harness(root, args.target, args.project_name)
         if args.command == "install-hooks":
@@ -159,6 +216,28 @@ def main(argv: list[str] | None = None) -> int:
         print(f"error: {exc}", file=sys.stderr)
         return 1
     return 0
+
+
+def _run_knowledge_extract(
+    root: Path,
+    controllers: Path | None,
+    sql_dir: Path | None,
+) -> int:
+    status = 0
+    if controllers:
+        status = max(
+            status,
+            knowledge_mod.extract_api(controllers, knowledge_mod.api_dir(root))[0],
+        )
+    if sql_dir:
+        status = max(
+            status,
+            knowledge_mod.extract_schema(sql_dir, knowledge_mod.schema_dir(root))[0],
+        )
+    if not controllers and not sql_dir:
+        print("error: provide --controllers and/or --sql", file=sys.stderr)
+        return 1
+    return status
 
 
 if __name__ == "__main__":

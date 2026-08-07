@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "cases": [
+    {
+      "id": "kb-001",
+      "mode": "route",
+      "question": "git 提交 推送 PR 怎么走",
+      "expected": ["rule:.harness/rules/git-workflow.md"],
+      "k": 3
+    },
+    {
+      "id": "kb-002",
+      "mode": "route",
+      "question": "sql 迁移 表结构 字段 规则",
+      "expected": ["rule:.harness/rules/sql-and-migration.md"],
+      "k": 3
+    },
+    {
+      "id": "kb-003",
+      "mode": "route",
+      "question": "项目知识 数据模型 API 怎么维护",
+      "expected": ["context:.harness/wiki/README.md"],
+      "k": 3
+    },
+    {
+      "id": "kb-004",
+      "mode": "route",
+      "question": "feature 功能 状态 WIP",
+      "expected": ["state:.harness/changes/active/feature-list.json"],
+      "k": 3
+    },
+    {
+      "id": "kb-005",
+      "mode": "api",
+      "question": "example-ping",
+      "expected": ["example-ping"],
+      "k": 1
+    },
+    {
+      "id": "kb-006",
+      "mode": "table",
+      "question": "example_account",
+      "expected": ["example_account"],
+      "k": 1
+    },
+    {
+      "id": "kb-007",
+      "mode": "search",
+      "question": "编码规范",
+      "expected": ["rule:.harness/rules/coding-standard.md"],
+      "k": 5
+    },
+    {
+      "id": "kb-008",
+      "mode": "route",
+      "question": "需求 不清晰 设计纠偏",
+      "expected": ["rule:.harness/rules/requirement-alignment-rule.md"],
+      "k": 3
+    }
+  ]
+}
