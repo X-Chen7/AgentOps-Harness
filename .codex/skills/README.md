@@ -44,6 +44,22 @@
 
 如需安装到 Codex，把每个技能目录复制到 Codex 的技能目录，例如 `~/.codex/skills/request-analysis/`。
 
+## 技能契约与评测
+
+- 每个技能目录必须包含 `skill.yaml`，字段包括 `schema_version`、`id`、`name`、`version`、`description`、`trigger`、`inputs`、`outputs`、`dependencies`。
+- `fixtures/` 目录存放评测场景；每个用例必须包含 `task.md`，可选包含 `fixture/`、`checks.yaml`、`expected.md`。
+- `checks.yaml` 支持 `run` 命令和 `checks` 检查项，检查类型包括 `exit_code`、`file_exists`、`contains`、`not_contains`。
+
+```bash
+python -m harness skill validate                          # 校验全部 skill.yaml 契约
+python -m harness skill test                              # 运行全部自动化 fixture
+python -m harness skill test --skill unit-test-ci         # 只测一个技能
+python -m harness skill bench --save                      # 保存当前结果为基线
+python -m harness skill bench --compare                   # 与基线对比，有回归则失败
+python -m harness skill record --skill unit-test-ci --status pass --note "..."
+python -m harness skill promote --skill unit-test-ci --case real-case --task-text "..."
+```
+
 ## 维护规则
 
 - 新增技能必须使用 `SKILL-TEMPLATE.md`。

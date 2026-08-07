@@ -1,0 +1,7 @@
+schema_version: "1.0"
+run: python -m pytest -q
+checks:
+  - type: exit_code
+    expected: 0
+  - type: file_exists
+    path: tests/test_demo.py

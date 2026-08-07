@@ -1,0 +1,14 @@
+schema_version: "1.0"
+id: coding-skill
+name: 后端编码
+version: "1.0.0"
+description: 按最小改动原则完成后端明确小范围代码、SQL、配置和文档同步修改。
+trigger:
+  - 明确的小范围 Bug、接口、Service、SQL、配置修改
+  - 已完成需求分析且边界清晰的后端任务
+inputs:
+  - 需求分析结果、相关代码、SQL、测试、契约与文档
+outputs:
+  - 修改点、原因、影响范围、接口/SQL变化、验证结果、风险
+dependencies:
+  - request-analysis

@@ -1,0 +1,4 @@
+schema_version: "1.0"
+checks:
+  - type: file_exists
+    path: config/app.yaml

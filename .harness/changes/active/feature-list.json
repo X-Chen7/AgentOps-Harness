@@ -253,6 +253,65 @@
                 }
             ],
             "commit": "bdd17c14018bfa29d129b7ee1ffc27254f1360ce"
+        },
+        {
+            "id": "F-013",
+            "owner": "owner",
+            "title": "Skill registry, fixture tests and benchmark",
+            "remote_branch": "feature/F-013",
+            "depends_on": [
+                "F-012"
+            ],
+            "sync_repos": [],
+            "push_status": "pushed",
+            "status": "pushed",
+            "repo": "AgentOps-Harness",
+            "branch": "feature/F-013",
+            "issue_id": "",
+            "plan": ".harness/changes/active/2026-08-07-skill-registry-and-benchmark.md",
+            "pr_url": "https://github.com/X-Chen7/AgentOps-Harness/pull/5",
+            "acceptance": [
+                "harness skill validate passes for 8 skills",
+                "harness skill test runs automated fixtures",
+                "harness skill bench --save / --compare works",
+                "harness skill record / promote works",
+                "sync-skills excludes fixtures and feedback",
+                "GitHub Actions skills job is a required check"
+            ],
+            "blocked_by": [],
+            "pipeline": {
+                "status": "not_started",
+                "artifacts": [],
+                "last_run": ""
+            },
+            "updated_at": "2026-08-07",
+            "history": [
+                {
+                    "status": "in_progress",
+                    "note": "skill registry and benchmark in progress",
+                    "by": "harness",
+                    "at": "2026-08-07"
+                },
+                {
+                    "status": "committed",
+                    "at": "2026-08-07",
+                    "by": "harness-git",
+                    "note": "committed on feature/F-013"
+                },
+                {
+                    "status": "pushed",
+                    "at": "2026-08-07",
+                    "by": "harness-git",
+                    "note": "pushed to origin/feature/F-013"
+                },
+                {
+                    "status": "pushed",
+                    "at": "2026-08-07",
+                    "by": "harness-git",
+                    "note": "PR created: https://github.com/X-Chen7/AgentOps-Harness/pull/5"
+                }
+            ],
+            "commit": "5550de0e886fe5f0c9f3a1ff159bfc5d2384f5b3"
         }
     ]
 }

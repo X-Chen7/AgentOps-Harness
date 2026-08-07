@@ -1,0 +1,14 @@
+schema_version: "1.0"
+id: unit-test-write
+name: 单元测试编写
+version: "1.0.0"
+description: 为后端变更补充覆盖成功、失败、边界和回归场景的最小测试。
+trigger:
+  - 新增业务规则或状态流转
+  - 修复 Bug 或 Review 发现测试缺口
+  - 修改登录、OAuth2、权限、组织或 SQL
+inputs:
+  - 被测代码、现有测试风格、业务规则、错误码与契约示例
+outputs:
+  - 新增测试、覆盖场景、未覆盖原因、验证命令与结果
+dependencies: []

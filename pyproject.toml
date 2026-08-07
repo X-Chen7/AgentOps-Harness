@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Executable AgentOps multi-agent harness CLI"
 readme = "README.md"
 requires-python = ">=3.9"
-dependencies = []
+dependencies = ["PyYAML>=6.0"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0", "ruff>=0.6", "pre-commit>=3.8"]
@@ -25,6 +25,7 @@ testpaths = ["tests"]
 [tool.ruff]
 line-length = 110
 target-version = "py39"
+extend-exclude = [".harness/**/fixtures/**"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP"]

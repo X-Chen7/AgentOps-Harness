@@ -1,0 +1,8 @@
+schema_version: "1.0"
+checks:
+  - type: contains
+    path: sql/v1__init.sql
+    text: "CREATE TABLE"
+  - type: not_contains
+    path: sql/v1__init.sql
+    text: "DROP TABLE"

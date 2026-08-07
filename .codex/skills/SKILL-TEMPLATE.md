@@ -11,6 +11,25 @@ description: 用一句话说明技能做什么，以及什么场景会触发使�
 ---
 ```
 
+## 技能契约 skill.yaml
+
+新增技能必须同步创建 `skill.yaml`，与 `SKILL.md` 放在同一技能目录。最小字段示例：
+
+```yaml
+schema_version: "1.0"
+id: skill-name
+name: 技能名称
+version: "1.0.0"
+description: 用一句话说明技能做什么。
+trigger:
+  - 触发场景
+inputs:
+  - 输入上下文
+outputs:
+  - 固定输出
+dependencies: []
+```
+
 ## 正文结构
 
 ```markdown

@@ -1,0 +1,13 @@
+schema_version: "1.0"
+id: db-schema-sync
+name: 数据库模型同步
+version: "1.0.0"
+description: 检查 SQL、DO、Mapper、VO/DTO、初始化数据与数据模型文档的一致性。
+trigger:
+  - 新增或修改表字段、DO、Mapper、XML、VO/DTO 或迁移脚本
+  - 需要数据模型一致性检查
+inputs:
+  - SQL 脚本、DO、Mapper、VO/DTO、初始化数据与 data-model.md
+outputs:
+  - 涉及表、字段、已同步/未同步项、枚举注释风险、建议验证
+dependencies: []
