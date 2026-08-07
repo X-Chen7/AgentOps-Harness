@@ -147,7 +147,10 @@ def build_parser() -> argparse.ArgumentParser:
     p_github_sync.add_argument("--apply", action="store_true", help="Apply and commit ledger changes")
     p_github_sync.add_argument("--strict", action="store_true", help="Fail when ledger is out of sync")
     p_github_sync.add_argument(
-        "--transport", choices=["direct", "pr"], default="pr", help="How to land ledger changes"
+        "--transport",
+        choices=["direct", "pr", "local"],
+        default="pr",
+        help="How to land ledger changes",
     )
     p_github_issue = github_sub.add_parser(
         "issue-create", parents=[common], help="Create a GitHub issue for a feature"

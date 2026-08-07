@@ -6,10 +6,11 @@
 
 - 更新日期：2026-08-08
 - 当前任务：F-015 问题跟踪 / PR 双向同步（进行中）
-- 当前状态：`in_progress`
+- 当前状态：`merged`
 - 最近验证：`python -m pytest -q` 67 passed；`harness knowledge bench` 8/8；ruoyi 真实项目索引 783 条目、接口 147、表 89
 
 ## 已完成
+- F-015 F-015: 问题跟踪 / PR 双向同步：GitHub Issue/PR 双向同步已自动归档（PR #auto-sync）。
 
 - Harness 第一轮收敛：技能扩平、spec 归档、changes 生命周期、wiki 隔离、校验脚本。
 - Harness 第二轮状态与反馈优化：PROGRESS、feature-list、check.ps1、模板和工具边界。
@@ -30,7 +31,6 @@
 
 ## 进行中
 
-- F-015 问题跟踪 / PR 双向同步：Issue/PR 事件驱动同步引擎、feature-list schema 1.3、状态回写与自动归档、CI github-sync 门禁。
 
 ## 下一步
 

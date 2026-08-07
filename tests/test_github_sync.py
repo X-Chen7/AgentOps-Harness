@@ -234,6 +234,27 @@ def test_secondary_merged_pr_does_not_rearchive() -> None:
     assert not any(a["type"] == "archive" for a in actions)
 
 
+def test_open_followup_pr_does_not_relink_merged_feature() -> None:
+    ledger = _ledger()
+    feature = ledger["features"][0]
+    feature["id"] = "F-015"
+    feature["status"] = "merged"
+    feature["push_status"] = "merged"
+    feature["commit"] = "a" * 40
+    feature["pr_number"] = 8
+    feature["pr_url"] = "https://github.com/test/repo/pull/8"
+    feature["issue_number"] = 1
+    features, actions = reconcile_ledger(
+        ledger,
+        [_issue(title="F-015: done", state="open")],
+        [_pr(number=9, state="open", merged=False)],
+    )
+    updated = next(f for f in features["features"] if f["id"] == "F-015")
+    assert updated["pr_number"] == 8
+    assert not any(a["type"] == "link_pr" for a in actions)
+    assert not any(a["type"] == "update_pr_body" for a in actions)
+
+
 def test_auto_created_feature_respects_wip_limit() -> None:
     features, _ = reconcile_ledger(_ledger(), [_issue(body="new work")], [])
     created = next(f for f in features["features"] if f["id"] == "F-015")
