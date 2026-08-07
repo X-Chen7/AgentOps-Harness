@@ -1,8 +1,11 @@
 {
-  "schema_version": "1.0",
-  "feature_id": "F-001",
+  "schema_version": "1.1",
+  "feature_id": "F-010",
   "status": "running",
   "current_stage": "coding",
+  "active_stages": [
+    "coding"
+  ],
   "stages": [
     {
       "id": "analysis",
@@ -11,12 +14,15 @@
       "max_attempts": 1,
       "rework_count": 0,
       "depends_on": [],
+      "write_scope": [
+        ".harness/state/tasks"
+      ],
       "gate": "script/check.ps1",
       "started_at": "2026-08-07T10:00:00+08:00",
       "finished_at": "2026-08-07T10:05:00+08:00",
-      "handoff": ".harness/state/tasks/F-001-analysis.md",
+      "handoff": ".harness/state/tasks/F-010-analysis.md",
       "artifacts": [
-        "F-001-analysis-scope.md"
+        "F-010-analysis-scope.md"
       ],
       "last_error": null
     },
@@ -29,10 +35,14 @@
       "depends_on": [
         "analysis"
       ],
+      "write_scope": [
+        "src/main",
+        "src/test"
+      ],
       "gate": "script/check.ps1 -Compile",
       "started_at": "2026-08-07T10:06:00+08:00",
       "finished_at": null,
-      "handoff": ".harness/state/tasks/F-001-coding.md",
+      "handoff": ".harness/state/tasks/F-010-coding.md",
       "artifacts": [],
       "last_error": null
     },
@@ -45,10 +55,13 @@
       "depends_on": [
         "coding"
       ],
+      "write_scope": [
+        "src/test"
+      ],
       "gate": "script/check.ps1 -Backend",
       "started_at": null,
       "finished_at": null,
-      "handoff": ".harness/state/tasks/F-001-test.md",
+      "handoff": ".harness/state/tasks/F-010-test.md",
       "artifacts": [],
       "last_error": null
     },
@@ -61,10 +74,11 @@
       "depends_on": [
         "test"
       ],
+      "write_scope": [],
       "gate": "script/check.ps1",
       "started_at": null,
       "finished_at": null,
-      "handoff": ".harness/state/tasks/F-001-review.md",
+      "handoff": ".harness/state/tasks/F-010-review.md",
       "artifacts": [],
       "last_error": null
     }
@@ -89,7 +103,7 @@
       "at": "2026-08-07T10:06:00+08:00",
       "type": "stage_started",
       "stage": "coding",
-      "note": "按 analysis_scope 启动编码"
+      "note": "active_stages 记录当前运行阶段"
     }
   ],
   "created_at": "2026-08-07T10:00:00+08:00",

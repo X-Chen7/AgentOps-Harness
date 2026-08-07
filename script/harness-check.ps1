@@ -300,17 +300,104 @@ $desktopPipeline = Join-Path $harness 'pipelines\desktop-pipeline.json'
 $pipelineHandoffTemplate = Join-Path $harness 'templates\pipeline-handoff.md.template'
 $pipelineHandoffExample = Join-Path $harness 'templates\pipeline-handoff.example.md'
 $pipelineStateExample = Join-Path $harness 'templates\pipeline-state.example.json'
-foreach ($artifact in @($desktopPipeline, $pipelineHandoffTemplate, $pipelineHandoffExample, $pipelineStateExample)) {
-    if (-not (Test-Path -LiteralPath $artifact)) {
-        Add-Error "Missing desktop pipeline artifact: $artifact"
-    }
-}
 
 if (Test-Path -LiteralPath $pipelineHandoffTemplate) {
     $handoffText = Get-Content -Raw -Encoding UTF8 $pipelineHandoffTemplate
     foreach ($placeholder in @('{{feature_id}}', '{{stage}}', '{{conclusion}}', '{{next_stage_contract}}')) {
         if (-not $handoffText.Contains($placeholder)) {
             Add-Error "pipeline-handoff.md.template missing placeholder: $placeholder"
+        }
+    }
+}
+
+$stickyWallTemplate = Join-Path $harness 'templates\sticky-wall.md.template'
+foreach ($artifact in @($desktopPipeline, $pipelineHandoffTemplate, $pipelineHandoffExample, $pipelineStateExample, $stickyWallTemplate)) {
+    if (-not (Test-Path -LiteralPath $artifact)) {
+        Add-Error "Missing desktop pipeline artifact: $artifact"
+    }
+}
+
+if (Test-Path -LiteralPath $stickyWallTemplate) {
+    $wallText = Get-Content -Raw -Encoding UTF8 $stickyWallTemplate
+    foreach ($placeholder in @('{{feature_id}}', '{{author}}', '{{stage}}', '{{content}}')) {
+        if (-not $wallText.Contains($placeholder)) {
+            Add-Error "sticky-wall.md.template missing placeholder: $placeholder"
+        }
+    }
+}
+
+function Assert-NoWriteScopeConflict($config, [string]$label) {
+    $allStages = @($config.stages)
+    for ($i = 0; $i -lt $allStages.Count; $i++) {
+        for ($j = $i + 1; $j -lt $allStages.Count; $j++) {
+            $a = $allStages[$i]
+            $b = $allStages[$j]
+            $aDeps = @($a.depends_on | Where-Object { $_ })
+            $bDeps = @($b.depends_on | Where-Object { $_ })
+            if ($aDeps -contains $b.id -or $bDeps -contains $a.id) {
+                continue
+            }
+            $aScope = @($a.write_scope | Where-Object { $_ })
+            $bScope = @($b.write_scope | Where-Object { $_ })
+            $overlap = @($aScope | Where-Object { $bScope -contains $_ })
+            if ($overlap.Count -gt 0) {
+                Add-Error "${label}: parallel stages $($a.id) and $($b.id) have overlapping write_scope: $($overlap -join ', ')"
+            }
+        }
+    }
+}
+
+function Assert-NoDependencyCycle($config, [string]$label) {
+    $ids = @($config.stages | ForEach-Object { $_.id })
+    $resolved = @()
+    $remaining = @($ids)
+    while ($remaining.Count -gt 0) {
+        $progress = $false
+        foreach ($id in @($remaining)) {
+            $stage = $config.stages | Where-Object { $_.id -eq $id }
+            $depsOk = $true
+            foreach ($dep in @($stage.depends_on | Where-Object { $_ })) {
+                if ($resolved -notcontains $dep) {
+                    $depsOk = $false
+                    break
+                }
+            }
+            if ($depsOk) {
+                $resolved += $id
+                $remaining = @($remaining | Where-Object { $_ -ne $id })
+                $progress = $true
+            }
+        }
+        if (-not $progress) {
+            Add-Error "${label}: dependency cycle: $($remaining -join ', ')"
+            break
+        }
+    }
+}
+
+function Assert-ActiveStages($state, [string]$label) {
+    if ($state.schema_version -ne '1.1') {
+        return
+    }
+    if ($null -eq $state.active_stages) {
+        Add-Error "$label missing active_stages for schema 1.1"
+        return
+    }
+    foreach ($activeId in @($state.active_stages)) {
+        $stage = $state.stages | Where-Object { $_.id -eq $activeId }
+        if ($null -eq $stage) {
+            Add-Error "$label active_stages has unknown stage: $activeId"
+        }
+        elseif ($stage.status -ne 'running') {
+            Add-Error "$label active_stage not running: $activeId"
+        }
+        else {
+            foreach ($dep in @($stage.depends_on | Where-Object { $_ })) {
+                $depStage = $state.stages | Where-Object { $_.id -eq $dep }
+                if ($null -eq $depStage -or $depStage.status -ne 'passed') {
+                    Add-Error "$label active_stage dependency not passed: $activeId -> $dep"
+                }
+            }
         }
     }
 }
@@ -389,6 +476,7 @@ if (Test-Path -LiteralPath $desktopPipeline) {
                 }
             }
         }
+        Assert-NoWriteScopeConflict $pipelineConfig 'desktop-pipeline.json'
     }
     catch {
         Add-Error "desktop-pipeline.json is not valid JSON: $($_.Exception.Message)"
@@ -400,12 +488,40 @@ if ($pipelineConfig) {
     $configStageIds = @($pipelineConfig.stages | ForEach-Object { $_.id })
 }
 
+$pipelineParallelExample = Join-Path $harness 'pipelines\desktop-pipeline.parallel.example.json'
+if (Test-Path -LiteralPath $pipelineParallelExample) {
+    try {
+        $parallelConfig = Get-Content -Raw -Encoding UTF8 $pipelineParallelExample | ConvertFrom-Json
+        if ($parallelConfig.schema_version -ne '1.0') {
+            Add-Error "desktop-pipeline.parallel.example.json schema_version must be 1.0"
+        }
+        $parallelIds = @()
+        foreach ($stage in $parallelConfig.stages) {
+            if ($parallelIds -contains $stage.id) {
+                Add-Error "Duplicate parallel example stage id: $($stage.id)"
+            }
+            $parallelIds += $stage.id
+            foreach ($dep in @($stage.depends_on | Where-Object { $_ })) {
+                if (($parallelConfig.stages | Where-Object { $_.id -eq $dep }).Count -eq 0) {
+                    Add-Error "Parallel example stage $($stage.id) has unknown dependency: $dep"
+                }
+            }
+        }
+        Assert-NoDependencyCycle $parallelConfig 'desktop-pipeline.parallel.example.json'
+        Assert-NoWriteScopeConflict $parallelConfig 'desktop-pipeline.parallel.example.json'
+    }
+    catch {
+        Add-Error "desktop-pipeline.parallel.example.json is not valid JSON: $($_.Exception.Message)"
+    }
+}
+
 if (Test-Path -LiteralPath $pipelineStateExample) {
     try {
         $exampleState = Get-Content -Raw -Encoding UTF8 $pipelineStateExample | ConvertFrom-Json
-        if ($exampleState.schema_version -ne '1.0') {
-            Add-Error "pipeline-state.example.json schema_version must be 1.0"
+        if (@('1.0', '1.1') -notcontains $exampleState.schema_version) {
+            Add-Error "pipeline-state.example.json schema_version must be 1.0 or 1.1"
         }
+        Assert-ActiveStages $exampleState 'pipeline-state.example.json'
         if ($null -eq $exampleState.stages -or $exampleState.stages.Count -eq 0) {
             Add-Error "pipeline-state.example.json has no stages"
         }
@@ -449,9 +565,10 @@ if (Test-Path -LiteralPath $stateDir) {
     foreach ($stateFile in (Get-ChildItem -LiteralPath $stateDir -File -Filter 'pipeline-*.json')) {
         try {
             $state = Get-Content -Raw -Encoding UTF8 $stateFile.FullName | ConvertFrom-Json
-            if ($state.schema_version -ne '1.0') {
-                Add-Error "Pipeline state schema_version must be 1.0 in $($stateFile.Name)"
+            if (@('1.0', '1.1') -notcontains $state.schema_version) {
+                Add-Error "Pipeline state schema_version must be 1.0 or 1.1 in $($stateFile.Name)"
             }
+            Assert-ActiveStages $state $stateFile.Name
             if ($validPipelineStatuses -notcontains $state.status) {
                 Add-Error "Invalid pipeline state status in $($stateFile.Name): $($state.status)"
             }

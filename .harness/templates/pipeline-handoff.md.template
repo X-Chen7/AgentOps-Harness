@@ -45,6 +45,9 @@
 
 - verdict: {{review_verdict}}
 - issues: {{review_issues}}
+- main_opinion: {{main_opinion}}
+- opposing_opinion: {{opposing_opinion}}
+- decision_basis: {{decision_basis}}
 
 ## Next Stage Contract
 
