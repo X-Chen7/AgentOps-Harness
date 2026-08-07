@@ -493,8 +493,8 @@ def run_check(root: Path, strict: bool = False) -> tuple[list[str], list[str]]:
                 ctx.error(f"Invalid pipeline state file {state_file.name}: {exc}")
 
     if features:
-        if features.get("schema_version") != "1.2":
-            ctx.error("feature-list schema_version must be 1.2")
+        if features.get("schema_version") != "1.3":
+            ctx.error("feature-list schema_version must be 1.3")
         for feature in feature_items:
             feature_id = feature.get("id")
             if feature.get("pipeline") is None:
@@ -503,6 +503,14 @@ def run_check(root: Path, strict: bool = False) -> tuple[list[str], list[str]]:
                 ctx.error(
                     f"Feature {feature_id} has invalid pipeline.status: {feature['pipeline'].get('status')}"
                 )
+            for field_name in ("issue_number", "pr_number"):
+                value = feature.get(field_name)
+                if value is not None and not isinstance(value, int):
+                    ctx.error(f"Feature {feature_id} {field_name} must be an integer or null")
+            for field_name in ("issue_url", "issue_id", "github_updated_at", "last_synced_at"):
+                value = feature.get(field_name)
+                if value is not None and not isinstance(value, str):
+                    ctx.error(f"Feature {feature_id} {field_name} must be a string")
 
     tech_debt = harness / "changes" / "tech-debt-tracker.md"
     if tech_debt.exists():

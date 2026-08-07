@@ -5,8 +5,8 @@
 ## 当前状态
 
 - 更新日期：2026-08-08
-- 当前任务：F-014 知识库检索化（已完成）
-- 当前状态：`merged`
+- 当前任务：F-015 问题跟踪 / PR 双向同步（进行中）
+- 当前状态：`in_progress`
 - 最近验证：`python -m pytest -q` 67 passed；`harness knowledge bench` 8/8；ruoyi 真实项目索引 783 条目、接口 147、表 89
 
 ## 已完成
@@ -28,9 +28,13 @@
 - F-013 技能注册表 + 技能测试与评测：skill.yaml 契约、fixtures 场景库、`harness skill validate/test/bench/record/promote`、CI skills job 与分支保护落地，对抗式审查修复后 PR #5 squash 合并完成。
 - F-014 知识库检索化：`harness knowledge index` 生成机器可读索引，`route/search/get/api/table` 定点检索，结构化 API/表事实与代码提取器，`check` 防过期防断链，`bench` 8 用例基线回归，CI knowledge job 落地，PR #8 squash 合并完成。
 
+## 进行中
+
+- F-015 问题跟踪 / PR 双向同步：Issue/PR 事件驱动同步引擎、feature-list schema 1.3、状态回写与自动归档、CI github-sync 门禁。
+
 ## 下一步
 
-- F-014 已收尾：`knowledge` 已加入 main 分支保护 required checks，`4. 知识库检索化` 交付文档已更新。
+- F-015 落地后接入 GitHub Actions 事件监听，并把 `github-sync` 加入 main 分支保护 required checks。
 - 后续新 feature 继续按 `analysis -> coding -> test -> review -> Git/PR` 流程执行。
 - 每次会话结束运行 `script/check.ps1` 并回填结果。
 - 同步更新 `changes/active/feature-list.json` 中的状态。

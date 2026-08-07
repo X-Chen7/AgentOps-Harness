@@ -1,5 +1,5 @@
 {
-    "schema_version": "1.2",
+    "schema_version": "1.3",
     "wip_limit": 1,
     "updated_at": "2026-08-08",
     "git_sync": {
@@ -19,6 +19,7 @@
             "commit": "0cc8e7891656fcd34e99e4d38e6c451ebd8eed88",
             "push_status": "merged",
             "pr_url": "https://github.com/X-Chen7/AgentOps-Harness/pull/1",
+            "pr_number": 1,
             "remote_branch": "feature/F-009",
             "sync_repos": [],
             "depends_on": [],
@@ -121,6 +122,7 @@
             "issue_id": "",
             "plan": ".harness/changes/completed/archive/2026-08-07-parallel-dag-and-collab.md",
             "pr_url": "https://github.com/X-Chen7/AgentOps-Harness/pull/2",
+            "pr_number": 2,
             "status": "merged",
             "blocked_by": [],
             "updated_at": "2026-08-07"
@@ -141,6 +143,7 @@
             "issue_id": "",
             "plan": ".harness/changes/completed/archive/2026-08-07-python-cli-migration.md",
             "pr_url": "https://github.com/X-Chen7/AgentOps-Harness/pull/3",
+            "pr_number": 3,
             "acceptance": [
                 "pytest passes",
                 "harness check passes",
@@ -204,6 +207,7 @@
             "issue_id": "",
             "plan": ".harness/changes/completed/archive/2026-08-07-ci-cd-pr-gate.md",
             "pr_url": "https://github.com/X-Chen7/AgentOps-Harness/pull/4",
+            "pr_number": 4,
             "acceptance": [
                 "ruff lint and format pass",
                 "pytest passes",
@@ -270,6 +274,7 @@
             "issue_id": "",
             "plan": ".harness/changes/completed/archive/2026-08-07-skill-registry-and-benchmark.md",
             "pr_url": "https://github.com/X-Chen7/AgentOps-Harness/pull/5",
+            "pr_number": 5,
             "acceptance": [
                 "harness skill validate passes for 8 skills",
                 "harness skill test runs automated fixtures",
@@ -335,6 +340,7 @@
             "issue_id": "",
             "plan": ".harness/changes/completed/archive/2026-08-08-knowledge-retrieval.md",
             "pr_url": "https://github.com/X-Chen7/AgentOps-Harness/pull/8",
+            "pr_number": 8,
             "acceptance": [
                 "harness knowledge index builds index.json",
                 "harness knowledge route/search/get/api/table works",
@@ -383,6 +389,51 @@
                 }
             ],
             "commit": "70c410d0b73cf86f5d24cdfe0707af411da6c365"
+        },
+        {
+            "id": "F-015",
+            "owner": "owner",
+            "title": "问题跟踪 / PR 双向同步",
+            "remote_branch": "",
+            "depends_on": [
+                "F-014"
+            ],
+            "sync_repos": [],
+            "push_status": "none",
+            "status": "in_progress",
+            "repo": "AgentOps-Harness",
+            "branch": "feature/F-015-issue-pr-sync",
+            "issue_id": "",
+            "issue_number": null,
+            "issue_url": "",
+            "pr_number": null,
+            "last_synced_at": "",
+            "github_updated_at": "",
+            "plan": ".harness/changes/active/2026-08-08-issue-pr-sync.md",
+            "pr_url": "",
+            "acceptance": [
+                "Issue 创建自动生成 feature 和计划",
+                "PR 打开/合并自动回写状态并归档",
+                "合并后自动更新 INDEX/PROGRESS 并关闭 Issue",
+                "harness github sync --strict 作为 CI 门禁",
+                "重复事件幂等，冲突不静默覆盖"
+            ],
+            "blocked_by": [],
+            "pipeline": {
+                "status": "not_started",
+                "artifacts": [],
+                "last_run": ""
+            },
+            "updated_at": "2026-08-08",
+            "history": [
+                {
+                    "status": "in_progress",
+                    "at": "2026-08-08",
+                    "by": "harness",
+                    "note": "issue/PR bidirectional sync in progress"
+                }
+            ],
+            "commit": ""
         }
     ]
 }

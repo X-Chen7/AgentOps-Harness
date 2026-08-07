@@ -7,6 +7,7 @@ from pathlib import Path
 from . import check as check_mod
 from . import dod as dod_mod
 from . import git_ops as git_mod
+from . import github_sync as github_sync_mod
 from . import hooks as hooks_mod
 from . import init_project as init_mod
 from . import knowledge as knowledge_mod
@@ -131,10 +132,27 @@ def build_parser() -> argparse.ArgumentParser:
         help="Install the simple handwritten pre-push hook",
     )
 
-    for name in ("commit", "push", "pr"):
-        p_git = sub.add_parser(name, parents=[common], help=f"Git {name} for a harness feature")
-        p_git.add_argument("--feature", required=True, help="Feature id, e.g. F-011")
-        p_git.add_argument("--message", default="", help="Optional commit message")
+    p_commit = sub.add_parser("commit", parents=[common], help="Git commit for a harness feature")
+    p_commit.add_argument("--feature", required=True, help="Feature id, e.g. F-011")
+    p_commit.add_argument("--message", default="", help="Optional commit message")
+    p_push = sub.add_parser("push", parents=[common], help="Git push for a harness feature")
+    p_push.add_argument("--feature", required=True, help="Feature id, e.g. F-011")
+    p_pr = sub.add_parser("pr", parents=[common], help="Create a GitHub PR for a harness feature")
+    p_pr.add_argument("--feature", required=True, help="Feature id, e.g. F-011")
+    p_pr.add_argument("--issue", type=int, default=None, help="GitHub issue number to close")
+
+    p_github = sub.add_parser("github", parents=[common], help="Sync GitHub issues/PRs with feature-list")
+    github_sub = p_github.add_subparsers(dest="github_command", required=True)
+    p_github_sync = github_sub.add_parser("sync", parents=[common], help="Reconcile GitHub state")
+    p_github_sync.add_argument("--apply", action="store_true", help="Apply and commit ledger changes")
+    p_github_sync.add_argument("--strict", action="store_true", help="Fail when ledger is out of sync")
+    p_github_sync.add_argument(
+        "--transport", choices=["direct", "pr"], default="pr", help="How to land ledger changes"
+    )
+    p_github_issue = github_sub.add_parser(
+        "issue-create", parents=[common], help="Create a GitHub issue for a feature"
+    )
+    p_github_issue.add_argument("--feature", required=True, help="Feature id, e.g. F-016")
 
     return parser
 
@@ -211,7 +229,17 @@ def main(argv: list[str] | None = None) -> int:
         if args.command == "push":
             return git_mod.cmd_push(root, args.feature)
         if args.command == "pr":
-            return git_mod.cmd_pr(root, args.feature)
+            return git_mod.cmd_pr(root, args.feature, issue_number=args.issue)
+        if args.command == "github":
+            if args.github_command == "sync":
+                return github_sync_mod.cmd_github_sync(
+                    root,
+                    apply=args.apply,
+                    strict=args.strict,
+                    transport=args.transport,
+                )
+            if args.github_command == "issue-create":
+                return github_sync_mod.cmd_github_issue_create(root, args.feature)
     except HarnessError as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 1

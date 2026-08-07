@@ -11,6 +11,7 @@
 - 多智能体流水线：`.harness/pipelines/desktop-pipeline.json` + `.harness/agents/pipeline/` + `.harness/pipelines/desktop-coordinator.md`
 - 项目知识：`.harness/wiki/`（初始化新项目时按需补充）
 - 知识检索：`.harness/knowledge/` + `harness knowledge route/search/get/api/table`
+- Issue/PR 双向同步：`harness github sync` + `.github/workflows/issue-pr-sync.yml`
 - 归档：`.harness/archive/harness-cli/`
 
 ## AI 自动加载范围
@@ -58,6 +59,7 @@
 | `state/README.md` | 读写流水线状态或查看 schema 前 |
 | `archive/harness-cli/*` | 追述历史实现时，只读参考 |
 | `script/*` | 需要校验、同步技能、初始化项目或安装 hooks 时 |
+| GitHub Issue/PR 状态 | 处理 Issue、PR 关联或执行 `harness github sync` 前 |
 
 快速判断口诀：
 - 任务关键词命中“接口 / SQL / 权限 / Git / 部署 / 文档”时，先读对应规则和技能；

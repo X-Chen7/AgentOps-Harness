@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.3",
   "wip_limit": 1,
   "updated_at": "YYYY-MM-DD",
   "git_sync": {
@@ -23,6 +23,11 @@
       "sync_repos": [],
       "depends_on": [],
       "issue_id": "",
+      "issue_number": null,
+      "issue_url": "",
+      "pr_number": null,
+      "last_synced_at": "",
+      "github_updated_at": "",
       "acceptance": [
         "可验证的验收条件 1",
         "可验证的验收条件 2"
