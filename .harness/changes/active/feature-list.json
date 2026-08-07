@@ -198,7 +198,7 @@
             ],
             "sync_repos": [],
             "push_status": "none",
-            "status": "in_progress",
+            "status": "committed",
             "repo": "AgentOps-Harness",
             "branch": "feature/F-012",
             "issue_id": "",
@@ -226,9 +226,15 @@
                     "note": "CI/CD machine acceptance and PR gate in progress",
                     "by": "harness",
                     "at": "2026-08-07"
+                },
+                {
+                    "status": "committed",
+                    "at": "2026-08-07",
+                    "by": "harness-git",
+                    "note": "committed on feature/F-012"
                 }
             ],
-            "commit": ""
+            "commit": "e89fc2647a0a556cc97d0109c82e05be2cba043e"
         }
     ]
 }
