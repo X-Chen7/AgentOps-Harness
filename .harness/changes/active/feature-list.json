@@ -1,143 +1,186 @@
 {
-    "schema_version":  "1.2",
-    "wip_limit":  1,
-    "updated_at":  "2026-08-07",
-    "git_sync":  {
-                     "enabled":  true,
-                     "repo":  "AgentOps-Harness",
-                     "remote":  "https://github.com/X-Chen7/AgentOps-Harness"
-                 },
-    "features":  [
-                     {
-                         "id":  "F-009",
-                         "title":  "Pipeline state consistency check",
-                         "plan":  ".harness/changes/completed/archive/2026-08-07-pipeline-state-consistency-check.md",
-                         "status":  "merged",
-                         "owner":  "owner",
-                         "repo":  "AgentOps-Harness",
-                         "branch":  "feature/F-009",
-                         "commit":  "0cc8e7891656fcd34e99e4d38e6c451ebd8eed88",
-                         "push_status":  "merged",
-                         "pr_url":  "https://github.com/X-Chen7/AgentOps-Harness/pull/1",
-                         "remote_branch":  "feature/F-009",
-                         "sync_repos":  [
-
-                                        ],
-                         "depends_on":  [
-
-                                        ],
-                         "issue_id":  "",
-                         "acceptance":  [
-                                            "script/check.ps1 passes",
-                                            "Pipeline state done/blocked must match feature-list pipeline status"
-                                        ],
-                         "blocked_by":  [
-
-                                        ],
-                         "pipeline":  {
-                                          "status":  "done",
-                                          "artifacts":  [
-
-                                                        ],
-                                          "last_run":  ""
-                                      },
-                         "updated_at":  "2026-08-07",
-                         "history":  [
-                                         {
-                                             "status":  "todo",
-                                             "at":  "2026-08-07",
-                                             "by":  "harness",
-                                             "note":  "planned for desktop pipeline demo"
-                                         },
-                                         {
-                                             "status":  "committed",
-                                             "note":  "committed on feature/F-009",
-                                             "by":  "harness-git",
-                                             "at":  "2026-08-07"
-                                         },
-                                         {
-                                             "status":  "pushed",
-                                             "note":  "pushed to origin/feature/F-009",
-                                             "by":  "harness-git",
-                                             "at":  "2026-08-07"
-                                         },
-                                         {
-                                             "status":  "pushed",
-                                             "note":  "PR created: https://github.com/X-Chen7/AgentOps-Harness/pull/1",
-                                             "by":  "harness-git",
-                                             "at":  "2026-08-07"
-                                         },
-                                         {
-                                             "status":  "merged",
-                                             "note":  "merged via PR #1 (squash)",
-                                             "by":  "harness-git",
-                                             "at":  "2026-08-07"
-                                         }
-                                     ]
-                     },
-                     {
-                         "id":  "F-010",
-                         "owner":  "owner",
-                         "title":  "Executable pipeline: parallel DAG and collaboration mechanisms",
-                         "remote_branch":  "feature/F-010",
-                         "depends_on":  [
-                                            "F-009"
-                                        ],
-                         "sync_repos":  [
-
-                                        ],
-                         "push_status":  "merged",
-                         "commit":  "a953cc09218cc7d7cc64006f59e79a64ea62be2d",
-                         "history":  [
-                                         {
-                                             "status":  "todo",
-                                             "note":  "planned",
-                                             "by":  "harness",
-                                             "at":  "2026-08-07"
-                                         },
-                                         {
-                                             "status":  "committed",
-                                             "note":  "committed on feature/F-010",
-                                             "by":  "harness-git",
-                                             "at":  "2026-08-07"
-                                         },
-                                         {
-                                             "status":  "pushed",
-                                             "note":  "pushed to origin/feature/F-010",
-                                             "by":  "harness-git",
-                                             "at":  "2026-08-07"
-                                         },
-                                         {
-                                             "status":  "merged",
-                                             "note":  "merged via PR #2 (squash)",
-                                             "by":  "harness-git",
-                                             "at":  "2026-08-07"
-                                         }
-                                     ],
-                         "pipeline":  {
-                                          "status":  "not_started",
-                                          "artifacts":  [
-
-                                                        ],
-                                          "last_run":  ""
-                                      },
-                         "branch":  "feature/F-010",
-                         "acceptance":  [
-                                            "script/check.ps1 passes",
-                                            "parallel pipeline example validates",
-                                            "write_scope conflicts blocked",
-                                            "sticky wall and debate templates exist",
-                                            "active_stages schema 1.1 validates"
-                                        ],
-                         "repo":  "AgentOps-Harness",
-                         "issue_id":  "",
-                         "plan":  ".harness/changes/completed/archive/2026-08-07-parallel-dag-and-collab.md",
-                         "pr_url":  "https://github.com/X-Chen7/AgentOps-Harness/pull/2",
-                         "status":  "merged",
-                         "blocked_by":  [
-
-                                        ],
-                         "updated_at":  "2026-08-07"
-                     }
-                 ]
+    "schema_version": "1.2",
+    "wip_limit": 1,
+    "updated_at": "2026-08-07",
+    "git_sync": {
+        "enabled": true,
+        "repo": "AgentOps-Harness",
+        "remote": "https://github.com/X-Chen7/AgentOps-Harness"
+    },
+    "features": [
+        {
+            "id": "F-009",
+            "title": "Pipeline state consistency check",
+            "plan": ".harness/changes/completed/archive/2026-08-07-pipeline-state-consistency-check.md",
+            "status": "merged",
+            "owner": "owner",
+            "repo": "AgentOps-Harness",
+            "branch": "feature/F-009",
+            "commit": "0cc8e7891656fcd34e99e4d38e6c451ebd8eed88",
+            "push_status": "merged",
+            "pr_url": "https://github.com/X-Chen7/AgentOps-Harness/pull/1",
+            "remote_branch": "feature/F-009",
+            "sync_repos": [],
+            "depends_on": [],
+            "issue_id": "",
+            "acceptance": [
+                "script/check.ps1 passes",
+                "Pipeline state done/blocked must match feature-list pipeline status"
+            ],
+            "blocked_by": [],
+            "pipeline": {
+                "status": "done",
+                "artifacts": [],
+                "last_run": ""
+            },
+            "updated_at": "2026-08-07",
+            "history": [
+                {
+                    "status": "todo",
+                    "at": "2026-08-07",
+                    "by": "harness",
+                    "note": "planned for desktop pipeline demo"
+                },
+                {
+                    "status": "committed",
+                    "note": "committed on feature/F-009",
+                    "by": "harness-git",
+                    "at": "2026-08-07"
+                },
+                {
+                    "status": "pushed",
+                    "note": "pushed to origin/feature/F-009",
+                    "by": "harness-git",
+                    "at": "2026-08-07"
+                },
+                {
+                    "status": "pushed",
+                    "note": "PR created: https://github.com/X-Chen7/AgentOps-Harness/pull/1",
+                    "by": "harness-git",
+                    "at": "2026-08-07"
+                },
+                {
+                    "status": "merged",
+                    "note": "merged via PR #1 (squash)",
+                    "by": "harness-git",
+                    "at": "2026-08-07"
+                }
+            ]
+        },
+        {
+            "id": "F-010",
+            "owner": "owner",
+            "title": "Executable pipeline: parallel DAG and collaboration mechanisms",
+            "remote_branch": "feature/F-010",
+            "depends_on": [
+                "F-009"
+            ],
+            "sync_repos": [],
+            "push_status": "merged",
+            "commit": "a953cc09218cc7d7cc64006f59e79a64ea62be2d",
+            "history": [
+                {
+                    "status": "todo",
+                    "note": "planned",
+                    "by": "harness",
+                    "at": "2026-08-07"
+                },
+                {
+                    "status": "committed",
+                    "note": "committed on feature/F-010",
+                    "by": "harness-git",
+                    "at": "2026-08-07"
+                },
+                {
+                    "status": "pushed",
+                    "note": "pushed to origin/feature/F-010",
+                    "by": "harness-git",
+                    "at": "2026-08-07"
+                },
+                {
+                    "status": "merged",
+                    "note": "merged via PR #2 (squash)",
+                    "by": "harness-git",
+                    "at": "2026-08-07"
+                }
+            ],
+            "pipeline": {
+                "status": "not_started",
+                "artifacts": [],
+                "last_run": ""
+            },
+            "branch": "feature/F-010",
+            "acceptance": [
+                "script/check.ps1 passes",
+                "parallel pipeline example validates",
+                "write_scope conflicts blocked",
+                "sticky wall and debate templates exist",
+                "active_stages schema 1.1 validates"
+            ],
+            "repo": "AgentOps-Harness",
+            "issue_id": "",
+            "plan": ".harness/changes/completed/archive/2026-08-07-parallel-dag-and-collab.md",
+            "pr_url": "https://github.com/X-Chen7/AgentOps-Harness/pull/2",
+            "status": "merged",
+            "blocked_by": [],
+            "updated_at": "2026-08-07"
+        },
+        {
+            "id": "F-011",
+            "owner": "owner",
+            "title": "Migrate PowerShell toolchain to Python CLI",
+            "remote_branch": "feature/F-011",
+            "depends_on": [
+                "F-010"
+            ],
+            "sync_repos": [],
+            "push_status": "pushed",
+            "status": "pushed",
+            "repo": "AgentOps-Harness",
+            "branch": "feature/F-011",
+            "issue_id": "",
+            "plan": ".harness/changes/active/2026-08-07-python-cli-migration.md",
+            "pr_url": "https://github.com/X-Chen7/AgentOps-Harness/pull/3",
+            "acceptance": [
+                "pytest passes",
+                "harness check passes",
+                "PowerShell wrappers remain compatible",
+                "GitHub Actions CI added"
+            ],
+            "blocked_by": [],
+            "pipeline": {
+                "status": "not_started",
+                "artifacts": [],
+                "last_run": ""
+            },
+            "updated_at": "2026-08-07",
+            "history": [
+                {
+                    "status": "in_progress",
+                    "note": "migration in progress",
+                    "by": "harness",
+                    "at": "2026-08-07"
+                },
+                {
+                    "status": "committed",
+                    "at": "2026-08-07",
+                    "by": "harness-git",
+                    "note": "committed on feature/F-011"
+                },
+                {
+                    "status": "pushed",
+                    "at": "2026-08-07",
+                    "by": "harness-git",
+                    "note": "pushed to origin/feature/F-011"
+                },
+                {
+                    "status": "pushed",
+                    "at": "2026-08-07",
+                    "by": "harness-git",
+                    "note": "PR created: https://github.com/X-Chen7/AgentOps-Harness/pull/3"
+                }
+            ],
+            "commit": "31872065d7bf3cbe3e9df7584947eaf89b32585a"
+        }
+    ]
 }

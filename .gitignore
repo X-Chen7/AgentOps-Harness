@@ -17,3 +17,11 @@ docs/zread/
 
 # Temp
 _tmp_*.json
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+build/
+dist/
+*.egg-info/

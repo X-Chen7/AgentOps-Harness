@@ -5,7 +5,7 @@
 ## 文件说明
 
 - `AGENTS.md.template`：新项目智能体入口模板，包含文件定位、目录与知识索引、任务路由、修改边界、验证入口和禁止事项。
-- `script\harness-init.ps1`：一键初始化脚本，生成目标项目的 `.harness` 骨架和 `AGENTS.md`。
+- `script\harness-init.ps1`：一键初始化脚本，生成目标项目的 `.harness` 骨架和 `AGENTS.md`（Python 入口为 `harness init`）。
 
 ## 使用方式
 
@@ -13,6 +13,12 @@
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File script\harness-init.ps1 -Target C:\path\to\new-project -ProjectName my-project
+```
+
+等价 Python 入口：
+
+```bash
+python -m harness init --target C:\path\to\new-project --project-name my-project
 ```
 
 `-Target` 必填，`-ProjectName` 可选；未传时使用目标目录名。目标目录不存在时自动创建；目标目录已存在且已有 `AGENTS.md` 时跳过，不覆盖任何内容。
