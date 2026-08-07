@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-08-08",
+  "updated_at": "2026-08-07",
   "generated_by": "harness knowledge index",
   "entries": [
     {
@@ -6896,8 +6896,8 @@
       "section": null,
       "line_start": null,
       "line_end": null,
-      "file_hash": "93af1cb83e42b0ac283c87ef96aae9d9a055931b710de322fe32d333ee697fc9",
-      "content_hash": "93af1cb83e42b0ac283c87ef96aae9d9a055931b710de322fe32d333ee697fc9"
+      "file_hash": "17bac7991b6ee608dbaa212c949ccf042bfac9cb4319c7e9fc1ab67aa5bdc465",
+      "content_hash": "17bac7991b6ee608dbaa212c949ccf042bfac9cb4319c7e9fc1ab67aa5bdc465"
     }
   ]
 }
