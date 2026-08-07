@@ -334,7 +334,7 @@
             "branch": "feature/F-014",
             "issue_id": "",
             "plan": ".harness/changes/active/2026-08-08-knowledge-retrieval.md",
-            "pr_url": "",
+            "pr_url": "https://github.com/X-Chen7/AgentOps-Harness/pull/8",
             "acceptance": [
                 "harness knowledge index builds index.json",
                 "harness knowledge route/search/get/api/table works",
@@ -368,6 +368,12 @@
                     "at": "2026-08-08",
                     "by": "harness-git",
                     "note": "pushed to origin/feature/F-014"
+                },
+                {
+                    "status": "pushed",
+                    "at": "2026-08-08",
+                    "by": "harness-git",
+                    "note": "PR created: https://github.com/X-Chen7/AgentOps-Harness/pull/8"
                 }
             ],
             "commit": "7c207a201ea0b614c2b865b0e00212a9b7c18ab6"
