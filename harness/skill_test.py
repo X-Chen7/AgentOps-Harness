@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import shutil
 import subprocess
+import sys
 import tempfile
 import time
 from pathlib import Path
@@ -16,10 +17,16 @@ CHECK_TYPES = ("exit_code", "file_exists", "contains", "not_contains")
 RUN_TIMEOUT_SECONDS = 120
 
 
+def _normalize_command(command: str) -> str:
+    if command == "python" or command.startswith("python "):
+        return f'"{sys.executable}"' + command[len("python") :]
+    return command
+
+
 def _run_shell(command: str, cwd: Path) -> subprocess.CompletedProcess:
     try:
         return subprocess.run(
-            command,
+            _normalize_command(command),
             shell=True,
             cwd=str(cwd),
             capture_output=True,
