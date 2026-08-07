@@ -5,9 +5,9 @@
 ## 当前状态
 
 - 更新日期：2026-08-07
-- 当前任务：F-013 技能注册表 + 技能测试与评测（进行中）
-- 当前状态：`in_progress`
-- 最近验证：`python -m pytest -q` 39 passed；`harness skill validate / test / bench --compare` 通过
+- 当前任务：F-013 技能注册表 + 技能测试与评测（已完成）
+- 当前状态：`merged`（PR #5 已合并）
+- 最近验证：`python -m pytest -q` 53 passed；GitHub Actions lint / test / skills / dod / sql / backend 六项全绿；PR #5 squash 合并完成
 
 ## 已完成
 
@@ -25,15 +25,15 @@
 - F-010 可执行多智能体流水线增强：并行 DAG、写权仲裁、便签墙、debate 轻量版落地，schema 升级 1.1，负向验证通过。
 - F-011 PowerShell 工具链迁移到 Python CLI：Python CLI、pytest 测试、GitHub Actions CI 落地，PowerShell 降级为兼容包装，PR #3 squash 合并完成。
 - F-012 CI/CD 机器验收 + PR 门禁：`harness lint` / `dod` / `check --ci/--sql`、pre-commit/pre-push、GitHub Actions 五段检查、main 分支保护全部落地，PR #4 squash 合并完成。
-- F-013 技能注册表 + 技能测试与评测：skill.yaml 契约、fixtures 场景库、`harness skill validate/test/bench/record/promote`、CI skills job 已实现，等待对抗式审查与 PR 合入。
+- F-013 技能注册表 + 技能测试与评测：skill.yaml 契约、fixtures 场景库、`harness skill validate/test/bench/record/promote`、CI skills job 与分支保护落地，对抗式审查修复后 PR #5 squash 合并完成。
 
 ## 进行中
 
-- F-013 技能注册表 + 技能测试与评测：核心实现已通过本地验证，进行对抗式审查并修复问题。
+- 无进行中 feature（WIP=0）。
 
 ## 下一步
 
-- F-013：完成对抗式审查修复、全量验证、提交推送、创建 PR、等待 CI 全绿并合并。
+- 无进行中 feature（WIP=0）。
 - 后续新 feature 继续按 `analysis -> coding -> test -> review -> Git/PR` 流程执行。
 - 每次会话结束运行 `script/check.ps1` 并回填结果。
 - 同步更新 `changes/active/feature-list.json` 中的状态。
