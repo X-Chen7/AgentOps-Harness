@@ -86,8 +86,8 @@
                          "sync_repos":  [
 
                                         ],
-                         "push_status":  "pushed",
-                         "commit":  "536e56d0b69e2a41a0168f282c0b59a45bf46d9f",
+                         "push_status":  "merged",
+                         "commit":  "a953cc09218cc7d7cc64006f59e79a64ea62be2d",
                          "history":  [
                                          {
                                              "status":  "todo",
@@ -104,6 +104,12 @@
                                          {
                                              "status":  "pushed",
                                              "note":  "pushed to origin/feature/F-010",
+                                             "by":  "harness-git",
+                                             "at":  "2026-08-07"
+                                         },
+                                         {
+                                             "status":  "merged",
+                                             "note":  "merged via PR #2 (squash)",
                                              "by":  "harness-git",
                                              "at":  "2026-08-07"
                                          }
@@ -126,8 +132,8 @@
                          "repo":  "AgentOps-Harness",
                          "issue_id":  "",
                          "plan":  ".harness/changes/completed/archive/2026-08-07-parallel-dag-and-collab.md",
-                         "pr_url":  "",
-                         "status":  "pushed",
+                         "pr_url":  "https://github.com/X-Chen7/AgentOps-Harness/pull/2",
+                         "status":  "merged",
                          "blocked_by":  [
 
                                         ],
