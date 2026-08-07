@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 import shutil
 import sys
@@ -234,7 +235,7 @@ def run_check(root: Path, strict: bool = False) -> tuple[list[str], list[str]]:
                 branch = feature.get("branch")
                 if branch and not branch.startswith("未"):
                     branch_proc = run_cmd(["git", "rev-parse", "--verify", f"refs/heads/{branch}"], cwd=root)
-                    if branch_proc.returncode != 0:
+                    if branch_proc.returncode != 0 and os.environ.get("CI") != "true":
                         ctx.warning(f"Feature {feature_id} branch not found locally: {branch}")
             git_sync = features.get("git_sync")
             if git_sync and not git_sync.get("enabled"):
