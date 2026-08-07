@@ -30,6 +30,8 @@ def init_harness(root: Path, target: str, project_name: str = "") -> int:
         "changes/active",
         "changes/completed",
         "wiki",
+        "knowledge/api",
+        "knowledge/schema",
         "templates",
         "agents",
     )

@@ -62,6 +62,25 @@ jobs:
       - name: Skill benchmark
         run: harness skill bench --compare
 
+  knowledge:
+    if: github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+      - name: Knowledge check
+        run: harness knowledge check
+      - name: Knowledge benchmark
+        run: harness knowledge bench --compare
+
   dod:
     if: github.event_name != 'schedule'
     runs-on: ubuntu-latest

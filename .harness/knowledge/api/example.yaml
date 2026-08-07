@@ -1,0 +1,14 @@
+schema_version: "1.0"
+domain: example
+items:
+  - id: example-ping
+    name: 示例健康检查接口
+    method: GET
+    path: /example/ping
+    module: example
+    request: []
+    response:
+      - status
+    errors: []
+    docs_ref: ".harness/wiki/api-contract.md"
+    source_file: ""

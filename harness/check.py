@@ -9,6 +9,7 @@ from collections.abc import Sequence
 from pathlib import Path
 
 from .common import git_repo_available, read_text, run_cmd, sha256_file
+from .knowledge import knowledge_check
 from .sqlcheck import run_sql_check
 
 VALID_FEATURE_STATUSES = (
@@ -538,6 +539,9 @@ def run_check(root: Path, strict: bool = False) -> tuple[list[str], list[str]]:
             for dirpath in base.rglob(".obsidian"):
                 if dirpath.is_dir():
                     ctx.warning(f"Obsidian editor state found: {dirpath}")
+
+    for error in knowledge_check(root):
+        ctx.error(f"knowledge: {error}")
 
     return ctx.errors, ctx.warnings
 

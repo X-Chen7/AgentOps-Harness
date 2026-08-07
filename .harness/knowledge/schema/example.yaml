@@ -1,0 +1,18 @@
+schema_version: "1.0"
+items:
+  - id: example_account
+    table: example_account
+    module: example
+    fields:
+      - name: id
+        type: bigint
+        nullable: false
+        comment: 主键
+      - name: name
+        type: varchar(64)
+        nullable: false
+        comment: 名称
+    indexes: []
+    relations: []
+    docs_ref: ".harness/wiki/data-model.md"
+    source_file: ""

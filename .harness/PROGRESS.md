@@ -4,10 +4,10 @@
 
 ## 当前状态
 
-- 更新日期：2026-08-07
-- 当前任务：F-013 技能注册表 + 技能测试与评测（已完成）
-- 当前状态：`merged`（PR #5 已合并）
-- 最近验证：`python -m pytest -q` 53 passed；GitHub Actions lint / test / skills / dod / sql / backend 六项全绿；PR #5 squash 合并完成
+- 更新日期：2026-08-08
+- 当前任务：F-014 知识库检索化（进行中）
+- 当前状态：`in_progress`
+- 最近验证：`python -m pytest -q` 67 passed；`harness knowledge bench` 8/8；ruoyi 真实项目索引 783 条目、接口 147、表 89
 
 ## 已完成
 
@@ -29,11 +29,11 @@
 
 ## 进行中
 
-- 无进行中 feature（WIP=0）。
+- F-014 知识库检索化：knowledge 索引、route/search/get/api/table、结构化事实与提取器、check/bench、CI knowledge job 已实现，待 PR 合并与分支保护收尾。
 
 ## 下一步
 
-- 无进行中 feature（WIP=0）。
+- F-014 按 PR 流程合并，新增 `knowledge` required check，完成后更新本文档和 `4. 知识库检索化` 文档。
 - 后续新 feature 继续按 `analysis -> coding -> test -> review -> Git/PR` 流程执行。
 - 每次会话结束运行 `script/check.ps1` 并回填结果。
 - 同步更新 `changes/active/feature-list.json` 中的状态。

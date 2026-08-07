@@ -1,7 +1,7 @@
 {
     "schema_version": "1.2",
     "wip_limit": 1,
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "git_sync": {
         "enabled": true,
         "repo": "AgentOps-Harness",
@@ -318,6 +318,65 @@
                 }
             ],
             "commit": "f39d73864c0aef2dded2668617b7ea461b19c3bc"
+        },
+        {
+            "id": "F-014",
+            "owner": "owner",
+            "title": "Knowledge retrieval: structured index and targeted lookup",
+            "remote_branch": "feature/F-014",
+            "depends_on": [
+                "F-013"
+            ],
+            "sync_repos": [],
+            "push_status": "pushed",
+            "status": "pushed",
+            "repo": "AgentOps-Harness",
+            "branch": "feature/F-014",
+            "issue_id": "",
+            "plan": ".harness/changes/active/2026-08-08-knowledge-retrieval.md",
+            "pr_url": "https://github.com/X-Chen7/AgentOps-Harness/pull/8",
+            "acceptance": [
+                "harness knowledge index builds index.json",
+                "harness knowledge route/search/get/api/table works",
+                "harness knowledge check detects stale/missing/broken index",
+                "harness knowledge bench --save/--compare passes 8 cases",
+                "GitHub Actions knowledge job is a required check",
+                "ruoyi real project validates index, api facts and table facts"
+            ],
+            "blocked_by": [],
+            "pipeline": {
+                "status": "not_started",
+                "artifacts": [],
+                "last_run": ""
+            },
+            "updated_at": "2026-08-08",
+            "history": [
+                {
+                    "status": "in_progress",
+                    "at": "2026-08-08",
+                    "by": "harness",
+                    "note": "knowledge retrieval implementation in progress"
+                },
+                {
+                    "status": "committed",
+                    "at": "2026-08-08",
+                    "by": "harness-git",
+                    "note": "committed on feature/F-014"
+                },
+                {
+                    "status": "pushed",
+                    "at": "2026-08-08",
+                    "by": "harness-git",
+                    "note": "pushed to origin/feature/F-014"
+                },
+                {
+                    "status": "pushed",
+                    "at": "2026-08-08",
+                    "by": "harness-git",
+                    "note": "PR created: https://github.com/X-Chen7/AgentOps-Harness/pull/8"
+                }
+            ],
+            "commit": "7c207a201ea0b614c2b865b0e00212a9b7c18ab6"
         }
     ]
 }

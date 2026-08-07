@@ -10,6 +10,7 @@
 - 变更与 Git 协作：`.harness/changes/` + `.harness/rules/git-workflow.md` + `script/sync-changes.ps1`
 - 多智能体流水线：`.harness/pipelines/desktop-pipeline.json` + `.harness/agents/pipeline/` + `.harness/pipelines/desktop-coordinator.md`
 - 项目知识：`.harness/wiki/`（初始化新项目时按需补充）
+- 知识检索：`.harness/knowledge/` + `harness knowledge route/search/get/api/table`
 - 归档：`.harness/archive/harness-cli/`
 
 ## AI 自动加载范围
@@ -43,6 +44,8 @@
 | `rules/documentation-change-rule.md` | 要更新接口、枚举、前端对接或设计文档前 |
 | `rules/requirement-alignment-rule.md` | 需求不清晰、L3/L4、设计纠偏、跨模块方案前 |
 | `skills/<名称>/SKILL.md` | 任务命中该技能描述，进入对应执行步骤时 |
+| `.harness/knowledge/index.json` | 任务开始、检索命中后定位知识片段时 |
+| `.harness/knowledge/api/`、`.harness/knowledge/schema/` | 查询接口路径、表字段等结构化事实时 |
 | `changes/active/feature-list.json` | 每个任务开始时和每次状态变化时（建议每次会话必读） |
 | `changes/active/*.md` | 任务有对应执行计划，需要确认步骤和验收条件时 |
 | `changes/completed/*`、`INDEX.md` | 参考历史实现、复用旧方案或归档前 |
@@ -58,6 +61,7 @@
 
 快速判断口诀：
 - 任务关键词命中“接口 / SQL / 权限 / Git / 部署 / 文档”时，先读对应规则和技能；
+- 不确定该读哪个文件时，先执行 `harness knowledge route "<任务>"`，命中后用 `harness knowledge get <id>` 读片段，不要整篇盲读；
 - 任务涉及“能不能做”先读规则，涉及“怎么做”先读技能，涉及“做到哪”先读 changes，涉及“事实是什么”先读 wiki；
 - 不确定先读 `.harness/README.md` 的知识坐标，再按上表定位；
 - 读之前先确认文件存在，读取后把结论写进交付说明，不把关键规则只放在聊天记忆里。

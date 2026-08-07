@@ -31,3 +31,12 @@
 ## 技能评测
 
 基准任务验证 Harness 整体价值，技能 fixtures 验证单个技能是否可用、改动是否回归。基准结果与技能评测结果分开记录：前者衡量完整流程收益，后者作为技能开发和回归检查的输入。
+
+## 知识检索评测
+
+`.harness/benchmarks/knowledge/cases.json` 定义“问题 -> 期望知识条目”的检索用例，覆盖 route / search / api / table 四类查询。
+
+```bash
+python -m harness knowledge bench --save      # 保存当前检索效果为基线
+python -m harness knowledge bench --compare   # 检测召回率下降或用例被删
+```

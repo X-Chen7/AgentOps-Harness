@@ -23,6 +23,12 @@ python -m harness sync --push-gate       # Git push 前门禁
 python -m harness skill validate         # 校验技能契约
 python -m harness skill test             # 运行技能 fixtures
 python -m harness skill bench --compare  # 技能基准回归对比
+python -m harness knowledge index        # 重建知识索引
+python -m harness knowledge route "接口 字段 规则"  # 任务路由到知识片段
+python -m harness knowledge api /oauth2/token      # 精确查接口事实
+python -m harness knowledge table platform_core_org  # 精确查表结构
+python -m harness knowledge check        # 校验知识索引新鲜度
+python -m harness knowledge bench --compare  # 知识检索基准回归
 python -m harness commit --feature F-009
 python -m harness push --feature F-009
 python -m harness pr --feature F-009

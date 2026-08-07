@@ -17,6 +17,7 @@
 - 变更：`.harness/changes/`
 - 状态：`.harness/PROGRESS.md` + `.harness/changes/active/feature-list.json`
 - 知识：`.harness/wiki/`
+- 知识检索：`.harness/knowledge/` + `harness knowledge route/get/api/table`
 
 ## 3. 当前项目实例化索引
 

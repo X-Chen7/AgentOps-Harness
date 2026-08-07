@@ -5,6 +5,8 @@
 ```bash
 python -m harness check          # Harness 与快速检查（推荐）
 python -m harness check --backend # 包含后端模块测试和服务打包（需 Maven 工程）
+python -m harness knowledge check  # 校验知识索引新鲜度、覆盖和断链
+python -m harness knowledge bench --compare  # 知识检索基准回归
 script/check.ps1              # Harness 与快速检查
 script/check.ps1 -Backend     # 包含后端模块测试和服务打包（需 Maven 工程）
 ```

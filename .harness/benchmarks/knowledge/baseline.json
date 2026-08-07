@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-08-08",
+  "summary": {
+    "cases": 8,
+    "passed": 8,
+    "failed": 0,
+    "pass_rate": 1.0,
+    "duration": 0.032
+  },
+  "results": [
+    {
+      "id": "kb-001",
+      "ok": true,
+      "mode": "route",
+      "candidates": [
+        "rule:.harness/rules/git-workflow.md#4-推送与-pr",
+        "rule:.harness/rules/git-workflow.md#6-非-git-目录降级",
+        "rule:.harness/rules/git-workflow.md#harness-rules-git-workflow-md"
+      ],
+      "expected": [
+        "rule:.harness/rules/git-workflow.md"
+      ],
+      "errors": []
+    },
+    {
+      "id": "kb-002",
+      "ok": true,
+      "mode": "route",
+      "candidates": [
+        "rule:.harness/rules/sql-and-migration.md#2-sql-目录规则",
+        "rule:.harness/rules/sql-and-migration.md#harness-rules-sql-and-migration-md",
+        "rule:.harness/rules/sql-and-migration.md#1-文件定位"
+      ],
+      "expected": [
+        "rule:.harness/rules/sql-and-migration.md"
+      ],
+      "errors": []
+    },
+    {
+      "id": "kb-003",
+      "ok": true,
+      "mode": "route",
+      "candidates": [
+        "context:.harness/wiki/README.md#项目知识-wiki",
+        "example-ping"
+      ],
+      "expected": [
+        "context:.harness/wiki/README.md"
+      ],
+      "errors": []
+    },
+    {
+      "id": "kb-004",
+      "ok": true,
+      "mode": "route",
+      "candidates": [
+        "state:.harness/changes/active/feature-list.json"
+      ],
+      "expected": [
+        "state:.harness/changes/active/feature-list.json"
+      ],
+      "errors": []
+    },
+    {
+      "id": "kb-005",
+      "ok": true,
+      "mode": "api",
+      "candidates": [
+        "example-ping"
+      ],
+      "expected": [
+        "example-ping"
+      ],
+      "errors": []
+    },
+    {
+      "id": "kb-006",
+      "ok": true,
+      "mode": "table",
+      "candidates": [
+        "example_account"
+      ],
+      "expected": [
+        "example_account"
+      ],
+      "errors": []
+    },
+    {
+      "id": "kb-007",
+      "ok": true,
+      "mode": "search",
+      "candidates": [
+        "rule:.harness/rules/coding-standard.md#1-文件定位",
+        "rule:.harness/rules/coding-standard.md#10-禁止事项",
+        "rule:.harness/rules/coding-standard.md#2-java-基本规范",
+        "rule:.harness/rules/coding-standard.md#3-分层和命名",
+        "rule:.harness/rules/coding-standard.md#4-1-基本要求"
+      ],
+      "expected": [
+        "rule:.harness/rules/coding-standard.md"
+      ],
+      "errors": []
+    },
+    {
+      "id": "kb-008",
+      "ok": true,
+      "mode": "route",
+      "candidates": [
+        "rule:.harness/rules/requirement-alignment-rule.md#1-文件定位",
+        "rule:.harness/rules/requirement-alignment-rule.md#2-强制对齐原则",
+        "rule:.harness/rules/requirement-alignment-rule.md#3-需求章节引用要求"
+      ],
+      "expected": [
+        "rule:.harness/rules/requirement-alignment-rule.md"
+      ],
+      "errors": []
+    }
+  ]
+}

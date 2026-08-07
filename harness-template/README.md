@@ -25,7 +25,7 @@ python -m harness init --target C:\path\to\new-project --project-name my-project
 
 初始化完成后，项目根目录会包含：
 
-- `.harness\` 骨架目录：`rules`、`skills`、`changes\active`、`changes\completed`、`wiki`、`templates`、`agents`
+- `.harness\` 骨架目录：`rules`、`skills`、`changes\active`、`changes\completed`、`wiki`、`knowledge`、`templates`、`agents`
 - `AGENTS.md`：由模板生成，`{{PROJECT_NAME}}` 已替换，`{{PROJECT_DESC}}`、`{{ENABLED_MODULES}}` 保留为 `TODO` 标记，需项目实例化时填写。
 
 ## 可复用内容
@@ -42,7 +42,7 @@ python -m harness init --target C:\path\to\new-project --project-name my-project
 - 具体规则：`.harness\rules\`（编码、Git、SQL、文档等）
 - 具体技能：`.harness\skills\`
 - 状态与变更：`.harness\changes\active\feature-list.json`、`changes\completed\INDEX.md`
-- 项目知识：`.harness\wiki\`
+- 项目知识：`.harness\wiki\` + `.harness\knowledge\`（用 `harness knowledge index` 生成索引）
 - 项目验证脚本：`script\check.ps1`
 
 ## 边界

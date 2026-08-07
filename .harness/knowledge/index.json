@@ -1,0 +1,6867 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-08-08",
+  "generated_by": "harness knowledge index",
+  "entries": [
+    {
+      "id": "context:.harness/wiki/README.md#项目知识-wiki",
+      "kind": "context",
+      "file": ".harness/wiki/README.md",
+      "title": "项目知识（wiki）",
+      "summary": "项目知识（wiki）",
+      "keywords": [
+        "项目知识",
+        "wiki",
+        "项目知识",
+        "wiki",
+        "README"
+      ],
+      "routes": [
+        "readme",
+        "项目知识",
+        "wiki"
+      ],
+      "section": "项目知识（wiki）",
+      "line_start": 1,
+      "line_end": 12,
+      "file_hash": "e85f1839ff1d5f6cacc8be5002570ada2f06315168240e465b6d6e8f39b8a9ec",
+      "content_hash": "1dc25b353780541692d13bcf5edf932697b2527e1bb178a717556187ca6e5538"
+    },
+    {
+      "id": "context:AGENTS.d/00-common.md#ai-自动加载范围",
+      "kind": "context",
+      "file": "AGENTS.d/00-common.md",
+      "title": "AI 自动加载范围",
+      "summary": "AI 自动加载范围",
+      "keywords": [
+        "AI",
+        "自动加载范围",
+        "AI",
+        "自动加载范围",
+        "00",
+        "common"
+      ],
+      "routes": [
+        "00-common",
+        "ai",
+        "自动加载范围"
+      ],
+      "section": "AI 自动加载范围",
+      "line_start": 16,
+      "line_end": 31,
+      "file_hash": "600b53b5706a8a8367e0ae20121491eabc6ca01fad795aa5f647342af525aeb4",
+      "content_hash": "725c71ef95e1b0bc157c6c2fb815ba1761f9f9f7433078ff04ae24e12f47445b"
+    },
+    {
+      "id": "context:AGENTS.d/00-common.md#常用入口",
+      "kind": "context",
+      "file": "AGENTS.d/00-common.md",
+      "title": "常用入口",
+      "summary": "常用入口",
+      "keywords": [
+        "常用入口",
+        "常用入口",
+        "00",
+        "common"
+      ],
+      "routes": [
+        "00-common",
+        "常用入口"
+      ],
+      "section": "常用入口",
+      "line_start": 3,
+      "line_end": 15,
+      "file_hash": "600b53b5706a8a8367e0ae20121491eabc6ca01fad795aa5f647342af525aeb4",
+      "content_hash": "d18331c823af1ee3f11a50d81745e15b68936dbecda733a4fc3607631bb5102c"
+    },
+    {
+      "id": "context:AGENTS.d/00-common.md#按需读取判定",
+      "kind": "context",
+      "file": "AGENTS.d/00-common.md",
+      "title": "按需读取判定",
+      "summary": "按需读取判定",
+      "keywords": [
+        "按需读取判定",
+        "按需读取判定",
+        "00",
+        "common"
+      ],
+      "routes": [
+        "00-common",
+        "按需读取判定"
+      ],
+      "section": "按需读取判定",
+      "line_start": 32,
+      "line_end": 67,
+      "file_hash": "600b53b5706a8a8367e0ae20121491eabc6ca01fad795aa5f647342af525aeb4",
+      "content_hash": "f31d417f6733af29d3226c5509e3858db70344a012c0527971fb508fc2c9dd58"
+    },
+    {
+      "id": "context:AGENTS.d/00-common.md#目录与知识索引",
+      "kind": "context",
+      "file": "AGENTS.d/00-common.md",
+      "title": "目录与知识索引",
+      "summary": "目录与知识索引",
+      "keywords": [
+        "目录与知识索引",
+        "目录与知识索引",
+        "00",
+        "common"
+      ],
+      "routes": [
+        "00-common",
+        "目录与知识索引"
+      ],
+      "section": "目录与知识索引",
+      "line_start": 1,
+      "line_end": 2,
+      "file_hash": "600b53b5706a8a8367e0ae20121491eabc6ca01fad795aa5f647342af525aeb4",
+      "content_hash": "5af868562981a2adcf2197f0e9b8661e34b93a99e620b2f62a3258e2b685cb04"
+    },
+    {
+      "id": "context:AGENTS.d/01-boundaries.md#修改边界",
+      "kind": "context",
+      "file": "AGENTS.d/01-boundaries.md",
+      "title": "修改边界",
+      "summary": "修改边界",
+      "keywords": [
+        "修改边界",
+        "修改边界",
+        "01",
+        "boundaries"
+      ],
+      "routes": [
+        "01-boundaries",
+        "修改边界"
+      ],
+      "section": "修改边界",
+      "line_start": 1,
+      "line_end": 11,
+      "file_hash": "a5a6c5b913b5be5ad7ee6f1dc0678c785deb3e522193b4b5f2d0633b7b9caac5",
+      "content_hash": "6b8326ef013dac1728c19c73bd88b2188e76ba54cb10107182b611e1b3d3ffd3"
+    },
+    {
+      "id": "context:AGENTS.d/01-boundaries.md#禁止事项",
+      "kind": "context",
+      "file": "AGENTS.d/01-boundaries.md",
+      "title": "禁止事项",
+      "summary": "禁止事项",
+      "keywords": [
+        "禁止事项",
+        "禁止事项",
+        "01",
+        "boundaries"
+      ],
+      "routes": [
+        "01-boundaries",
+        "禁止事项"
+      ],
+      "section": "禁止事项",
+      "line_start": 12,
+      "line_end": 20,
+      "file_hash": "a5a6c5b913b5be5ad7ee6f1dc0678c785deb3e522193b4b5f2d0633b7b9caac5",
+      "content_hash": "3a91f2438bea1d15099d317f6bbc40ca2505f99acc6f6268c089262ad12ee650"
+    },
+    {
+      "id": "context:AGENTS.d/02-verification.md#agent-工作流程",
+      "kind": "context",
+      "file": "AGENTS.d/02-verification.md",
+      "title": "Agent 工作流程",
+      "summary": "Agent 工作流程",
+      "keywords": [
+        "Agent",
+        "工作流程",
+        "Agent",
+        "工作流程",
+        "02",
+        "verification"
+      ],
+      "routes": [
+        "02-verification",
+        "agent",
+        "工作流程"
+      ],
+      "section": "Agent 工作流程",
+      "line_start": 14,
+      "line_end": 24,
+      "file_hash": "23bee15a4a3a3023d4563589b56744ecca8a3bd780a8ca1e7600ded83201c70a",
+      "content_hash": "41766ada9678ae7227166ebe05795a125ed15514d7f5abd4e160e4b59217d645"
+    },
+    {
+      "id": "context:AGENTS.d/02-verification.md#验证入口",
+      "kind": "context",
+      "file": "AGENTS.d/02-verification.md",
+      "title": "验证入口",
+      "summary": "验证入口",
+      "keywords": [
+        "验证入口",
+        "验证入口",
+        "02",
+        "verification"
+      ],
+      "routes": [
+        "02-verification",
+        "验证入口"
+      ],
+      "section": "验证入口",
+      "line_start": 1,
+      "line_end": 13,
+      "file_hash": "23bee15a4a3a3023d4563589b56744ecca8a3bd780a8ca1e7600ded83201c70a",
+      "content_hash": "d74eb4f3821899b38286ef3f72c1d8bef040ffbf008456bd101f68ef5a81b513"
+    },
+    {
+      "id": "context:AGENTS.md#1-文件定位",
+      "kind": "context",
+      "file": "AGENTS.md",
+      "title": "1. 文件定位",
+      "summary": "1. 文件定位",
+      "keywords": [
+        "1.",
+        "文件定位",
+        "1.",
+        "文件定位",
+        "AGENTS"
+      ],
+      "routes": [
+        "agents",
+        "1.",
+        "文件定位"
+      ],
+      "section": "1. 文件定位",
+      "line_start": 3,
+      "line_end": 14,
+      "file_hash": "fe85cf6370e5f0d064f7fa74c1563d1545714d30d631ca54a866a1778e377787",
+      "content_hash": "92deb0ffbcafc30c2fd25d0b23bce26d9e77d820650d09757a6219adea038ae8"
+    },
+    {
+      "id": "context:AGENTS.md#2-目录与知识索引",
+      "kind": "context",
+      "file": "AGENTS.md",
+      "title": "2. 目录与知识索引",
+      "summary": "2. 目录与知识索引",
+      "keywords": [
+        "2.",
+        "目录与知识索引",
+        "2.",
+        "目录与知识索引",
+        "AGENTS"
+      ],
+      "routes": [
+        "agents",
+        "2.",
+        "目录与知识索引"
+      ],
+      "section": "2. 目录与知识索引",
+      "line_start": 15,
+      "line_end": 18,
+      "file_hash": "fe85cf6370e5f0d064f7fa74c1563d1545714d30d631ca54a866a1778e377787",
+      "content_hash": "ccdf59fb256220e87c0faad1861a6be876d500ee9d65c8fc38bc6870d267ca7c"
+    },
+    {
+      "id": "context:AGENTS.md#3-修改边界与禁止事项",
+      "kind": "context",
+      "file": "AGENTS.md",
+      "title": "3. 修改边界与禁止事项",
+      "summary": "3. 修改边界与禁止事项",
+      "keywords": [
+        "3.",
+        "修改边界与禁止事项",
+        "3.",
+        "修改边界与禁止事项",
+        "AGENTS"
+      ],
+      "routes": [
+        "agents",
+        "3.",
+        "修改边界与禁止事项"
+      ],
+      "section": "3. 修改边界与禁止事项",
+      "line_start": 19,
+      "line_end": 22,
+      "file_hash": "fe85cf6370e5f0d064f7fa74c1563d1545714d30d631ca54a866a1778e377787",
+      "content_hash": "f4182454099bf462c47e6b004dc38bff29b8d8cc68bd5beec174802aa62299f6"
+    },
+    {
+      "id": "context:AGENTS.md#4-验证与工作流程",
+      "kind": "context",
+      "file": "AGENTS.md",
+      "title": "4. 验证与工作流程",
+      "summary": "4. 验证与工作流程",
+      "keywords": [
+        "4.",
+        "验证与工作流程",
+        "4.",
+        "验证与工作流程",
+        "AGENTS"
+      ],
+      "routes": [
+        "agents",
+        "4.",
+        "验证与工作流程"
+      ],
+      "section": "4. 验证与工作流程",
+      "line_start": 23,
+      "line_end": 25,
+      "file_hash": "fe85cf6370e5f0d064f7fa74c1563d1545714d30d631ca54a866a1778e377787",
+      "content_hash": "b5a0d8fb94e70f494f1d63bbf43ebde5654ed063d63a92f9472057a89eda5a22"
+    },
+    {
+      "id": "context:AGENTS.md#agents-md",
+      "kind": "context",
+      "file": "AGENTS.md",
+      "title": "AGENTS.md",
+      "summary": "AGENTS.md",
+      "keywords": [
+        "AGENTS.md",
+        "AGENTS.md",
+        "AGENTS"
+      ],
+      "routes": [
+        "agents",
+        "agents.md"
+      ],
+      "section": "AGENTS.md",
+      "line_start": 1,
+      "line_end": 2,
+      "file_hash": "fe85cf6370e5f0d064f7fa74c1563d1545714d30d631ca54a866a1778e377787",
+      "content_hash": "bc7f4408a2f9386558ff4bbb3e43856b516cb873c9df4c40eecd9c8e8f7c4e1b"
+    },
+    {
+      "id": "example-ping",
+      "kind": "api",
+      "file": ".harness/knowledge/api/example.yaml",
+      "title": "示例健康检查接口",
+      "summary": "GET /example/ping",
+      "keywords": [
+        "example",
+        "ping",
+        "示例健康检查接口",
+        "GET",
+        "example",
+        "ping",
+        ".harness",
+        "knowledge",
+        "api",
+        "example.yaml"
+      ],
+      "routes": [
+        "example-ping",
+        "示例健康检查接口",
+        "/example/ping"
+      ],
+      "section": null,
+      "line_start": null,
+      "line_end": null,
+      "file_hash": "850e41bd114816521a786515e5ab239e6aa99430ba9f25711de28a5c66c6730b",
+      "content_hash": "2901d61ecd2bc082a00ae1b94910e1e605f2e061b5d5d50c1d94c584ba1fac18"
+    },
+    {
+      "id": "example_account",
+      "kind": "schema",
+      "file": ".harness/knowledge/schema/example.yaml",
+      "title": "example_account",
+      "summary": "表 example_account",
+      "keywords": [
+        "example",
+        "account",
+        "example",
+        "account",
+        "example",
+        "account",
+        ".harness",
+        "knowledge",
+        "schema",
+        "example.yaml"
+      ],
+      "routes": [
+        "example_account",
+        "example_account",
+        "example_account"
+      ],
+      "section": null,
+      "line_start": null,
+      "line_end": null,
+      "file_hash": "4ba559d8ff618262b39f8123142b36b3c349a079b4d8619665cfdcd960bc0328",
+      "content_hash": "e63087a52c73e374635cc6d6cd927ce074f71a79417d3886e8d945a1f280c7e4"
+    },
+    {
+      "id": "rule:.harness/rules/backend-module-boundary.md#1-文件定位",
+      "kind": "rule",
+      "file": ".harness/rules/backend-module-boundary.md",
+      "title": "1. 文件定位",
+      "summary": "1. 文件定位",
+      "keywords": [
+        "1.",
+        "文件定位",
+        "1.",
+        "文件定位",
+        "backend",
+        "module",
+        "boundary"
+      ],
+      "routes": [
+        "backend-module-boundary",
+        "模块边界",
+        "module",
+        "依赖",
+        "1.",
+        "文件定位"
+      ],
+      "section": "1. 文件定位",
+      "line_start": 3,
+      "line_end": 6,
+      "file_hash": "8641c5b37acc61d731797daadb6386ec23fc98534419a0f9dc43a8af91041d23",
+      "content_hash": "f980305aee1e4f4580c85da1271e636917be295cc8673b0eed66670126221498"
+    },
+    {
+      "id": "rule:.harness/rules/backend-module-boundary.md#2-总体原则",
+      "kind": "rule",
+      "file": ".harness/rules/backend-module-boundary.md",
+      "title": "2. 总体原则",
+      "summary": "2. 总体原则",
+      "keywords": [
+        "2.",
+        "总体原则",
+        "2.",
+        "总体原则",
+        "backend",
+        "module",
+        "boundary"
+      ],
+      "routes": [
+        "backend-module-boundary",
+        "模块边界",
+        "module",
+        "依赖",
+        "2.",
+        "总体原则"
+      ],
+      "section": "2. 总体原则",
+      "line_start": 7,
+      "line_end": 14,
+      "file_hash": "8641c5b37acc61d731797daadb6386ec23fc98534419a0f9dc43a8af91041d23",
+      "content_hash": "ecd3eac06a6b685b86c31f1b3960ab4f19bc7c074369f7d19ad60c8686a2c8e2"
+    },
+    {
+      "id": "rule:.harness/rules/backend-module-boundary.md#3-模块职责",
+      "kind": "rule",
+      "file": ".harness/rules/backend-module-boundary.md",
+      "title": "3. 模块职责",
+      "summary": "3. 模块职责",
+      "keywords": [
+        "3.",
+        "模块职责",
+        "3.",
+        "模块职责",
+        "backend",
+        "module",
+        "boundary"
+      ],
+      "routes": [
+        "backend-module-boundary",
+        "模块边界",
+        "module",
+        "依赖",
+        "3.",
+        "模块职责"
+      ],
+      "section": "3. 模块职责",
+      "line_start": 15,
+      "line_end": 24,
+      "file_hash": "8641c5b37acc61d731797daadb6386ec23fc98534419a0f9dc43a8af91041d23",
+      "content_hash": "5029c78116aa875bdb4a76f3ea93944654a149d03a0768dcac3cd08ee64510bf"
+    },
+    {
+      "id": "rule:.harness/rules/backend-module-boundary.md#4-修改边界",
+      "kind": "rule",
+      "file": ".harness/rules/backend-module-boundary.md",
+      "title": "4. 修改边界",
+      "summary": "4. 修改边界",
+      "keywords": [
+        "4.",
+        "修改边界",
+        "4.",
+        "修改边界",
+        "backend",
+        "module",
+        "boundary"
+      ],
+      "routes": [
+        "backend-module-boundary",
+        "模块边界",
+        "module",
+        "依赖",
+        "4.",
+        "修改边界"
+      ],
+      "section": "4. 修改边界",
+      "line_start": 25,
+      "line_end": 31,
+      "file_hash": "8641c5b37acc61d731797daadb6386ec23fc98534419a0f9dc43a8af91041d23",
+      "content_hash": "5d9020a9c0b8db1ce2bc9f34410df54edb7fd190c12050965f737c438feb6051"
+    },
+    {
+      "id": "rule:.harness/rules/backend-module-boundary.md#5-跨模块调用",
+      "kind": "rule",
+      "file": ".harness/rules/backend-module-boundary.md",
+      "title": "5. 跨模块调用",
+      "summary": "5. 跨模块调用",
+      "keywords": [
+        "5.",
+        "跨模块调用",
+        "5.",
+        "跨模块调用",
+        "backend",
+        "module",
+        "boundary"
+      ],
+      "routes": [
+        "backend-module-boundary",
+        "模块边界",
+        "module",
+        "依赖",
+        "5.",
+        "跨模块调用"
+      ],
+      "section": "5. 跨模块调用",
+      "line_start": 32,
+      "line_end": 38,
+      "file_hash": "8641c5b37acc61d731797daadb6386ec23fc98534419a0f9dc43a8af91041d23",
+      "content_hash": "13e6816f5dfb4192c410c49782656aa50ef90a97f3a5ba09100fbb20acf66df9"
+    },
+    {
+      "id": "rule:.harness/rules/backend-module-boundary.md#6-禁止事项",
+      "kind": "rule",
+      "file": ".harness/rules/backend-module-boundary.md",
+      "title": "6. 禁止事项",
+      "summary": "6. 禁止事项",
+      "keywords": [
+        "6.",
+        "禁止事项",
+        "6.",
+        "禁止事项",
+        "backend",
+        "module",
+        "boundary"
+      ],
+      "routes": [
+        "backend-module-boundary",
+        "模块边界",
+        "module",
+        "依赖",
+        "6.",
+        "禁止事项"
+      ],
+      "section": "6. 禁止事项",
+      "line_start": 39,
+      "line_end": 45,
+      "file_hash": "8641c5b37acc61d731797daadb6386ec23fc98534419a0f9dc43a8af91041d23",
+      "content_hash": "096c972847d11a0ee2a53c219c5fc9b4fe1056578331217412f0e241423265d7"
+    },
+    {
+      "id": "rule:.harness/rules/backend-module-boundary.md#7-检查清单",
+      "kind": "rule",
+      "file": ".harness/rules/backend-module-boundary.md",
+      "title": "7. 检查清单",
+      "summary": "7. 检查清单",
+      "keywords": [
+        "7.",
+        "检查清单",
+        "7.",
+        "检查清单",
+        "backend",
+        "module",
+        "boundary"
+      ],
+      "routes": [
+        "backend-module-boundary",
+        "模块边界",
+        "module",
+        "依赖",
+        "7.",
+        "检查清单"
+      ],
+      "section": "7. 检查清单",
+      "line_start": 46,
+      "line_end": 54,
+      "file_hash": "8641c5b37acc61d731797daadb6386ec23fc98534419a0f9dc43a8af91041d23",
+      "content_hash": "1f51579b86b685d487032b6dc330c39d85efe703b621d29eddf0b5bf01fef970"
+    },
+    {
+      "id": "rule:.harness/rules/backend-module-boundary.md#harness-rules-backend-module-boundary-md",
+      "kind": "rule",
+      "file": ".harness/rules/backend-module-boundary.md",
+      "title": ".harness/rules/backend-module-boundary.md",
+      "summary": ".harness/rules/backend-module-boundary.md",
+      "keywords": [
+        ".harness",
+        "rules",
+        "backend",
+        "module",
+        "boundary.md",
+        ".harness",
+        "rules",
+        "backend",
+        "module",
+        "boundary.md",
+        "backend",
+        "module"
+      ],
+      "routes": [
+        "backend-module-boundary",
+        "模块边界",
+        "module",
+        "依赖",
+        ".harness",
+        "rules",
+        "backend",
+        "boundary.md"
+      ],
+      "section": ".harness/rules/backend-module-boundary.md",
+      "line_start": 1,
+      "line_end": 2,
+      "file_hash": "8641c5b37acc61d731797daadb6386ec23fc98534419a0f9dc43a8af91041d23",
+      "content_hash": "18192c8a7bb6072b16bab33177f80a9d838341c2b9517978fd94782e5a201e42"
+    },
+    {
+      "id": "rule:.harness/rules/coding-standard.md#1-文件定位",
+      "kind": "rule",
+      "file": ".harness/rules/coding-standard.md",
+      "title": "1. 文件定位",
+      "summary": "1. 文件定位",
+      "keywords": [
+        "1.",
+        "文件定位",
+        "1.",
+        "文件定位",
+        "coding",
+        "standard"
+      ],
+      "routes": [
+        "coding-standard",
+        "编码",
+        "coding",
+        "代码",
+        "规范",
+        "1.",
+        "文件定位"
+      ],
+      "section": "1. 文件定位",
+      "line_start": 3,
+      "line_end": 8,
+      "file_hash": "2bd1f7898e1ef82e1779aa258a159070fc03da230932f37dc7a10e69335c6ec6",
+      "content_hash": "cf2a127b3c408895678451f5f1cb32bc5987c03c168546d61aae5ccd013d3669"
+    },
+    {
+      "id": "rule:.harness/rules/coding-standard.md#10-禁止事项",
+      "kind": "rule",
+      "file": ".harness/rules/coding-standard.md",
+      "title": "10. 禁止事项",
+      "summary": "10. 禁止事项",
+      "keywords": [
+        "10.",
+        "禁止事项",
+        "10.",
+        "禁止事项",
+        "coding",
+        "standard"
+      ],
+      "routes": [
+        "coding-standard",
+        "编码",
+        "coding",
+        "代码",
+        "规范",
+        "10.",
+        "禁止事项"
+      ],
+      "section": "10. 禁止事项",
+      "line_start": 199,
+      "line_end": 205,
+      "file_hash": "2bd1f7898e1ef82e1779aa258a159070fc03da230932f37dc7a10e69335c6ec6",
+      "content_hash": "76beb37d167a56be599cebab08839dcb8d22d2df2a912cdf2561b95f55ef2ed9"
+    },
+    {
+      "id": "rule:.harness/rules/coding-standard.md#2-java-基本规范",
+      "kind": "rule",
+      "file": ".harness/rules/coding-standard.md",
+      "title": "2. Java 基本规范",
+      "summary": "2. Java 基本规范",
+      "keywords": [
+        "2.",
+        "Java",
+        "基本规范",
+        "2.",
+        "Java",
+        "基本规范",
+        "coding",
+        "standard"
+      ],
+      "routes": [
+        "coding-standard",
+        "编码",
+        "coding",
+        "代码",
+        "规范",
+        "2.",
+        "java",
+        "基本规范"
+      ],
+      "section": "2. Java 基本规范",
+      "line_start": 9,
+      "line_end": 17,
+      "file_hash": "2bd1f7898e1ef82e1779aa258a159070fc03da230932f37dc7a10e69335c6ec6",
+      "content_hash": "2ee016c0afb44db344ad0aa3386b1e775b463311e494929e57645275852f8e59"
+    },
+    {
+      "id": "rule:.harness/rules/coding-standard.md#3-分层和命名",
+      "kind": "rule",
+      "file": ".harness/rules/coding-standard.md",
+      "title": "3. 分层和命名",
+      "summary": "3. 分层和命名",
+      "keywords": [
+        "3.",
+        "分层和命名",
+        "3.",
+        "分层和命名",
+        "coding",
+        "standard"
+      ],
+      "routes": [
+        "coding-standard",
+        "编码",
+        "coding",
+        "代码",
+        "规范",
+        "3.",
+        "分层和命名"
+      ],
+      "section": "3. 分层和命名",
+      "line_start": 18,
+      "line_end": 37,
+      "file_hash": "2bd1f7898e1ef82e1779aa258a159070fc03da230932f37dc7a10e69335c6ec6",
+      "content_hash": "b804188e0c22f9914a89a72332d011f8adbac19048f84a455824b56fb715bf82"
+    },
+    {
+      "id": "rule:.harness/rules/coding-standard.md#4-1-基本要求",
+      "kind": "rule",
+      "file": ".harness/rules/coding-standard.md",
+      "title": "4.1 基本要求",
+      "summary": "4.1 基本要求",
+      "keywords": [
+        "4.1",
+        "基本要求",
+        "4.1",
+        "基本要求",
+        "coding",
+        "standard"
+      ],
+      "routes": [
+        "coding-standard",
+        "编码",
+        "coding",
+        "代码",
+        "规范",
+        "4.1",
+        "基本要求"
+      ],
+      "section": "4.1 基本要求",
+      "line_start": 40,
+      "line_end": 47,
+      "file_hash": "2bd1f7898e1ef82e1779aa258a159070fc03da230932f37dc7a10e69335c6ec6",
+      "content_hash": "64359563fdca325168d84aff91bbaeb1e88e079f914397aa61b07007ce2fee93"
+    },
+    {
+      "id": "rule:.harness/rules/coding-standard.md#4-2-必须写注释的函数",
+      "kind": "rule",
+      "file": ".harness/rules/coding-standard.md",
+      "title": "4.2 必须写注释的函数",
+      "summary": "4.2 必须写注释的函数",
+      "keywords": [
+        "4.2",
+        "必须写注释的函数",
+        "4.2",
+        "必须写注释的函数",
+        "coding",
+        "standard"
+      ],
+      "routes": [
+        "coding-standard",
+        "编码",
+        "coding",
+        "代码",
+        "规范",
+        "4.2",
+        "必须写注释的函数"
+      ],
+      "section": "4.2 必须写注释的函数",
+      "line_start": 48,
+      "line_end": 58,
+      "file_hash": "2bd1f7898e1ef82e1779aa258a159070fc03da230932f37dc7a10e69335c6ec6",
+      "content_hash": "091e16a0ad93dedab5da86ca655e5ece5d04a9c318370b7e41957598222b359f"
+    },
+    {
+      "id": "rule:.harness/rules/coding-standard.md#4-3-函数迭代时的注释维护",
+      "kind": "rule",
+      "file": ".harness/rules/coding-standard.md",
+      "title": "4.3 函数迭代时的注释维护",
+      "summary": "4.3 函数迭代时的注释维护",
+      "keywords": [
+        "4.3",
+        "函数迭代时的注释维护",
+        "4.3",
+        "函数迭代时的注释维护",
+        "coding",
+        "standard"
+      ],
+      "routes": [
+        "coding-standard",
+        "编码",
+        "coding",
+        "代码",
+        "规范",
+        "4.3",
+        "函数迭代时的注释维护"
+      ],
+      "section": "4.3 函数迭代时的注释维护",
+      "line_start": 59,
+      "line_end": 71,
+      "file_hash": "2bd1f7898e1ef82e1779aa258a159070fc03da230932f37dc7a10e69335c6ec6",
+      "content_hash": "9672c9e2b8672fb2723561ff596325d5da9d22981a77d4c45088f0d3eb6ce90a"
+    },
+    {
+      "id": "rule:.harness/rules/coding-standard.md#4-4-推荐格式",
+      "kind": "rule",
+      "file": ".harness/rules/coding-standard.md",
+      "title": "4.4 推荐格式",
+      "summary": "4.4 推荐格式",
+      "keywords": [
+        "4.4",
+        "推荐格式",
+        "4.4",
+        "推荐格式",
+        "coding",
+        "standard"
+      ],
+      "routes": [
+        "coding-standard",
+        "编码",
+        "coding",
+        "代码",
+        "规范",
+        "4.4",
+        "推荐格式"
+      ],
+      "section": "4.4 推荐格式",
+      "line_start": 72,
+      "line_end": 83,
+      "file_hash": "2bd1f7898e1ef82e1779aa258a159070fc03da230932f37dc7a10e69335c6ec6",
+      "content_hash": "2d019fa3d110f5ea10e2016aa7cac1148415fd66278768dc3b4c560cb6beb5f0"
+    },
+    {
+      "id": "rule:.harness/rules/coding-standard.md#4-注释规则",
+      "kind": "rule",
+      "file": ".harness/rules/coding-standard.md",
+      "title": "4. 注释规则",
+      "summary": "4. 注释规则",
+      "keywords": [
+        "4.",
+        "注释规则",
+        "4.",
+        "注释规则",
+        "coding",
+        "standard"
+      ],
+      "routes": [
+        "coding-standard",
+        "编码",
+        "coding",
+        "代码",
+        "规范",
+        "4.",
+        "注释规则"
+      ],
+      "section": "4. 注释规则",
+      "line_start": 38,
+      "line_end": 39,
+      "file_hash": "2bd1f7898e1ef82e1779aa258a159070fc03da230932f37dc7a10e69335c6ec6",
+      "content_hash": "ce6f274ea517679b4634d0e04e382ae184a1e40650eddbc76705361d3d023fed"
+    },
+    {
+      "id": "rule:.harness/rules/coding-standard.md#5-异常和返回",
+      "kind": "rule",
+      "file": ".harness/rules/coding-standard.md",
+      "title": "5. 异常和返回",
+      "summary": "5. 异常和返回",
+      "keywords": [
+        "5.",
+        "异常和返回",
+        "5.",
+        "异常和返回",
+        "coding",
+        "standard"
+      ],
+      "routes": [
+        "coding-standard",
+        "编码",
+        "coding",
+        "代码",
+        "规范",
+        "5.",
+        "异常和返回"
+      ],
+      "section": "5. 异常和返回",
+      "line_start": 84,
+      "line_end": 91,
+      "file_hash": "2bd1f7898e1ef82e1779aa258a159070fc03da230932f37dc7a10e69335c6ec6",
+      "content_hash": "c5bf74e6fe95511261daa44d5c8cd0e565fb05b8513da65a04bba66c7bb69e8b"
+    },
+    {
+      "id": "rule:.harness/rules/coding-standard.md#6-事务规则",
+      "kind": "rule",
+      "file": ".harness/rules/coding-standard.md",
+      "title": "6. 事务规则",
+      "summary": "6. 事务规则",
+      "keywords": [
+        "6.",
+        "事务规则",
+        "6.",
+        "事务规则",
+        "coding",
+        "standard"
+      ],
+      "routes": [
+        "coding-standard",
+        "编码",
+        "coding",
+        "代码",
+        "规范",
+        "6.",
+        "事务规则"
+      ],
+      "section": "6. 事务规则",
+      "line_start": 92,
+      "line_end": 99,
+      "file_hash": "2bd1f7898e1ef82e1779aa258a159070fc03da230932f37dc7a10e69335c6ec6",
+      "content_hash": "ba8d6a0d33499ce73d506150cf6cd16f614e96a37f85b1612f931b7eb0e07284"
+    },
+    {
+      "id": "rule:.harness/rules/coding-standard.md#7-1-添加日志的原则",
+      "kind": "rule",
+      "file": ".harness/rules/coding-standard.md",
+      "title": "7.1 添加日志的原则",
+      "summary": "7.1 添加日志的原则",
+      "keywords": [
+        "7.1",
+        "添加日志的原则",
+        "7.1",
+        "添加日志的原则",
+        "coding",
+        "standard"
+      ],
+      "routes": [
+        "coding-standard",
+        "编码",
+        "coding",
+        "代码",
+        "规范",
+        "7.1",
+        "添加日志的原则"
+      ],
+      "section": "7.1 添加日志的原则",
+      "line_start": 102,
+      "line_end": 115,
+      "file_hash": "2bd1f7898e1ef82e1779aa258a159070fc03da230932f37dc7a10e69335c6ec6",
+      "content_hash": "4fe877eb836139e0816708bff3af2553b164b9335bf21d0a22ef82daebb8a97e"
+    },
+    {
+      "id": "rule:.harness/rules/coding-standard.md#7-2-不应添加日志的情况",
+      "kind": "rule",
+      "file": ".harness/rules/coding-standard.md",
+      "title": "7.2 不应添加日志的情况",
+      "summary": "7.2 不应添加日志的情况",
+      "keywords": [
+        "7.2",
+        "不应添加日志的情况",
+        "7.2",
+        "不应添加日志的情况",
+        "coding",
+        "standard"
+      ],
+      "routes": [
+        "coding-standard",
+        "编码",
+        "coding",
+        "代码",
+        "规范",
+        "7.2",
+        "不应添加日志的情况"
+      ],
+      "section": "7.2 不应添加日志的情况",
+      "line_start": 116,
+      "line_end": 123,
+      "file_hash": "2bd1f7898e1ef82e1779aa258a159070fc03da230932f37dc7a10e69335c6ec6",
+      "content_hash": "55743e42b3e6fb270099a86abbb57778f44fc2fde177e59da99212ee16a69b17"
+    },
+    {
+      "id": "rule:.harness/rules/coding-standard.md#7-3-日志级别建议",
+      "kind": "rule",
+      "file": ".harness/rules/coding-standard.md",
+      "title": "7.3 日志级别建议",
+      "summary": "7.3 日志级别建议",
+      "keywords": [
+        "7.3",
+        "日志级别建议",
+        "7.3",
+        "日志级别建议",
+        "coding",
+        "standard"
+      ],
+      "routes": [
+        "coding-standard",
+        "编码",
+        "coding",
+        "代码",
+        "规范",
+        "7.3",
+        "日志级别建议"
+      ],
+      "section": "7.3 日志级别建议",
+      "line_start": 124,
+      "line_end": 130,
+      "file_hash": "2bd1f7898e1ef82e1779aa258a159070fc03da230932f37dc7a10e69335c6ec6",
+      "content_hash": "c187ada3164334343d76787701e6741457aea19420ef07d0e2510b0360f15826"
+    },
+    {
+      "id": "rule:.harness/rules/coding-standard.md#7-4-敏感信息规则",
+      "kind": "rule",
+      "file": ".harness/rules/coding-standard.md",
+      "title": "7.4 敏感信息规则",
+      "summary": "7.4 敏感信息规则",
+      "keywords": [
+        "7.4",
+        "敏感信息规则",
+        "7.4",
+        "敏感信息规则",
+        "coding",
+        "standard"
+      ],
+      "routes": [
+        "coding-standard",
+        "编码",
+        "coding",
+        "代码",
+        "规范",
+        "7.4",
+        "敏感信息规则"
+      ],
+      "section": "7.4 敏感信息规则",
+      "line_start": 131,
+      "line_end": 143,
+      "file_hash": "2bd1f7898e1ef82e1779aa258a159070fc03da230932f37dc7a10e69335c6ec6",
+      "content_hash": "8e8d4e014b15f2e14c0189eb12940b0ddea598a38c8ccb895fce630e343ff6cb"
+    },
+    {
+      "id": "rule:.harness/rules/coding-standard.md#7-日志规则",
+      "kind": "rule",
+      "file": ".harness/rules/coding-standard.md",
+      "title": "7. 日志规则",
+      "summary": "7. 日志规则",
+      "keywords": [
+        "7.",
+        "日志规则",
+        "7.",
+        "日志规则",
+        "coding",
+        "standard"
+      ],
+      "routes": [
+        "coding-standard",
+        "编码",
+        "coding",
+        "代码",
+        "规范",
+        "7.",
+        "日志规则"
+      ],
+      "section": "7. 日志规则",
+      "line_start": 100,
+      "line_end": 101,
+      "file_hash": "2bd1f7898e1ef82e1779aa258a159070fc03da230932f37dc7a10e69335c6ec6",
+      "content_hash": "9c62cb893826b51d2ceba94eb116cb2c336c3ac2e290af75f52b43eb6a20c99d"
+    },
+    {
+      "id": "rule:.harness/rules/coding-standard.md#8-mybatis-plus-和-sql",
+      "kind": "rule",
+      "file": ".harness/rules/coding-standard.md",
+      "title": "8. MyBatis-Plus 和 SQL",
+      "summary": "8. MyBatis-Plus 和 SQL",
+      "keywords": [
+        "8.",
+        "MyBatis",
+        "Plus",
+        "SQL",
+        "8.",
+        "MyBatis",
+        "Plus",
+        "SQL",
+        "coding",
+        "standard"
+      ],
+      "routes": [
+        "coding-standard",
+        "编码",
+        "coding",
+        "代码",
+        "规范",
+        "8.",
+        "mybatis",
+        "plus",
+        "sql"
+      ],
+      "section": "8. MyBatis-Plus 和 SQL",
+      "line_start": 144,
+      "line_end": 151,
+      "file_hash": "2bd1f7898e1ef82e1779aa258a159070fc03da230932f37dc7a10e69335c6ec6",
+      "content_hash": "ac9c41ed27ae65c629ce25cb6b4fb9c2e54d31299612d33ef568884379e5e731"
+    },
+    {
+      "id": "rule:.harness/rules/coding-standard.md#9-1-什么情况下必须用枚举",
+      "kind": "rule",
+      "file": ".harness/rules/coding-standard.md",
+      "title": "9.1 什么情况下必须用枚举",
+      "summary": "9.1 什么情况下必须用枚举",
+      "keywords": [
+        "9.1",
+        "什么情况下必须用枚举",
+        "9.1",
+        "什么情况下必须用枚举",
+        "coding",
+        "standard"
+      ],
+      "routes": [
+        "coding-standard",
+        "编码",
+        "coding",
+        "代码",
+        "规范",
+        "9.1",
+        "什么情况下必须用枚举"
+      ],
+      "section": "9.1 什么情况下必须用枚举",
+      "line_start": 159,
+      "line_end": 171,
+      "file_hash": "2bd1f7898e1ef82e1779aa258a159070fc03da230932f37dc7a10e69335c6ec6",
+      "content_hash": "ab04513826a5f3d9a33b0751ce2b1d83610e1f1493841fea149af2c372ab86cb"
+    },
+    {
+      "id": "rule:.harness/rules/coding-standard.md#9-2-什么情况下可以保留常量",
+      "kind": "rule",
+      "file": ".harness/rules/coding-standard.md",
+      "title": "9.2 什么情况下可以保留常量",
+      "summary": "9.2 什么情况下可以保留常量",
+      "keywords": [
+        "9.2",
+        "什么情况下可以保留常量",
+        "9.2",
+        "什么情况下可以保留常量",
+        "coding",
+        "standard"
+      ],
+      "routes": [
+        "coding-standard",
+        "编码",
+        "coding",
+        "代码",
+        "规范",
+        "9.2",
+        "什么情况下可以保留常量"
+      ],
+      "section": "9.2 什么情况下可以保留常量",
+      "line_start": 172,
+      "line_end": 182,
+      "file_hash": "2bd1f7898e1ef82e1779aa258a159070fc03da230932f37dc7a10e69335c6ec6",
+      "content_hash": "a8c7bc0d6fc24f5b87040761f21534bc051ac0dd52816d3d3913416af9f79905"
+    },
+    {
+      "id": "rule:.harness/rules/coding-standard.md#9-3-常量注释要求",
+      "kind": "rule",
+      "file": ".harness/rules/coding-standard.md",
+      "title": "9.3 常量注释要求",
+      "summary": "9.3 常量注释要求",
+      "keywords": [
+        "9.3",
+        "常量注释要求",
+        "9.3",
+        "常量注释要求",
+        "coding",
+        "standard"
+      ],
+      "routes": [
+        "coding-standard",
+        "编码",
+        "coding",
+        "代码",
+        "规范",
+        "9.3",
+        "常量注释要求"
+      ],
+      "section": "9.3 常量注释要求",
+      "line_start": 183,
+      "line_end": 191,
+      "file_hash": "2bd1f7898e1ef82e1779aa258a159070fc03da230932f37dc7a10e69335c6ec6",
+      "content_hash": "8af68031434057fb3f2c0c05a9bbc1d31a402876b951a48dad89a3e04a728196"
+    },
+    {
+      "id": "rule:.harness/rules/coding-standard.md#9-4-禁止写法",
+      "kind": "rule",
+      "file": ".harness/rules/coding-standard.md",
+      "title": "9.4 禁止写法",
+      "summary": "9.4 禁止写法",
+      "keywords": [
+        "9.4",
+        "禁止写法",
+        "9.4",
+        "禁止写法",
+        "coding",
+        "standard"
+      ],
+      "routes": [
+        "coding-standard",
+        "编码",
+        "coding",
+        "代码",
+        "规范",
+        "9.4",
+        "禁止写法"
+      ],
+      "section": "9.4 禁止写法",
+      "line_start": 192,
+      "line_end": 198,
+      "file_hash": "2bd1f7898e1ef82e1779aa258a159070fc03da230932f37dc7a10e69335c6ec6",
+      "content_hash": "726ec8e2a467b1df26de47a6094a50ae4d6ce395e3d75585a379dc5941da846b"
+    },
+    {
+      "id": "rule:.harness/rules/coding-standard.md#9-枚举和常量",
+      "kind": "rule",
+      "file": ".harness/rules/coding-standard.md",
+      "title": "9. 枚举和常量",
+      "summary": "9. 枚举和常量",
+      "keywords": [
+        "9.",
+        "枚举和常量",
+        "9.",
+        "枚举和常量",
+        "coding",
+        "standard"
+      ],
+      "routes": [
+        "coding-standard",
+        "编码",
+        "coding",
+        "代码",
+        "规范",
+        "9.",
+        "枚举和常量"
+      ],
+      "section": "9. 枚举和常量",
+      "line_start": 152,
+      "line_end": 158,
+      "file_hash": "2bd1f7898e1ef82e1779aa258a159070fc03da230932f37dc7a10e69335c6ec6",
+      "content_hash": "96abce629a2715d627204e9ef2393f603407150634c50d442d0f38bcb69e0124"
+    },
+    {
+      "id": "rule:.harness/rules/coding-standard.md#harness-rules-coding-standard-md",
+      "kind": "rule",
+      "file": ".harness/rules/coding-standard.md",
+      "title": ".harness/rules/coding-standard.md",
+      "summary": ".harness/rules/coding-standard.md",
+      "keywords": [
+        ".harness",
+        "rules",
+        "coding",
+        "standard.md",
+        ".harness",
+        "rules",
+        "coding",
+        "standard.md",
+        "coding",
+        "standard"
+      ],
+      "routes": [
+        "coding-standard",
+        "编码",
+        "coding",
+        "代码",
+        "规范",
+        ".harness",
+        "rules",
+        "standard.md"
+      ],
+      "section": ".harness/rules/coding-standard.md",
+      "line_start": 1,
+      "line_end": 2,
+      "file_hash": "2bd1f7898e1ef82e1779aa258a159070fc03da230932f37dc7a10e69335c6ec6",
+      "content_hash": "ed214079852476f7cdd540251eacccb7e6e892cb675e70b5e7830d296333c1c3"
+    },
+    {
+      "id": "rule:.harness/rules/comment-guardrail.md#1-文件定位",
+      "kind": "rule",
+      "file": ".harness/rules/comment-guardrail.md",
+      "title": "1. 文件定位",
+      "summary": "1. 文件定位",
+      "keywords": [
+        "1.",
+        "文件定位",
+        "1.",
+        "文件定位",
+        "comment",
+        "guardrail"
+      ],
+      "routes": [
+        "comment-guardrail",
+        "注释",
+        "comment",
+        "1.",
+        "文件定位"
+      ],
+      "section": "1. 文件定位",
+      "line_start": 3,
+      "line_end": 8,
+      "file_hash": "18c12d85f983e06efcf6ead2e9d79dacd5745d154b4056ba380d48b2cc4b477f",
+      "content_hash": "d79768a6c7db99500c679276d48b72095f3f28e2ef8a51fb78f3e43ff1413d9b"
+    },
+    {
+      "id": "rule:.harness/rules/comment-guardrail.md#2-适用范围",
+      "kind": "rule",
+      "file": ".harness/rules/comment-guardrail.md",
+      "title": "2. 适用范围",
+      "summary": "2. 适用范围",
+      "keywords": [
+        "2.",
+        "适用范围",
+        "2.",
+        "适用范围",
+        "comment",
+        "guardrail"
+      ],
+      "routes": [
+        "comment-guardrail",
+        "注释",
+        "comment",
+        "2.",
+        "适用范围"
+      ],
+      "section": "2. 适用范围",
+      "line_start": 9,
+      "line_end": 18,
+      "file_hash": "18c12d85f983e06efcf6ead2e9d79dacd5745d154b4056ba380d48b2cc4b477f",
+      "content_hash": "45304d0556f075916c830b1b80b61daa9e4e9de62bb9e90d97dbf88ad36fce8f"
+    },
+    {
+      "id": "rule:.harness/rules/comment-guardrail.md#3-1-开发前规则",
+      "kind": "rule",
+      "file": ".harness/rules/comment-guardrail.md",
+      "title": "3.1 开发前规则",
+      "summary": "3.1 开发前规则",
+      "keywords": [
+        "3.1",
+        "开发前规则",
+        "3.1",
+        "开发前规则",
+        "comment",
+        "guardrail"
+      ],
+      "routes": [
+        "comment-guardrail",
+        "注释",
+        "comment",
+        "3.1",
+        "开发前规则"
+      ],
+      "section": "3.1 开发前规则",
+      "line_start": 21,
+      "line_end": 28,
+      "file_hash": "18c12d85f983e06efcf6ead2e9d79dacd5745d154b4056ba380d48b2cc4b477f",
+      "content_hash": "a87a7ad90ba3326df86b88ec78d3bc2272386f417823254c77521a5f4235f1d8"
+    },
+    {
+      "id": "rule:.harness/rules/comment-guardrail.md#3-2-编码中规则",
+      "kind": "rule",
+      "file": ".harness/rules/comment-guardrail.md",
+      "title": "3.2 编码中规则",
+      "summary": "3.2 编码中规则",
+      "keywords": [
+        "3.2",
+        "编码中规则",
+        "3.2",
+        "编码中规则",
+        "comment",
+        "guardrail"
+      ],
+      "routes": [
+        "comment-guardrail",
+        "注释",
+        "comment",
+        "3.2",
+        "编码中规则"
+      ],
+      "section": "3.2 编码中规则",
+      "line_start": 29,
+      "line_end": 36,
+      "file_hash": "18c12d85f983e06efcf6ead2e9d79dacd5745d154b4056ba380d48b2cc4b477f",
+      "content_hash": "883321c299a1a85dad6598adf1d4aa80aaa6644f05c85c6459886ddb36be8dd2"
+    },
+    {
+      "id": "rule:.harness/rules/comment-guardrail.md#3-3-迭代中规则",
+      "kind": "rule",
+      "file": ".harness/rules/comment-guardrail.md",
+      "title": "3.3 迭代中规则",
+      "summary": "3.3 迭代中规则",
+      "keywords": [
+        "3.3",
+        "迭代中规则",
+        "3.3",
+        "迭代中规则",
+        "comment",
+        "guardrail"
+      ],
+      "routes": [
+        "comment-guardrail",
+        "注释",
+        "comment",
+        "3.3",
+        "迭代中规则"
+      ],
+      "section": "3.3 迭代中规则",
+      "line_start": 37,
+      "line_end": 49,
+      "file_hash": "18c12d85f983e06efcf6ead2e9d79dacd5745d154b4056ba380d48b2cc4b477f",
+      "content_hash": "3c6376ef9c0699f540b1b4ebfdd32d3107e42de920e9c48dd04a11f9a4aeaa5f"
+    },
+    {
+      "id": "rule:.harness/rules/comment-guardrail.md#3-强制规则",
+      "kind": "rule",
+      "file": ".harness/rules/comment-guardrail.md",
+      "title": "3. 强制规则",
+      "summary": "3. 强制规则",
+      "keywords": [
+        "3.",
+        "强制规则",
+        "3.",
+        "强制规则",
+        "comment",
+        "guardrail"
+      ],
+      "routes": [
+        "comment-guardrail",
+        "注释",
+        "comment",
+        "3.",
+        "强制规则"
+      ],
+      "section": "3. 强制规则",
+      "line_start": 19,
+      "line_end": 20,
+      "file_hash": "18c12d85f983e06efcf6ead2e9d79dacd5745d154b4056ba380d48b2cc4b477f",
+      "content_hash": "691986aa366b6d0ab610a25585c688f672a7b3da143947ee50520ebae647e90f"
+    },
+    {
+      "id": "rule:.harness/rules/comment-guardrail.md#4-1-任务受理阶段",
+      "kind": "rule",
+      "file": ".harness/rules/comment-guardrail.md",
+      "title": "4.1 任务受理阶段",
+      "summary": "4.1 任务受理阶段",
+      "keywords": [
+        "4.1",
+        "任务受理阶段",
+        "4.1",
+        "任务受理阶段",
+        "comment",
+        "guardrail"
+      ],
+      "routes": [
+        "comment-guardrail",
+        "注释",
+        "comment",
+        "4.1",
+        "任务受理阶段"
+      ],
+      "section": "4.1 任务受理阶段",
+      "line_start": 52,
+      "line_end": 56,
+      "file_hash": "18c12d85f983e06efcf6ead2e9d79dacd5745d154b4056ba380d48b2cc4b477f",
+      "content_hash": "d7373c27829593102147f981fc87095d6be462ac84c7987ce1bb2befb7aadbda"
+    },
+    {
+      "id": "rule:.harness/rules/comment-guardrail.md#4-2-实现前检查阶段",
+      "kind": "rule",
+      "file": ".harness/rules/comment-guardrail.md",
+      "title": "4.2 实现前检查阶段",
+      "summary": "4.2 实现前检查阶段",
+      "keywords": [
+        "4.2",
+        "实现前检查阶段",
+        "4.2",
+        "实现前检查阶段",
+        "comment",
+        "guardrail"
+      ],
+      "routes": [
+        "comment-guardrail",
+        "注释",
+        "comment",
+        "4.2",
+        "实现前检查阶段"
+      ],
+      "section": "4.2 实现前检查阶段",
+      "line_start": 57,
+      "line_end": 67,
+      "file_hash": "18c12d85f983e06efcf6ead2e9d79dacd5745d154b4056ba380d48b2cc4b477f",
+      "content_hash": "6d30b0748feb5bd2eadaaf750c58544b5354bfd38c16ac14b8660b018376d281"
+    },
+    {
+      "id": "rule:.harness/rules/comment-guardrail.md#4-3-编码阶段",
+      "kind": "rule",
+      "file": ".harness/rules/comment-guardrail.md",
+      "title": "4.3 编码阶段",
+      "summary": "4.3 编码阶段",
+      "keywords": [
+        "4.3",
+        "编码阶段",
+        "4.3",
+        "编码阶段",
+        "comment",
+        "guardrail"
+      ],
+      "routes": [
+        "comment-guardrail",
+        "注释",
+        "comment",
+        "4.3",
+        "编码阶段"
+      ],
+      "section": "4.3 编码阶段",
+      "line_start": 68,
+      "line_end": 73,
+      "file_hash": "18c12d85f983e06efcf6ead2e9d79dacd5745d154b4056ba380d48b2cc4b477f",
+      "content_hash": "d6fbcdd2747d1e9c3a01b042dadc42f6e43b161de8603f2ec619527184b308a4"
+    },
+    {
+      "id": "rule:.harness/rules/comment-guardrail.md#4-4-执行计划阶段",
+      "kind": "rule",
+      "file": ".harness/rules/comment-guardrail.md",
+      "title": "4.4 执行计划阶段",
+      "summary": "4.4 执行计划阶段",
+      "keywords": [
+        "4.4",
+        "执行计划阶段",
+        "4.4",
+        "执行计划阶段",
+        "comment",
+        "guardrail"
+      ],
+      "routes": [
+        "comment-guardrail",
+        "注释",
+        "comment",
+        "4.4",
+        "执行计划阶段"
+      ],
+      "section": "4.4 执行计划阶段",
+      "line_start": 74,
+      "line_end": 81,
+      "file_hash": "18c12d85f983e06efcf6ead2e9d79dacd5745d154b4056ba380d48b2cc4b477f",
+      "content_hash": "83c90e5db360b2523bc770c6792e82b996c8a0cd6e1adcadc0df860237e99eb0"
+    },
+    {
+      "id": "rule:.harness/rules/comment-guardrail.md#4-5-review-自检阶段",
+      "kind": "rule",
+      "file": ".harness/rules/comment-guardrail.md",
+      "title": "4.5 Review / 自检阶段",
+      "summary": "4.5 Review / 自检阶段",
+      "keywords": [
+        "4.5",
+        "Review",
+        "自检阶段",
+        "4.5",
+        "Review",
+        "自检阶段",
+        "comment",
+        "guardrail"
+      ],
+      "routes": [
+        "comment-guardrail",
+        "注释",
+        "comment",
+        "4.5",
+        "review",
+        "自检阶段"
+      ],
+      "section": "4.5 Review / 自检阶段",
+      "line_start": 82,
+      "line_end": 90,
+      "file_hash": "18c12d85f983e06efcf6ead2e9d79dacd5745d154b4056ba380d48b2cc4b477f",
+      "content_hash": "7fd05f37ec762377b6797f5cd8cc089e3783f39653131ce36e1ee36867a40791"
+    },
+    {
+      "id": "rule:.harness/rules/comment-guardrail.md#4-流程卡点",
+      "kind": "rule",
+      "file": ".harness/rules/comment-guardrail.md",
+      "title": "4. 流程卡点",
+      "summary": "4. 流程卡点",
+      "keywords": [
+        "4.",
+        "流程卡点",
+        "4.",
+        "流程卡点",
+        "comment",
+        "guardrail"
+      ],
+      "routes": [
+        "comment-guardrail",
+        "注释",
+        "comment",
+        "4.",
+        "流程卡点"
+      ],
+      "section": "4. 流程卡点",
+      "line_start": 50,
+      "line_end": 51,
+      "file_hash": "18c12d85f983e06efcf6ead2e9d79dacd5745d154b4056ba380d48b2cc4b477f",
+      "content_hash": "3f801a920e54d0cc4134e98cc141ec491390f499388dae7821cb914f22d2b172"
+    },
+    {
+      "id": "rule:.harness/rules/comment-guardrail.md#5-配套文档",
+      "kind": "rule",
+      "file": ".harness/rules/comment-guardrail.md",
+      "title": "5. 配套文档",
+      "summary": "5. 配套文档",
+      "keywords": [
+        "5.",
+        "配套文档",
+        "5.",
+        "配套文档",
+        "comment",
+        "guardrail"
+      ],
+      "routes": [
+        "comment-guardrail",
+        "注释",
+        "comment",
+        "5.",
+        "配套文档"
+      ],
+      "section": "5. 配套文档",
+      "line_start": 91,
+      "line_end": 98,
+      "file_hash": "18c12d85f983e06efcf6ead2e9d79dacd5745d154b4056ba380d48b2cc4b477f",
+      "content_hash": "92926b5ead51d08dd95fda6bbb2b9b92a081acad155d967ec19f2953cd4037aa"
+    },
+    {
+      "id": "rule:.harness/rules/comment-guardrail.md#6-交付判定",
+      "kind": "rule",
+      "file": ".harness/rules/comment-guardrail.md",
+      "title": "6. 交付判定",
+      "summary": "6. 交付判定",
+      "keywords": [
+        "6.",
+        "交付判定",
+        "6.",
+        "交付判定",
+        "comment",
+        "guardrail"
+      ],
+      "routes": [
+        "comment-guardrail",
+        "注释",
+        "comment",
+        "6.",
+        "交付判定"
+      ],
+      "section": "6. 交付判定",
+      "line_start": 99,
+      "line_end": 107,
+      "file_hash": "18c12d85f983e06efcf6ead2e9d79dacd5745d154b4056ba380d48b2cc4b477f",
+      "content_hash": "64f2369d220e922f4e83694fdc38f7a634b022684ef9200fa82538fbf754e7b7"
+    },
+    {
+      "id": "rule:.harness/rules/comment-guardrail.md#harness-rules-comment-guardrail-md",
+      "kind": "rule",
+      "file": ".harness/rules/comment-guardrail.md",
+      "title": ".harness/rules/comment-guardrail.md",
+      "summary": ".harness/rules/comment-guardrail.md",
+      "keywords": [
+        ".harness",
+        "rules",
+        "comment",
+        "guardrail.md",
+        ".harness",
+        "rules",
+        "comment",
+        "guardrail.md",
+        "comment",
+        "guardrail"
+      ],
+      "routes": [
+        "comment-guardrail",
+        "注释",
+        "comment",
+        ".harness",
+        "rules",
+        "guardrail.md"
+      ],
+      "section": ".harness/rules/comment-guardrail.md",
+      "line_start": 1,
+      "line_end": 2,
+      "file_hash": "18c12d85f983e06efcf6ead2e9d79dacd5745d154b4056ba380d48b2cc4b477f",
+      "content_hash": "37a1cd333ff009c402e5fb906139978b41f57d12793ad3f7b0206212ec5fff9a"
+    },
+    {
+      "id": "rule:.harness/rules/comment-review-checklist.md#1-文件定位",
+      "kind": "rule",
+      "file": ".harness/rules/comment-review-checklist.md",
+      "title": "1. 文件定位",
+      "summary": "1. 文件定位",
+      "keywords": [
+        "1.",
+        "文件定位",
+        "1.",
+        "文件定位",
+        "comment",
+        "review",
+        "checklist"
+      ],
+      "routes": [
+        "comment-review-checklist",
+        "注释",
+        "检查",
+        "comment",
+        "1.",
+        "文件定位"
+      ],
+      "section": "1. 文件定位",
+      "line_start": 3,
+      "line_end": 8,
+      "file_hash": "b7410557f2ee72375c2fff72f9d101afd465b044e55ace93c3c36acd26905081",
+      "content_hash": "64611e24c10cdde3cc12fff34f914d514809e979afea783996c2d43bb3634349"
+    },
+    {
+      "id": "rule:.harness/rules/comment-review-checklist.md#2-适用范围",
+      "kind": "rule",
+      "file": ".harness/rules/comment-review-checklist.md",
+      "title": "2. 适用范围",
+      "summary": "2. 适用范围",
+      "keywords": [
+        "2.",
+        "适用范围",
+        "2.",
+        "适用范围",
+        "comment",
+        "review",
+        "checklist"
+      ],
+      "routes": [
+        "comment-review-checklist",
+        "注释",
+        "检查",
+        "comment",
+        "2.",
+        "适用范围"
+      ],
+      "section": "2. 适用范围",
+      "line_start": 9,
+      "line_end": 18,
+      "file_hash": "b7410557f2ee72375c2fff72f9d101afd465b044e55ace93c3c36acd26905081",
+      "content_hash": "5940d2c5ae4f545bcb50152e93618d6e0bf66e13c9821b912c20844c326b1d9a"
+    },
+    {
+      "id": "rule:.harness/rules/comment-review-checklist.md#3-1-方法注释",
+      "kind": "rule",
+      "file": ".harness/rules/comment-review-checklist.md",
+      "title": "3.1 方法注释",
+      "summary": "3.1 方法注释",
+      "keywords": [
+        "3.1",
+        "方法注释",
+        "3.1",
+        "方法注释",
+        "comment",
+        "review",
+        "checklist"
+      ],
+      "routes": [
+        "comment-review-checklist",
+        "注释",
+        "检查",
+        "comment",
+        "3.1",
+        "方法注释"
+      ],
+      "section": "3.1 方法注释",
+      "line_start": 21,
+      "line_end": 30,
+      "file_hash": "b7410557f2ee72375c2fff72f9d101afd465b044e55ace93c3c36acd26905081",
+      "content_hash": "2499f7ad5137a856c3139e453afe37f4b14f21bd1de9687b3ff592b3747bb4ba"
+    },
+    {
+      "id": "rule:.harness/rules/comment-review-checklist.md#3-2-do-vo-注释",
+      "kind": "rule",
+      "file": ".harness/rules/comment-review-checklist.md",
+      "title": "3.2 DO / VO 注释",
+      "summary": "3.2 DO / VO 注释",
+      "keywords": [
+        "3.2",
+        "DO",
+        "VO",
+        "注释",
+        "3.2",
+        "DO",
+        "VO",
+        "注释",
+        "comment",
+        "review",
+        "checklist"
+      ],
+      "routes": [
+        "comment-review-checklist",
+        "注释",
+        "检查",
+        "comment",
+        "3.2",
+        "do",
+        "vo"
+      ],
+      "section": "3.2 DO / VO 注释",
+      "line_start": 31,
+      "line_end": 38,
+      "file_hash": "b7410557f2ee72375c2fff72f9d101afd465b044e55ace93c3c36acd26905081",
+      "content_hash": "59e89f7b5d2601945ea33c4ba38c1c4a561e68a3570c12e483f0e453d4174e6b"
+    },
+    {
+      "id": "rule:.harness/rules/comment-review-checklist.md#3-3-mapper-enum-注释",
+      "kind": "rule",
+      "file": ".harness/rules/comment-review-checklist.md",
+      "title": "3.3 Mapper / Enum 注释",
+      "summary": "3.3 Mapper / Enum 注释",
+      "keywords": [
+        "3.3",
+        "Mapper",
+        "Enum",
+        "注释",
+        "3.3",
+        "Mapper",
+        "Enum",
+        "注释",
+        "comment",
+        "review",
+        "checklist"
+      ],
+      "routes": [
+        "comment-review-checklist",
+        "注释",
+        "检查",
+        "comment",
+        "3.3",
+        "mapper",
+        "enum"
+      ],
+      "section": "3.3 Mapper / Enum 注释",
+      "line_start": 39,
+      "line_end": 44,
+      "file_hash": "b7410557f2ee72375c2fff72f9d101afd465b044e55ace93c3c36acd26905081",
+      "content_hash": "e7e3489220f368dfe2c23391d5f67245c745dbceed5c9f84fa862854e1d2d551"
+    },
+    {
+      "id": "rule:.harness/rules/comment-review-checklist.md#3-4-枚举-常量专项检查",
+      "kind": "rule",
+      "file": ".harness/rules/comment-review-checklist.md",
+      "title": "3.4 枚举 / 常量专项检查",
+      "summary": "3.4 枚举 / 常量专项检查",
+      "keywords": [
+        "3.4",
+        "枚举",
+        "常量专项检查",
+        "3.4",
+        "枚举",
+        "常量专项检查",
+        "comment",
+        "review",
+        "checklist"
+      ],
+      "routes": [
+        "comment-review-checklist",
+        "注释",
+        "检查",
+        "comment",
+        "3.4",
+        "枚举",
+        "常量专项检查"
+      ],
+      "section": "3.4 枚举 / 常量专项检查",
+      "line_start": 45,
+      "line_end": 53,
+      "file_hash": "b7410557f2ee72375c2fff72f9d101afd465b044e55ace93c3c36acd26905081",
+      "content_hash": "004e8da1eb7e6c88bb915a93c43545982945bc8378f4ef86a7294e375eca716b"
+    },
+    {
+      "id": "rule:.harness/rules/comment-review-checklist.md#3-必查项",
+      "kind": "rule",
+      "file": ".harness/rules/comment-review-checklist.md",
+      "title": "3. 必查项",
+      "summary": "3. 必查项",
+      "keywords": [
+        "3.",
+        "必查项",
+        "3.",
+        "必查项",
+        "comment",
+        "review",
+        "checklist"
+      ],
+      "routes": [
+        "comment-review-checklist",
+        "注释",
+        "检查",
+        "comment",
+        "3.",
+        "必查项"
+      ],
+      "section": "3. 必查项",
+      "line_start": 19,
+      "line_end": 20,
+      "file_hash": "b7410557f2ee72375c2fff72f9d101afd465b044e55ace93c3c36acd26905081",
+      "content_hash": "c0cae16a5fb3502b99208f75d78c5bf189c26c40da625800869116ff6bc1dbe3"
+    },
+    {
+      "id": "rule:.harness/rules/comment-review-checklist.md#4-快速扫描命令",
+      "kind": "rule",
+      "file": ".harness/rules/comment-review-checklist.md",
+      "title": "4. 快速扫描命令",
+      "summary": "4. 快速扫描命令",
+      "keywords": [
+        "4.",
+        "快速扫描命令",
+        "4.",
+        "快速扫描命令",
+        "comment",
+        "review",
+        "checklist"
+      ],
+      "routes": [
+        "comment-review-checklist",
+        "注释",
+        "检查",
+        "comment",
+        "4.",
+        "快速扫描命令"
+      ],
+      "section": "4. 快速扫描命令",
+      "line_start": 54,
+      "line_end": 69,
+      "file_hash": "b7410557f2ee72375c2fff72f9d101afd465b044e55ace93c3c36acd26905081",
+      "content_hash": "ccb83ecf938fba8c4f0d3ab5d8f43a841f193e4fc9428abb0559a5f7ef287d96"
+    },
+    {
+      "id": "rule:.harness/rules/comment-review-checklist.md#5-交付前结论规则",
+      "kind": "rule",
+      "file": ".harness/rules/comment-review-checklist.md",
+      "title": "5. 交付前结论规则",
+      "summary": "5. 交付前结论规则",
+      "keywords": [
+        "5.",
+        "交付前结论规则",
+        "5.",
+        "交付前结论规则",
+        "comment",
+        "review",
+        "checklist"
+      ],
+      "routes": [
+        "comment-review-checklist",
+        "注释",
+        "检查",
+        "comment",
+        "5.",
+        "交付前结论规则"
+      ],
+      "section": "5. 交付前结论规则",
+      "line_start": 70,
+      "line_end": 79,
+      "file_hash": "b7410557f2ee72375c2fff72f9d101afd465b044e55ace93c3c36acd26905081",
+      "content_hash": "4b3a13595a3f191a6f38a5f4f0b883c50dd2d62a83598ce0e1f17a2f97bf879f"
+    },
+    {
+      "id": "rule:.harness/rules/comment-review-checklist.md#6-review-口径",
+      "kind": "rule",
+      "file": ".harness/rules/comment-review-checklist.md",
+      "title": "6. Review 口径",
+      "summary": "6. Review 口径",
+      "keywords": [
+        "6.",
+        "Review",
+        "口径",
+        "6.",
+        "Review",
+        "口径",
+        "comment",
+        "review",
+        "checklist"
+      ],
+      "routes": [
+        "comment-review-checklist",
+        "注释",
+        "检查",
+        "comment",
+        "6.",
+        "review",
+        "口径"
+      ],
+      "section": "6. Review 口径",
+      "line_start": 80,
+      "line_end": 89,
+      "file_hash": "b7410557f2ee72375c2fff72f9d101afd465b044e55ace93c3c36acd26905081",
+      "content_hash": "063f6854070d5d1672600a85e6b1ac4f6c1a67ab0f33094450453e87b5e7888d"
+    },
+    {
+      "id": "rule:.harness/rules/comment-review-checklist.md#7-字段权限与敏感字段检查",
+      "kind": "rule",
+      "file": ".harness/rules/comment-review-checklist.md",
+      "title": "7. 字段权限与敏感字段检查",
+      "summary": "7. 字段权限与敏感字段检查",
+      "keywords": [
+        "7.",
+        "字段权限与敏感字段检查",
+        "7.",
+        "字段权限与敏感字段检查",
+        "comment",
+        "review",
+        "checklist"
+      ],
+      "routes": [
+        "comment-review-checklist",
+        "注释",
+        "检查",
+        "comment",
+        "7.",
+        "字段权限与敏感字段检查"
+      ],
+      "section": "7. 字段权限与敏感字段检查",
+      "line_start": 90,
+      "line_end": 95,
+      "file_hash": "b7410557f2ee72375c2fff72f9d101afd465b044e55ace93c3c36acd26905081",
+      "content_hash": "362c673841ff47a2ff1e5cc6457a7c0a594f2d524bfd5434c74fda4374736e3f"
+    },
+    {
+      "id": "rule:.harness/rules/comment-review-checklist.md#harness-rules-comment-review-checklist-md",
+      "kind": "rule",
+      "file": ".harness/rules/comment-review-checklist.md",
+      "title": ".harness/rules/comment-review-checklist.md",
+      "summary": ".harness/rules/comment-review-checklist.md",
+      "keywords": [
+        ".harness",
+        "rules",
+        "comment",
+        "review",
+        "checklist.md",
+        ".harness",
+        "rules",
+        "comment",
+        "review",
+        "checklist.md",
+        "comment",
+        "review"
+      ],
+      "routes": [
+        "comment-review-checklist",
+        "注释",
+        "检查",
+        "comment",
+        ".harness",
+        "rules",
+        "review",
+        "checklist.md"
+      ],
+      "section": ".harness/rules/comment-review-checklist.md",
+      "line_start": 1,
+      "line_end": 2,
+      "file_hash": "b7410557f2ee72375c2fff72f9d101afd465b044e55ace93c3c36acd26905081",
+      "content_hash": "ea7335c8ee398979e30525c9c85f1fe0658c032872751fc9d916f21dd5fe6542"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#1-文件定位",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "1. 文件定位",
+      "summary": "1. 文件定位",
+      "keywords": [
+        "1.",
+        "文件定位",
+        "1.",
+        "文件定位",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "1.",
+        "文件定位"
+      ],
+      "section": "1. 文件定位",
+      "line_start": 3,
+      "line_end": 10,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "283a432c1068cf27ef5ede4a5935c1f1739349a3ef40975ff5524b1d3a3b1807"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#10-1-request-analysis",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "10.1 request-analysis",
+      "summary": "10.1 request-analysis",
+      "keywords": [
+        "10.1",
+        "request",
+        "analysis",
+        "10.1",
+        "request",
+        "analysis",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "10.1",
+        "request",
+        "analysis"
+      ],
+      "section": "10.1 request-analysis",
+      "line_start": 185,
+      "line_end": 195,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "7e616cbf3b951ea77b807df9485da5d5ce22f3e86db5504eb4b6f85e5cd4b729"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#10-2-coding-skill",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "10.2 coding-skill",
+      "summary": "10.2 coding-skill",
+      "keywords": [
+        "10.2",
+        "coding",
+        "skill",
+        "10.2",
+        "coding",
+        "skill",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "10.2",
+        "coding",
+        "skill"
+      ],
+      "section": "10.2 coding-skill",
+      "line_start": 196,
+      "line_end": 199,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "8d12f52a89c3405a64e2253cf3a7ca389fce246e90cb5ecddb8f379cc55a9440"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#10-3-expert-reviewer",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "10.3 expert-reviewer",
+      "summary": "10.3 expert-reviewer",
+      "keywords": [
+        "10.3",
+        "expert",
+        "reviewer",
+        "10.3",
+        "expert",
+        "reviewer",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "10.3",
+        "expert",
+        "reviewer"
+      ],
+      "section": "10.3 expert-reviewer",
+      "line_start": 200,
+      "line_end": 208,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "8b9a9aa42e908ef38f402851b5fe65642bb9178d8f50f9a6d71f81022285ff83"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#10-4-unit-test-ci",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "10.4 unit-test-ci",
+      "summary": "10.4 unit-test-ci",
+      "keywords": [
+        "10.4",
+        "unit",
+        "test",
+        "ci",
+        "10.4",
+        "unit",
+        "test",
+        "ci",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "10.4",
+        "unit",
+        "test",
+        "ci"
+      ],
+      "section": "10.4 unit-test-ci",
+      "line_start": 209,
+      "line_end": 212,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "747578fa2fcb9631ae8060fa1c84d665dcf53287d03a846d61a49ef8d96cec12"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#10-5-deploy-verify",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "10.5 deploy-verify",
+      "summary": "10.5 deploy-verify",
+      "keywords": [
+        "10.5",
+        "deploy",
+        "verify",
+        "10.5",
+        "deploy",
+        "verify",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "10.5",
+        "deploy",
+        "verify"
+      ],
+      "section": "10.5 deploy-verify",
+      "line_start": 213,
+      "line_end": 216,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "807e7fb83265d84bbd7b55e037a66a6f2a3adbf3588ef2e78f9c07b5d71629f1"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#10-工具和技能使用规则",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "10. 工具和技能使用规则",
+      "summary": "10. 工具和技能使用规则",
+      "keywords": [
+        "10.",
+        "工具和技能使用规则",
+        "10.",
+        "工具和技能使用规则",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "10.",
+        "工具和技能使用规则"
+      ],
+      "section": "10. 工具和技能使用规则",
+      "line_start": 183,
+      "line_end": 184,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "26e75c93dd23d4da03552d6b63ec3f3ce2fc93b1d4fc9b827998f37e6a58c875"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#11-实现前检查",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "11. 实现前检查",
+      "summary": "11. 实现前检查",
+      "keywords": [
+        "11.",
+        "实现前检查",
+        "11.",
+        "实现前检查",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "11.",
+        "实现前检查"
+      ],
+      "section": "11. 实现前检查",
+      "line_start": 217,
+      "line_end": 231,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "6df4b8cd7c2cd79795bd0935d6df59b357d4c817dd3af4c75245c2fae79b9ce0"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#12-编码或文档修改",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "12. 编码或文档修改",
+      "summary": "12. 编码或文档修改",
+      "keywords": [
+        "12.",
+        "编码或文档修改",
+        "12.",
+        "编码或文档修改",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "12.",
+        "编码或文档修改"
+      ],
+      "section": "12. 编码或文档修改",
+      "line_start": 232,
+      "line_end": 246,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "bee7d67e88b97b0e2b112aced1c07d11850f8ecaf182468ca2e5bbd846cf4dec"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#13-1-sql",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "13.1 SQL",
+      "summary": "13.1 SQL",
+      "keywords": [
+        "13.1",
+        "SQL",
+        "13.1",
+        "SQL",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "13.1",
+        "sql"
+      ],
+      "section": "13.1 SQL",
+      "line_start": 251,
+      "line_end": 259,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "b071d611d87c88053dbf43597921126f93efcfd21bc66f2e0dbc9807f90cbe5a"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#13-2-配置",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "13.2 配置",
+      "summary": "13.2 配置",
+      "keywords": [
+        "13.2",
+        "配置",
+        "13.2",
+        "配置",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "13.2",
+        "配置"
+      ],
+      "section": "13.2 配置",
+      "line_start": 260,
+      "line_end": 267,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "8e929744ac334ec91f215f476f8f59e7d35a5f4ec8e8d6238bd1ecbcd5497b37"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#13-3-对接说明",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "13.3 对接说明",
+      "summary": "13.3 对接说明",
+      "keywords": [
+        "13.3",
+        "对接说明",
+        "13.3",
+        "对接说明",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "13.3",
+        "对接说明"
+      ],
+      "section": "13.3 对接说明",
+      "line_start": 268,
+      "line_end": 284,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "91d55a2600f3d264c72690afcb500835f9ddef758b2817930f444634b6342696"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#13-sql-配置和对接说明同步",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "13. SQL、配置和对接说明同步",
+      "summary": "13. SQL、配置和对接说明同步",
+      "keywords": [
+        "13.",
+        "SQL",
+        "配置和对接说明同步",
+        "13.",
+        "SQL",
+        "配置和对接说明同步",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "13.",
+        "sql",
+        "配置和对接说明同步"
+      ],
+      "section": "13. SQL、配置和对接说明同步",
+      "line_start": 247,
+      "line_end": 250,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "9193a1f41529c2824213778371db6946cc20bc854c46cfe0f11a3c076e3525ee"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#14-最小验证",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "14. 最小验证",
+      "summary": "14. 最小验证",
+      "keywords": [
+        "14.",
+        "最小验证",
+        "14.",
+        "最小验证",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "14.",
+        "最小验证"
+      ],
+      "section": "14. 最小验证",
+      "line_start": 285,
+      "line_end": 321,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "1b42b15b078b0760b8b41c19df118e1628b214dce5fba111bbc3762c8e82b871"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#15-review-或自检",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "15. Review 或自检",
+      "summary": "15. Review 或自检",
+      "keywords": [
+        "15.",
+        "Review",
+        "或自检",
+        "15.",
+        "Review",
+        "或自检",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "15.",
+        "review",
+        "或自检"
+      ],
+      "section": "15. Review 或自检",
+      "line_start": 322,
+      "line_end": 341,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "505412d0f7c845fa46a7657bf436d9042ce80510b6e75ced37f8ccea076e2de4"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#16-交付说明",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "16. 交付说明",
+      "summary": "16. 交付说明",
+      "keywords": [
+        "16.",
+        "交付说明",
+        "16.",
+        "交付说明",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "16.",
+        "交付说明"
+      ],
+      "section": "16. 交付说明",
+      "line_start": 342,
+      "line_end": 358,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "8338bd6f8e86b45641721f47ce5cb29c68862f43ff5520f7c9d45cbdd15a89ae"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#17-文档归档和后续跟踪",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "17. 文档归档和后续跟踪",
+      "summary": "17. 文档归档和后续跟踪",
+      "keywords": [
+        "17.",
+        "文档归档和后续跟踪",
+        "17.",
+        "文档归档和后续跟踪",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "17.",
+        "文档归档和后续跟踪"
+      ],
+      "section": "17. 文档归档和后续跟踪",
+      "line_start": 359,
+      "line_end": 383,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "6e5fd769bfeceed8c53c61e0f539918f0a9c82e58ccb98bce97dd08110e93548"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#18-特殊暂停条件",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "18. 特殊暂停条件",
+      "summary": "18. 特殊暂停条件",
+      "keywords": [
+        "18.",
+        "特殊暂停条件",
+        "18.",
+        "特殊暂停条件",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "18.",
+        "特殊暂停条件"
+      ],
+      "section": "18. 特殊暂停条件",
+      "line_start": 384,
+      "line_end": 396,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "b2659c95ed88456b6e52fd64795f4a6ff49b3d149fd35f49dea07e3e9f95f77b"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#19-维护规则",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "19. 维护规则",
+      "summary": "19. 维护规则",
+      "keywords": [
+        "19.",
+        "维护规则",
+        "19.",
+        "维护规则",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "19.",
+        "维护规则"
+      ],
+      "section": "19. 维护规则",
+      "line_start": 397,
+      "line_end": 407,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "c70c9270f7ba5fa6ead1b87f5b27e3eff793ecdc4eec952e0889c99ff60f4dc4"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#2-标准流程",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "2. 标准流程",
+      "summary": "2. 标准流程",
+      "keywords": [
+        "2.",
+        "标准流程",
+        "2.",
+        "标准流程",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "2.",
+        "标准流程"
+      ],
+      "section": "2. 标准流程",
+      "line_start": 11,
+      "line_end": 29,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "90a4d895f891ea796c826d2a144ccebb63c7ee9b48f1ecbf14fa1da56ee6e0b9"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#20-git-提交与推送同步",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "20. Git 提交与推送同步",
+      "summary": "20. Git 提交与推送同步",
+      "keywords": [
+        "20.",
+        "Git",
+        "提交与推送同步",
+        "20.",
+        "Git",
+        "提交与推送同步",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "20.",
+        "git",
+        "提交与推送同步"
+      ],
+      "section": "20. Git 提交与推送同步",
+      "line_start": 408,
+      "line_end": 418,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "cc11102e1ff9e74189beff8f7cfaa492580db4cef4f6df80580944b289e1bbd3"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#3-任务受理",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "3. 任务受理",
+      "summary": "3. 任务受理",
+      "keywords": [
+        "3.",
+        "任务受理",
+        "3.",
+        "任务受理",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "3.",
+        "任务受理"
+      ],
+      "section": "3. 任务受理",
+      "line_start": 30,
+      "line_end": 52,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "b41c5fffdac4771f6b58f4c9939e516c8211ad72c9b5af6ca57f99d67ab20cba"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#4-上下文确认",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "4. 上下文确认",
+      "summary": "4. 上下文确认",
+      "keywords": [
+        "4.",
+        "上下文确认",
+        "4.",
+        "上下文确认",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "4.",
+        "上下文确认"
+      ],
+      "section": "4. 上下文确认",
+      "line_start": 53,
+      "line_end": 71,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "9699d6e374a5f60cde1fd17e5349bcd2ec0c03b09fbad28f9eceb700ae163aae"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#5-影响范围分析",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "5. 影响范围分析",
+      "summary": "5. 影响范围分析",
+      "keywords": [
+        "5.",
+        "影响范围分析",
+        "5.",
+        "影响范围分析",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "5.",
+        "影响范围分析"
+      ],
+      "section": "5. 影响范围分析",
+      "line_start": 72,
+      "line_end": 88,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "825ab608ddc1ef5dae04e85d354421c9e62ab711f6a7140f5b6276d9766192fc"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#6-复杂度分级",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "6. 复杂度分级",
+      "summary": "6. 复杂度分级",
+      "keywords": [
+        "6.",
+        "复杂度分级",
+        "6.",
+        "复杂度分级",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "6.",
+        "复杂度分级"
+      ],
+      "section": "6. 复杂度分级",
+      "line_start": 89,
+      "line_end": 101,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "e464c58cb293f09777135f5ae8d7d349e684def5fbf23b470dc8de19458d05f6"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#7-1-l1-简单任务",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "7.1 L1 简单任务",
+      "summary": "7.1 L1 简单任务",
+      "keywords": [
+        "7.1",
+        "L1",
+        "简单任务",
+        "7.1",
+        "L1",
+        "简单任务",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "7.1",
+        "l1",
+        "简单任务"
+      ],
+      "section": "7.1 L1 简单任务",
+      "line_start": 104,
+      "line_end": 111,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "3a0f0aace21e02de29fdc2f6e3afdbd497552e019325f67453be8ec5a255fd82"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#7-2-l2-中等任务",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "7.2 L2 中等任务",
+      "summary": "7.2 L2 中等任务",
+      "keywords": [
+        "7.2",
+        "L2",
+        "中等任务",
+        "7.2",
+        "L2",
+        "中等任务",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "7.2",
+        "l2",
+        "中等任务"
+      ],
+      "section": "7.2 L2 中等任务",
+      "line_start": 112,
+      "line_end": 121,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "a87274f9a02e3262e3ab3bd91f1781974fc6dac100c742a2ae921ea21920de6a"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#7-3-l3-复杂任务",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "7.3 L3 复杂任务",
+      "summary": "7.3 L3 复杂任务",
+      "keywords": [
+        "7.3",
+        "L3",
+        "复杂任务",
+        "7.3",
+        "L3",
+        "复杂任务",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "7.3",
+        "l3",
+        "复杂任务"
+      ],
+      "section": "7.3 L3 复杂任务",
+      "line_start": 122,
+      "line_end": 133,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "0fa2b6343e268fbd71c76ae25ac98be8afe7f7b7d4c6602fbd21e7734a8ade4c"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#7-4-l4-高风险任务",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "7.4 L4 高风险任务",
+      "summary": "7.4 L4 高风险任务",
+      "keywords": [
+        "7.4",
+        "L4",
+        "高风险任务",
+        "7.4",
+        "L4",
+        "高风险任务",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "7.4",
+        "l4",
+        "高风险任务"
+      ],
+      "section": "7.4 L4 高风险任务",
+      "line_start": 134,
+      "line_end": 146,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "5427c97982d6307078363f59ae2ee74c9e8a1af6845f43acc9527a5c1c97d748"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#7-不同复杂度的处理流程",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "7. 不同复杂度的处理流程",
+      "summary": "7. 不同复杂度的处理流程",
+      "keywords": [
+        "7.",
+        "不同复杂度的处理流程",
+        "7.",
+        "不同复杂度的处理流程",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "7.",
+        "不同复杂度的处理流程"
+      ],
+      "section": "7. 不同复杂度的处理流程",
+      "line_start": 102,
+      "line_end": 103,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "45f02b9b7c01a3054fd4d1604f2928e5ad1fd5ed030dafad1808d5cf42cd364b"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#8-注释防遗漏流程",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "8. 注释防遗漏流程",
+      "summary": "8. 注释防遗漏流程",
+      "keywords": [
+        "8.",
+        "注释防遗漏流程",
+        "8.",
+        "注释防遗漏流程",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "8.",
+        "注释防遗漏流程"
+      ],
+      "section": "8. 注释防遗漏流程",
+      "line_start": 147,
+      "line_end": 166,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "49ecd97f2a8d17859991b739d64a07d0173f46cfb6b9c3d4dd23b97ac97571cb"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#9-harness-文档迭代规则",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": "9. Harness 文档迭代规则",
+      "summary": "9. Harness 文档迭代规则",
+      "keywords": [
+        "9.",
+        "Harness",
+        "文档迭代规则",
+        "9.",
+        "Harness",
+        "文档迭代规则",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        "9.",
+        "harness",
+        "文档迭代规则"
+      ],
+      "section": "9. Harness 文档迭代规则",
+      "line_start": 167,
+      "line_end": 182,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "641bbd61f509bee4904d7770b636add73490e9dec65a595eafdcc114fd5f48a1"
+    },
+    {
+      "id": "rule:.harness/rules/development-flow.md#harness-rules-development-flow-md",
+      "kind": "rule",
+      "file": ".harness/rules/development-flow.md",
+      "title": ".harness/rules/development-flow.md",
+      "summary": ".harness/rules/development-flow.md",
+      "keywords": [
+        ".harness",
+        "rules",
+        "development",
+        "flow.md",
+        ".harness",
+        "rules",
+        "development",
+        "flow.md",
+        "development",
+        "flow"
+      ],
+      "routes": [
+        "development-flow",
+        "开发流程",
+        "流程",
+        "development",
+        ".harness",
+        "rules",
+        "flow.md"
+      ],
+      "section": ".harness/rules/development-flow.md",
+      "line_start": 1,
+      "line_end": 2,
+      "file_hash": "ac6ce4b12d39dec8211bdc2794d1b1df901c471a9d973c40feb5302f668768a5",
+      "content_hash": "ded1622025582e0099fd452054f91723eea340b24f78ed149a29e8438025348b"
+    },
+    {
+      "id": "rule:.harness/rules/documentation-change-rule.md#1-文件定位",
+      "kind": "rule",
+      "file": ".harness/rules/documentation-change-rule.md",
+      "title": "1. 文件定位",
+      "summary": "1. 文件定位",
+      "keywords": [
+        "1.",
+        "文件定位",
+        "1.",
+        "文件定位",
+        "documentation",
+        "change",
+        "rule"
+      ],
+      "routes": [
+        "documentation-change-rule",
+        "文档",
+        "doc",
+        "同步",
+        "1.",
+        "文件定位"
+      ],
+      "section": "1. 文件定位",
+      "line_start": 3,
+      "line_end": 8,
+      "file_hash": "dcacb2e6160f98c3bb56bb5b8f34634da3c906fdfbfb1ea4652c18841ebbe933",
+      "content_hash": "f09c97498881c58c26c50acf84caa1247e1b22228e3bf1a249309f1d02ebe67e"
+    },
+    {
+      "id": "rule:.harness/rules/documentation-change-rule.md#10-前端对接文档枚举定义规范",
+      "kind": "rule",
+      "file": ".harness/rules/documentation-change-rule.md",
+      "title": "10. 前端对接文档枚举定义规范",
+      "summary": "10. 前端对接文档枚举定义规范",
+      "keywords": [
+        "10.",
+        "前端对接文档枚举定义规范",
+        "10.",
+        "前端对接文档枚举定义规范",
+        "documentation",
+        "change",
+        "rule"
+      ],
+      "routes": [
+        "documentation-change-rule",
+        "文档",
+        "doc",
+        "同步",
+        "10.",
+        "前端对接文档枚举定义规范"
+      ],
+      "section": "10. 前端对接文档枚举定义规范",
+      "line_start": 218,
+      "line_end": 237,
+      "file_hash": "dcacb2e6160f98c3bb56bb5b8f34634da3c906fdfbfb1ea4652c18841ebbe933",
+      "content_hash": "cbb1c5403b23c81c3f5bb3d78da144d2718d05ec202d0b3e57e1f99d7ca226e3"
+    },
+    {
+      "id": "rule:.harness/rules/documentation-change-rule.md#2-文档类型",
+      "kind": "rule",
+      "file": ".harness/rules/documentation-change-rule.md",
+      "title": "2. 文档类型",
+      "summary": "2. 文档类型",
+      "keywords": [
+        "2.",
+        "文档类型",
+        "2.",
+        "文档类型",
+        "documentation",
+        "change",
+        "rule"
+      ],
+      "routes": [
+        "documentation-change-rule",
+        "文档",
+        "doc",
+        "同步",
+        "2.",
+        "文档类型"
+      ],
+      "section": "2. 文档类型",
+      "line_start": 9,
+      "line_end": 21,
+      "file_hash": "dcacb2e6160f98c3bb56bb5b8f34634da3c906fdfbfb1ea4652c18841ebbe933",
+      "content_hash": "53f7ddab8b15427bf3aea1f7fd2069fbb9f13249d823a156ed91dc419913d63a"
+    },
+    {
+      "id": "rule:.harness/rules/documentation-change-rule.md#3-复杂度分级",
+      "kind": "rule",
+      "file": ".harness/rules/documentation-change-rule.md",
+      "title": "3. 复杂度分级",
+      "summary": "3. 复杂度分级",
+      "keywords": [
+        "3.",
+        "复杂度分级",
+        "3.",
+        "复杂度分级",
+        "documentation",
+        "change",
+        "rule"
+      ],
+      "routes": [
+        "documentation-change-rule",
+        "文档",
+        "doc",
+        "同步",
+        "3.",
+        "复杂度分级"
+      ],
+      "section": "3. 复杂度分级",
+      "line_start": 22,
+      "line_end": 32,
+      "file_hash": "dcacb2e6160f98c3bb56bb5b8f34634da3c906fdfbfb1ea4652c18841ebbe933",
+      "content_hash": "e7d1459c35d71aeec55ba0169f414e2302f536d81cac64ecfb3e0d55770bb4c8"
+    },
+    {
+      "id": "rule:.harness/rules/documentation-change-rule.md#4-文档更新触发规则",
+      "kind": "rule",
+      "file": ".harness/rules/documentation-change-rule.md",
+      "title": "4. 文档更新触发规则",
+      "summary": "4. 文档更新触发规则",
+      "keywords": [
+        "4.",
+        "文档更新触发规则",
+        "4.",
+        "文档更新触发规则",
+        "documentation",
+        "change",
+        "rule"
+      ],
+      "routes": [
+        "documentation-change-rule",
+        "文档",
+        "doc",
+        "同步",
+        "4.",
+        "文档更新触发规则"
+      ],
+      "section": "4. 文档更新触发规则",
+      "line_start": 33,
+      "line_end": 51,
+      "file_hash": "dcacb2e6160f98c3bb56bb5b8f34634da3c906fdfbfb1ea4652c18841ebbe933",
+      "content_hash": "c70f884247b3d4d5bbf185af81087b651ce0b945522ea347c3ddf4e4a57da17b"
+    },
+    {
+      "id": "rule:.harness/rules/documentation-change-rule.md#5-复杂功能设计说明要求",
+      "kind": "rule",
+      "file": ".harness/rules/documentation-change-rule.md",
+      "title": "5. 复杂功能设计说明要求",
+      "summary": "5. 复杂功能设计说明要求",
+      "keywords": [
+        "5.",
+        "复杂功能设计说明要求",
+        "5.",
+        "复杂功能设计说明要求",
+        "documentation",
+        "change",
+        "rule"
+      ],
+      "routes": [
+        "documentation-change-rule",
+        "文档",
+        "doc",
+        "同步",
+        "5.",
+        "复杂功能设计说明要求"
+      ],
+      "section": "5. 复杂功能设计说明要求",
+      "line_start": 52,
+      "line_end": 80,
+      "file_hash": "dcacb2e6160f98c3bb56bb5b8f34634da3c906fdfbfb1ea4652c18841ebbe933",
+      "content_hash": "0c722a58c847db87cd3349a809822f919c39054395082b3ff8c48e83fbae9c07"
+    },
+    {
+      "id": "rule:.harness/rules/documentation-change-rule.md#6-mermaid-图要求",
+      "kind": "rule",
+      "file": ".harness/rules/documentation-change-rule.md",
+      "title": "6. Mermaid 图要求",
+      "summary": "6. Mermaid 图要求",
+      "keywords": [
+        "6.",
+        "Mermaid",
+        "图要求",
+        "6.",
+        "Mermaid",
+        "图要求",
+        "documentation",
+        "change",
+        "rule"
+      ],
+      "routes": [
+        "documentation-change-rule",
+        "文档",
+        "doc",
+        "同步",
+        "6.",
+        "mermaid",
+        "图要求"
+      ],
+      "section": "6. Mermaid 图要求",
+      "line_start": 81,
+      "line_end": 123,
+      "file_hash": "dcacb2e6160f98c3bb56bb5b8f34634da3c906fdfbfb1ea4652c18841ebbe933",
+      "content_hash": "0975a7d37958a9a7506c4dccf527e303e84267a854bac24935a324027aae7239"
+    },
+    {
+      "id": "rule:.harness/rules/documentation-change-rule.md#7-文档更新原则",
+      "kind": "rule",
+      "file": ".harness/rules/documentation-change-rule.md",
+      "title": "7. 文档更新原则",
+      "summary": "7. 文档更新原则",
+      "keywords": [
+        "7.",
+        "文档更新原则",
+        "7.",
+        "文档更新原则",
+        "documentation",
+        "change",
+        "rule"
+      ],
+      "routes": [
+        "documentation-change-rule",
+        "文档",
+        "doc",
+        "同步",
+        "7.",
+        "文档更新原则"
+      ],
+      "section": "7. 文档更新原则",
+      "line_start": 124,
+      "line_end": 134,
+      "file_hash": "dcacb2e6160f98c3bb56bb5b8f34634da3c906fdfbfb1ea4652c18841ebbe933",
+      "content_hash": "e3ed7a6290200a13af6a4b8a9decf65382937151d772d11127ae2f87f91a9b54"
+    },
+    {
+      "id": "rule:.harness/rules/documentation-change-rule.md#8-1-文档不是一次性产物",
+      "kind": "rule",
+      "file": ".harness/rules/documentation-change-rule.md",
+      "title": "8.1 文档不是一次性产物",
+      "summary": "8.1 文档不是一次性产物",
+      "keywords": [
+        "8.1",
+        "文档不是一次性产物",
+        "8.1",
+        "文档不是一次性产物",
+        "documentation",
+        "change",
+        "rule"
+      ],
+      "routes": [
+        "documentation-change-rule",
+        "文档",
+        "doc",
+        "同步",
+        "8.1",
+        "文档不是一次性产物"
+      ],
+      "section": "8.1 文档不是一次性产物",
+      "line_start": 137,
+      "line_end": 146,
+      "file_hash": "dcacb2e6160f98c3bb56bb5b8f34634da3c906fdfbfb1ea4652c18841ebbe933",
+      "content_hash": "9440908ee25b9367522bf2c13466648e9314a1e05ba78faf8788a70a7f2e7b7b"
+    },
+    {
+      "id": "rule:.harness/rules/documentation-change-rule.md#8-2-触发更新条件",
+      "kind": "rule",
+      "file": ".harness/rules/documentation-change-rule.md",
+      "title": "8.2 触发更新条件",
+      "summary": "8.2 触发更新条件",
+      "keywords": [
+        "8.2",
+        "触发更新条件",
+        "8.2",
+        "触发更新条件",
+        "documentation",
+        "change",
+        "rule"
+      ],
+      "routes": [
+        "documentation-change-rule",
+        "文档",
+        "doc",
+        "同步",
+        "8.2",
+        "触发更新条件"
+      ],
+      "section": "8.2 触发更新条件",
+      "line_start": 147,
+      "line_end": 161,
+      "file_hash": "dcacb2e6160f98c3bb56bb5b8f34634da3c906fdfbfb1ea4652c18841ebbe933",
+      "content_hash": "4df03a8196eeec0e342e379f8b51ff4d558e539c0bf41790e2392a3cfebc51c4"
+    },
+    {
+      "id": "rule:.harness/rules/documentation-change-rule.md#8-3-更新原则",
+      "kind": "rule",
+      "file": ".harness/rules/documentation-change-rule.md",
+      "title": "8.3 更新原则",
+      "summary": "8.3 更新原则",
+      "keywords": [
+        "8.3",
+        "更新原则",
+        "8.3",
+        "更新原则",
+        "documentation",
+        "change",
+        "rule"
+      ],
+      "routes": [
+        "documentation-change-rule",
+        "文档",
+        "doc",
+        "同步",
+        "8.3",
+        "更新原则"
+      ],
+      "section": "8.3 更新原则",
+      "line_start": 162,
+      "line_end": 173,
+      "file_hash": "dcacb2e6160f98c3bb56bb5b8f34634da3c906fdfbfb1ea4652c18841ebbe933",
+      "content_hash": "dd6ac377ff4c56e4b46261a7da0a959768334732ef5cf2f2c1f183c7d155d4da"
+    },
+    {
+      "id": "rule:.harness/rules/documentation-change-rule.md#8-4-版本叠加要求",
+      "kind": "rule",
+      "file": ".harness/rules/documentation-change-rule.md",
+      "title": "8.4 版本叠加要求",
+      "summary": "8.4 版本叠加要求",
+      "keywords": [
+        "8.4",
+        "版本叠加要求",
+        "8.4",
+        "版本叠加要求",
+        "documentation",
+        "change",
+        "rule"
+      ],
+      "routes": [
+        "documentation-change-rule",
+        "文档",
+        "doc",
+        "同步",
+        "8.4",
+        "版本叠加要求"
+      ],
+      "section": "8.4 版本叠加要求",
+      "line_start": 174,
+      "line_end": 183,
+      "file_hash": "dcacb2e6160f98c3bb56bb5b8f34634da3c906fdfbfb1ea4652c18841ebbe933",
+      "content_hash": "b799bc8eb3b959b5dc20e87724c41b734e688404fae3a230ef2d47421e9fa96e"
+    },
+    {
+      "id": "rule:.harness/rules/documentation-change-rule.md#8-harness-文档迭代规则",
+      "kind": "rule",
+      "file": ".harness/rules/documentation-change-rule.md",
+      "title": "8. Harness 文档迭代规则",
+      "summary": "8. Harness 文档迭代规则",
+      "keywords": [
+        "8.",
+        "Harness",
+        "文档迭代规则",
+        "8.",
+        "Harness",
+        "文档迭代规则",
+        "documentation",
+        "change",
+        "rule"
+      ],
+      "routes": [
+        "documentation-change-rule",
+        "文档",
+        "doc",
+        "同步",
+        "8.",
+        "harness",
+        "文档迭代规则"
+      ],
+      "section": "8. Harness 文档迭代规则",
+      "line_start": 135,
+      "line_end": 136,
+      "file_hash": "dcacb2e6160f98c3bb56bb5b8f34634da3c906fdfbfb1ea4652c18841ebbe933",
+      "content_hash": "5102aece392bb17d0de30a0660d4cfdd3fa3711707b3002281ac6dd6e1e4b522"
+    },
+    {
+      "id": "rule:.harness/rules/documentation-change-rule.md#9-1-接口业务逻辑复核要求",
+      "kind": "rule",
+      "file": ".harness/rules/documentation-change-rule.md",
+      "title": "9.1 接口业务逻辑复核要求",
+      "summary": "9.1 接口业务逻辑复核要求",
+      "keywords": [
+        "9.1",
+        "接口业务逻辑复核要求",
+        "9.1",
+        "接口业务逻辑复核要求",
+        "documentation",
+        "change",
+        "rule"
+      ],
+      "routes": [
+        "documentation-change-rule",
+        "文档",
+        "doc",
+        "同步",
+        "9.1",
+        "接口业务逻辑复核要求"
+      ],
+      "section": "9.1 接口业务逻辑复核要求",
+      "line_start": 202,
+      "line_end": 217,
+      "file_hash": "dcacb2e6160f98c3bb56bb5b8f34634da3c906fdfbfb1ea4652c18841ebbe933",
+      "content_hash": "2a72a57ce61a1dd2513c6b7b1908fb20ee66ac96849c74c1edff1ff8416bb27b"
+    },
+    {
+      "id": "rule:.harness/rules/documentation-change-rule.md#9-交付检查清单",
+      "kind": "rule",
+      "file": ".harness/rules/documentation-change-rule.md",
+      "title": "9. 交付检查清单",
+      "summary": "9. 交付检查清单",
+      "keywords": [
+        "9.",
+        "交付检查清单",
+        "9.",
+        "交付检查清单",
+        "documentation",
+        "change",
+        "rule"
+      ],
+      "routes": [
+        "documentation-change-rule",
+        "文档",
+        "doc",
+        "同步",
+        "9.",
+        "交付检查清单"
+      ],
+      "section": "9. 交付检查清单",
+      "line_start": 184,
+      "line_end": 201,
+      "file_hash": "dcacb2e6160f98c3bb56bb5b8f34634da3c906fdfbfb1ea4652c18841ebbe933",
+      "content_hash": "2745595d6e4a8eb2036d0447e616436c078ccdbb5f7382e22f582ddeb322e189"
+    },
+    {
+      "id": "rule:.harness/rules/documentation-change-rule.md#harness-rules-documentation-change-rule-md",
+      "kind": "rule",
+      "file": ".harness/rules/documentation-change-rule.md",
+      "title": ".harness/rules/documentation-change-rule.md",
+      "summary": ".harness/rules/documentation-change-rule.md",
+      "keywords": [
+        ".harness",
+        "rules",
+        "documentation",
+        "change",
+        "rule.md",
+        ".harness",
+        "rules",
+        "documentation",
+        "change",
+        "rule.md",
+        "documentation",
+        "change"
+      ],
+      "routes": [
+        "documentation-change-rule",
+        "文档",
+        "doc",
+        "同步",
+        ".harness",
+        "rules",
+        "documentation",
+        "change",
+        "rule.md"
+      ],
+      "section": ".harness/rules/documentation-change-rule.md",
+      "line_start": 1,
+      "line_end": 2,
+      "file_hash": "dcacb2e6160f98c3bb56bb5b8f34634da3c906fdfbfb1ea4652c18841ebbe933",
+      "content_hash": "1abd2fa4d747159f4a1b62aecc78294292b58da79610c44834868e5d78f24a98"
+    },
+    {
+      "id": "rule:.harness/rules/git-workflow.md#1-文件定位",
+      "kind": "rule",
+      "file": ".harness/rules/git-workflow.md",
+      "title": "1. 文件定位",
+      "summary": "1. 文件定位",
+      "keywords": [
+        "1.",
+        "文件定位",
+        "1.",
+        "文件定位",
+        "git",
+        "workflow"
+      ],
+      "routes": [
+        "git-workflow",
+        "git",
+        "commit",
+        "push",
+        "pr",
+        "提交",
+        "推送",
+        "1.",
+        "文件定位"
+      ],
+      "section": "1. 文件定位",
+      "line_start": 3,
+      "line_end": 6,
+      "file_hash": "fb17141cc8834b7e7edd3dde23241204e71592e4741f17fbaf15607a4c218bf3",
+      "content_hash": "f10aa89c625e106c745910bd71a043bdb10f171af6027eb68cae7302cadd5df5"
+    },
+    {
+      "id": "rule:.harness/rules/git-workflow.md#2-分支规范",
+      "kind": "rule",
+      "file": ".harness/rules/git-workflow.md",
+      "title": "2. 分支规范",
+      "summary": "2. 分支规范",
+      "keywords": [
+        "2.",
+        "分支规范",
+        "2.",
+        "分支规范",
+        "git",
+        "workflow"
+      ],
+      "routes": [
+        "git-workflow",
+        "git",
+        "commit",
+        "push",
+        "pr",
+        "提交",
+        "推送",
+        "2.",
+        "分支规范"
+      ],
+      "section": "2. 分支规范",
+      "line_start": 7,
+      "line_end": 14,
+      "file_hash": "fb17141cc8834b7e7edd3dde23241204e71592e4741f17fbaf15607a4c218bf3",
+      "content_hash": "396ca3fc759fbf200cb6311501ccb0337a342010c7494b7af9bc280428dd3286"
+    },
+    {
+      "id": "rule:.harness/rules/git-workflow.md#3-提交规范",
+      "kind": "rule",
+      "file": ".harness/rules/git-workflow.md",
+      "title": "3. 提交规范",
+      "summary": "3. 提交规范",
+      "keywords": [
+        "3.",
+        "提交规范",
+        "3.",
+        "提交规范",
+        "git",
+        "workflow"
+      ],
+      "routes": [
+        "git-workflow",
+        "git",
+        "commit",
+        "push",
+        "pr",
+        "提交",
+        "推送",
+        "3.",
+        "提交规范"
+      ],
+      "section": "3. 提交规范",
+      "line_start": 15,
+      "line_end": 22,
+      "file_hash": "fb17141cc8834b7e7edd3dde23241204e71592e4741f17fbaf15607a4c218bf3",
+      "content_hash": "23c90f7474b9056012b81ba082b15fe777be445cedaa0e32a1029f7f7af45fd4"
+    },
+    {
+      "id": "rule:.harness/rules/git-workflow.md#4-推送与-pr",
+      "kind": "rule",
+      "file": ".harness/rules/git-workflow.md",
+      "title": "4. 推送与 PR",
+      "summary": "4. 推送与 PR",
+      "keywords": [
+        "4.",
+        "推送与",
+        "PR",
+        "4.",
+        "推送与",
+        "PR",
+        "git",
+        "workflow"
+      ],
+      "routes": [
+        "git-workflow",
+        "git",
+        "commit",
+        "push",
+        "pr",
+        "提交",
+        "推送",
+        "4.",
+        "推送与"
+      ],
+      "section": "4. 推送与 PR",
+      "line_start": 23,
+      "line_end": 30,
+      "file_hash": "fb17141cc8834b7e7edd3dde23241204e71592e4741f17fbaf15607a4c218bf3",
+      "content_hash": "301bf23b58245facfce6a6d5e41993626c8a25248cc8b4dcd6660df1768d65a6"
+    },
+    {
+      "id": "rule:.harness/rules/git-workflow.md#5-状态同步规则",
+      "kind": "rule",
+      "file": ".harness/rules/git-workflow.md",
+      "title": "5. 状态同步规则",
+      "summary": "5. 状态同步规则",
+      "keywords": [
+        "5.",
+        "状态同步规则",
+        "5.",
+        "状态同步规则",
+        "git",
+        "workflow"
+      ],
+      "routes": [
+        "git-workflow",
+        "git",
+        "commit",
+        "push",
+        "pr",
+        "提交",
+        "推送",
+        "5.",
+        "状态同步规则"
+      ],
+      "section": "5. 状态同步规则",
+      "line_start": 31,
+      "line_end": 44,
+      "file_hash": "fb17141cc8834b7e7edd3dde23241204e71592e4741f17fbaf15607a4c218bf3",
+      "content_hash": "41bef023090f36a147e971744beb881554164bd2eccb4a78254e16e89c45366f"
+    },
+    {
+      "id": "rule:.harness/rules/git-workflow.md#6-非-git-目录降级",
+      "kind": "rule",
+      "file": ".harness/rules/git-workflow.md",
+      "title": "6. 非 Git 目录降级",
+      "summary": "6. 非 Git 目录降级",
+      "keywords": [
+        "6.",
+        "Git",
+        "目录降级",
+        "6.",
+        "Git",
+        "目录降级",
+        "git",
+        "workflow"
+      ],
+      "routes": [
+        "git-workflow",
+        "git",
+        "commit",
+        "push",
+        "pr",
+        "提交",
+        "推送",
+        "6.",
+        "目录降级"
+      ],
+      "section": "6. 非 Git 目录降级",
+      "line_start": 45,
+      "line_end": 53,
+      "file_hash": "fb17141cc8834b7e7edd3dde23241204e71592e4741f17fbaf15607a4c218bf3",
+      "content_hash": "38ff8b7d673b394b850754513c893ca7aa72ad0fd699957c62544d1546f3db1f"
+    },
+    {
+      "id": "rule:.harness/rules/git-workflow.md#7-禁止事项",
+      "kind": "rule",
+      "file": ".harness/rules/git-workflow.md",
+      "title": "7. 禁止事项",
+      "summary": "7. 禁止事项",
+      "keywords": [
+        "7.",
+        "禁止事项",
+        "7.",
+        "禁止事项",
+        "git",
+        "workflow"
+      ],
+      "routes": [
+        "git-workflow",
+        "git",
+        "commit",
+        "push",
+        "pr",
+        "提交",
+        "推送",
+        "7.",
+        "禁止事项"
+      ],
+      "section": "7. 禁止事项",
+      "line_start": 54,
+      "line_end": 59,
+      "file_hash": "fb17141cc8834b7e7edd3dde23241204e71592e4741f17fbaf15607a4c218bf3",
+      "content_hash": "a468fc1b1f2dfd49e803587b2576b431fb2af9967ae0db5b92d243e7a493e389"
+    },
+    {
+      "id": "rule:.harness/rules/git-workflow.md#harness-rules-git-workflow-md",
+      "kind": "rule",
+      "file": ".harness/rules/git-workflow.md",
+      "title": ".harness/rules/git-workflow.md",
+      "summary": ".harness/rules/git-workflow.md",
+      "keywords": [
+        ".harness",
+        "rules",
+        "git",
+        "workflow.md",
+        ".harness",
+        "rules",
+        "git",
+        "workflow.md",
+        "git",
+        "workflow"
+      ],
+      "routes": [
+        "git-workflow",
+        "git",
+        "commit",
+        "push",
+        "pr",
+        "提交",
+        "推送",
+        ".harness",
+        "rules",
+        "workflow.md"
+      ],
+      "section": ".harness/rules/git-workflow.md",
+      "line_start": 1,
+      "line_end": 2,
+      "file_hash": "fb17141cc8834b7e7edd3dde23241204e71592e4741f17fbaf15607a4c218bf3",
+      "content_hash": "82882b22b16c72ef2fe962d9ea9d992f3b5a2a3523111ac6b483545a9e72dd0e"
+    },
+    {
+      "id": "rule:.harness/rules/project-structure.md#1-文件定位",
+      "kind": "rule",
+      "file": ".harness/rules/project-structure.md",
+      "title": "1. 文件定位",
+      "summary": "1. 文件定位",
+      "keywords": [
+        "1.",
+        "文件定位",
+        "1.",
+        "文件定位",
+        "project",
+        "structure"
+      ],
+      "routes": [
+        "project-structure",
+        "模块",
+        "结构",
+        "目录",
+        "structure",
+        "1.",
+        "文件定位"
+      ],
+      "section": "1. 文件定位",
+      "line_start": 3,
+      "line_end": 6,
+      "file_hash": "24add385d9d9b6539b190cf400cd6cda46ea1d6e79ef2afdf507d593f5843a48",
+      "content_hash": "f32974e35163ba21cc1405e1885f956e92fdd39c8eaaeea1fffe7eb514244e45"
+    },
+    {
+      "id": "rule:.harness/rules/project-structure.md#2-标准目录地图",
+      "kind": "rule",
+      "file": ".harness/rules/project-structure.md",
+      "title": "2. 标准目录地图",
+      "summary": "2. 标准目录地图",
+      "keywords": [
+        "2.",
+        "标准目录地图",
+        "2.",
+        "标准目录地图",
+        "project",
+        "structure"
+      ],
+      "routes": [
+        "project-structure",
+        "模块",
+        "结构",
+        "目录",
+        "structure",
+        "2.",
+        "标准目录地图"
+      ],
+      "section": "2. 标准目录地图",
+      "line_start": 7,
+      "line_end": 18,
+      "file_hash": "24add385d9d9b6539b190cf400cd6cda46ea1d6e79ef2afdf507d593f5843a48",
+      "content_hash": "0a636118147d3e713b1445222b34396ab1f6adbf44401c36474d0a72ef40a183"
+    },
+    {
+      "id": "rule:.harness/rules/project-structure.md#3-启用模块识别",
+      "kind": "rule",
+      "file": ".harness/rules/project-structure.md",
+      "title": "3. 启用模块识别",
+      "summary": "3. 启用模块识别",
+      "keywords": [
+        "3.",
+        "启用模块识别",
+        "3.",
+        "启用模块识别",
+        "project",
+        "structure"
+      ],
+      "routes": [
+        "project-structure",
+        "模块",
+        "结构",
+        "目录",
+        "structure",
+        "3.",
+        "启用模块识别"
+      ],
+      "section": "3. 启用模块识别",
+      "line_start": 19,
+      "line_end": 24,
+      "file_hash": "24add385d9d9b6539b190cf400cd6cda46ea1d6e79ef2afdf507d593f5843a48",
+      "content_hash": "085a0d07d30a2be2c080de045ece38725208263fd8a2c69f57205f0b9a88eb48"
+    },
+    {
+      "id": "rule:.harness/rules/project-structure.md#4-服务装配识别",
+      "kind": "rule",
+      "file": ".harness/rules/project-structure.md",
+      "title": "4. 服务装配识别",
+      "summary": "4. 服务装配识别",
+      "keywords": [
+        "4.",
+        "服务装配识别",
+        "4.",
+        "服务装配识别",
+        "project",
+        "structure"
+      ],
+      "routes": [
+        "project-structure",
+        "模块",
+        "结构",
+        "目录",
+        "structure",
+        "4.",
+        "服务装配识别"
+      ],
+      "section": "4. 服务装配识别",
+      "line_start": 25,
+      "line_end": 34,
+      "file_hash": "24add385d9d9b6539b190cf400cd6cda46ea1d6e79ef2afdf507d593f5843a48",
+      "content_hash": "4c3a579dddea4fd78e28e9809d833c91f8866a4d962a2d68a95c7c137a3dc158"
+    },
+    {
+      "id": "rule:.harness/rules/project-structure.md#5-未启用模块处理",
+      "kind": "rule",
+      "file": ".harness/rules/project-structure.md",
+      "title": "5. 未启用模块处理",
+      "summary": "5. 未启用模块处理",
+      "keywords": [
+        "5.",
+        "未启用模块处理",
+        "5.",
+        "未启用模块处理",
+        "project",
+        "structure"
+      ],
+      "routes": [
+        "project-structure",
+        "模块",
+        "结构",
+        "目录",
+        "structure",
+        "5.",
+        "未启用模块处理"
+      ],
+      "section": "5. 未启用模块处理",
+      "line_start": 35,
+      "line_end": 38,
+      "file_hash": "24add385d9d9b6539b190cf400cd6cda46ea1d6e79ef2afdf507d593f5843a48",
+      "content_hash": "3d226dec0ae4cefc1fb6c8a6113b8fbc8d7e9cb39b5cb0a1a05391a76de2e7bc"
+    },
+    {
+      "id": "rule:.harness/rules/project-structure.md#6-自定义业务模块",
+      "kind": "rule",
+      "file": ".harness/rules/project-structure.md",
+      "title": "6. 自定义业务模块",
+      "summary": "6. 自定义业务模块",
+      "keywords": [
+        "6.",
+        "自定义业务模块",
+        "6.",
+        "自定义业务模块",
+        "project",
+        "structure"
+      ],
+      "routes": [
+        "project-structure",
+        "模块",
+        "结构",
+        "目录",
+        "structure",
+        "6.",
+        "自定义业务模块"
+      ],
+      "section": "6. 自定义业务模块",
+      "line_start": 39,
+      "line_end": 44,
+      "file_hash": "24add385d9d9b6539b190cf400cd6cda46ea1d6e79ef2afdf507d593f5843a48",
+      "content_hash": "465ed68dc38ad45b9fcfd1384ca7d43f34ebe305c4078643fdfd43bdbeea9993"
+    },
+    {
+      "id": "rule:.harness/rules/project-structure.md#7-智能体检查清单",
+      "kind": "rule",
+      "file": ".harness/rules/project-structure.md",
+      "title": "7. 智能体检查清单",
+      "summary": "7. 智能体检查清单",
+      "keywords": [
+        "7.",
+        "智能体检查清单",
+        "7.",
+        "智能体检查清单",
+        "project",
+        "structure"
+      ],
+      "routes": [
+        "project-structure",
+        "模块",
+        "结构",
+        "目录",
+        "structure",
+        "7.",
+        "智能体检查清单"
+      ],
+      "section": "7. 智能体检查清单",
+      "line_start": 45,
+      "line_end": 54,
+      "file_hash": "24add385d9d9b6539b190cf400cd6cda46ea1d6e79ef2afdf507d593f5843a48",
+      "content_hash": "ec67ba4f26fc7f8b3d94ea44f215b25abc75fa8a0a9ba1404b99cb0ba74b93da"
+    },
+    {
+      "id": "rule:.harness/rules/project-structure.md#8-维护规则",
+      "kind": "rule",
+      "file": ".harness/rules/project-structure.md",
+      "title": "8. 维护规则",
+      "summary": "8. 维护规则",
+      "keywords": [
+        "8.",
+        "维护规则",
+        "8.",
+        "维护规则",
+        "project",
+        "structure"
+      ],
+      "routes": [
+        "project-structure",
+        "模块",
+        "结构",
+        "目录",
+        "structure",
+        "8.",
+        "维护规则"
+      ],
+      "section": "8. 维护规则",
+      "line_start": 55,
+      "line_end": 57,
+      "file_hash": "24add385d9d9b6539b190cf400cd6cda46ea1d6e79ef2afdf507d593f5843a48",
+      "content_hash": "5c2e0867f0937690c72fe488406b72c36d622c7b499b2a6e714e09b18a3c8dad"
+    },
+    {
+      "id": "rule:.harness/rules/project-structure.md#harness-rules-project-structure-md",
+      "kind": "rule",
+      "file": ".harness/rules/project-structure.md",
+      "title": ".harness/rules/project-structure.md",
+      "summary": ".harness/rules/project-structure.md",
+      "keywords": [
+        ".harness",
+        "rules",
+        "project",
+        "structure.md",
+        ".harness",
+        "rules",
+        "project",
+        "structure.md",
+        "project",
+        "structure"
+      ],
+      "routes": [
+        "project-structure",
+        "模块",
+        "结构",
+        "目录",
+        "structure",
+        ".harness",
+        "rules",
+        "project",
+        "structure.md"
+      ],
+      "section": ".harness/rules/project-structure.md",
+      "line_start": 1,
+      "line_end": 2,
+      "file_hash": "24add385d9d9b6539b190cf400cd6cda46ea1d6e79ef2afdf507d593f5843a48",
+      "content_hash": "7e4bf7b16851955d852036a456605f513e0a809686f224868ccebbb1d24f0dec"
+    },
+    {
+      "id": "rule:.harness/rules/requirement-alignment-rule.md#1-文件定位",
+      "kind": "rule",
+      "file": ".harness/rules/requirement-alignment-rule.md",
+      "title": "1. 文件定位",
+      "summary": "1. 文件定位",
+      "keywords": [
+        "1.",
+        "文件定位",
+        "1.",
+        "文件定位",
+        "requirement",
+        "alignment",
+        "rule"
+      ],
+      "routes": [
+        "requirement-alignment-rule",
+        "需求",
+        "requirement",
+        "纠偏",
+        "1.",
+        "文件定位"
+      ],
+      "section": "1. 文件定位",
+      "line_start": 3,
+      "line_end": 16,
+      "file_hash": "417477337145059568d30092c3aeed69583b836cea426b4db499d507409b6a4e",
+      "content_hash": "08d0e27b315ec98eb8f3c6d2059831156c83dd09e151f8574141cc74ae91a5a4"
+    },
+    {
+      "id": "rule:.harness/rules/requirement-alignment-rule.md#2-强制对齐原则",
+      "kind": "rule",
+      "file": ".harness/rules/requirement-alignment-rule.md",
+      "title": "2. 强制对齐原则",
+      "summary": "2. 强制对齐原则",
+      "keywords": [
+        "2.",
+        "强制对齐原则",
+        "2.",
+        "强制对齐原则",
+        "requirement",
+        "alignment",
+        "rule"
+      ],
+      "routes": [
+        "requirement-alignment-rule",
+        "需求",
+        "requirement",
+        "纠偏",
+        "2.",
+        "强制对齐原则"
+      ],
+      "section": "2. 强制对齐原则",
+      "line_start": 17,
+      "line_end": 35,
+      "file_hash": "417477337145059568d30092c3aeed69583b836cea426b4db499d507409b6a4e",
+      "content_hash": "cbf5ab8677e8dff85b07b1a81049601b5e8b013b3d1c91b3c557b3b7fbda7470"
+    },
+    {
+      "id": "rule:.harness/rules/requirement-alignment-rule.md#3-需求章节引用要求",
+      "kind": "rule",
+      "file": ".harness/rules/requirement-alignment-rule.md",
+      "title": "3. 需求章节引用要求",
+      "summary": "3. 需求章节引用要求",
+      "keywords": [
+        "3.",
+        "需求章节引用要求",
+        "3.",
+        "需求章节引用要求",
+        "requirement",
+        "alignment",
+        "rule"
+      ],
+      "routes": [
+        "requirement-alignment-rule",
+        "需求",
+        "requirement",
+        "纠偏",
+        "3.",
+        "需求章节引用要求"
+      ],
+      "section": "3. 需求章节引用要求",
+      "line_start": 36,
+      "line_end": 51,
+      "file_hash": "417477337145059568d30092c3aeed69583b836cea426b4db499d507409b6a4e",
+      "content_hash": "14fcfc469de9dcb02b1b662ac0eb2447fb87aec2afdd9592210358fec87028bf"
+    },
+    {
+      "id": "rule:.harness/rules/requirement-alignment-rule.md#4-当前代码复用判断",
+      "kind": "rule",
+      "file": ".harness/rules/requirement-alignment-rule.md",
+      "title": "4. 当前代码复用判断",
+      "summary": "4. 当前代码复用判断",
+      "keywords": [
+        "4.",
+        "当前代码复用判断",
+        "4.",
+        "当前代码复用判断",
+        "requirement",
+        "alignment",
+        "rule"
+      ],
+      "routes": [
+        "requirement-alignment-rule",
+        "需求",
+        "requirement",
+        "纠偏",
+        "4.",
+        "当前代码复用判断"
+      ],
+      "section": "4. 当前代码复用判断",
+      "line_start": 52,
+      "line_end": 73,
+      "file_hash": "417477337145059568d30092c3aeed69583b836cea426b4db499d507409b6a4e",
+      "content_hash": "eb9723a3688bc5ff7e9888a68bd89805486b0cf2ce369433e932a1a632fd150c"
+    },
+    {
+      "id": "rule:.harness/rules/requirement-alignment-rule.md#5-设计纠偏触发条件",
+      "kind": "rule",
+      "file": ".harness/rules/requirement-alignment-rule.md",
+      "title": "5. 设计纠偏触发条件",
+      "summary": "5. 设计纠偏触发条件",
+      "keywords": [
+        "5.",
+        "设计纠偏触发条件",
+        "5.",
+        "设计纠偏触发条件",
+        "requirement",
+        "alignment",
+        "rule"
+      ],
+      "routes": [
+        "requirement-alignment-rule",
+        "需求",
+        "requirement",
+        "纠偏",
+        "5.",
+        "设计纠偏触发条件"
+      ],
+      "section": "5. 设计纠偏触发条件",
+      "line_start": 74,
+      "line_end": 96,
+      "file_hash": "417477337145059568d30092c3aeed69583b836cea426b4db499d507409b6a4e",
+      "content_hash": "fe56242d2432a86f81a295156555c44e96cbb8df704ff069b392a36f97db61a2"
+    },
+    {
+      "id": "rule:.harness/rules/requirement-alignment-rule.md#6-输出格式要求",
+      "kind": "rule",
+      "file": ".harness/rules/requirement-alignment-rule.md",
+      "title": "6. 输出格式要求",
+      "summary": "6. 输出格式要求",
+      "keywords": [
+        "6.",
+        "输出格式要求",
+        "6.",
+        "输出格式要求",
+        "requirement",
+        "alignment",
+        "rule"
+      ],
+      "routes": [
+        "requirement-alignment-rule",
+        "需求",
+        "requirement",
+        "纠偏",
+        "6.",
+        "输出格式要求"
+      ],
+      "section": "6. 输出格式要求",
+      "line_start": 97,
+      "line_end": 115,
+      "file_hash": "417477337145059568d30092c3aeed69583b836cea426b4db499d507409b6a4e",
+      "content_hash": "bccac77b6a9a3eb6c6c2b8ed065cbdd43f2fb8d6b6fb6cb59bfa85a9913eeb6b"
+    },
+    {
+      "id": "rule:.harness/rules/requirement-alignment-rule.md#7-与其他-harness-文档的关系",
+      "kind": "rule",
+      "file": ".harness/rules/requirement-alignment-rule.md",
+      "title": "7. 与其他 Harness 文档的关系",
+      "summary": "7. 与其他 Harness 文档的关系",
+      "keywords": [
+        "7.",
+        "与其他",
+        "Harness",
+        "文档的关系",
+        "7.",
+        "与其他",
+        "Harness",
+        "文档的关系",
+        "requirement",
+        "alignment",
+        "rule"
+      ],
+      "routes": [
+        "requirement-alignment-rule",
+        "需求",
+        "requirement",
+        "纠偏",
+        "7.",
+        "与其他",
+        "harness",
+        "文档的关系"
+      ],
+      "section": "7. 与其他 Harness 文档的关系",
+      "line_start": 116,
+      "line_end": 124,
+      "file_hash": "417477337145059568d30092c3aeed69583b836cea426b4db499d507409b6a4e",
+      "content_hash": "8ca8d0bb221e908cfe3bb845ef0e6e616cf538a312a373c9690965a1777d33ab"
+    },
+    {
+      "id": "rule:.harness/rules/requirement-alignment-rule.md#8-当前阶段结论",
+      "kind": "rule",
+      "file": ".harness/rules/requirement-alignment-rule.md",
+      "title": "8. 当前阶段结论",
+      "summary": "8. 当前阶段结论",
+      "keywords": [
+        "8.",
+        "当前阶段结论",
+        "8.",
+        "当前阶段结论",
+        "requirement",
+        "alignment",
+        "rule"
+      ],
+      "routes": [
+        "requirement-alignment-rule",
+        "需求",
+        "requirement",
+        "纠偏",
+        "8.",
+        "当前阶段结论"
+      ],
+      "section": "8. 当前阶段结论",
+      "line_start": 125,
+      "line_end": 135,
+      "file_hash": "417477337145059568d30092c3aeed69583b836cea426b4db499d507409b6a4e",
+      "content_hash": "97faf44d0ade7ac8ec44a7540a038682d2be854446cc923600adb776a582b89a"
+    },
+    {
+      "id": "rule:.harness/rules/requirement-alignment-rule.md#harness-rules-requirement-alignment-rule-md",
+      "kind": "rule",
+      "file": ".harness/rules/requirement-alignment-rule.md",
+      "title": ".harness/rules/requirement-alignment-rule.md",
+      "summary": ".harness/rules/requirement-alignment-rule.md",
+      "keywords": [
+        ".harness",
+        "rules",
+        "requirement",
+        "alignment",
+        "rule.md",
+        ".harness",
+        "rules",
+        "requirement",
+        "alignment",
+        "rule.md",
+        "requirement",
+        "alignment"
+      ],
+      "routes": [
+        "requirement-alignment-rule",
+        "需求",
+        "requirement",
+        "纠偏",
+        ".harness",
+        "rules",
+        "alignment",
+        "rule.md"
+      ],
+      "section": ".harness/rules/requirement-alignment-rule.md",
+      "line_start": 1,
+      "line_end": 2,
+      "file_hash": "417477337145059568d30092c3aeed69583b836cea426b4db499d507409b6a4e",
+      "content_hash": "f165e4bd1546f44b3b7e7d27985ea7a6a472eef3aa60c398e950d5b57113ca8d"
+    },
+    {
+      "id": "rule:.harness/rules/sql-and-migration.md#1-文件定位",
+      "kind": "rule",
+      "file": ".harness/rules/sql-and-migration.md",
+      "title": "1. 文件定位",
+      "summary": "1. 文件定位",
+      "keywords": [
+        "1.",
+        "文件定位",
+        "1.",
+        "文件定位",
+        "sql",
+        "and",
+        "migration"
+      ],
+      "routes": [
+        "sql-and-migration",
+        "sql",
+        "表",
+        "字段",
+        "迁移",
+        "migration",
+        "1.",
+        "文件定位"
+      ],
+      "section": "1. 文件定位",
+      "line_start": 3,
+      "line_end": 6,
+      "file_hash": "00d08de1aab9c4a4e1f510499e2aa7be4d12e4f09e187e0184ca698e99e84bab",
+      "content_hash": "a911f7c4b27374e8c77d75f2c0aa9100756a6b52fb39695df86544937e226a4d"
+    },
+    {
+      "id": "rule:.harness/rules/sql-and-migration.md#2-sql-目录规则",
+      "kind": "rule",
+      "file": ".harness/rules/sql-and-migration.md",
+      "title": "2. SQL 目录规则",
+      "summary": "2. SQL 目录规则",
+      "keywords": [
+        "2.",
+        "SQL",
+        "目录规则",
+        "2.",
+        "SQL",
+        "目录规则",
+        "sql",
+        "and",
+        "migration"
+      ],
+      "routes": [
+        "sql-and-migration",
+        "sql",
+        "表",
+        "字段",
+        "迁移",
+        "migration",
+        "2.",
+        "目录规则"
+      ],
+      "section": "2. SQL 目录规则",
+      "line_start": 7,
+      "line_end": 13,
+      "file_hash": "00d08de1aab9c4a4e1f510499e2aa7be4d12e4f09e187e0184ca698e99e84bab",
+      "content_hash": "5587765aa92d912539fe2894700abf758709839ff93a044279751f2505cbd90c"
+    },
+    {
+      "id": "rule:.harness/rules/sql-and-migration.md#3-变更分类",
+      "kind": "rule",
+      "file": ".harness/rules/sql-and-migration.md",
+      "title": "3. 变更分类",
+      "summary": "3. 变更分类",
+      "keywords": [
+        "3.",
+        "变更分类",
+        "3.",
+        "变更分类",
+        "sql",
+        "and",
+        "migration"
+      ],
+      "routes": [
+        "sql-and-migration",
+        "sql",
+        "表",
+        "字段",
+        "迁移",
+        "migration",
+        "3.",
+        "变更分类"
+      ],
+      "section": "3. 变更分类",
+      "line_start": 14,
+      "line_end": 22,
+      "file_hash": "00d08de1aab9c4a4e1f510499e2aa7be4d12e4f09e187e0184ca698e99e84bab",
+      "content_hash": "d03d45c10d35cc45810672e7fe51b2f952207571843a5e18b646c3ace00e2883"
+    },
+    {
+      "id": "rule:.harness/rules/sql-and-migration.md#4-1-字段注释要求",
+      "kind": "rule",
+      "file": ".harness/rules/sql-and-migration.md",
+      "title": "4.1 字段注释要求",
+      "summary": "4.1 字段注释要求",
+      "keywords": [
+        "4.1",
+        "字段注释要求",
+        "4.1",
+        "字段注释要求",
+        "sql",
+        "and",
+        "migration"
+      ],
+      "routes": [
+        "sql-and-migration",
+        "sql",
+        "表",
+        "字段",
+        "迁移",
+        "migration",
+        "4.1",
+        "字段注释要求"
+      ],
+      "section": "4.1 字段注释要求",
+      "line_start": 35,
+      "line_end": 42,
+      "file_hash": "00d08de1aab9c4a4e1f510499e2aa7be4d12e4f09e187e0184ca698e99e84bab",
+      "content_hash": "3c91132ea43699028789528f24c256941ed44bdd5ed48e65b27e61dd35599f1f"
+    },
+    {
+      "id": "rule:.harness/rules/sql-and-migration.md#4-2-枚举和状态字段注释要求",
+      "kind": "rule",
+      "file": ".harness/rules/sql-and-migration.md",
+      "title": "4.2 枚举和状态字段注释要求",
+      "summary": "4.2 枚举和状态字段注释要求",
+      "keywords": [
+        "4.2",
+        "枚举和状态字段注释要求",
+        "4.2",
+        "枚举和状态字段注释要求",
+        "sql",
+        "and",
+        "migration"
+      ],
+      "routes": [
+        "sql-and-migration",
+        "sql",
+        "表",
+        "字段",
+        "迁移",
+        "migration",
+        "4.2",
+        "枚举和状态字段注释要求"
+      ],
+      "section": "4.2 枚举和状态字段注释要求",
+      "line_start": 43,
+      "line_end": 52,
+      "file_hash": "00d08de1aab9c4a4e1f510499e2aa7be4d12e4f09e187e0184ca698e99e84bab",
+      "content_hash": "0c5e4fcffcdb27d3870d9a964a204396bf932e0dbae5672876be0ddfdbabd8d1"
+    },
+    {
+      "id": "rule:.harness/rules/sql-and-migration.md#4-同步要求",
+      "kind": "rule",
+      "file": ".harness/rules/sql-and-migration.md",
+      "title": "4. 同步要求",
+      "summary": "4. 同步要求",
+      "keywords": [
+        "4.",
+        "同步要求",
+        "4.",
+        "同步要求",
+        "sql",
+        "and",
+        "migration"
+      ],
+      "routes": [
+        "sql-and-migration",
+        "sql",
+        "表",
+        "字段",
+        "迁移",
+        "migration",
+        "4.",
+        "同步要求"
+      ],
+      "section": "4. 同步要求",
+      "line_start": 23,
+      "line_end": 34,
+      "file_hash": "00d08de1aab9c4a4e1f510499e2aa7be4d12e4f09e187e0184ca698e99e84bab",
+      "content_hash": "2ede6114eec5c62db63148599a771d4a01620628e7f8a74e16dbcc315c18f643"
+    },
+    {
+      "id": "rule:.harness/rules/sql-and-migration.md#5-兼容性要求",
+      "kind": "rule",
+      "file": ".harness/rules/sql-and-migration.md",
+      "title": "5. 兼容性要求",
+      "summary": "5. 兼容性要求",
+      "keywords": [
+        "5.",
+        "兼容性要求",
+        "5.",
+        "兼容性要求",
+        "sql",
+        "and",
+        "migration"
+      ],
+      "routes": [
+        "sql-and-migration",
+        "sql",
+        "表",
+        "字段",
+        "迁移",
+        "migration",
+        "5.",
+        "兼容性要求"
+      ],
+      "section": "5. 兼容性要求",
+      "line_start": 53,
+      "line_end": 59,
+      "file_hash": "00d08de1aab9c4a4e1f510499e2aa7be4d12e4f09e187e0184ca698e99e84bab",
+      "content_hash": "be2d5156d1c00df97eacd361214dba1f96c621383125d31b8ca4bb84d49b03eb"
+    },
+    {
+      "id": "rule:.harness/rules/sql-and-migration.md#6-回滚要求",
+      "kind": "rule",
+      "file": ".harness/rules/sql-and-migration.md",
+      "title": "6. 回滚要求",
+      "summary": "6. 回滚要求",
+      "keywords": [
+        "6.",
+        "回滚要求",
+        "6.",
+        "回滚要求",
+        "sql",
+        "and",
+        "migration"
+      ],
+      "routes": [
+        "sql-and-migration",
+        "sql",
+        "表",
+        "字段",
+        "迁移",
+        "migration",
+        "6.",
+        "回滚要求"
+      ],
+      "section": "6. 回滚要求",
+      "line_start": 60,
+      "line_end": 68,
+      "file_hash": "00d08de1aab9c4a4e1f510499e2aa7be4d12e4f09e187e0184ca698e99e84bab",
+      "content_hash": "e2ee84a188bf1e76aa82b681b537845320c5c40af85f0ec6b4d85c0a4e822984"
+    },
+    {
+      "id": "rule:.harness/rules/sql-and-migration.md#7-审批边界",
+      "kind": "rule",
+      "file": ".harness/rules/sql-and-migration.md",
+      "title": "7. 审批边界",
+      "summary": "7. 审批边界",
+      "keywords": [
+        "7.",
+        "审批边界",
+        "7.",
+        "审批边界",
+        "sql",
+        "and",
+        "migration"
+      ],
+      "routes": [
+        "sql-and-migration",
+        "sql",
+        "表",
+        "字段",
+        "迁移",
+        "migration",
+        "7.",
+        "审批边界"
+      ],
+      "section": "7. 审批边界",
+      "line_start": 69,
+      "line_end": 72,
+      "file_hash": "00d08de1aab9c4a4e1f510499e2aa7be4d12e4f09e187e0184ca698e99e84bab",
+      "content_hash": "998aeec9e6d82d0bfc3e86b72db690636f293aa1c72d3572ff68674bafd26be2"
+    },
+    {
+      "id": "rule:.harness/rules/sql-and-migration.md#8-禁止事项",
+      "kind": "rule",
+      "file": ".harness/rules/sql-and-migration.md",
+      "title": "8. 禁止事项",
+      "summary": "8. 禁止事项",
+      "keywords": [
+        "8.",
+        "禁止事项",
+        "8.",
+        "禁止事项",
+        "sql",
+        "and",
+        "migration"
+      ],
+      "routes": [
+        "sql-and-migration",
+        "sql",
+        "表",
+        "字段",
+        "迁移",
+        "migration",
+        "8.",
+        "禁止事项"
+      ],
+      "section": "8. 禁止事项",
+      "line_start": 73,
+      "line_end": 80,
+      "file_hash": "00d08de1aab9c4a4e1f510499e2aa7be4d12e4f09e187e0184ca698e99e84bab",
+      "content_hash": "8f1357ea7029596c72ef16d7c68853f65b81882b1b4dc84bdf1f3ab58d7f6f44"
+    },
+    {
+      "id": "rule:.harness/rules/sql-and-migration.md#9-app-core-敏感字段分级补充规则",
+      "kind": "rule",
+      "file": ".harness/rules/sql-and-migration.md",
+      "title": "9. app-core 敏感字段分级补充规则",
+      "summary": "9. app-core 敏感字段分级补充规则",
+      "keywords": [
+        "9.",
+        "app",
+        "core",
+        "敏感字段分级补充规则",
+        "9.",
+        "app",
+        "core",
+        "敏感字段分级补充规则",
+        "sql",
+        "and",
+        "migration"
+      ],
+      "routes": [
+        "sql-and-migration",
+        "sql",
+        "表",
+        "字段",
+        "迁移",
+        "migration",
+        "9.",
+        "app",
+        "core",
+        "敏感字段分级补充规则"
+      ],
+      "section": "9. app-core 敏感字段分级补充规则",
+      "line_start": 81,
+      "line_end": 87,
+      "file_hash": "00d08de1aab9c4a4e1f510499e2aa7be4d12e4f09e187e0184ca698e99e84bab",
+      "content_hash": "21ec340d1fef4844ba928b455dc146a9dc203183242213b25ce3bd92cb7defd9"
+    },
+    {
+      "id": "rule:.harness/rules/sql-and-migration.md#harness-rules-sql-and-migration-md",
+      "kind": "rule",
+      "file": ".harness/rules/sql-and-migration.md",
+      "title": ".harness/rules/sql-and-migration.md",
+      "summary": ".harness/rules/sql-and-migration.md",
+      "keywords": [
+        ".harness",
+        "rules",
+        "sql",
+        "and",
+        "migration.md",
+        ".harness",
+        "rules",
+        "sql",
+        "and",
+        "migration.md",
+        "sql",
+        "and"
+      ],
+      "routes": [
+        "sql-and-migration",
+        "sql",
+        "表",
+        "字段",
+        "迁移",
+        "migration",
+        ".harness",
+        "rules",
+        "and",
+        "migration.md"
+      ],
+      "section": ".harness/rules/sql-and-migration.md",
+      "line_start": 1,
+      "line_end": 2,
+      "file_hash": "00d08de1aab9c4a4e1f510499e2aa7be4d12e4f09e187e0184ca698e99e84bab",
+      "content_hash": "747b3a1bb46ed837af5109c5ea149a23e0ad04c0be0fb0250c7722fde3390fae"
+    },
+    {
+      "id": "rule:.harness/rules/tool-access.md#1-文件定位",
+      "kind": "rule",
+      "file": ".harness/rules/tool-access.md",
+      "title": "1. 文件定位",
+      "summary": "1. 文件定位",
+      "keywords": [
+        "1.",
+        "文件定位",
+        "1.",
+        "文件定位",
+        "tool",
+        "access"
+      ],
+      "routes": [
+        "tool-access",
+        "工具",
+        "tool",
+        "命令",
+        "权限",
+        "1.",
+        "文件定位"
+      ],
+      "section": "1. 文件定位",
+      "line_start": 3,
+      "line_end": 6,
+      "file_hash": "a0706bb6e7c65b9ce9f15b60445c2e6e324263719e2c9f37ea444df328bef76f",
+      "content_hash": "4e962548e964941f859d16e0c7ddaa2c2b232ec4a47462a4eaab5379b2cd2312"
+    },
+    {
+      "id": "rule:.harness/rules/tool-access.md#2-默认允许",
+      "kind": "rule",
+      "file": ".harness/rules/tool-access.md",
+      "title": "2. 默认允许",
+      "summary": "2. 默认允许",
+      "keywords": [
+        "2.",
+        "默认允许",
+        "2.",
+        "默认允许",
+        "tool",
+        "access"
+      ],
+      "routes": [
+        "tool-access",
+        "工具",
+        "tool",
+        "命令",
+        "权限",
+        "2.",
+        "默认允许"
+      ],
+      "section": "2. 默认允许",
+      "line_start": 7,
+      "line_end": 14,
+      "file_hash": "a0706bb6e7c65b9ce9f15b60445c2e6e324263719e2c9f37ea444df328bef76f",
+      "content_hash": "aeecf4b3072fc425d87f29c6b51e55a48327b907e479bb8a1589ba10bde288cc"
+    },
+    {
+      "id": "rule:.harness/rules/tool-access.md#3-需要暂停确认",
+      "kind": "rule",
+      "file": ".harness/rules/tool-access.md",
+      "title": "3. 需要暂停确认",
+      "summary": "3. 需要暂停确认",
+      "keywords": [
+        "3.",
+        "需要暂停确认",
+        "3.",
+        "需要暂停确认",
+        "tool",
+        "access"
+      ],
+      "routes": [
+        "tool-access",
+        "工具",
+        "tool",
+        "命令",
+        "权限",
+        "3.",
+        "需要暂停确认"
+      ],
+      "section": "3. 需要暂停确认",
+      "line_start": 15,
+      "line_end": 23,
+      "file_hash": "a0706bb6e7c65b9ce9f15b60445c2e6e324263719e2c9f37ea444df328bef76f",
+      "content_hash": "31377095858c13114c1b458027695cad016b34de1ce9e911625a32273ace1a1e"
+    },
+    {
+      "id": "rule:.harness/rules/tool-access.md#4-最小权限原则",
+      "kind": "rule",
+      "file": ".harness/rules/tool-access.md",
+      "title": "4. 最小权限原则",
+      "summary": "4. 最小权限原则",
+      "keywords": [
+        "4.",
+        "最小权限原则",
+        "4.",
+        "最小权限原则",
+        "tool",
+        "access"
+      ],
+      "routes": [
+        "tool-access",
+        "工具",
+        "tool",
+        "命令",
+        "权限",
+        "4.",
+        "最小权限原则"
+      ],
+      "section": "4. 最小权限原则",
+      "line_start": 24,
+      "line_end": 29,
+      "file_hash": "a0706bb6e7c65b9ce9f15b60445c2e6e324263719e2c9f37ea444df328bef76f",
+      "content_hash": "e10c37d2ba616abe317c667aa1c603ca487a6835b335496ab8337f1987803f41"
+    },
+    {
+      "id": "rule:.harness/rules/tool-access.md#5-codex-侧强制与配置",
+      "kind": "rule",
+      "file": ".harness/rules/tool-access.md",
+      "title": "5. Codex 侧强制与配置",
+      "summary": "5. Codex 侧强制与配置",
+      "keywords": [
+        "5.",
+        "Codex",
+        "侧强制与配置",
+        "5.",
+        "Codex",
+        "侧强制与配置",
+        "tool",
+        "access"
+      ],
+      "routes": [
+        "tool-access",
+        "工具",
+        "tool",
+        "命令",
+        "权限",
+        "5.",
+        "codex",
+        "侧强制与配置"
+      ],
+      "section": "5. Codex 侧强制与配置",
+      "line_start": 30,
+      "line_end": 34,
+      "file_hash": "a0706bb6e7c65b9ce9f15b60445c2e6e324263719e2c9f37ea444df328bef76f",
+      "content_hash": "8b4ba6fe292f75c5dc6ca59153b7f5d286b249116a31fb311f2ff48d09df4296"
+    },
+    {
+      "id": "rule:.harness/rules/tool-access.md#harness-rules-tool-access-md",
+      "kind": "rule",
+      "file": ".harness/rules/tool-access.md",
+      "title": ".harness/rules/tool-access.md",
+      "summary": ".harness/rules/tool-access.md",
+      "keywords": [
+        ".harness",
+        "rules",
+        "tool",
+        "access.md",
+        ".harness",
+        "rules",
+        "tool",
+        "access.md",
+        "tool",
+        "access"
+      ],
+      "routes": [
+        "tool-access",
+        "工具",
+        "tool",
+        "命令",
+        "权限",
+        ".harness",
+        "rules",
+        "access.md"
+      ],
+      "section": ".harness/rules/tool-access.md",
+      "line_start": 1,
+      "line_end": 2,
+      "file_hash": "a0706bb6e7c65b9ce9f15b60445c2e6e324263719e2c9f37ea444df328bef76f",
+      "content_hash": "5b677799a0487b4ec341ad5bceeac4e6d8303ddbb82d647817494cc98a93e715"
+    },
+    {
+      "id": "skill:.harness/skills/coding-skill/SKILL.md",
+      "kind": "skill",
+      "file": ".harness/skills/coding-skill/SKILL.md",
+      "title": "",
+      "summary": "",
+      "keywords": [
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "明确的小范围 bug、接口、service、sql、配置修改",
+        "已完成需求分析且边界清晰的后端任务"
+      ],
+      "section": "",
+      "line_start": 5,
+      "line_end": 5,
+      "file_hash": "f4677a96b82a5af02cae934f77ddd16e35cc93500a16b8414e46799d69296f4a",
+      "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "skill:.harness/skills/coding-skill/SKILL.md#coding-skill",
+      "kind": "skill",
+      "file": ".harness/skills/coding-skill/SKILL.md",
+      "title": "Coding Skill",
+      "summary": "Coding Skill",
+      "keywords": [
+        "Coding",
+        "Skill",
+        "Coding",
+        "Skill",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "明确的小范围 bug、接口、service、sql、配置修改",
+        "已完成需求分析且边界清晰的后端任务",
+        "coding"
+      ],
+      "section": "Coding Skill",
+      "line_start": 6,
+      "line_end": 7,
+      "file_hash": "f4677a96b82a5af02cae934f77ddd16e35cc93500a16b8414e46799d69296f4a",
+      "content_hash": "2c7d2debe7bbb8d15bfcbae1f9ad1caf4e00123e7a14f49e53c36140657c92a7"
+    },
+    {
+      "id": "skill:.harness/skills/coding-skill/SKILL.md#停止条件",
+      "kind": "skill",
+      "file": ".harness/skills/coding-skill/SKILL.md",
+      "title": "停止条件",
+      "summary": "停止条件",
+      "keywords": [
+        "停止条件",
+        "停止条件",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "明确的小范围 bug、接口、service、sql、配置修改",
+        "已完成需求分析且边界清晰的后端任务",
+        "停止条件"
+      ],
+      "section": "停止条件",
+      "line_start": 51,
+      "line_end": 58,
+      "file_hash": "f4677a96b82a5af02cae934f77ddd16e35cc93500a16b8414e46799d69296f4a",
+      "content_hash": "72a27d8bff34cdd9e9c1a1243a3fe29fa1b9e2aa1548f00a97bf918573f17890"
+    },
+    {
+      "id": "skill:.harness/skills/coding-skill/SKILL.md#定位",
+      "kind": "skill",
+      "file": ".harness/skills/coding-skill/SKILL.md",
+      "title": "定位",
+      "summary": "定位",
+      "keywords": [
+        "定位",
+        "定位",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "明确的小范围 bug、接口、service、sql、配置修改",
+        "已完成需求分析且边界清晰的后端任务",
+        "定位"
+      ],
+      "section": "定位",
+      "line_start": 8,
+      "line_end": 11,
+      "file_hash": "f4677a96b82a5af02cae934f77ddd16e35cc93500a16b8414e46799d69296f4a",
+      "content_hash": "d33b041fd27840e4f34add31a3b76341d6270fb559fd16bb96ed8954802ae3fa"
+    },
+    {
+      "id": "skill:.harness/skills/coding-skill/SKILL.md#执行步骤",
+      "kind": "skill",
+      "file": ".harness/skills/coding-skill/SKILL.md",
+      "title": "执行步骤",
+      "summary": "执行步骤",
+      "keywords": [
+        "执行步骤",
+        "执行步骤",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "明确的小范围 bug、接口、service、sql、配置修改",
+        "已完成需求分析且边界清晰的后端任务",
+        "执行步骤"
+      ],
+      "section": "执行步骤",
+      "line_start": 26,
+      "line_end": 38,
+      "file_hash": "f4677a96b82a5af02cae934f77ddd16e35cc93500a16b8414e46799d69296f4a",
+      "content_hash": "da990e60f487e5672b71fe162cfe02ab5178fa5d1f712c8910bf51f328dc750f"
+    },
+    {
+      "id": "skill:.harness/skills/coding-skill/SKILL.md#触发条件",
+      "kind": "skill",
+      "file": ".harness/skills/coding-skill/SKILL.md",
+      "title": "触发条件",
+      "summary": "触发条件",
+      "keywords": [
+        "触发条件",
+        "触发条件",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "明确的小范围 bug、接口、service、sql、配置修改",
+        "已完成需求分析且边界清晰的后端任务",
+        "触发条件"
+      ],
+      "section": "触发条件",
+      "line_start": 12,
+      "line_end": 18,
+      "file_hash": "f4677a96b82a5af02cae934f77ddd16e35cc93500a16b8414e46799d69296f4a",
+      "content_hash": "6a1cc2dda25b71e95384ad0b0ae480740cc977b9378054cf4b564cdd4981a597"
+    },
+    {
+      "id": "skill:.harness/skills/coding-skill/SKILL.md#输入上下文",
+      "kind": "skill",
+      "file": ".harness/skills/coding-skill/SKILL.md",
+      "title": "输入上下文",
+      "summary": "输入上下文",
+      "keywords": [
+        "输入上下文",
+        "输入上下文",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "明确的小范围 bug、接口、service、sql、配置修改",
+        "已完成需求分析且边界清晰的后端任务",
+        "输入上下文"
+      ],
+      "section": "输入上下文",
+      "line_start": 19,
+      "line_end": 25,
+      "file_hash": "f4677a96b82a5af02cae934f77ddd16e35cc93500a16b8414e46799d69296f4a",
+      "content_hash": "f921a71565628718e5e5dc15edaba1f6a04813edeb5c8ace8d41b1b6d7096146"
+    },
+    {
+      "id": "skill:.harness/skills/coding-skill/SKILL.md#输出格式",
+      "kind": "skill",
+      "file": ".harness/skills/coding-skill/SKILL.md",
+      "title": "输出格式",
+      "summary": "输出格式",
+      "keywords": [
+        "输出格式",
+        "输出格式",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "明确的小范围 bug、接口、service、sql、配置修改",
+        "已完成需求分析且边界清晰的后端任务",
+        "输出格式"
+      ],
+      "section": "输出格式",
+      "line_start": 39,
+      "line_end": 50,
+      "file_hash": "f4677a96b82a5af02cae934f77ddd16e35cc93500a16b8414e46799d69296f4a",
+      "content_hash": "dc703f92f65c9105607c01ace9e2e0d7c219fca4a5dce6dca1d52fe945031807"
+    },
+    {
+      "id": "skill:.harness/skills/coding-skill/SKILL.md#验证要求",
+      "kind": "skill",
+      "file": ".harness/skills/coding-skill/SKILL.md",
+      "title": "验证要求",
+      "summary": "验证要求",
+      "keywords": [
+        "验证要求",
+        "验证要求",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "明确的小范围 bug、接口、service、sql、配置修改",
+        "已完成需求分析且边界清晰的后端任务",
+        "验证要求"
+      ],
+      "section": "验证要求",
+      "line_start": 59,
+      "line_end": 61,
+      "file_hash": "f4677a96b82a5af02cae934f77ddd16e35cc93500a16b8414e46799d69296f4a",
+      "content_hash": "df667edf3b037dea957abbf15c3d4dc7777347b13e68baeea7b169cb7d6c11ca"
+    },
+    {
+      "id": "skill:.harness/skills/db-schema-sync/SKILL.md",
+      "kind": "skill",
+      "file": ".harness/skills/db-schema-sync/SKILL.md",
+      "title": "",
+      "summary": "",
+      "keywords": [
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新增或修改表字段、do、mapper、xml、vo/dto 或迁移脚本",
+        "需要数据模型一致性检查"
+      ],
+      "section": "",
+      "line_start": 5,
+      "line_end": 5,
+      "file_hash": "25d741e5bdef1e7b8fdff2e5372044c87ce34b7eaf9341c22f43581a6f2af496",
+      "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "skill:.harness/skills/db-schema-sync/SKILL.md#db-schema-sync",
+      "kind": "skill",
+      "file": ".harness/skills/db-schema-sync/SKILL.md",
+      "title": "DB Schema Sync",
+      "summary": "DB Schema Sync",
+      "keywords": [
+        "DB",
+        "Schema",
+        "Sync",
+        "DB",
+        "Schema",
+        "Sync",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新增或修改表字段、do、mapper、xml、vo/dto 或迁移脚本",
+        "需要数据模型一致性检查",
+        "db",
+        "schema",
+        "sync"
+      ],
+      "section": "DB Schema Sync",
+      "line_start": 6,
+      "line_end": 7,
+      "file_hash": "25d741e5bdef1e7b8fdff2e5372044c87ce34b7eaf9341c22f43581a6f2af496",
+      "content_hash": "c8f0f6d0bfc2db95320ceb3855208d8575c003198df18acc073b9578cf9f7c79"
+    },
+    {
+      "id": "skill:.harness/skills/db-schema-sync/SKILL.md#停止条件",
+      "kind": "skill",
+      "file": ".harness/skills/db-schema-sync/SKILL.md",
+      "title": "停止条件",
+      "summary": "停止条件",
+      "keywords": [
+        "停止条件",
+        "停止条件",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新增或修改表字段、do、mapper、xml、vo/dto 或迁移脚本",
+        "需要数据模型一致性检查",
+        "停止条件"
+      ],
+      "section": "停止条件",
+      "line_start": 53,
+      "line_end": 58,
+      "file_hash": "25d741e5bdef1e7b8fdff2e5372044c87ce34b7eaf9341c22f43581a6f2af496",
+      "content_hash": "a46f05430055b7c3f31f1c4e4dffb9f7d7598d7a1b73f9e5c91a84e1b715ef95"
+    },
+    {
+      "id": "skill:.harness/skills/db-schema-sync/SKILL.md#定位",
+      "kind": "skill",
+      "file": ".harness/skills/db-schema-sync/SKILL.md",
+      "title": "定位",
+      "summary": "定位",
+      "keywords": [
+        "定位",
+        "定位",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新增或修改表字段、do、mapper、xml、vo/dto 或迁移脚本",
+        "需要数据模型一致性检查",
+        "定位"
+      ],
+      "section": "定位",
+      "line_start": 8,
+      "line_end": 11,
+      "file_hash": "25d741e5bdef1e7b8fdff2e5372044c87ce34b7eaf9341c22f43581a6f2af496",
+      "content_hash": "93134f283994d01e39fe453b4dcc7c18eef0bcb436932ee9dbcb3537a836aa98"
+    },
+    {
+      "id": "skill:.harness/skills/db-schema-sync/SKILL.md#检查步骤",
+      "kind": "skill",
+      "file": ".harness/skills/db-schema-sync/SKILL.md",
+      "title": "检查步骤",
+      "summary": "检查步骤",
+      "keywords": [
+        "检查步骤",
+        "检查步骤",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新增或修改表字段、do、mapper、xml、vo/dto 或迁移脚本",
+        "需要数据模型一致性检查",
+        "检查步骤"
+      ],
+      "section": "检查步骤",
+      "line_start": 28,
+      "line_end": 41,
+      "file_hash": "25d741e5bdef1e7b8fdff2e5372044c87ce34b7eaf9341c22f43581a6f2af496",
+      "content_hash": "25c7781a3e488c187bf2d20257549b012a624bd9bca3430931931f66285e21fb"
+    },
+    {
+      "id": "skill:.harness/skills/db-schema-sync/SKILL.md#触发条件",
+      "kind": "skill",
+      "file": ".harness/skills/db-schema-sync/SKILL.md",
+      "title": "触发条件",
+      "summary": "触发条件",
+      "keywords": [
+        "触发条件",
+        "触发条件",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新增或修改表字段、do、mapper、xml、vo/dto 或迁移脚本",
+        "需要数据模型一致性检查",
+        "触发条件"
+      ],
+      "section": "触发条件",
+      "line_start": 12,
+      "line_end": 19,
+      "file_hash": "25d741e5bdef1e7b8fdff2e5372044c87ce34b7eaf9341c22f43581a6f2af496",
+      "content_hash": "6e254a9bae0724f8d34bc4ad367872814b7328e9c2ce318e7fa38badd7db517a"
+    },
+    {
+      "id": "skill:.harness/skills/db-schema-sync/SKILL.md#输入上下文",
+      "kind": "skill",
+      "file": ".harness/skills/db-schema-sync/SKILL.md",
+      "title": "输入上下文",
+      "summary": "输入上下文",
+      "keywords": [
+        "输入上下文",
+        "输入上下文",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新增或修改表字段、do、mapper、xml、vo/dto 或迁移脚本",
+        "需要数据模型一致性检查",
+        "输入上下文"
+      ],
+      "section": "输入上下文",
+      "line_start": 20,
+      "line_end": 27,
+      "file_hash": "25d741e5bdef1e7b8fdff2e5372044c87ce34b7eaf9341c22f43581a6f2af496",
+      "content_hash": "98aaa20fb9e97aacaec1315a73e6d2ddaf576cb4ef373cab6a7ece702d837596"
+    },
+    {
+      "id": "skill:.harness/skills/db-schema-sync/SKILL.md#输出格式",
+      "kind": "skill",
+      "file": ".harness/skills/db-schema-sync/SKILL.md",
+      "title": "输出格式",
+      "summary": "输出格式",
+      "keywords": [
+        "输出格式",
+        "输出格式",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新增或修改表字段、do、mapper、xml、vo/dto 或迁移脚本",
+        "需要数据模型一致性检查",
+        "输出格式"
+      ],
+      "section": "输出格式",
+      "line_start": 42,
+      "line_end": 52,
+      "file_hash": "25d741e5bdef1e7b8fdff2e5372044c87ce34b7eaf9341c22f43581a6f2af496",
+      "content_hash": "ea382ae3766d08ec4fc234941c60eea159a715ad04787b52b554350ab5e68745"
+    },
+    {
+      "id": "skill:.harness/skills/db-schema-sync/SKILL.md#验证要求",
+      "kind": "skill",
+      "file": ".harness/skills/db-schema-sync/SKILL.md",
+      "title": "验证要求",
+      "summary": "验证要求",
+      "keywords": [
+        "验证要求",
+        "验证要求",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新增或修改表字段、do、mapper、xml、vo/dto 或迁移脚本",
+        "需要数据模型一致性检查",
+        "验证要求"
+      ],
+      "section": "验证要求",
+      "line_start": 59,
+      "line_end": 61,
+      "file_hash": "25d741e5bdef1e7b8fdff2e5372044c87ce34b7eaf9341c22f43581a6f2af496",
+      "content_hash": "928b1cc35fd950008ffd06378b9d244cd8122f1b0741e306c5bc142a5dbd34f0"
+    },
+    {
+      "id": "skill:.harness/skills/deploy-verify/SKILL.md",
+      "kind": "skill",
+      "file": ".harness/skills/deploy-verify/SKILL.md",
+      "title": "",
+      "summary": "",
+      "keywords": [
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "修改 app-server、配置文件、依赖或模块装配",
+        "发布前检查或打包失败排查"
+      ],
+      "section": "",
+      "line_start": 5,
+      "line_end": 5,
+      "file_hash": "f928e738f63781911ac6fb4a0c9786da79231a02d7f2c0faa31ba053cea17405",
+      "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "skill:.harness/skills/deploy-verify/SKILL.md#deploy-verify",
+      "kind": "skill",
+      "file": ".harness/skills/deploy-verify/SKILL.md",
+      "title": "Deploy Verify",
+      "summary": "Deploy Verify",
+      "keywords": [
+        "Deploy",
+        "Verify",
+        "Deploy",
+        "Verify",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "修改 app-server、配置文件、依赖或模块装配",
+        "发布前检查或打包失败排查",
+        "deploy",
+        "verify"
+      ],
+      "section": "Deploy Verify",
+      "line_start": 6,
+      "line_end": 7,
+      "file_hash": "f928e738f63781911ac6fb4a0c9786da79231a02d7f2c0faa31ba053cea17405",
+      "content_hash": "89fbc16e81c45aa7d8b4c24ab183475026135cbdf961c330b118ae2d8630d94a"
+    },
+    {
+      "id": "skill:.harness/skills/deploy-verify/SKILL.md#停止条件",
+      "kind": "skill",
+      "file": ".harness/skills/deploy-verify/SKILL.md",
+      "title": "停止条件",
+      "summary": "停止条件",
+      "keywords": [
+        "停止条件",
+        "停止条件",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "修改 app-server、配置文件、依赖或模块装配",
+        "发布前检查或打包失败排查",
+        "停止条件"
+      ],
+      "section": "停止条件",
+      "line_start": 55,
+      "line_end": 61,
+      "file_hash": "f928e738f63781911ac6fb4a0c9786da79231a02d7f2c0faa31ba053cea17405",
+      "content_hash": "b47425fa5942b1a0ef10f4376211da86347a76328012100d3b001dba5fc66856"
+    },
+    {
+      "id": "skill:.harness/skills/deploy-verify/SKILL.md#定位",
+      "kind": "skill",
+      "file": ".harness/skills/deploy-verify/SKILL.md",
+      "title": "定位",
+      "summary": "定位",
+      "keywords": [
+        "定位",
+        "定位",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "修改 app-server、配置文件、依赖或模块装配",
+        "发布前检查或打包失败排查",
+        "定位"
+      ],
+      "section": "定位",
+      "line_start": 8,
+      "line_end": 11,
+      "file_hash": "f928e738f63781911ac6fb4a0c9786da79231a02d7f2c0faa31ba053cea17405",
+      "content_hash": "2fcffa25d8236e6e53fc50e534ed534435b425473e6fd58c86189450340607b0"
+    },
+    {
+      "id": "skill:.harness/skills/deploy-verify/SKILL.md#常用命令",
+      "kind": "skill",
+      "file": ".harness/skills/deploy-verify/SKILL.md",
+      "title": "常用命令",
+      "summary": "常用命令",
+      "keywords": [
+        "常用命令",
+        "常用命令",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "修改 app-server、配置文件、依赖或模块装配",
+        "发布前检查或打包失败排查",
+        "常用命令"
+      ],
+      "section": "常用命令",
+      "line_start": 38,
+      "line_end": 43,
+      "file_hash": "f928e738f63781911ac6fb4a0c9786da79231a02d7f2c0faa31ba053cea17405",
+      "content_hash": "8b3371e442e122fc9b3003fbe02441b1653a233d3f3a57706cb7b1c43d9864e2"
+    },
+    {
+      "id": "skill:.harness/skills/deploy-verify/SKILL.md#检查步骤",
+      "kind": "skill",
+      "file": ".harness/skills/deploy-verify/SKILL.md",
+      "title": "检查步骤",
+      "summary": "检查步骤",
+      "keywords": [
+        "检查步骤",
+        "检查步骤",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "修改 app-server、配置文件、依赖或模块装配",
+        "发布前检查或打包失败排查",
+        "检查步骤"
+      ],
+      "section": "检查步骤",
+      "line_start": 27,
+      "line_end": 37,
+      "file_hash": "f928e738f63781911ac6fb4a0c9786da79231a02d7f2c0faa31ba053cea17405",
+      "content_hash": "5ee44d6dc554e187e48f77217c6d608e921bcb2642497a5d5e08a4aa3eb8a2ae"
+    },
+    {
+      "id": "skill:.harness/skills/deploy-verify/SKILL.md#触发条件",
+      "kind": "skill",
+      "file": ".harness/skills/deploy-verify/SKILL.md",
+      "title": "触发条件",
+      "summary": "触发条件",
+      "keywords": [
+        "触发条件",
+        "触发条件",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "修改 app-server、配置文件、依赖或模块装配",
+        "发布前检查或打包失败排查",
+        "触发条件"
+      ],
+      "section": "触发条件",
+      "line_start": 12,
+      "line_end": 18,
+      "file_hash": "f928e738f63781911ac6fb4a0c9786da79231a02d7f2c0faa31ba053cea17405",
+      "content_hash": "97053fb093b27aa252860620b55255de398f93850b7a797dbeed9ac755ce0aca"
+    },
+    {
+      "id": "skill:.harness/skills/deploy-verify/SKILL.md#输入上下文",
+      "kind": "skill",
+      "file": ".harness/skills/deploy-verify/SKILL.md",
+      "title": "输入上下文",
+      "summary": "输入上下文",
+      "keywords": [
+        "输入上下文",
+        "输入上下文",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "修改 app-server、配置文件、依赖或模块装配",
+        "发布前检查或打包失败排查",
+        "输入上下文"
+      ],
+      "section": "输入上下文",
+      "line_start": 19,
+      "line_end": 26,
+      "file_hash": "f928e738f63781911ac6fb4a0c9786da79231a02d7f2c0faa31ba053cea17405",
+      "content_hash": "22e20d23b411eacf8550dc904d3f7a08e5e2152df2e78211626b23c26891b7fa"
+    },
+    {
+      "id": "skill:.harness/skills/deploy-verify/SKILL.md#输出格式",
+      "kind": "skill",
+      "file": ".harness/skills/deploy-verify/SKILL.md",
+      "title": "输出格式",
+      "summary": "输出格式",
+      "keywords": [
+        "输出格式",
+        "输出格式",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "修改 app-server、配置文件、依赖或模块装配",
+        "发布前检查或打包失败排查",
+        "输出格式"
+      ],
+      "section": "输出格式",
+      "line_start": 44,
+      "line_end": 54,
+      "file_hash": "f928e738f63781911ac6fb4a0c9786da79231a02d7f2c0faa31ba053cea17405",
+      "content_hash": "9b9b1af0b4343a3291904e7996113dbaf9d4d5dd4e8618871ccdf05ac9a50c42"
+    },
+    {
+      "id": "skill:.harness/skills/expert-reviewer/SKILL.md",
+      "kind": "skill",
+      "file": ".harness/skills/expert-reviewer/SKILL.md",
+      "title": "",
+      "summary": "",
+      "keywords": [
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "用户要求 review",
+        "重要变更完成、合并或发布前",
+        "涉及权限、sql、框架层或接口兼容性"
+      ],
+      "section": "",
+      "line_start": 5,
+      "line_end": 5,
+      "file_hash": "b131a8935b8e053bb24f75c9fd877f387f7e753c150011215614fc9ccd5dfd9b",
+      "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "skill:.harness/skills/expert-reviewer/SKILL.md#expert-reviewer",
+      "kind": "skill",
+      "file": ".harness/skills/expert-reviewer/SKILL.md",
+      "title": "Expert Reviewer",
+      "summary": "Expert Reviewer",
+      "keywords": [
+        "Expert",
+        "Reviewer",
+        "Expert",
+        "Reviewer",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "用户要求 review",
+        "重要变更完成、合并或发布前",
+        "涉及权限、sql、框架层或接口兼容性",
+        "expert",
+        "reviewer"
+      ],
+      "section": "Expert Reviewer",
+      "line_start": 6,
+      "line_end": 7,
+      "file_hash": "b131a8935b8e053bb24f75c9fd877f387f7e753c150011215614fc9ccd5dfd9b",
+      "content_hash": "cdabf82f9ba7b8cb489a1f6d8742f0f1dd69c7b7a38301d2f737180bb87b9817"
+    },
+    {
+      "id": "skill:.harness/skills/expert-reviewer/SKILL.md#停止条件",
+      "kind": "skill",
+      "file": ".harness/skills/expert-reviewer/SKILL.md",
+      "title": "停止条件",
+      "summary": "停止条件",
+      "keywords": [
+        "停止条件",
+        "停止条件",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "用户要求 review",
+        "重要变更完成、合并或发布前",
+        "涉及权限、sql、框架层或接口兼容性",
+        "停止条件"
+      ],
+      "section": "停止条件",
+      "line_start": 59,
+      "line_end": 63,
+      "file_hash": "b131a8935b8e053bb24f75c9fd877f387f7e753c150011215614fc9ccd5dfd9b",
+      "content_hash": "950b093a7043a2666c8e19da550abee2ca7dc5b8d9f7b530670a48f80c59c8e9"
+    },
+    {
+      "id": "skill:.harness/skills/expert-reviewer/SKILL.md#定位",
+      "kind": "skill",
+      "file": ".harness/skills/expert-reviewer/SKILL.md",
+      "title": "定位",
+      "summary": "定位",
+      "keywords": [
+        "定位",
+        "定位",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "用户要求 review",
+        "重要变更完成、合并或发布前",
+        "涉及权限、sql、框架层或接口兼容性",
+        "定位"
+      ],
+      "section": "定位",
+      "line_start": 8,
+      "line_end": 11,
+      "file_hash": "b131a8935b8e053bb24f75c9fd877f387f7e753c150011215614fc9ccd5dfd9b",
+      "content_hash": "faf6557b7c166b4dbaf262679b435dc8262b50993fc53834f7a989a8336f8f0b"
+    },
+    {
+      "id": "skill:.harness/skills/expert-reviewer/SKILL.md#执行步骤",
+      "kind": "skill",
+      "file": ".harness/skills/expert-reviewer/SKILL.md",
+      "title": "执行步骤",
+      "summary": "执行步骤",
+      "keywords": [
+        "执行步骤",
+        "执行步骤",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "用户要求 review",
+        "重要变更完成、合并或发布前",
+        "涉及权限、sql、框架层或接口兼容性",
+        "执行步骤"
+      ],
+      "section": "执行步骤",
+      "line_start": 26,
+      "line_end": 33,
+      "file_hash": "b131a8935b8e053bb24f75c9fd877f387f7e753c150011215614fc9ccd5dfd9b",
+      "content_hash": "6d715f7ad1ce38a91f266a9dd97f75d54fa5ae0af79aea4313887b61706decaa"
+    },
+    {
+      "id": "skill:.harness/skills/expert-reviewer/SKILL.md#检查项",
+      "kind": "skill",
+      "file": ".harness/skills/expert-reviewer/SKILL.md",
+      "title": "检查项",
+      "summary": "检查项",
+      "keywords": [
+        "检查项",
+        "检查项",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "用户要求 review",
+        "重要变更完成、合并或发布前",
+        "涉及权限、sql、框架层或接口兼容性",
+        "检查项"
+      ],
+      "section": "检查项",
+      "line_start": 34,
+      "line_end": 44,
+      "file_hash": "b131a8935b8e053bb24f75c9fd877f387f7e753c150011215614fc9ccd5dfd9b",
+      "content_hash": "ea18ede349e23621c3d558fa55902334d09e0b2437436ede80e3a241ef6df13c"
+    },
+    {
+      "id": "skill:.harness/skills/expert-reviewer/SKILL.md#触发条件",
+      "kind": "skill",
+      "file": ".harness/skills/expert-reviewer/SKILL.md",
+      "title": "触发条件",
+      "summary": "触发条件",
+      "keywords": [
+        "触发条件",
+        "触发条件",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "用户要求 review",
+        "重要变更完成、合并或发布前",
+        "涉及权限、sql、框架层或接口兼容性",
+        "触发条件"
+      ],
+      "section": "触发条件",
+      "line_start": 12,
+      "line_end": 18,
+      "file_hash": "b131a8935b8e053bb24f75c9fd877f387f7e753c150011215614fc9ccd5dfd9b",
+      "content_hash": "fad6b9b7e23752a5978a0509d4c1858dd643f4cb15115f6925f03be09ba532f8"
+    },
+    {
+      "id": "skill:.harness/skills/expert-reviewer/SKILL.md#输入上下文",
+      "kind": "skill",
+      "file": ".harness/skills/expert-reviewer/SKILL.md",
+      "title": "输入上下文",
+      "summary": "输入上下文",
+      "keywords": [
+        "输入上下文",
+        "输入上下文",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "用户要求 review",
+        "重要变更完成、合并或发布前",
+        "涉及权限、sql、框架层或接口兼容性",
+        "输入上下文"
+      ],
+      "section": "输入上下文",
+      "line_start": 19,
+      "line_end": 25,
+      "file_hash": "b131a8935b8e053bb24f75c9fd877f387f7e753c150011215614fc9ccd5dfd9b",
+      "content_hash": "d153eb7e63dde8b13144c2b198b5543769a8ca65f08e82354d438d53c43d2ef9"
+    },
+    {
+      "id": "skill:.harness/skills/expert-reviewer/SKILL.md#输出格式",
+      "kind": "skill",
+      "file": ".harness/skills/expert-reviewer/SKILL.md",
+      "title": "输出格式",
+      "summary": "输出格式",
+      "keywords": [
+        "输出格式",
+        "输出格式",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "用户要求 review",
+        "重要变更完成、合并或发布前",
+        "涉及权限、sql、框架层或接口兼容性",
+        "输出格式"
+      ],
+      "section": "输出格式",
+      "line_start": 45,
+      "line_end": 58,
+      "file_hash": "b131a8935b8e053bb24f75c9fd877f387f7e753c150011215614fc9ccd5dfd9b",
+      "content_hash": "68795ddb657d717f1f1c814c6e4339776fee8626c991bc8ab1f9b420339683af"
+    },
+    {
+      "id": "skill:.harness/skills/expert-reviewer/SKILL.md#验证要求",
+      "kind": "skill",
+      "file": ".harness/skills/expert-reviewer/SKILL.md",
+      "title": "验证要求",
+      "summary": "验证要求",
+      "keywords": [
+        "验证要求",
+        "验证要求",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "用户要求 review",
+        "重要变更完成、合并或发布前",
+        "涉及权限、sql、框架层或接口兼容性",
+        "验证要求"
+      ],
+      "section": "验证要求",
+      "line_start": 64,
+      "line_end": 66,
+      "file_hash": "b131a8935b8e053bb24f75c9fd877f387f7e753c150011215614fc9ccd5dfd9b",
+      "content_hash": "dc11e4909786e002cabb71c516346c10e05bb7b694a1cc0fca3ec2425f97e9e8"
+    },
+    {
+      "id": "skill:.harness/skills/frontend-backend-integration/SKILL.md",
+      "kind": "skill",
+      "file": ".harness/skills/frontend-backend-integration/SKILL.md",
+      "title": "",
+      "summary": "",
+      "keywords": [
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "后端接口新增、修改或删除",
+        "前端对接新页面或联调失败",
+        "枚举、错误码、分页、认证、租户或权限语义变化"
+      ],
+      "section": "",
+      "line_start": 5,
+      "line_end": 5,
+      "file_hash": "dd6b1299fbefd4b76f03bbec7c4055899347fc08cea8bf9cdf3364ffecb90793",
+      "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "skill:.harness/skills/frontend-backend-integration/SKILL.md#frontend-backend-integration",
+      "kind": "skill",
+      "file": ".harness/skills/frontend-backend-integration/SKILL.md",
+      "title": "Frontend Backend Integration",
+      "summary": "Frontend Backend Integration",
+      "keywords": [
+        "Frontend",
+        "Backend",
+        "Integration",
+        "Frontend",
+        "Backend",
+        "Integration",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "后端接口新增、修改或删除",
+        "前端对接新页面或联调失败",
+        "枚举、错误码、分页、认证、租户或权限语义变化",
+        "frontend",
+        "backend",
+        "integration"
+      ],
+      "section": "Frontend Backend Integration",
+      "line_start": 6,
+      "line_end": 7,
+      "file_hash": "dd6b1299fbefd4b76f03bbec7c4055899347fc08cea8bf9cdf3364ffecb90793",
+      "content_hash": "934622e8d1f7c5aeb399cc8e6ef713489fdd91acdf4d3da208cae0d44cb864f1"
+    },
+    {
+      "id": "skill:.harness/skills/frontend-backend-integration/SKILL.md#停止条件",
+      "kind": "skill",
+      "file": ".harness/skills/frontend-backend-integration/SKILL.md",
+      "title": "停止条件",
+      "summary": "停止条件",
+      "keywords": [
+        "停止条件",
+        "停止条件",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "后端接口新增、修改或删除",
+        "前端对接新页面或联调失败",
+        "枚举、错误码、分页、认证、租户或权限语义变化",
+        "停止条件"
+      ],
+      "section": "停止条件",
+      "line_start": 80,
+      "line_end": 86,
+      "file_hash": "dd6b1299fbefd4b76f03bbec7c4055899347fc08cea8bf9cdf3364ffecb90793",
+      "content_hash": "d781610490b0fd34f8ecb2b287b63497dc6566532c10aa25c6aaf7aa386451e9"
+    },
+    {
+      "id": "skill:.harness/skills/frontend-backend-integration/SKILL.md#定位",
+      "kind": "skill",
+      "file": ".harness/skills/frontend-backend-integration/SKILL.md",
+      "title": "定位",
+      "summary": "定位",
+      "keywords": [
+        "定位",
+        "定位",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "后端接口新增、修改或删除",
+        "前端对接新页面或联调失败",
+        "枚举、错误码、分页、认证、租户或权限语义变化",
+        "定位"
+      ],
+      "section": "定位",
+      "line_start": 8,
+      "line_end": 11,
+      "file_hash": "dd6b1299fbefd4b76f03bbec7c4055899347fc08cea8bf9cdf3364ffecb90793",
+      "content_hash": "39aa82c67b90dafac815db99875c57348f0e2f4b2bf161d87394806f2da8a3d0"
+    },
+    {
+      "id": "skill:.harness/skills/frontend-backend-integration/SKILL.md#执行步骤",
+      "kind": "skill",
+      "file": ".harness/skills/frontend-backend-integration/SKILL.md",
+      "title": "执行步骤",
+      "summary": "执行步骤",
+      "keywords": [
+        "执行步骤",
+        "执行步骤",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "后端接口新增、修改或删除",
+        "前端对接新页面或联调失败",
+        "枚举、错误码、分页、认证、租户或权限语义变化",
+        "执行步骤"
+      ],
+      "section": "执行步骤",
+      "line_start": 34,
+      "line_end": 49,
+      "file_hash": "dd6b1299fbefd4b76f03bbec7c4055899347fc08cea8bf9cdf3364ffecb90793",
+      "content_hash": "d9784517b6d403683661760219c538e114529a8fcfb36de13828258517c4df61"
+    },
+    {
+      "id": "skill:.harness/skills/frontend-backend-integration/SKILL.md#核心原则",
+      "kind": "skill",
+      "file": ".harness/skills/frontend-backend-integration/SKILL.md",
+      "title": "核心原则",
+      "summary": "核心原则",
+      "keywords": [
+        "核心原则",
+        "核心原则",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "后端接口新增、修改或删除",
+        "前端对接新页面或联调失败",
+        "枚举、错误码、分页、认证、租户或权限语义变化",
+        "核心原则"
+      ],
+      "section": "核心原则",
+      "line_start": 12,
+      "line_end": 18,
+      "file_hash": "dd6b1299fbefd4b76f03bbec7c4055899347fc08cea8bf9cdf3364ffecb90793",
+      "content_hash": "4bb666d38cf8b9883d66421358e26af082720b25f65219592d85449fd1dc488d"
+    },
+    {
+      "id": "skill:.harness/skills/frontend-backend-integration/SKILL.md#联合验收清单",
+      "kind": "skill",
+      "file": ".harness/skills/frontend-backend-integration/SKILL.md",
+      "title": "联合验收清单",
+      "summary": "联合验收清单",
+      "keywords": [
+        "联合验收清单",
+        "联合验收清单",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "后端接口新增、修改或删除",
+        "前端对接新页面或联调失败",
+        "枚举、错误码、分页、认证、租户或权限语义变化",
+        "联合验收清单"
+      ],
+      "section": "联合验收清单",
+      "line_start": 69,
+      "line_end": 79,
+      "file_hash": "dd6b1299fbefd4b76f03bbec7c4055899347fc08cea8bf9cdf3364ffecb90793",
+      "content_hash": "4cceb0eefc9881e08ac7830f497cf5a98d26c6942b35baf298f86791a15c32af"
+    },
+    {
+      "id": "skill:.harness/skills/frontend-backend-integration/SKILL.md#联调包格式",
+      "kind": "skill",
+      "file": ".harness/skills/frontend-backend-integration/SKILL.md",
+      "title": "联调包格式",
+      "summary": "联调包格式",
+      "keywords": [
+        "联调包格式",
+        "联调包格式",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "后端接口新增、修改或删除",
+        "前端对接新页面或联调失败",
+        "枚举、错误码、分页、认证、租户或权限语义变化",
+        "联调包格式"
+      ],
+      "section": "联调包格式",
+      "line_start": 50,
+      "line_end": 68,
+      "file_hash": "dd6b1299fbefd4b76f03bbec7c4055899347fc08cea8bf9cdf3364ffecb90793",
+      "content_hash": "07836ab08be976fbdbb69313023c111200378ae6d825a27fcc6ec4d8ba063da6"
+    },
+    {
+      "id": "skill:.harness/skills/frontend-backend-integration/SKILL.md#触发条件",
+      "kind": "skill",
+      "file": ".harness/skills/frontend-backend-integration/SKILL.md",
+      "title": "触发条件",
+      "summary": "触发条件",
+      "keywords": [
+        "触发条件",
+        "触发条件",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "后端接口新增、修改或删除",
+        "前端对接新页面或联调失败",
+        "枚举、错误码、分页、认证、租户或权限语义变化",
+        "触发条件"
+      ],
+      "section": "触发条件",
+      "line_start": 19,
+      "line_end": 25,
+      "file_hash": "dd6b1299fbefd4b76f03bbec7c4055899347fc08cea8bf9cdf3364ffecb90793",
+      "content_hash": "1c6970adee7adfce6b612291dcfbec32dd55b2c046564ed5e9980179693e7598"
+    },
+    {
+      "id": "skill:.harness/skills/frontend-backend-integration/SKILL.md#输入上下文",
+      "kind": "skill",
+      "file": ".harness/skills/frontend-backend-integration/SKILL.md",
+      "title": "输入上下文",
+      "summary": "输入上下文",
+      "keywords": [
+        "输入上下文",
+        "输入上下文",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "后端接口新增、修改或删除",
+        "前端对接新页面或联调失败",
+        "枚举、错误码、分页、认证、租户或权限语义变化",
+        "输入上下文"
+      ],
+      "section": "输入上下文",
+      "line_start": 26,
+      "line_end": 33,
+      "file_hash": "dd6b1299fbefd4b76f03bbec7c4055899347fc08cea8bf9cdf3364ffecb90793",
+      "content_hash": "48a0d7d96663ca3946800447a6a84a82b562fca73fbb7ccac31745681f478697"
+    },
+    {
+      "id": "skill:.harness/skills/frontend-backend-integration/SKILL.md#验证要求",
+      "kind": "skill",
+      "file": ".harness/skills/frontend-backend-integration/SKILL.md",
+      "title": "验证要求",
+      "summary": "验证要求",
+      "keywords": [
+        "验证要求",
+        "验证要求",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "后端接口新增、修改或删除",
+        "前端对接新页面或联调失败",
+        "枚举、错误码、分页、认证、租户或权限语义变化",
+        "验证要求"
+      ],
+      "section": "验证要求",
+      "line_start": 87,
+      "line_end": 89,
+      "file_hash": "dd6b1299fbefd4b76f03bbec7c4055899347fc08cea8bf9cdf3364ffecb90793",
+      "content_hash": "e14d2f090a4df8d069220cb770b020ff243d644e9e629a68c78d513de613f994"
+    },
+    {
+      "id": "skill:.harness/skills/request-analysis/SKILL.md",
+      "kind": "skill",
+      "file": ".harness/skills/request-analysis/SKILL.md",
+      "title": "",
+      "summary": "",
+      "keywords": [
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新功能、bug、接口、sql、配置或前后端联调任务",
+        "影响范围、复杂度或验收标准不清晰"
+      ],
+      "section": "",
+      "line_start": 5,
+      "line_end": 5,
+      "file_hash": "1809e4e4230e5af0f20cf2338762aa67fb3993983ee6c55c3fce19a020365c4e",
+      "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "skill:.harness/skills/request-analysis/SKILL.md#request-analysis",
+      "kind": "skill",
+      "file": ".harness/skills/request-analysis/SKILL.md",
+      "title": "Request Analysis",
+      "summary": "Request Analysis",
+      "keywords": [
+        "Request",
+        "Analysis",
+        "Request",
+        "Analysis",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新功能、bug、接口、sql、配置或前后端联调任务",
+        "影响范围、复杂度或验收标准不清晰",
+        "request",
+        "analysis"
+      ],
+      "section": "Request Analysis",
+      "line_start": 6,
+      "line_end": 7,
+      "file_hash": "1809e4e4230e5af0f20cf2338762aa67fb3993983ee6c55c3fce19a020365c4e",
+      "content_hash": "b91ee0939ba0fcc9656fee46addc8e97784433b2b539f428c327c10537d747fb"
+    },
+    {
+      "id": "skill:.harness/skills/request-analysis/SKILL.md#停止条件",
+      "kind": "skill",
+      "file": ".harness/skills/request-analysis/SKILL.md",
+      "title": "停止条件",
+      "summary": "停止条件",
+      "keywords": [
+        "停止条件",
+        "停止条件",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新功能、bug、接口、sql、配置或前后端联调任务",
+        "影响范围、复杂度或验收标准不清晰",
+        "停止条件"
+      ],
+      "section": "停止条件",
+      "line_start": 61,
+      "line_end": 67,
+      "file_hash": "1809e4e4230e5af0f20cf2338762aa67fb3993983ee6c55c3fce19a020365c4e",
+      "content_hash": "ba5614542ab604e24f0d0c63929e93f14be3415481568b4481e94fb3c0759062"
+    },
+    {
+      "id": "skill:.harness/skills/request-analysis/SKILL.md#定位",
+      "kind": "skill",
+      "file": ".harness/skills/request-analysis/SKILL.md",
+      "title": "定位",
+      "summary": "定位",
+      "keywords": [
+        "定位",
+        "定位",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新功能、bug、接口、sql、配置或前后端联调任务",
+        "影响范围、复杂度或验收标准不清晰",
+        "定位"
+      ],
+      "section": "定位",
+      "line_start": 8,
+      "line_end": 11,
+      "file_hash": "1809e4e4230e5af0f20cf2338762aa67fb3993983ee6c55c3fce19a020365c4e",
+      "content_hash": "752e2f871f6f5e732c2b6a352a8b3ec335f9d0fd4a42bc54ba3254ac3c72c86a"
+    },
+    {
+      "id": "skill:.harness/skills/request-analysis/SKILL.md#执行步骤",
+      "kind": "skill",
+      "file": ".harness/skills/request-analysis/SKILL.md",
+      "title": "执行步骤",
+      "summary": "执行步骤",
+      "keywords": [
+        "执行步骤",
+        "执行步骤",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新功能、bug、接口、sql、配置或前后端联调任务",
+        "影响范围、复杂度或验收标准不清晰",
+        "执行步骤"
+      ],
+      "section": "执行步骤",
+      "line_start": 28,
+      "line_end": 42,
+      "file_hash": "1809e4e4230e5af0f20cf2338762aa67fb3993983ee6c55c3fce19a020365c4e",
+      "content_hash": "c634f4dc4bf46048868f80f6b09071f0bf5002a48804408e6e5ccd292df94710"
+    },
+    {
+      "id": "skill:.harness/skills/request-analysis/SKILL.md#触发条件",
+      "kind": "skill",
+      "file": ".harness/skills/request-analysis/SKILL.md",
+      "title": "触发条件",
+      "summary": "触发条件",
+      "keywords": [
+        "触发条件",
+        "触发条件",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新功能、bug、接口、sql、配置或前后端联调任务",
+        "影响范围、复杂度或验收标准不清晰",
+        "触发条件"
+      ],
+      "section": "触发条件",
+      "line_start": 12,
+      "line_end": 18,
+      "file_hash": "1809e4e4230e5af0f20cf2338762aa67fb3993983ee6c55c3fce19a020365c4e",
+      "content_hash": "545843a9283def3d247dcca03ed35f64f4853a4ad695d2915d38222246af13ed"
+    },
+    {
+      "id": "skill:.harness/skills/request-analysis/SKILL.md#输入上下文",
+      "kind": "skill",
+      "file": ".harness/skills/request-analysis/SKILL.md",
+      "title": "输入上下文",
+      "summary": "输入上下文",
+      "keywords": [
+        "输入上下文",
+        "输入上下文",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新功能、bug、接口、sql、配置或前后端联调任务",
+        "影响范围、复杂度或验收标准不清晰",
+        "输入上下文"
+      ],
+      "section": "输入上下文",
+      "line_start": 19,
+      "line_end": 27,
+      "file_hash": "1809e4e4230e5af0f20cf2338762aa67fb3993983ee6c55c3fce19a020365c4e",
+      "content_hash": "1f9e4616c7618f09e7377e1391aaae2ea755771ffe4397b96c7b2b52d7b0e661"
+    },
+    {
+      "id": "skill:.harness/skills/request-analysis/SKILL.md#输出格式",
+      "kind": "skill",
+      "file": ".harness/skills/request-analysis/SKILL.md",
+      "title": "输出格式",
+      "summary": "输出格式",
+      "keywords": [
+        "输出格式",
+        "输出格式",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新功能、bug、接口、sql、配置或前后端联调任务",
+        "影响范围、复杂度或验收标准不清晰",
+        "输出格式"
+      ],
+      "section": "输出格式",
+      "line_start": 43,
+      "line_end": 60,
+      "file_hash": "1809e4e4230e5af0f20cf2338762aa67fb3993983ee6c55c3fce19a020365c4e",
+      "content_hash": "4306dfef68bf5a166c01d83ec67fca6368bbcf37fecacf9e9f0385466ce15e33"
+    },
+    {
+      "id": "skill:.harness/skills/request-analysis/SKILL.md#验证要求",
+      "kind": "skill",
+      "file": ".harness/skills/request-analysis/SKILL.md",
+      "title": "验证要求",
+      "summary": "验证要求",
+      "keywords": [
+        "验证要求",
+        "验证要求",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新功能、bug、接口、sql、配置或前后端联调任务",
+        "影响范围、复杂度或验收标准不清晰",
+        "验证要求"
+      ],
+      "section": "验证要求",
+      "line_start": 68,
+      "line_end": 70,
+      "file_hash": "1809e4e4230e5af0f20cf2338762aa67fb3993983ee6c55c3fce19a020365c4e",
+      "content_hash": "13fb4aef93f531b9157dccf956f8116fb270a2fc587db012e187fce904d50147"
+    },
+    {
+      "id": "skill:.harness/skills/unit-test-ci/SKILL.md",
+      "kind": "skill",
+      "file": ".harness/skills/unit-test-ci/SKILL.md",
+      "title": "",
+      "summary": "",
+      "keywords": [
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "代码、sql 或配置修改后",
+        "review 前或交付前"
+      ],
+      "section": "",
+      "line_start": 5,
+      "line_end": 5,
+      "file_hash": "e8e5161ed8ff31f948586f52a855f5a3895ee725e2488f55009495130947352e",
+      "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "skill:.harness/skills/unit-test-ci/SKILL.md#unit-test-ci",
+      "kind": "skill",
+      "file": ".harness/skills/unit-test-ci/SKILL.md",
+      "title": "Unit Test CI",
+      "summary": "Unit Test CI",
+      "keywords": [
+        "Unit",
+        "Test",
+        "CI",
+        "Unit",
+        "Test",
+        "CI",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "代码、sql 或配置修改后",
+        "review 前或交付前",
+        "unit",
+        "test",
+        "ci"
+      ],
+      "section": "Unit Test CI",
+      "line_start": 6,
+      "line_end": 7,
+      "file_hash": "e8e5161ed8ff31f948586f52a855f5a3895ee725e2488f55009495130947352e",
+      "content_hash": "5d24595334c7de72034ce53d0627cc4a073a8045200d3def29304737044d69c8"
+    },
+    {
+      "id": "skill:.harness/skills/unit-test-ci/SKILL.md#停止条件",
+      "kind": "skill",
+      "file": ".harness/skills/unit-test-ci/SKILL.md",
+      "title": "停止条件",
+      "summary": "停止条件",
+      "keywords": [
+        "停止条件",
+        "停止条件",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "代码、sql 或配置修改后",
+        "review 前或交付前",
+        "停止条件"
+      ],
+      "section": "停止条件",
+      "line_start": 62,
+      "line_end": 66,
+      "file_hash": "e8e5161ed8ff31f948586f52a855f5a3895ee725e2488f55009495130947352e",
+      "content_hash": "10b98e182565ff03bb5d16fb9522fae08596cf6363826ec903075c1336665716"
+    },
+    {
+      "id": "skill:.harness/skills/unit-test-ci/SKILL.md#命令选择",
+      "kind": "skill",
+      "file": ".harness/skills/unit-test-ci/SKILL.md",
+      "title": "命令选择",
+      "summary": "命令选择",
+      "keywords": [
+        "命令选择",
+        "命令选择",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "代码、sql 或配置修改后",
+        "review 前或交付前",
+        "命令选择"
+      ],
+      "section": "命令选择",
+      "line_start": 26,
+      "line_end": 35,
+      "file_hash": "e8e5161ed8ff31f948586f52a855f5a3895ee725e2488f55009495130947352e",
+      "content_hash": "44223670b187df04f66470ab29c54ebbe3545b68b201da1a4fad7b3e7747b45f"
+    },
+    {
+      "id": "skill:.harness/skills/unit-test-ci/SKILL.md#失败归因",
+      "kind": "skill",
+      "file": ".harness/skills/unit-test-ci/SKILL.md",
+      "title": "失败归因",
+      "summary": "失败归因",
+      "keywords": [
+        "失败归因",
+        "失败归因",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "代码、sql 或配置修改后",
+        "review 前或交付前",
+        "失败归因"
+      ],
+      "section": "失败归因",
+      "line_start": 45,
+      "line_end": 51,
+      "file_hash": "e8e5161ed8ff31f948586f52a855f5a3895ee725e2488f55009495130947352e",
+      "content_hash": "aba4cd7f1dfe89d7c2f82319c0f960cd11d670d990ab61d31debc860ed724e30"
+    },
+    {
+      "id": "skill:.harness/skills/unit-test-ci/SKILL.md#定位",
+      "kind": "skill",
+      "file": ".harness/skills/unit-test-ci/SKILL.md",
+      "title": "定位",
+      "summary": "定位",
+      "keywords": [
+        "定位",
+        "定位",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "代码、sql 或配置修改后",
+        "review 前或交付前",
+        "定位"
+      ],
+      "section": "定位",
+      "line_start": 8,
+      "line_end": 11,
+      "file_hash": "e8e5161ed8ff31f948586f52a855f5a3895ee725e2488f55009495130947352e",
+      "content_hash": "b0bf73a85adcd26547c655af719626bf176d8b978be7218b2496414a35420904"
+    },
+    {
+      "id": "skill:.harness/skills/unit-test-ci/SKILL.md#执行步骤",
+      "kind": "skill",
+      "file": ".harness/skills/unit-test-ci/SKILL.md",
+      "title": "执行步骤",
+      "summary": "执行步骤",
+      "keywords": [
+        "执行步骤",
+        "执行步骤",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "代码、sql 或配置修改后",
+        "review 前或交付前",
+        "执行步骤"
+      ],
+      "section": "执行步骤",
+      "line_start": 36,
+      "line_end": 44,
+      "file_hash": "e8e5161ed8ff31f948586f52a855f5a3895ee725e2488f55009495130947352e",
+      "content_hash": "6ccd550d6ac88d118222d1e1b865e3f2004bb56fd1f2533057cef772640f944e"
+    },
+    {
+      "id": "skill:.harness/skills/unit-test-ci/SKILL.md#触发条件",
+      "kind": "skill",
+      "file": ".harness/skills/unit-test-ci/SKILL.md",
+      "title": "触发条件",
+      "summary": "触发条件",
+      "keywords": [
+        "触发条件",
+        "触发条件",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "代码、sql 或配置修改后",
+        "review 前或交付前",
+        "触发条件"
+      ],
+      "section": "触发条件",
+      "line_start": 12,
+      "line_end": 18,
+      "file_hash": "e8e5161ed8ff31f948586f52a855f5a3895ee725e2488f55009495130947352e",
+      "content_hash": "41909a4f3ff96a3f34e0010c7baa0858d86a5d2e3dc3d590d698ecafaafacc91"
+    },
+    {
+      "id": "skill:.harness/skills/unit-test-ci/SKILL.md#输入上下文",
+      "kind": "skill",
+      "file": ".harness/skills/unit-test-ci/SKILL.md",
+      "title": "输入上下文",
+      "summary": "输入上下文",
+      "keywords": [
+        "输入上下文",
+        "输入上下文",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "代码、sql 或配置修改后",
+        "review 前或交付前",
+        "输入上下文"
+      ],
+      "section": "输入上下文",
+      "line_start": 19,
+      "line_end": 25,
+      "file_hash": "e8e5161ed8ff31f948586f52a855f5a3895ee725e2488f55009495130947352e",
+      "content_hash": "12800572b7c7d8fd78bc065d35b14e85135afd03ef11a96f71c5bfad3fad7d0b"
+    },
+    {
+      "id": "skill:.harness/skills/unit-test-ci/SKILL.md#输出格式",
+      "kind": "skill",
+      "file": ".harness/skills/unit-test-ci/SKILL.md",
+      "title": "输出格式",
+      "summary": "输出格式",
+      "keywords": [
+        "输出格式",
+        "输出格式",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "代码、sql 或配置修改后",
+        "review 前或交付前",
+        "输出格式"
+      ],
+      "section": "输出格式",
+      "line_start": 52,
+      "line_end": 61,
+      "file_hash": "e8e5161ed8ff31f948586f52a855f5a3895ee725e2488f55009495130947352e",
+      "content_hash": "3201c051891eaa9df3c78c3808335af3ea847b0dbc5780cb7b02b7850e9e83ac"
+    },
+    {
+      "id": "skill:.harness/skills/unit-test-write/SKILL.md",
+      "kind": "skill",
+      "file": ".harness/skills/unit-test-write/SKILL.md",
+      "title": "",
+      "summary": "",
+      "keywords": [
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新增业务规则或状态流转",
+        "修复 bug 或 review 发现测试缺口",
+        "修改登录、oauth2、权限、组织或 sql"
+      ],
+      "section": "",
+      "line_start": 5,
+      "line_end": 5,
+      "file_hash": "68e267bcacafdccbb0a012c7f4081f7acafdfc32aa6b20c12765975535b3aa9a",
+      "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "skill:.harness/skills/unit-test-write/SKILL.md#unit-test-write",
+      "kind": "skill",
+      "file": ".harness/skills/unit-test-write/SKILL.md",
+      "title": "Unit Test Write",
+      "summary": "Unit Test Write",
+      "keywords": [
+        "Unit",
+        "Test",
+        "Write",
+        "Unit",
+        "Test",
+        "Write",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新增业务规则或状态流转",
+        "修复 bug 或 review 发现测试缺口",
+        "修改登录、oauth2、权限、组织或 sql",
+        "unit",
+        "test",
+        "write"
+      ],
+      "section": "Unit Test Write",
+      "line_start": 6,
+      "line_end": 7,
+      "file_hash": "68e267bcacafdccbb0a012c7f4081f7acafdfc32aa6b20c12765975535b3aa9a",
+      "content_hash": "95d7c2c4916020732407a0fa7c20b9967596e5131b87c4ccdd514741f33baf24"
+    },
+    {
+      "id": "skill:.harness/skills/unit-test-write/SKILL.md#停止条件",
+      "kind": "skill",
+      "file": ".harness/skills/unit-test-write/SKILL.md",
+      "title": "停止条件",
+      "summary": "停止条件",
+      "keywords": [
+        "停止条件",
+        "停止条件",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新增业务规则或状态流转",
+        "修复 bug 或 review 发现测试缺口",
+        "修改登录、oauth2、权限、组织或 sql",
+        "停止条件"
+      ],
+      "section": "停止条件",
+      "line_start": 47,
+      "line_end": 52,
+      "file_hash": "68e267bcacafdccbb0a012c7f4081f7acafdfc32aa6b20c12765975535b3aa9a",
+      "content_hash": "1d4d8d7ac2772a77462ef91d2c909ac4e7e330c2b877cc22958fc41eca2aa6ec"
+    },
+    {
+      "id": "skill:.harness/skills/unit-test-write/SKILL.md#定位",
+      "kind": "skill",
+      "file": ".harness/skills/unit-test-write/SKILL.md",
+      "title": "定位",
+      "summary": "定位",
+      "keywords": [
+        "定位",
+        "定位",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新增业务规则或状态流转",
+        "修复 bug 或 review 发现测试缺口",
+        "修改登录、oauth2、权限、组织或 sql",
+        "定位"
+      ],
+      "section": "定位",
+      "line_start": 8,
+      "line_end": 11,
+      "file_hash": "68e267bcacafdccbb0a012c7f4081f7acafdfc32aa6b20c12765975535b3aa9a",
+      "content_hash": "245aa6144aa7b74a5e567d3d495c15ba02c033ed42571cf046e36104e02efa12"
+    },
+    {
+      "id": "skill:.harness/skills/unit-test-write/SKILL.md#测试设计步骤",
+      "kind": "skill",
+      "file": ".harness/skills/unit-test-write/SKILL.md",
+      "title": "测试设计步骤",
+      "summary": "测试设计步骤",
+      "keywords": [
+        "测试设计步骤",
+        "测试设计步骤",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新增业务规则或状态流转",
+        "修复 bug 或 review 发现测试缺口",
+        "修改登录、oauth2、权限、组织或 sql",
+        "测试设计步骤"
+      ],
+      "section": "测试设计步骤",
+      "line_start": 26,
+      "line_end": 36,
+      "file_hash": "68e267bcacafdccbb0a012c7f4081f7acafdfc32aa6b20c12765975535b3aa9a",
+      "content_hash": "eb20089229acc23ba7f6233a897fe94305162fe9fa9d905f2143892e4ef98562"
+    },
+    {
+      "id": "skill:.harness/skills/unit-test-write/SKILL.md#触发条件",
+      "kind": "skill",
+      "file": ".harness/skills/unit-test-write/SKILL.md",
+      "title": "触发条件",
+      "summary": "触发条件",
+      "keywords": [
+        "触发条件",
+        "触发条件",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新增业务规则或状态流转",
+        "修复 bug 或 review 发现测试缺口",
+        "修改登录、oauth2、权限、组织或 sql",
+        "触发条件"
+      ],
+      "section": "触发条件",
+      "line_start": 12,
+      "line_end": 18,
+      "file_hash": "68e267bcacafdccbb0a012c7f4081f7acafdfc32aa6b20c12765975535b3aa9a",
+      "content_hash": "3a1c2941177d0660db875d82083b93302e2e431e387842218537d27590e07f12"
+    },
+    {
+      "id": "skill:.harness/skills/unit-test-write/SKILL.md#输入上下文",
+      "kind": "skill",
+      "file": ".harness/skills/unit-test-write/SKILL.md",
+      "title": "输入上下文",
+      "summary": "输入上下文",
+      "keywords": [
+        "输入上下文",
+        "输入上下文",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新增业务规则或状态流转",
+        "修复 bug 或 review 发现测试缺口",
+        "修改登录、oauth2、权限、组织或 sql",
+        "输入上下文"
+      ],
+      "section": "输入上下文",
+      "line_start": 19,
+      "line_end": 25,
+      "file_hash": "68e267bcacafdccbb0a012c7f4081f7acafdfc32aa6b20c12765975535b3aa9a",
+      "content_hash": "6ec3f317a58fc29d82cbfc094291eb561e2dd97f53531fddba5c7e6e79da2874"
+    },
+    {
+      "id": "skill:.harness/skills/unit-test-write/SKILL.md#输出格式",
+      "kind": "skill",
+      "file": ".harness/skills/unit-test-write/SKILL.md",
+      "title": "输出格式",
+      "summary": "输出格式",
+      "keywords": [
+        "输出格式",
+        "输出格式",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新增业务规则或状态流转",
+        "修复 bug 或 review 发现测试缺口",
+        "修改登录、oauth2、权限、组织或 sql",
+        "输出格式"
+      ],
+      "section": "输出格式",
+      "line_start": 37,
+      "line_end": 46,
+      "file_hash": "68e267bcacafdccbb0a012c7f4081f7acafdfc32aa6b20c12765975535b3aa9a",
+      "content_hash": "b34da65120e2977a59ea29defa9f10ffef36bebcb99e47c266fbf4c577165782"
+    },
+    {
+      "id": "skill:.harness/skills/unit-test-write/SKILL.md#验证要求",
+      "kind": "skill",
+      "file": ".harness/skills/unit-test-write/SKILL.md",
+      "title": "验证要求",
+      "summary": "验证要求",
+      "keywords": [
+        "验证要求",
+        "验证要求",
+        "SKILL"
+      ],
+      "routes": [
+        "skill",
+        "新增业务规则或状态流转",
+        "修复 bug 或 review 发现测试缺口",
+        "修改登录、oauth2、权限、组织或 sql",
+        "验证要求"
+      ],
+      "section": "验证要求",
+      "line_start": 53,
+      "line_end": 55,
+      "file_hash": "68e267bcacafdccbb0a012c7f4081f7acafdfc32aa6b20c12765975535b3aa9a",
+      "content_hash": "02738746ba27a9c3a785b1f7cb801fb5707ad972385174ad7c9b9ecdb3146919"
+    },
+    {
+      "id": "state:.harness/PROGRESS.md#harness-进度-progress",
+      "kind": "state",
+      "file": ".harness/PROGRESS.md",
+      "title": "Harness 进度（PROGRESS）",
+      "summary": "Harness 进度（PROGRESS）",
+      "keywords": [
+        "Harness",
+        "进度",
+        "PROGRESS",
+        "Harness",
+        "进度",
+        "PROGRESS",
+        "PROGRESS"
+      ],
+      "routes": [
+        "progress",
+        "进度",
+        "会话",
+        "harness"
+      ],
+      "section": "Harness 进度（PROGRESS）",
+      "line_start": 1,
+      "line_end": 4,
+      "file_hash": "37a6b559ee4332a192f4abe1659ea3b71d6ceb9e57b2125cbe3f458bf377b105",
+      "content_hash": "ded6338c544c2688a4cd9920126d40dc6f14bd671afc14aaf5c7f8e400e95863"
+    },
+    {
+      "id": "state:.harness/PROGRESS.md#下一步",
+      "kind": "state",
+      "file": ".harness/PROGRESS.md",
+      "title": "下一步",
+      "summary": "下一步",
+      "keywords": [
+        "下一步",
+        "下一步",
+        "PROGRESS"
+      ],
+      "routes": [
+        "progress",
+        "进度",
+        "会话",
+        "下一步"
+      ],
+      "section": "下一步",
+      "line_start": 34,
+      "line_end": 40,
+      "file_hash": "37a6b559ee4332a192f4abe1659ea3b71d6ceb9e57b2125cbe3f458bf377b105",
+      "content_hash": "78b1c03462461cf563d9c2a32edf5005ea0879524676d4d83a7487a47b3655d5"
+    },
+    {
+      "id": "state:.harness/PROGRESS.md#决策记录",
+      "kind": "state",
+      "file": ".harness/PROGRESS.md",
+      "title": "决策记录",
+      "summary": "决策记录",
+      "keywords": [
+        "决策记录",
+        "决策记录",
+        "PROGRESS"
+      ],
+      "routes": [
+        "progress",
+        "进度",
+        "会话",
+        "决策记录"
+      ],
+      "section": "决策记录",
+      "line_start": 41,
+      "line_end": 47,
+      "file_hash": "37a6b559ee4332a192f4abe1659ea3b71d6ceb9e57b2125cbe3f458bf377b105",
+      "content_hash": "ce997ad527a1a7356a72267f3718d1b5314bbe5f726be2d56516212ca721b0f2"
+    },
+    {
+      "id": "state:.harness/PROGRESS.md#已完成",
+      "kind": "state",
+      "file": ".harness/PROGRESS.md",
+      "title": "已完成",
+      "summary": "已完成",
+      "keywords": [
+        "已完成",
+        "已完成",
+        "PROGRESS"
+      ],
+      "routes": [
+        "progress",
+        "进度",
+        "会话",
+        "已完成"
+      ],
+      "section": "已完成",
+      "line_start": 12,
+      "line_end": 29,
+      "file_hash": "37a6b559ee4332a192f4abe1659ea3b71d6ceb9e57b2125cbe3f458bf377b105",
+      "content_hash": "693dbcb69bfa83a1f96ea67fb980c6f66523c03feed3dd5ba0b8e6ec8946e771"
+    },
+    {
+      "id": "state:.harness/PROGRESS.md#当前状态",
+      "kind": "state",
+      "file": ".harness/PROGRESS.md",
+      "title": "当前状态",
+      "summary": "当前状态",
+      "keywords": [
+        "当前状态",
+        "当前状态",
+        "PROGRESS"
+      ],
+      "routes": [
+        "progress",
+        "进度",
+        "会话",
+        "当前状态"
+      ],
+      "section": "当前状态",
+      "line_start": 5,
+      "line_end": 11,
+      "file_hash": "37a6b559ee4332a192f4abe1659ea3b71d6ceb9e57b2125cbe3f458bf377b105",
+      "content_hash": "0ef0b813bc80c50d1e97e6493e1ee243059a170f0df846a742e338862e1618e9"
+    },
+    {
+      "id": "state:.harness/PROGRESS.md#进行中",
+      "kind": "state",
+      "file": ".harness/PROGRESS.md",
+      "title": "进行中",
+      "summary": "进行中",
+      "keywords": [
+        "进行中",
+        "进行中",
+        "PROGRESS"
+      ],
+      "routes": [
+        "progress",
+        "进度",
+        "会话",
+        "进行中"
+      ],
+      "section": "进行中",
+      "line_start": 30,
+      "line_end": 33,
+      "file_hash": "37a6b559ee4332a192f4abe1659ea3b71d6ceb9e57b2125cbe3f458bf377b105",
+      "content_hash": "ca9b327be137ea99138b42f7d82b1eccf827778ad1242cfc189b41427e7eb4e6"
+    },
+    {
+      "id": "state:.harness/changes/active/feature-list.json",
+      "kind": "state",
+      "file": ".harness/changes/active/feature-list.json",
+      "title": "功能状态清单",
+      "summary": "机器可读功能状态权威：feature、状态、commit、PR",
+      "keywords": [
+        "feature",
+        "功能",
+        "状态",
+        "F-",
+        "wip",
+        "commit",
+        "pr"
+      ],
+      "routes": [
+        "feature",
+        "功能",
+        "状态",
+        "F-",
+        "wip"
+      ],
+      "section": null,
+      "line_start": null,
+      "line_end": null,
+      "file_hash": "ebb47f083927dd0bff77523d3be5ae21b2c8212bc0d692d8a73072f6780831f4",
+      "content_hash": "ebb47f083927dd0bff77523d3be5ae21b2c8212bc0d692d8a73072f6780831f4"
+    }
+  ]
+}
