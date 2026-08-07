@@ -5,6 +5,7 @@ import copy
 from harness.github_sync import (
     GitHubIssue,
     GitHubPR,
+    _blocked_direct_paths,
     reconcile_ledger,
 )
 
@@ -259,3 +260,25 @@ def test_auto_created_feature_respects_wip_limit() -> None:
     features, _ = reconcile_ledger(_ledger(), [_issue(body="new work")], [])
     created = next(f for f in features["features"] if f["id"] == "F-015")
     assert created["status"] == "todo"
+
+
+def test_direct_path_whitelist_accepts_harness_state() -> None:
+    allowed = [
+        ".harness/changes/active/feature-list.json",
+        ".harness/changes/completed/INDEX.md",
+        ".harness/PROGRESS.md",
+        ".harness/knowledge/index.json",
+    ]
+    assert _blocked_direct_paths(allowed) == []
+
+
+def test_direct_path_whitelist_rejects_code_and_other_docs() -> None:
+    blocked = _blocked_direct_paths(
+        [
+            "src/main.py",
+            "README.md",
+            ".harness/rules/git-workflow.md",
+            "pom.xml",
+        ]
+    )
+    assert blocked == ["src/main.py", "README.md", ".harness/rules/git-workflow.md", "pom.xml"]

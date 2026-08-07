@@ -6,6 +6,7 @@ import os
 import re
 import shutil
 import sys
+from collections.abc import Iterable
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -16,6 +17,24 @@ FEATURE_ID_RE = re.compile(r"F-\d{3,}")
 PR_NUMBER_RE = re.compile(r"/pull/(\d+)")
 ISSUE_CLOSE_RE = re.compile(r"(?:closes|fixes|resolves)\s+#(\d+)", re.IGNORECASE)
 SYNC_BRANCH_PREFIX = "harness-sync/"
+DIRECT_SYNC_ALLOWED_FILES = (".harness/PROGRESS.md",)
+DIRECT_SYNC_ALLOWED_PREFIXES = (
+    ".harness/changes/",
+    ".harness/knowledge/",
+)
+
+
+def _blocked_direct_paths(paths: Iterable[str]) -> list[str]:
+    """Return paths that a direct-write sync must never push to main."""
+    blocked: list[str] = []
+    for raw in paths:
+        path = raw.strip()
+        if not path:
+            continue
+        if path in DIRECT_SYNC_ALLOWED_FILES or path.startswith(DIRECT_SYNC_ALLOWED_PREFIXES):
+            continue
+        blocked.append(path)
+    return blocked
 
 
 @dataclass
@@ -690,6 +709,13 @@ def _commit_and_transport(root: Path, transport: str, actions: list[dict]) -> in
     if not [line for line in status_proc.stdout.splitlines() if line.strip()]:
         print("[github-sync] no files changed after apply")
         return 0
+    if transport == "direct":
+        staged_proc = run_cmd(["git", "diff", "--cached", "--name-only"], cwd=root)
+        staged_paths = [line.strip() for line in staged_proc.stdout.splitlines() if line.strip()]
+        blocked_paths = _blocked_direct_paths(staged_paths)
+        if blocked_paths:
+            detail = ", ".join(blocked_paths)
+            raise HarnessError(f"direct sync blocked: paths outside harness whitelist: {detail}")
 
     feature_ids = sorted(
         {str(action.get("feature_id") or "") for action in actions if action.get("feature_id")}
