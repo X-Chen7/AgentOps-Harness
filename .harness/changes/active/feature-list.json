@@ -203,7 +203,7 @@
             "branch": "feature/F-012",
             "issue_id": "",
             "plan": ".harness/changes/active/2026-08-07-ci-cd-pr-gate.md",
-            "pr_url": "",
+            "pr_url": "https://github.com/X-Chen7/AgentOps-Harness/pull/4",
             "acceptance": [
                 "ruff lint and format pass",
                 "pytest passes",
@@ -238,6 +238,12 @@
                     "at": "2026-08-07",
                     "by": "harness-git",
                     "note": "pushed to origin/feature/F-012"
+                },
+                {
+                    "status": "pushed",
+                    "at": "2026-08-07",
+                    "by": "harness-git",
+                    "note": "PR created: https://github.com/X-Chen7/AgentOps-Harness/pull/4"
                 }
             ],
             "commit": "e89fc2647a0a556cc97d0109c82e05be2cba043e"
