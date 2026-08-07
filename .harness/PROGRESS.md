@@ -5,12 +5,13 @@
 ## 当前状态
 
 - 更新日期：2026-08-08
-- 当前任务：F-015 问题跟踪 / PR 双向同步（进行中）
+- 当前任务：F-015 问题跟踪 / PR 双向同步（已合入，收尾中）
 - 当前状态：`merged`
-- 最近验证：`python -m pytest -q` 67 passed；`harness knowledge bench` 8/8；ruoyi 真实项目索引 783 条目、接口 147、表 89
+- 最近验证：`python -m pytest -q` 80 passed；`harness check` 0 errors；`harness github sync --strict` up to date；`harness knowledge bench` 8/8
 
 ## 已完成
-- F-015 F-015: 问题跟踪 / PR 双向同步：GitHub Issue/PR 双向同步已自动归档（PR #auto-sync）。
+- F-015 问题跟踪 / PR 双向同步：`harness github sync` 事件驱动同步、Issue/PR 状态回写、自动归档、`github-sync` CI 门禁与 main 分支保护落地；PR #12 合入，PR #20 完成同步传输层收尾。
+- F-016 双向同步自动生成验证：Issue #15 自动生成 feature/计划，关闭未合并后回写 `blocked`，验证自动同步闭环。
 
 - Harness 第一轮收敛：技能扩平、spec 归档、changes 生命周期、wiki 隔离、校验脚本。
 - Harness 第二轮状态与反馈优化：PROGRESS、feature-list、check.ps1、模板和工具边界。
@@ -34,7 +35,7 @@
 
 ## 下一步
 
-- F-015 落地后接入 GitHub Actions 事件监听，并把 `github-sync` 加入 main 分支保护 required checks。
+- 可选：配置 `HARNESS_SYNC_TOKEN` 与 repository ruleset，把状态同步从“状态 PR + auto-merge”升级为机器人直写 main。
 - 后续新 feature 继续按 `analysis -> coding -> test -> review -> Git/PR` 流程执行。
 - 每次会话结束运行 `script/check.ps1` 并回填结果。
 - 同步更新 `changes/active/feature-list.json` 中的状态。
@@ -46,3 +47,5 @@
 - feature 状态与 Git 绑定：`committed` / `pushed` / `merged` 必须回写 commit、branch、push_status。
 - 完成记录必须同步维护 `changes/completed/INDEX.md`。
 - 完成判定必须经过 `script/check.ps1` 和 `expert-reviewer`，不能由执行者自报完成。
+- GitHub 状态以 `feature-list.json` 为权威，Issue/PR 事件只触发重新计算，不直接改写台账。
+- 未配置同步机器人令牌时，状态同步走“状态 PR + auto-merge”，避免绕过代码评审。

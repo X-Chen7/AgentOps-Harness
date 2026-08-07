@@ -418,9 +418,7 @@
                 "harness github sync --strict 作为 CI 门禁",
                 "重复事件幂等，冲突不静默覆盖"
             ],
-            "blocked_by": [
-                "GitHub issue #11 closed without merge"
-            ],
+            "blocked_by": [],
             "pipeline": {
                 "status": "not_started",
                 "artifacts": [],
@@ -489,7 +487,7 @@
             "id": "F-016",
             "title": "双向同步自动生成验证",
             "plan": ".harness/changes/active/2026-08-08-f-016-f016.md",
-            "status": "todo",
+            "status": "blocked",
             "owner": "owner",
             "repo": "AgentOps-Harness",
             "branch": "",
@@ -506,7 +504,9 @@
             "last_synced_at": "2026-08-08",
             "github_updated_at": "2026-08-07T18:32:07Z",
             "acceptance": [],
-            "blocked_by": [],
+            "blocked_by": [
+                "GitHub issue #15 closed without merge"
+            ],
             "pipeline": {
                 "status": "not_started",
                 "artifacts": [],
@@ -525,6 +525,12 @@
                     "at": "2026-08-08",
                     "by": "harness-github",
                     "note": "linked to issue #15"
+                },
+                {
+                    "status": "blocked",
+                    "at": "2026-08-08",
+                    "by": "harness-github",
+                    "note": "GitHub issue #15 closed without merge"
                 }
             ]
         }

@@ -22,6 +22,10 @@ jobs:
       github.event_name != 'pull_request_target' ||
       (github.event.pull_request.head.repo.full_name == github.repository &&
        !startsWith(github.event.pull_request.head.ref, 'harness-sync/'))
+    env:
+      GH_TOKEN: ${{ secrets.HARNESS_SYNC_TOKEN || github.token }}
+      HARNESS_SYNC_TRANSPORT: ${{ secrets.HARNESS_SYNC_TOKEN != '' && 'direct' || 'pr' }}
+      GITHUB_EVENT_NUMBER: ${{ github.event.issue.number || github.event.pull_request.number || 'manual' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -39,10 +43,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Configure git bot auth
+        if: env.HARNESS_SYNC_TOKEN != ''
+        run: gh auth setup-git
       - name: Sync GitHub state
-        env:
-          GH_TOKEN: ${{ secrets.HARNESS_SYNC_TOKEN || github.token }}
-          HARNESS_SYNC_TRANSPORT: ${{ secrets.HARNESS_SYNC_TOKEN != '' && 'direct' || 'pr' }}
-          GITHUB_EVENT_NUMBER: ${{ github.event.issue.number || github.event.pull_request.number || 'manual' }}
         run: |
           python -m harness github sync --apply --transport "$HARNESS_SYNC_TRANSPORT"
