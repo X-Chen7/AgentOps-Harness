@@ -10,6 +10,10 @@ from . import git_ops as git_mod
 from . import hooks as hooks_mod
 from . import init_project as init_mod
 from . import lint as lint_mod
+from . import skill_bench as skill_bench_mod
+from . import skill_contract as skill_contract_mod
+from . import skill_feedback as skill_feedback_mod
+from . import skill_test as skill_test_mod
 from . import skills as skills_mod
 from . import sync as sync_mod
 from .common import HarnessError
@@ -49,6 +53,28 @@ def build_parser() -> argparse.ArgumentParser:
     p_skills.add_argument(
         "--check", dest="check_only", action="store_true", help="Compare files without copying"
     )
+
+    p_skill = sub.add_parser(
+        "skill", parents=[common], help="Skill contracts, tests, benchmarks and feedback"
+    )
+    skill_sub = p_skill.add_subparsers(dest="skill_command", required=True)
+    skill_sub.add_parser("validate", parents=[common], help="Validate skill.yaml contracts")
+    p_skill_test = skill_sub.add_parser("test", parents=[common], help="Run skill fixture tests")
+    p_skill_test.add_argument("--skill", default="", help="Run tests for one skill id")
+    p_skill_test.add_argument("--smoke", action="store_true", help="Run one case per skill")
+    p_skill_bench = skill_sub.add_parser("bench", parents=[common], help="Run skill benchmark")
+    p_skill_bench.add_argument("--save", action="store_true", help="Save current results as baseline")
+    p_skill_bench.add_argument("--compare", action="store_true", help="Compare against baseline")
+    p_skill_record = skill_sub.add_parser("record", parents=[common], help="Record real execution feedback")
+    p_skill_record.add_argument("--skill", required=True, help="Skill id")
+    p_skill_record.add_argument("--status", required=True, choices=["pass", "fail", "partial"])
+    p_skill_record.add_argument("--note", default="", help="Short note about the execution")
+    p_skill_promote = skill_sub.add_parser(
+        "promote", parents=[common], help="Promote a real case into fixtures"
+    )
+    p_skill_promote.add_argument("--skill", required=True, help="Skill id")
+    p_skill_promote.add_argument("--case", required=True, help="New fixture case id")
+    p_skill_promote.add_argument("--task-text", default="", help="Task description for task.md")
 
     p_init = sub.add_parser("init", parents=[common], help="Initialize harness in a target project")
     p_init.add_argument("--target", required=True, help="Target project directory")
@@ -101,6 +127,19 @@ def main(argv: list[str] | None = None) -> int:
             return sync_mod.sync_changes(root, push_gate=args.push_gate)
         if args.command == "sync-skills":
             return skills_mod.sync_skills(root, check_only=args.check_only)
+        if args.command == "skill":
+            if args.skill_command == "validate":
+                return skill_contract_mod.validate_all_skills(root)
+            if args.skill_command == "test":
+                return skill_test_mod.run_skill_tests(root, skill_id=args.skill or None, smoke=args.smoke)[0]
+            if args.skill_command == "bench":
+                return skill_bench_mod.run_skill_bench(root, save=args.save, compare=args.compare)
+            if args.skill_command == "record":
+                return skill_feedback_mod.record_feedback(root, args.skill, args.status, note=args.note)
+            if args.skill_command == "promote":
+                return skill_feedback_mod.promote_feedback(
+                    root, args.skill, args.case, task_text=args.task_text
+                )
         if args.command == "init":
             return init_mod.init_harness(root, args.target, args.project_name)
         if args.command == "install-hooks":

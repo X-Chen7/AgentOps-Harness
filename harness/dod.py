@@ -53,6 +53,20 @@ def run_dod(root: Path) -> int:
         if not (root / relative).exists():
             errors.append(f"Missing DoD required file: {relative}")
 
+    dod_config = root / ".harness" / "dod.json"
+    if dod_config.exists():
+        try:
+            config = json.loads(read_text(dod_config))
+            required_checks = config.get("required_checks") if isinstance(config, dict) else None
+            if not isinstance(required_checks, list) or not all(
+                isinstance(item, str) for item in required_checks
+            ):
+                errors.append("dod.json required_checks must be a list of strings")
+            elif not required_checks:
+                errors.append("dod.json required_checks must not be empty")
+        except Exception as exc:
+            errors.append(f"dod.json is not valid JSON: {exc}")
+
     pr = _read_pr_event()
     if pr:
         title = (pr.get("title") or "").strip()

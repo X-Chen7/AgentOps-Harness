@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-08-07",
+  "summary": {
+    "cases": 3,
+    "passed": 3,
+    "failed": 0,
+    "pass_rate": 1.0,
+    "duration": 0.61
+  },
+  "results": [
+    {
+      "case": "safe-migration",
+      "ok": true,
+      "manual": false,
+      "errors": [],
+      "duration": 0.016,
+      "skill": "db-schema-sync"
+    },
+    {
+      "case": "config-present",
+      "ok": true,
+      "manual": false,
+      "errors": [],
+      "duration": 0.0,
+      "skill": "deploy-verify"
+    },
+    {
+      "case": "new-feature",
+      "ok": null,
+      "manual": true,
+      "errors": [],
+      "duration": 0.0,
+      "skill": "request-analysis"
+    },
+    {
+      "case": "mini-pytest",
+      "ok": true,
+      "manual": false,
+      "errors": [],
+      "duration": 0.594,
+      "skill": "unit-test-ci"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+schema_version: "1.0"
+id: unit-test-ci
+name: 最小验证与 CI
+version: "1.0.0"
+description: 按影响范围执行最小验证、测试、打包和接口冒烟，并完成失败归因。
+trigger:
+  - 代码、SQL 或配置修改后
+  - Review 前或交付前
+inputs:
+  - 修改文件、影响模块、验证命令与构建配置
+outputs:
+  - 执行命令、结果、失败原因、是否与本次修改相关、未验证范围
+dependencies: []

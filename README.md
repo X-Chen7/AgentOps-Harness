@@ -20,6 +20,9 @@ python -m harness check                  # Harness 与快速检查（推荐）
 python -m harness check --backend        # 包含后端模块测试和打包
 python -m harness sync-skills            # 同步技能到 .codex/skills
 python -m harness sync --push-gate       # Git push 前门禁
+python -m harness skill validate         # 校验技能契约
+python -m harness skill test             # 运行技能 fixtures
+python -m harness skill bench --compare  # 技能基准回归对比
 python -m harness commit --feature F-009
 python -m harness push --feature F-009
 python -m harness pr --feature F-009

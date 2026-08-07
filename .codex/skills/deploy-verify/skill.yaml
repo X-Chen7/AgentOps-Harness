@@ -1,0 +1,13 @@
+schema_version: "1.0"
+id: deploy-verify
+name: 部署验证
+version: "1.0.0"
+description: 在打包和部署前检查服务装配、配置、依赖和运行风险。
+trigger:
+  - 修改 app-server、配置文件、依赖或模块装配
+  - 发布前检查或打包失败排查
+inputs:
+  - 根 pom.xml、app-server/pom.xml、application-*.yaml、部署说明与运行文档
+outputs:
+  - 检查范围、执行命令、验证结果、配置风险、未验证依赖、建议下一步
+dependencies: []

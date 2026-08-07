@@ -1,0 +1,15 @@
+schema_version: "1.0"
+id: frontend-backend-integration
+name: 前后端联调
+version: "1.0.0"
+description: 以接口契约为共同语言，驱动前后端开发、联调与联合验收。
+trigger:
+  - 后端接口新增、修改或删除
+  - 前端对接新页面或联调失败
+  - 枚举、错误码、分页、认证、租户或权限语义变化
+inputs:
+  - AGENTS.md、ARCHITECTURE.md、api-contract.md、frontend-integration.md
+  - 前后端代码、接口说明、页面原型或联调环境信息
+outputs:
+  - 联调包、契约更新、联合验收清单与结果
+dependencies: []

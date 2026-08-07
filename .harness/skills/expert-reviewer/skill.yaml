@@ -1,0 +1,14 @@
+schema_version: "1.0"
+id: expert-reviewer
+name: 专家评审
+version: "1.0.0"
+description: 以评审视角检查变更，优先报告缺陷、回归风险、安全问题和测试缺口。
+trigger:
+  - 用户要求 review
+  - 重要变更完成、合并或发布前
+  - 涉及权限、SQL、框架层或接口兼容性
+inputs:
+  - 变更 diff、相关代码、SQL、测试、规则与知识文档
+outputs:
+  - Findings、Open questions、Residual risks 与验证建议
+dependencies: []

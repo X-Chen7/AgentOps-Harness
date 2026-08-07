@@ -1,0 +1,14 @@
+schema_version: "1.0"
+id: request-analysis
+name: 需求分析
+version: "1.0.0"
+description: 在编码前拆解需求、识别影响范围、判断复杂度并输出执行建议。
+trigger:
+  - 新功能、Bug、接口、SQL、配置或前后端联调任务
+  - 影响范围、复杂度或验收标准不清晰
+inputs:
+  - 用户需求与问题描述
+  - AGENTS.md、ARCHITECTURE.md、相关代码与 wiki
+outputs:
+  - 需求目标、任务类型、影响范围、复杂度级别、建议下一步
+dependencies: []
