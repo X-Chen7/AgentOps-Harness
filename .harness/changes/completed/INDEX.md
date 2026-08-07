@@ -6,6 +6,7 @@
 
 | 日期 | 标题 | 文件 | commit | PR | 仓库 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-08-08 | 知识库检索化（MCP 结构化 brain） | [archive/2026-08-08-knowledge-retrieval.md](archive/2026-08-08-knowledge-retrieval.md) | 本次 F-014 提交 | 本次 F-014 PR | agentops-harness |
 | 2026-08-07 | 技能注册表 + 技能测试与评测 | [archive/2026-08-07-skill-registry-and-benchmark.md](archive/2026-08-07-skill-registry-and-benchmark.md) | 本次 F-013 提交 | 本次 F-013 PR | agentops-harness |
 | 2026-08-07 | CI/CD 机器验收 + PR 门禁 | [archive/2026-08-07-ci-cd-pr-gate.md](archive/2026-08-07-ci-cd-pr-gate.md) | 本次 F-012 提交 | 本次 F-012 PR | agentops-harness |
 | 2026-08-07 | PowerShell 工具链迁移到 Python CLI | [2026-08-07-python-cli-migration.md](2026-08-07-python-cli-migration.md) | 本次 F-011 提交 | 本次 F-011 PR | agentops-harness |
@@ -23,6 +24,7 @@
 
 | 日期 | 标题 | 文件 | commit | PR | 仓库 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-08-08 | 执行计划：知识库检索化（F-014） | [archive/2026-08-08-knowledge-retrieval.md](archive/2026-08-08-knowledge-retrieval.md) | 本次 F-014 提交 | 本次 F-014 PR | agentops-harness |
 | 2026-08-07 | 执行计划：技能注册表 + 技能测试与评测（F-013） | [archive/2026-08-07-skill-registry-and-benchmark.md](archive/2026-08-07-skill-registry-and-benchmark.md) | 本次 F-013 提交 | 本次 F-013 PR | agentops-harness |
 | 2026-08-07 | 执行计划：CI/CD 机器验收 + PR 门禁（F-012） | [archive/2026-08-07-ci-cd-pr-gate.md](archive/2026-08-07-ci-cd-pr-gate.md) | 本次 F-012 提交 | 本次 F-012 PR | agentops-harness |
 | 2026-08-07 | 执行计划：PowerShell 工具链迁移到 Python CLI（F-011） | [archive/2026-08-07-python-cli-migration.md](archive/2026-08-07-python-cli-migration.md) | 本次 F-011 提交 | 本次 F-011 PR | agentops-harness |
