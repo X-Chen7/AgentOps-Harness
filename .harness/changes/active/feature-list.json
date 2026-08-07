@@ -484,6 +484,49 @@
                 }
             ],
             "commit": "89ecf7952410f393a0c2c65f07269e7d11f43d4b"
+        },
+        {
+            "id": "F-016",
+            "title": "双向同步自动生成验证",
+            "plan": ".harness/changes/active/2026-08-08-f-016-f016.md",
+            "status": "todo",
+            "owner": "owner",
+            "repo": "AgentOps-Harness",
+            "branch": "",
+            "commit": "",
+            "push_status": "none",
+            "pr_url": "",
+            "remote_branch": "",
+            "sync_repos": [],
+            "depends_on": [],
+            "issue_id": "15",
+            "issue_number": 15,
+            "issue_url": "https://github.com/X-Chen7/AgentOps-Harness/issues/15",
+            "pr_number": null,
+            "last_synced_at": "2026-08-08",
+            "github_updated_at": "2026-08-07T18:32:07Z",
+            "acceptance": [],
+            "blocked_by": [],
+            "pipeline": {
+                "status": "not_started",
+                "artifacts": [],
+                "last_run": ""
+            },
+            "updated_at": "2026-08-08",
+            "history": [
+                {
+                    "status": "todo",
+                    "at": "2026-08-08",
+                    "by": "harness-github",
+                    "note": "created from GitHub sync"
+                },
+                {
+                    "status": "todo",
+                    "at": "2026-08-08",
+                    "by": "harness-github",
+                    "note": "linked to issue #15"
+                }
+            ]
         }
     ]
 }

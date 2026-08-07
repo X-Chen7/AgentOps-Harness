@@ -561,6 +561,19 @@ def _update_progress(root: Path, feature: dict) -> None:
     write_text(path, "\n".join(result))
 
 
+def _sync_progress_date(root: Path, updated_at: str) -> None:
+    path = root / ".harness" / "PROGRESS.md"
+    if not path.exists():
+        return
+    lines = []
+    for line in read_text(path).splitlines():
+        if line.startswith("- 更新日期："):
+            lines.append(f"- 更新日期：{updated_at}")
+        else:
+            lines.append(line)
+    write_text(path, "\n".join(lines))
+
+
 def _write_plan_file(root: Path, path: str, feature_id: str, title: str) -> None:
     target = root / path
     target.parent.mkdir(parents=True, exist_ok=True)
@@ -665,6 +678,7 @@ def _apply_actions(root: Path, features: dict, actions: list[dict]) -> None:
             )
     knowledge_mod.build_index(root)
     features["updated_at"] = today_str()
+    _sync_progress_date(root, features["updated_at"])
     _save_ledger(root, features)
 
 
@@ -791,6 +805,7 @@ def cmd_github_issue_create(root: Path, feature_id: str) -> int:
     feature["issue_url"] = url
     _add_history(feature, "todo", f"issue created: {url}")
     features["updated_at"] = today_str()
+    _sync_progress_date(root, features["updated_at"])
     _save_ledger(root, features)
     knowledge_mod.build_index(root)
     add_proc = run_cmd(["git", "add", "-A"], cwd=root)
