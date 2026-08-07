@@ -403,9 +403,9 @@
             "status": "committed",
             "repo": "AgentOps-Harness",
             "branch": "feature/F-015-issue-pr-sync",
-            "issue_id": "",
-            "issue_number": null,
-            "issue_url": "",
+            "issue_id": "11",
+            "issue_number": 11,
+            "issue_url": "https://github.com/X-Chen7/AgentOps-Harness/issues/11",
             "pr_number": null,
             "last_synced_at": "",
             "github_updated_at": "",
@@ -437,6 +437,12 @@
                     "at": "2026-08-08",
                     "by": "harness-git",
                     "note": "committed on feature/F-015-issue-pr-sync"
+                },
+                {
+                    "status": "todo",
+                    "at": "2026-08-08",
+                    "by": "harness-github",
+                    "note": "issue created: https://github.com/X-Chen7/AgentOps-Harness/issues/11"
                 }
             ],
             "commit": "a2598a93d4adccd12d3afd074c5a771b050185ba"
