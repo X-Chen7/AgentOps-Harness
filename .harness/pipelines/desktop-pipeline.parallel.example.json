@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "pipeline": "desktop",
+  "pipeline": "desktop-parallel",
   "stages": [
     {
       "id": "analysis",
-      "description": "需求拆解、影响范围、scope 清单",
+      "description": "需求拆解并输出两个独立子任务 scope",
       "role": "analyst",
       "depends_on": [],
       "write_scope": [
@@ -13,32 +13,49 @@
       "gate": "script/check.ps1",
       "max_attempts": 1,
       "outputs": [
-        "analysis_scope"
+        "scope_a",
+        "scope_b"
       ]
     },
     {
-      "id": "coding",
-      "description": "按 scope 实现代码、SQL、配置和测试",
+      "id": "coding-a",
+      "description": "实现子任务 A 的代码、配置和测试",
       "role": "coder",
       "depends_on": [
         "analysis"
       ],
       "write_scope": [
-        "src/main",
-        "src/test"
+        "src/module-a"
       ],
       "gate": "script/check.ps1 -Compile",
       "max_attempts": 2,
       "outputs": [
-        "code_changes"
+        "code_a"
+      ]
+    },
+    {
+      "id": "coding-b",
+      "description": "实现子任务 B 的代码、配置和测试",
+      "role": "coder",
+      "depends_on": [
+        "analysis"
+      ],
+      "write_scope": [
+        "src/module-b"
+      ],
+      "gate": "script/check.ps1 -Compile",
+      "max_attempts": 2,
+      "outputs": [
+        "code_b"
       ]
     },
     {
       "id": "test",
-      "description": "补充测试并运行最小测试集",
+      "description": "汇总两个子任务并运行集成测试",
       "role": "tester",
       "depends_on": [
-        "coding"
+        "coding-a",
+        "coding-b"
       ],
       "write_scope": [
         "src/test"

@@ -22,6 +22,7 @@
 - Harness 第九轮 Codex 桌面版可执行多智能体流水线 v2（F-008）：落地 desktop-pipeline.json、状态 schema、handoff 协议、角色升级、门禁/重试/打回/升级语义和校验脚本。
 - F-009 流水线状态一致性校验：`script/harness-check.ps1` 在流水线状态为 `done` / `blocked` 时校验 feature-list 的 `pipeline.status` 一致，负向验证通过。
 - F-009 Git/PR 链路收尾：`harness commit`、`harness push`、PR #1 创建与 squash 合并全部完成，feature-list 状态回写为 `merged`。
+- F-010 可执行多智能体流水线增强：并行 DAG、写权仲裁、便签墙、debate 轻量版落地，schema 升级 1.1，负向验证通过。
 
 ## 进行中
 

@@ -74,6 +74,64 @@
                                              "at":  "2026-08-07"
                                          }
                                      ]
+                     },
+                     {
+                         "id":  "F-010",
+                         "owner":  "owner",
+                         "title":  "Executable pipeline: parallel DAG and collaboration mechanisms",
+                         "remote_branch":  "feature/F-010",
+                         "depends_on":  [
+                                            "F-009"
+                                        ],
+                         "sync_repos":  [
+
+                                        ],
+                         "push_status":  "pushed",
+                         "commit":  "536e56d0b69e2a41a0168f282c0b59a45bf46d9f",
+                         "history":  [
+                                         {
+                                             "status":  "todo",
+                                             "note":  "planned",
+                                             "by":  "harness",
+                                             "at":  "2026-08-07"
+                                         },
+                                         {
+                                             "status":  "committed",
+                                             "note":  "committed on feature/F-010",
+                                             "by":  "harness-git",
+                                             "at":  "2026-08-07"
+                                         },
+                                         {
+                                             "status":  "pushed",
+                                             "note":  "pushed to origin/feature/F-010",
+                                             "by":  "harness-git",
+                                             "at":  "2026-08-07"
+                                         }
+                                     ],
+                         "pipeline":  {
+                                          "status":  "not_started",
+                                          "artifacts":  [
+
+                                                        ],
+                                          "last_run":  ""
+                                      },
+                         "branch":  "feature/F-010",
+                         "acceptance":  [
+                                            "script/check.ps1 passes",
+                                            "parallel pipeline example validates",
+                                            "write_scope conflicts blocked",
+                                            "sticky wall and debate templates exist",
+                                            "active_stages schema 1.1 validates"
+                                        ],
+                         "repo":  "AgentOps-Harness",
+                         "issue_id":  "",
+                         "plan":  ".harness/changes/completed/archive/2026-08-07-parallel-dag-and-collab.md",
+                         "pr_url":  "",
+                         "status":  "pushed",
+                         "blocked_by":  [
+
+                                        ],
+                         "updated_at":  "2026-08-07"
                      }
                  ]
 }

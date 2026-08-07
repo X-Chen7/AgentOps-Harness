@@ -7,24 +7,25 @@
 - `pipeline-desktop-<feature>.json`：流水线状态与 Journal
 - `tasks/<feature>-<stage>.md`：阶段交接物
 - `logs/<feature>-<stage>.log`：阶段日志与门禁输出
+- `wall/<feature>.md`：共享便签墙
 - `reports/pipeline-desktop-<feature>.md`：最终报告
 
-## 状态 schema
+## 状态 schema（1.1）
 
 顶层字段：
-
-- `schema_version`：`1.0`
+- `schema_version`：`1.1`
 - `feature_id`：关联的 feature
 - `status`：`not_started` / `running` / `blocked` / `done`
-- `current_stage`：当前阶段 id 或 null
+- `current_stage`：当前阶段 id 或 null（兼容字段）
+- `active_stages`：当前并行运行的阶段 id 数组
 - `stages`：阶段数组
 - `journal`：追加式事件日志
 - `created_at` / `updated_at`
 
 阶段字段：
-
 - `id`、`status`（`queued` / `running` / `passed` / `failed` / `skipped`）
 - `attempts`、`max_attempts`、`rework_count`、`depends_on`
+- `write_scope`：该阶段允许写入的路径，用于并行写权仲裁
 - `gate`、`started_at`、`finished_at`、`handoff`、`artifacts`、`last_error`
 
 ## 维护规则
@@ -32,4 +33,6 @@
 - 状态文件由协调者更新，阶段 Agent 不直接改状态。
 - 每个事件只追加到 journal，不覆盖历史。
 - 运行中的状态不手改；必须修改时先记录原因。
+- 并行阶段由 `active_stages` 标记，协调者按 `write_scope` 做写权仲裁。
+- 便签墙规则见 `.harness/state/wall/README.md`。
 - 状态示例见 `.harness/templates/pipeline-state.example.json`，交接示例见 `.harness/templates/pipeline-handoff.example.md`。
