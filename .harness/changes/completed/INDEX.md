@@ -6,6 +6,7 @@
 
 | 日期 | 标题 | 文件 | commit | PR | 仓库 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-08-07 | PowerShell 工具链迁移到 Python CLI | [2026-08-07-python-cli-migration.md](2026-08-07-python-cli-migration.md) | 本次 F-011 提交 | 本次 F-011 PR | agentops-harness |
 | 2026-08-07 | 可执行多智能体流水线增强：并行 DAG 与协作机制 | [2026-08-07-parallel-dag-and-collab.md](2026-08-07-parallel-dag-and-collab.md) | 本次 F-010 提交 | 本次 F-010 PR | agentops-harness |
 | 2026-08-07 | 流水线状态一致性校验 | [2026-08-07-pipeline-state-consistency-check.md](2026-08-07-pipeline-state-consistency-check.md) | 本次 F-009 提交 | 本次 F-009 PR | agentops-harness |
 | 2026-08-07 | Codex 桌面版可执行多智能体流水线 v2 | [2026-08-07-agent-desktop-pipeline-v2.md](2026-08-07-agent-desktop-pipeline-v2.md) | 本次 F-008 提交 | 未登记 | agentops-harness |
@@ -20,6 +21,7 @@
 
 | 日期 | 标题 | 文件 | commit | PR | 仓库 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-08-07 | 执行计划：PowerShell 工具链迁移到 Python CLI（F-011） | [archive/2026-08-07-python-cli-migration.md](archive/2026-08-07-python-cli-migration.md) | 本次 F-011 提交 | 本次 F-011 PR | agentops-harness |
 | 2026-08-07 | 执行计划：可执行多智能体流水线增强（F-010） | [archive/2026-08-07-parallel-dag-and-collab.md](archive/2026-08-07-parallel-dag-and-collab.md) | 本次 F-010 提交 | 本次 F-010 PR | agentops-harness |
 | 2026-08-07 | 执行计划：流水线状态一致性校验（F-009） | [archive/2026-08-07-pipeline-state-consistency-check.md](archive/2026-08-07-pipeline-state-consistency-check.md) | 本次 F-009 提交 | 本次 F-009 PR | agentops-harness |
 | 2026-08-07 | Agent 设计计划：桌面版可执行多智能体流水线 v2 | [archive/2026-08-07-agent-desktop-pipeline-v2.md](archive/2026-08-07-agent-desktop-pipeline-v2.md) | 本次 F-008 提交 | 未登记 | agentops-harness |

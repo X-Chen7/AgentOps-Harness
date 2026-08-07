@@ -5,9 +5,9 @@
 ## 当前状态
 
 - 更新日期：2026-08-07
-- 当前任务：F-011 PowerShell 工具链迁移到 Python CLI（进行中）
-- 当前状态：`in_progress`
-- 最近验证：`python -m pytest -q` 14 passed；`python -m harness check` 0 error
+- 当前任务：F-011 PowerShell 工具链迁移到 Python CLI（已完成）
+- 当前状态：`merged`（PR #3 已合并）
+- 最近验证：`python -m pytest -q` 14 passed；`python -m harness check` 0 error；PR #3 squash 合并完成
 
 ## 已完成
 
@@ -23,14 +23,15 @@
 - F-009 流水线状态一致性校验：`script/harness-check.ps1` 在流水线状态为 `done` / `blocked` 时校验 feature-list 的 `pipeline.status` 一致，负向验证通过。
 - F-009 Git/PR 链路收尾：`harness commit`、`harness push`、PR #1 创建与 squash 合并全部完成，feature-list 状态回写为 `merged`。
 - F-010 可执行多智能体流水线增强：并行 DAG、写权仲裁、便签墙、debate 轻量版落地，schema 升级 1.1，负向验证通过。
+- F-011 PowerShell 工具链迁移到 Python CLI：Python CLI、pytest 测试、GitHub Actions CI 落地，PowerShell 降级为兼容包装，PR #3 squash 合并完成。
 
 ## 进行中
 
-- F-011 PowerShell 工具链迁移到 Python CLI：Python CLI 已实现，PowerShell 降级为兼容包装，测试与 CI 已就绪。
+- 无进行中 feature（WIP=0）。
 
 ## 下一步
 
-- F-011 完成 Git/PR 链路后标记 `merged`。
+- 无进行中 feature（WIP=0）。
 - 后续新 feature 继续按 `analysis -> coding -> test -> review -> Git/PR` 流程执行。
 - 每次会话结束运行 `script/check.ps1` 并回填结果。
 - 同步更新 `changes/active/feature-list.json` 中的状态。
