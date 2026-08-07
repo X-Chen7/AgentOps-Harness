@@ -269,7 +269,7 @@
             "branch": "feature/F-013",
             "issue_id": "",
             "plan": ".harness/changes/active/2026-08-07-skill-registry-and-benchmark.md",
-            "pr_url": "",
+            "pr_url": "https://github.com/X-Chen7/AgentOps-Harness/pull/5",
             "acceptance": [
                 "harness skill validate passes for 8 skills",
                 "harness skill test runs automated fixtures",
@@ -303,6 +303,12 @@
                     "at": "2026-08-07",
                     "by": "harness-git",
                     "note": "pushed to origin/feature/F-013"
+                },
+                {
+                    "status": "pushed",
+                    "at": "2026-08-07",
+                    "by": "harness-git",
+                    "note": "PR created: https://github.com/X-Chen7/AgentOps-Harness/pull/5"
                 }
             ],
             "commit": "5550de0e886fe5f0c9f3a1ff159bfc5d2384f5b3"
