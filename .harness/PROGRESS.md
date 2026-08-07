@@ -4,7 +4,7 @@
 
 ## 当前状态
 
-- 更新日期：2026-08-08
+- 更新日期：2026-08-07
 - 当前任务：F-015 问题跟踪 / PR 双向同步（进行中）
 - 当前状态：`merged`
 - 最近验证：`python -m pytest -q` 67 passed；`harness knowledge bench` 8/8；ruoyi 真实项目索引 783 条目、接口 147、表 89
