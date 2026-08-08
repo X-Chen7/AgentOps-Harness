@@ -584,6 +584,49 @@
                     "note": "GitHub issue #25 closed without merge"
                 }
             ]
+        },
+        {
+            "id": "F-018",
+            "title": "Direct write E2E verification",
+            "plan": ".harness/changes/active/2026-08-08-f-018-direct-write-e2e-verification.md",
+            "status": "todo",
+            "owner": "owner",
+            "repo": "AgentOps-Harness",
+            "branch": "",
+            "commit": "",
+            "push_status": "none",
+            "pr_url": "",
+            "remote_branch": "",
+            "sync_repos": [],
+            "depends_on": [],
+            "issue_id": "27",
+            "issue_number": 27,
+            "issue_url": "https://github.com/X-Chen7/AgentOps-Harness/issues/27",
+            "pr_number": null,
+            "last_synced_at": "2026-08-08",
+            "github_updated_at": "2026-08-08T02:16:22Z",
+            "acceptance": [],
+            "blocked_by": [],
+            "pipeline": {
+                "status": "not_started",
+                "artifacts": [],
+                "last_run": ""
+            },
+            "updated_at": "2026-08-08",
+            "history": [
+                {
+                    "status": "todo",
+                    "at": "2026-08-08",
+                    "by": "harness-github",
+                    "note": "created from GitHub sync"
+                },
+                {
+                    "status": "todo",
+                    "at": "2026-08-08",
+                    "by": "harness-github",
+                    "note": "linked to issue #27"
+                }
+            ]
         }
     ]
 }
