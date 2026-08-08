@@ -589,7 +589,7 @@
             "id": "F-018",
             "title": "Direct write E2E verification",
             "plan": ".harness/changes/active/2026-08-08-f-018-direct-write-e2e-verification.md",
-            "status": "todo",
+            "status": "blocked",
             "owner": "owner",
             "repo": "AgentOps-Harness",
             "branch": "",
@@ -606,7 +606,9 @@
             "last_synced_at": "2026-08-08",
             "github_updated_at": "2026-08-08T02:16:22Z",
             "acceptance": [],
-            "blocked_by": [],
+            "blocked_by": [
+                "GitHub issue #27 closed without merge"
+            ],
             "pipeline": {
                 "status": "not_started",
                 "artifacts": [],
@@ -625,6 +627,12 @@
                     "at": "2026-08-08",
                     "by": "harness-github",
                     "note": "linked to issue #27"
+                },
+                {
+                    "status": "blocked",
+                    "at": "2026-08-08",
+                    "by": "harness-github",
+                    "note": "GitHub issue #27 closed without merge"
                 }
             ]
         }
