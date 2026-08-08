@@ -533,6 +533,57 @@
                     "note": "GitHub issue #15 closed without merge"
                 }
             ]
+        },
+        {
+            "id": "F-017",
+            "title": "Direct sync direct-write validation",
+            "plan": ".harness/changes/active/2026-08-08-f-017-direct-sync-direct-write-validation.md",
+            "status": "blocked",
+            "owner": "owner",
+            "repo": "AgentOps-Harness",
+            "branch": "",
+            "commit": "",
+            "push_status": "none",
+            "pr_url": "",
+            "remote_branch": "",
+            "sync_repos": [],
+            "depends_on": [],
+            "issue_id": "25",
+            "issue_number": 25,
+            "issue_url": "https://github.com/X-Chen7/AgentOps-Harness/issues/25",
+            "pr_number": null,
+            "last_synced_at": "2026-08-08",
+            "github_updated_at": "2026-08-08T02:12:45Z",
+            "acceptance": [],
+            "blocked_by": [
+                "GitHub issue #25 closed without merge"
+            ],
+            "pipeline": {
+                "status": "not_started",
+                "artifacts": [],
+                "last_run": ""
+            },
+            "updated_at": "2026-08-08",
+            "history": [
+                {
+                    "status": "todo",
+                    "at": "2026-08-08",
+                    "by": "harness-github",
+                    "note": "created from GitHub sync"
+                },
+                {
+                    "status": "todo",
+                    "at": "2026-08-08",
+                    "by": "harness-github",
+                    "note": "linked to issue #25"
+                },
+                {
+                    "status": "blocked",
+                    "at": "2026-08-08",
+                    "by": "harness-github",
+                    "note": "GitHub issue #25 closed without merge"
+                }
+            ]
         }
     ]
 }
