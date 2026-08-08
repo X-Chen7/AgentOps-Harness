@@ -5,13 +5,14 @@
 ## 当前状态
 
 - 更新日期：2026-08-08
-- 当前任务：F-015 问题跟踪 / PR 双向同步（已合入，收尾中）
+- 当前任务：F-015 问题跟踪 / PR 双向同步（已完成，direct 直写已启用）
 - 当前状态：`merged`
-- 最近验证：`python -m pytest -q` 80 passed；`harness check` 0 errors；`harness github sync --strict` up to date；`harness knowledge bench` 8/8
+- 最近验证：`python -m pytest -q` 82 passed；`harness check` 0 errors；`harness github sync --strict` up to date；`harness knowledge bench` 8/8；direct 直写闭环 F-017/F-018 已验证
 
 ## 已完成
-- F-015 问题跟踪 / PR 双向同步：`harness github sync` 事件驱动同步、Issue/PR 状态回写、自动归档、`github-sync` CI 门禁与 main 分支保护落地；PR #12 合入，PR #20 完成同步传输层收尾。
+- F-015 问题跟踪 / PR 双向同步：`harness github sync` 事件驱动同步、Issue/PR 状态回写、自动归档、`github-sync` CI 门禁落地；PR #12 合入，PR #20 完成传输层收尾，PR #24 增加直写路径白名单，PR #26 修复机器人凭据并迁移 main 到 ruleset，direct 直写模式已启用。
 - F-016 双向同步自动生成验证：Issue #15 自动生成 feature/计划，关闭未合并后回写 `blocked`，验证自动同步闭环。
+- F-017/F-018 direct 直写验证：Issue #25/#27 自动生成 feature 并直推 main，关闭未合并后自动回写 `blocked`，验证机器人直写闭环真实生效。
 
 - Harness 第一轮收敛：技能扩平、spec 归档、changes 生命周期、wiki 隔离、校验脚本。
 - Harness 第二轮状态与反馈优化：PROGRESS、feature-list、check.ps1、模板和工具边界。
@@ -35,7 +36,8 @@
 
 ## 下一步
 
-- 可选：配置 `HARNESS_SYNC_TOKEN` 与 repository ruleset，把状态同步从“状态 PR + auto-merge”升级为机器人直写 main。
+- 进一步加固：升级为 GitHub App，把 ruleset bypass actor 从用户账号换成 App 集成，并增加令牌到期提醒与轮换。
+- 可选：清理验证用 Issue #25/#27 及 F-017/F-018 测试记录，保持仓库台账干净。
 - 后续新 feature 继续按 `analysis -> coding -> test -> review -> Git/PR` 流程执行。
 - 每次会话结束运行 `script/check.ps1` 并回填结果。
 - 同步更新 `changes/active/feature-list.json` 中的状态。
@@ -48,4 +50,4 @@
 - 完成记录必须同步维护 `changes/completed/INDEX.md`。
 - 完成判定必须经过 `script/check.ps1` 和 `expert-reviewer`，不能由执行者自报完成。
 - GitHub 状态以 `feature-list.json` 为权威，Issue/PR 事件只触发重新计算，不直接改写台账。
-- 未配置同步机器人令牌时，状态同步走“状态 PR + auto-merge”，避免绕过代码评审。
+- 已配置 fine-grained PAT + repository ruleset bypass；direct 模式只允许路径白名单内的 `.harness/**` 文件直写 main，代码改动仍必须走 PR。
